@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicaltestmodel.testsheet="http:///com/corticon/rulesemf/canonicaltestmodel/testsheet.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_StbjQQlOEe65L5wl6N2lBw" externalChecksum="2722078124:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="__DJtyQkkEe6JlZa2rQHNaw" externalChecksum="2722078124:507989954" studioType="Java">
+    <testsheet ruleActivityUpdateStamp="_KHInMAkfEe6JlZa2rQHNaw" returnEntityMode="All" ruleActivity="HolidayRules.erf#//@ruleflow" locale="">
+      <input/>
+      <output>
+        <PostedMessage severity="Warning" text="[HolidayRules_Check_Holidays_Weekend,1] The next day [11/24/2023] falls on a holiday, so increment to the next day"/>
+        <PostedMessage severity="Warning" text="[HolidayRules_Check_Holidays_Weekend,1] The next day [11/25/2023] falls on a holiday, so increment to the next day"/>
+        <PostedMessage severity="Warning" text="[HolidayRules_Check_Holidays_Weekend,4] The next day [11/27/2023] falls on a Saturday, so increment two days"/>
+        <PostedMessage severity="Info" text="[HolidayRules_Check_Holidays_Weekend,2] The next day [11/27/2023] does not fall on a holiday, so do not increment"/>
+        <PostedMessage severity="Info" text="[HolidayRules_Check_Holidays_Weekend,2] The next day [11/27/2023] does not fall on a holiday, so do not increment"/>
+        <PostedMessage severity="Info" text="[HolidayRules_Check_Holidays_Weekend,2] The next day [11/27/2023] does not fall on a holiday, so do not increment"/>
+        <PostedMessage severity="Info" text="[HolidayRules_Check_Holidays_Weekend,5] The next day [11/27/2023] does not fall on a Saturday or Sunday, so do not increment"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="1" rulesheet="HolidayRules_Check_Holidays_Weekend" rule="A0" entityname="Weekday" entityidentity="" entityid="Weekday_id_1" name="nextWorkDay" oldvalue="" newvalue="11/23/2023"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="2" rulesheet="HolidayRules_Check_Holidays_Weekend" rule="1" entityname="Weekday" entityidentity="" entityid="Weekday_id_1" name="nextWorkDay" oldvalue="11/23/2023" newvalue="11/24/2023"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="3" rulesheet="HolidayRules_Check_Holidays_Weekend" rule="1" entityname="Weekday" entityidentity="" entityid="Weekday_id_1" name="nextWorkDay" oldvalue="11/24/2023" newvalue="11/25/2023"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="4" rulesheet="HolidayRules_Check_Holidays_Weekend" rule="4" entityname="Weekday" entityidentity="" entityid="Weekday_id_1" name="nextWorkDay" oldvalue="11/25/2023" newvalue="11/27/2023"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Calendar.ecore#//Holiday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="11/23/2023" eAttribute="Calendar.ecore#//Holiday/calendarDate"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Calendar.ecore#//Holiday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="11/24/2023" eAttribute="Calendar.ecore#//Holiday/calendarDate"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Calendar.ecore#//Holiday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="12/25/2023" eAttribute="Calendar.ecore#//Holiday/calendarDate"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Calendar.ecore#//Weekday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="11/22/2023" eAttribute="Calendar.ecore#//Weekday/currentDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Calendar.ecore#//Weekday/nextWorkDay"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="Calendar.ecore#//Holiday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="11/23/2023" eAttribute="Calendar.ecore#//Holiday/calendarDate"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" eClass="Calendar.ecore#//Holiday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="11/24/2023" eAttribute="Calendar.ecore#//Holiday/calendarDate"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" eClass="Calendar.ecore#//Holiday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="12/25/2023" eAttribute="Calendar.ecore#//Holiday/calendarDate"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eClass="Calendar.ecore#//Weekday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.3" value="11/27/2023" eAttribute="Calendar.ecore#//Weekday/nextWorkDay"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="11/22/2023" eAttribute="Calendar.ecore#//Weekday/currentDate"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3"/>
+      </outputMessageSection>
+      <expectedRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Calendar.ecore#//Holiday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="11/23/2023" eAttribute="Calendar.ecore#//Holiday/calendarDate"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Calendar.ecore#//Holiday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="11/24/2023" eAttribute="Calendar.ecore#//Holiday/calendarDate"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Calendar.ecore#//Holiday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="12/25/2023" eAttribute="Calendar.ecore#//Holiday/calendarDate"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Calendar.ecore#//Weekday">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="11/27/2023" eAttribute="Calendar.ecore#//Weekday/nextWorkDay"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="11/22/2023" eAttribute="Calendar.ecore#//Weekday/currentDate"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.0"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.0"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.0"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.0"/>
+      </outputRuleTraceSection>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_KG1sQAkfEe6JlZa2rQHNaw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Calendar.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="HolidayRules"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_iaWQv6e9Ee2CYcAFLXQDZg" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_H-bIMFeTEeySPpxYtiv76w" vocabulary="vocab.ecore#/">
+    <rule>
+      <condition/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="Loan.ratePeriodInterval = 'daily'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.ratePeriodInterval = 'daily'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="ratePeriodInterval" datatype="String" termtype="ATTRIBUTE" fulltext="Loan.ratePeriodInterval">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Loan.ratePeriodInterval" rhs="'daily'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Loan.timesCompoundedPerYear = 365">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.timesCompoundedPerYear = 365" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="Loan.ratePeriodInterval = 'weekly'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.ratePeriodInterval = 'weekly'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="ratePeriodInterval" datatype="String" termtype="ATTRIBUTE" fulltext="Loan.ratePeriodInterval">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Loan.ratePeriodInterval" rhs="'weekly'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Loan.timesCompoundedPerYear = 52">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.timesCompoundedPerYear = 52" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="Loan.ratePeriodInterval = 'monthly'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.ratePeriodInterval = 'monthly'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="ratePeriodInterval" datatype="String" termtype="ATTRIBUTE" fulltext="Loan.ratePeriodInterval">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Loan.ratePeriodInterval" rhs="'monthly'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Loan.timesCompoundedPerYear = 12">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.timesCompoundedPerYear = 12" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="Loan.ratePeriodInterval = 'annually'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.ratePeriodInterval = 'annually'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="ratePeriodInterval" datatype="String" termtype="ATTRIBUTE" fulltext="Loan.ratePeriodInterval">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Loan.ratePeriodInterval" rhs="'annually'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Loan.timesCompoundedPerYear = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.timesCompoundedPerYear = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1 #//@ruleset/@rules.2 #//@ruleset/@rules.3 #//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Loan rate per period interval of [{Loan.ratePeriodInterval}] means loan is compounded [{Loan.timesCompoundedPerYear}] times per year">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan rate per period interval of [ + Loan.ratePeriodInterval + ] means loan is compounded [ + Loan.timesCompoundedPerYear + ] times per year" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="ratePeriodInterval" datatype="String" termtype="ATTRIBUTE" fulltext="Loan.ratePeriodInterval">
+              <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+              <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="vocab.ecore#//Loan" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <referencedAttributes attribute="vocab.ecore#//Loan/ratePerYear"/>
+      <referencedAttributes attribute="vocab.ecore#//Loan/ratePerPeriod"/>
+      <referencedAttributes attribute="vocab.ecore#//Loan/ratePeriodInterval"/>
+      <referencedAttributes attribute="vocab.ecore#//Loan/timesCompoundedPerYear"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsActions="49" sashWeightConditionsIf="31">
+    <actionSection rowCount="45" columnWidthFactor="0.5">
+      <actionItemList rowHeight="60">
+        <valueSetCell/>
+        <expressionCell external="Loan.timesCompoundedPerYear">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.timesCompoundedPerYear" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="49"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="1000" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1:4"/>
+        <text external="Loan rate per period interval of [{Loan.ratePeriodInterval}] means loan is compounded [{Loan.timesCompoundedPerYear}] times per year">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan rate per period interval of [ + Loan.ratePeriodInterval + ] means loan is compounded [ + Loan.timesCompoundedPerYear + ] times per year" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="ratePeriodInterval" datatype="String" termtype="ATTRIBUTE" fulltext="Loan.ratePeriodInterval">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="46" columnWidthFactor="0.5">
+      <conditionItemList rowHeight="63">
+        <valueSetCell/>
+        <expressionCell external="Loan.ratePeriodInterval">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.ratePeriodInterval" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="ratePeriodInterval" datatype="String" termtype="ATTRIBUTE" fulltext="Loan.ratePeriodInterval">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="254" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="182" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'daily'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.ratePeriodInterval = 'daily'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="ratePeriodInterval" datatype="String" termtype="ATTRIBUTE" fulltext="Loan.ratePeriodInterval">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="365">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.timesCompoundedPerYear = 365" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'weekly'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.ratePeriodInterval = 'weekly'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="ratePeriodInterval" datatype="String" termtype="ATTRIBUTE" fulltext="Loan.ratePeriodInterval">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="52">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.timesCompoundedPerYear = 52" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'monthly'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.ratePeriodInterval = 'monthly'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="ratePeriodInterval" datatype="String" termtype="ATTRIBUTE" fulltext="Loan.ratePeriodInterval">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="12">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.timesCompoundedPerYear = 12" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="'annually'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.ratePeriodInterval = 'annually'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="ratePeriodInterval" datatype="String" termtype="ATTRIBUTE" fulltext="Loan.ratePeriodInterval">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.timesCompoundedPerYear = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

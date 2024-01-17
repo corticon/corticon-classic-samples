@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicaltestmodel.testsheet="http:///com/corticon/rulesemf/canonicaltestmodel/testsheet.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_2J-y4QbGEe6CfO_-j_rNpQ" externalChecksum="2722078124:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_rEY1gAcEEe6FtuaKUbnbIg" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_0dMNPQcDEe6EIfVvzbJqgw" ruleActivity="Ideal%20Body%20Weight%20and%20Adjusted%20Body%20Weight.ers#//@ruleset" locale="">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="[3] Ideal body weight (IBW) (men) over 5 ft (60 in.) tall = 50 kg + 2.3 kg x (height, in - 60)"/>
+        <PostedMessage severity="Info" text="[2] If weight in lbs not provided, determine it by diving weight in kg by 2.205"/>
+        <PostedMessage severity="Info" text="[B0] BMI: weight (lb) / [height (in)]2 x 703"/>
+        <PostedMessage severity="Info" text="[7] Adjusted Body Weight (ABW), for use in obese patients (where actual body weight > IBW): ABW = IBW + 0.4 x (actual body weight - IBW)"/>
+        <PostedMessage severity="Info" text="[11] Patient's weight is more than 120% of their ideal body weight, so use [Adjusted Body Weight] of [60.760000] kg as dosing weight for [Acyclovir]"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="1" rulesheet="MyRule" rule="3" entityname="Patient" entityidentity="" entityid="Patient_id_1" name="ideal_body_weight_kg" oldvalue="" newvalue="54.600000"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="2" rulesheet="MyRule" rule="2" entityname="Patient" entityidentity="" entityid="Patient_id_1" name="weight_lbs" oldvalue="" newvalue="154.350000"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="3" rulesheet="MyRule" rule="B0" entityname="Patient" entityidentity="" entityid="Patient_id_1" name="bmi" oldvalue="" newvalue="28.227901"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="4" rulesheet="MyRule" rule="8" entityname="Drug" entityidentity="" entityid="Drug_id_1" name="dosing_weight_type" oldvalue="" newvalue="Adjusted Body Weight"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="5" rulesheet="MyRule" rule="7" entityname="Patient" entityidentity="" entityid="Patient_id_1" name="adjusted_body_weight" oldvalue="" newvalue="60.760000"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="6" rulesheet="MyRule" rule="11" entityname="Drug" entityidentity="" entityid="Drug_id_1" name="dosing_weight_lbs" oldvalue="" newvalue="60.760000"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Vocabulary.ecore#//Patient">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="62" eAttribute="Vocabulary.ecore#//Patient/height_in"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="Vocabulary.ecore#//Patient/drug" eClass="Vocabulary.ecore#//Drug">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Acyclovir" eAttribute="Vocabulary.ecore#//Drug/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Male" eAttribute="Vocabulary.ecore#//Patient/sex"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70.000000" eAttribute="Vocabulary.ecore#//Patient/weight_kg"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="Vocabulary.ecore#//Patient">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="70.000000" eAttribute="Vocabulary.ecore#//Patient/weight_kg"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Male" eAttribute="Vocabulary.ecore#//Patient/sex"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="62" eAttribute="Vocabulary.ecore#//Patient/height_in"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.4" value="60.760000" eAttribute="Vocabulary.ecore#//Patient/adjusted_body_weight"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.0" value="54.600000" eAttribute="Vocabulary.ecore#//Patient/ideal_body_weight_kg"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.1" value="154.350000" eAttribute="Vocabulary.ecore#//Patient/weight_lbs"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eReference="Vocabulary.ecore#//Patient/drug" eClass="Vocabulary.ecore#//Drug">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.3" value="Adjusted Body Weight" eAttribute="Vocabulary.ecore#//Drug/dosing_weight_type"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.5" value="60.760000" eAttribute="Vocabulary.ecore#//Drug/dosing_weight_lbs"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Acyclovir" eAttribute="Vocabulary.ecore#//Drug/name"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.2" value="28.227901" eAttribute="Vocabulary.ecore#//Patient/bmi"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6"/>
+      </outputMessageSection>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.0"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.1"/>
+      </outputRuleTraceSection>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_LNEG8QbOEe6CfO_-j_rNpQ" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Vocabulary.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="untitled_1"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

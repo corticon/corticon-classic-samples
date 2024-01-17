@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_iZ3viae9Ee2CYcAFLXQDZg" externalChecksum="3391387159:507989954:2614682131" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_H-bIMFeTEeySPpxYtiv76w" vocabulary="vocab.ecore#/">
+    <rule>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="Loan.simpleInterest = Loan.principal * Loan.ratePerYear* Loan.timesCompoundedPerYear">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.simpleInterest = Loan.principal * Loan.ratePerYear * Loan.timesCompoundedPerYear" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="simpleInterest" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Loan.simpleInterest">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="principal" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.principal">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ratePerYear" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Loan.ratePerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.0/@actions.0" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="the simple interest is calculated as principal [ {Loan.principal} ] times rate per period [{Loan.ratePerPeriod}] times # of periods [{Loan.timesCompoundedPerYear}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="the simple interest is calculated as principal [  + Loan.principal +  ] times rate per period [ + Loan.ratePerPeriod + ] times # of periods [ + Loan.timesCompoundedPerYear + ]" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+              <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="ratePerPeriod" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Loan.ratePerPeriod">
+              <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="principal" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.principal">
+              <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="vocab.ecore#//Loan" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <referencedAttributes attribute="vocab.ecore#//Loan/ratePerPeriod"/>
+      <referencedAttributes attribute="vocab.ecore#//Loan/timesCompoundedPerYear"/>
+      <referencedAttributes attribute="vocab.ecore#//Loan/ratePeriodInterval"/>
+      <referencedAttributes attribute="vocab.ecore#//Loan/ratePerYear"/>
+      <referencedAttributes attribute="vocab.ecore#//Loan/simpleInterest"/>
+      <referencedAttributes attribute="vocab.ecore#//Loan/compoundInterest"/>
+      <referencedAttributes attribute="vocab.ecore#//Loan/principal"/>
+      <referencedAttributes attribute="vocab.ecore#//Loan/interestType"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightScope="50" sashWeightConditionsActions="25" sashWeightConditionsIf="26">
+    <actionSection rowCount="55" columnWidthFactor="0.5">
+      <actionItemList rowHeight="51">
+        <valueSetCell/>
+        <expressionCell external="Loan.simpleInterest">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.simpleInterest" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="simpleInterest" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Loan.simpleInterest">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.5"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.6"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.7"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="1000" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="A0"/>
+        <text external="the simple interest is calculated as principal [ {Loan.principal} ] times rate per period [{Loan.ratePerPeriod}] times # of periods [{Loan.timesCompoundedPerYear}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="the simple interest is calculated as principal [  + Loan.principal +  ] times rate per period [ + Loan.ratePerPeriod + ] times # of periods [ + Loan.timesCompoundedPerYear + ]" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ratePerPeriod" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Loan.ratePerPeriod">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="principal" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.principal">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="46" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="16">
+      <ruleColumnList ruleId="0" columnWidth="273" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="Loan.principal * Loan.ratePerYear* Loan.timesCompoundedPerYear">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Loan.simpleInterest = Loan.principal * Loan.ratePerYear * Loan.timesCompoundedPerYear" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="simpleInterest" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Loan.simpleInterest">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="timesCompoundedPerYear" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.timesCompoundedPerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+              </terms>
+              <terms text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+              <terms text="principal" datatype="Integer" termtype="ATTRIBUTE" fulltext="Loan.principal">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+              </terms>
+              <terms text="ratePerYear" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Loan.ratePerYear">
+                <parentTerm text="Loan" datatype="Loan" termtype="ENTITY" fulltext="Loan"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

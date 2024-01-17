@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_SsYapglOEe65L5wl6N2lBw" externalChecksum="2722078124:507989954:2614682131" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset operationMode="ProcessMultiRuleLogicalLoops" vocabularyUpdateStamp="_KG1sQAkfEe6JlZa2rQHNaw" vocabulary="Calendar.ecore#/">
+    <rule>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+        <opaqueExpression expression="Weekday.nextWorkDay = Weekday.currentDate.addDays(1)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay = Weekday.currentDate.addDays ( 1 )" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Weekday.currentDate.addDays">
+                <parentTerm text="currentDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.currentDate">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(Weekday.nextWorkDay = Holiday.calendarDate)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Weekday.nextWorkDay = Holiday.calendarDate ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="calendarDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.calendarDate">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Weekday.nextWorkDay = Holiday.calendarDate" rhs="T"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Weekday.nextWorkDay = Weekday.nextWorkDay.addDays(1)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay = Weekday.nextWorkDay.addDays ( 1 )" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Weekday.nextWorkDay.addDays">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="(Weekday.nextWorkDay = Holiday.calendarDate)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Weekday.nextWorkDay = Holiday.calendarDate ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="calendarDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.calendarDate">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Weekday.nextWorkDay = Holiday.calendarDate" rhs="F"/>
+      </condition>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Weekday.nextWorkDay.dayOfWeek = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay.dayOfWeek = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dayOfWeek" datatype="Integer" termtype="METHOD" fulltext="Weekday.nextWorkDay.dayOfWeek">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Weekday.nextWorkDay.dayOfWeek" rhs="1"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="Weekday.nextWorkDay = Weekday.nextWorkDay.addDays(1)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay = Weekday.nextWorkDay.addDays ( 1 )" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Weekday.nextWorkDay.addDays">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.4">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Weekday.nextWorkDay.dayOfWeek = 7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay.dayOfWeek = 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dayOfWeek" datatype="Integer" termtype="METHOD" fulltext="Weekday.nextWorkDay.dayOfWeek">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Weekday.nextWorkDay.dayOfWeek" rhs="7"/>
+      </condition>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Weekday.nextWorkDay = Weekday.nextWorkDay.addDays(2)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay = Weekday.nextWorkDay.addDays ( 2 )" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Weekday.nextWorkDay.addDays">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.5">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Weekday.nextWorkDay.dayOfWeek &lt; 1 or Weekday.nextWorkDay.dayOfWeek in [2..6] or Weekday.nextWorkDay.dayOfWeek > 7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay.dayOfWeek &lt; 1 or Weekday.nextWorkDay.dayOfWeek in 2 .. 6 or Weekday.nextWorkDay.dayOfWeek > 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dayOfWeek" datatype="Integer" termtype="METHOD" fulltext="Weekday.nextWorkDay.dayOfWeek">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Weekday.nextWorkDay.dayOfWeek" rhs="other"/>
+      </condition>
+    </rule>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.0/@actions.0">
+      <text expression="Set next work day to initial value of current date plus one">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Set next work day to initial value of current date plus one" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The next day [{Weekday.nextWorkDay}] falls on a holiday, so increment to the next day">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The next day [ + Weekday.nextWorkDay + ] falls on a holiday, so increment to the next day" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+              <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The next day [{Weekday.nextWorkDay}] does not fall on a holiday, so do not increment">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The next day [ + Weekday.nextWorkDay + ] does not fall on a holiday, so do not increment" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+              <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The next day [{Weekday.nextWorkDay}] falls on a Sunday, so increment to the next day">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The next day [ + Weekday.nextWorkDay + ] falls on a Sunday, so increment to the next day" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+              <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The next day [{Weekday.nextWorkDay}] falls on a Saturday, so increment two days">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The next day [ + Weekday.nextWorkDay + ] falls on a Saturday, so increment two days" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+              <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.5" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The next day [{Weekday.nextWorkDay}] does not fall on a Saturday or Sunday, so do not increment">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The next day [ + Weekday.nextWorkDay + ] does not fall on a Saturday or Sunday, so do not increment" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+              <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="Calendar.ecore#//Weekday" ruleStatements="#//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3 #//@ruleset/@ruleStatements.4 #//@ruleset/@ruleStatements.5">
+      <referencedAttributes attribute="Calendar.ecore#//Weekday/currentDate"/>
+      <referencedAttributes attribute="Calendar.ecore#//Weekday/nextWorkDay"/>
+    </logicalVariable>
+    <logicalVariable entity="Calendar.ecore#//Holiday">
+      <referencedAttributes attribute="Calendar.ecore#//Holiday/calendarDate"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="49" columnWidthFactor="0.5">
+      <actionItemList rowHeight="63">
+        <valueSetCell/>
+        <expressionCell external="Weekday.nextWorkDay = Weekday.currentDate.addDays(1)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay = Weekday.currentDate.addDays ( 1 )" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Weekday.currentDate.addDays">
+                <parentTerm text="currentDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.currentDate">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="53">
+        <valueSetCell/>
+        <expressionCell external="Weekday.nextWorkDay = Weekday.nextWorkDay.addDays(1)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay = Weekday.nextWorkDay.addDays ( 1 )" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Weekday.nextWorkDay.addDays">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="76">
+        <valueSetCell/>
+        <expressionCell external="Weekday.nextWorkDay = Weekday.nextWorkDay.addDays(2)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay = Weekday.nextWorkDay.addDays ( 2 )" datatype="DateTime" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="addDays" datatype="DateTime" termtype="METHOD" fulltext="Weekday.nextWorkDay.addDays">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="1424" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="A0"/>
+        <text external="Set next work day to initial value of current date plus one">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Set next work day to initial value of current date plus one" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="1"/>
+        <text external="The next day [{Weekday.nextWorkDay}] falls on a holiday, so increment to the next day">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The next day [ + Weekday.nextWorkDay + ] falls on a holiday, so increment to the next day" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="2"/>
+        <text external="The next day [{Weekday.nextWorkDay}] does not fall on a holiday, so do not increment">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The next day [ + Weekday.nextWorkDay + ] does not fall on a holiday, so do not increment" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="3"/>
+        <text external="The next day [{Weekday.nextWorkDay}] falls on a Sunday, so increment to the next day">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The next day [ + Weekday.nextWorkDay + ] falls on a Sunday, so increment to the next day" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference external="4"/>
+        <text external="The next day [{Weekday.nextWorkDay}] falls on a Saturday, so increment two days">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The next day [ + Weekday.nextWorkDay + ] falls on a Saturday, so increment two days" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.5">
+        <reference external="5"/>
+        <text external="The next day [{Weekday.nextWorkDay}] does not fall on a Saturday or Sunday, so do not increment">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The next day [ + Weekday.nextWorkDay + ] does not fall on a Saturday or Sunday, so do not increment" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="Weekday.nextWorkDay = Holiday.calendarDate">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay = Holiday.calendarDate" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="calendarDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.calendarDate">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{1, 7, other}"/>
+        <expressionCell external="Weekday.nextWorkDay.dayOfWeek">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay.dayOfWeek" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dayOfWeek" datatype="Integer" termtype="METHOD" fulltext="Weekday.nextWorkDay.dayOfWeek">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Weekday.nextWorkDay = Holiday.calendarDate ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="calendarDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.calendarDate">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Weekday.nextWorkDay = Holiday.calendarDate ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="calendarDate" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Holiday.calendarDate">
+                <parentTerm text="Holiday" datatype="Holiday" termtype="ENTITY" fulltext="Holiday" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay.dayOfWeek = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dayOfWeek" datatype="Integer" termtype="METHOD" fulltext="Weekday.nextWorkDay.dayOfWeek">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay.dayOfWeek = 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dayOfWeek" datatype="Integer" termtype="METHOD" fulltext="Weekday.nextWorkDay.dayOfWeek">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="100" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="other">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Weekday.nextWorkDay.dayOfWeek &lt; 1 or Weekday.nextWorkDay.dayOfWeek in 2 .. 6 or Weekday.nextWorkDay.dayOfWeek > 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dayOfWeek" datatype="Integer" termtype="METHOD" fulltext="Weekday.nextWorkDay.dayOfWeek">
+                <parentTerm text="nextWorkDay" datatype="DateTime" termtype="ATTRIBUTE" fulltext="Weekday.nextWorkDay">
+                  <parentTerm text="Weekday" datatype="Weekday" termtype="ENTITY" fulltext="Weekday" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

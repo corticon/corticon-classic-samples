@@ -1,0 +1,1761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_zyq-sBTnEe67yvSrSIUMVA" externalChecksum="2722078124:507989954:1851567734" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_zyA3YBTnEe67yvSrSIUMVA" key="101" type="Validation" severity="Warning" invalidObjects="#//@rulesheetViewList.0/@ruleSection/@ruleColumnList.7/@conditionValueSetCellList.4" textKey="RulesheetTableModelAPIImpl.Validation.InvalidVariableUsage" locationKey="RulesheetTableModelAPIImpl.Validation.Location.If">
+    <textVariables>Variable usage warning: use of multiple variables and literals disables analysis functions.</textVariables>
+    <locationVariables>e</locationVariables>
+    <locationVariables>7</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_zyCskBTnEe67yvSrSIUMVA" key="101" type="Validation" severity="Warning" invalidObjects="#//@rulesheetViewList.0/@ruleSection/@ruleColumnList.8/@conditionValueSetCellList.4" textKey="RulesheetTableModelAPIImpl.Validation.InvalidVariableUsage" locationKey="RulesheetTableModelAPIImpl.Validation.Location.If">
+    <textVariables>Variable usage warning: use of multiple variables and literals disables analysis functions.</textVariables>
+    <locationVariables>e</locationVariables>
+    <locationVariables>8</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_zyCskRTnEe67yvSrSIUMVA" key="101" type="Validation" severity="Warning" invalidObjects="#//@rulesheetViewList.0/@ruleSection/@ruleColumnList.9/@conditionValueSetCellList.4" textKey="RulesheetTableModelAPIImpl.Validation.InvalidVariableUsage" locationKey="RulesheetTableModelAPIImpl.Validation.Location.If">
+    <textVariables>Variable usage warning: use of multiple variables and literals disables analysis functions.</textVariables>
+    <locationVariables>e</locationVariables>
+    <locationVariables>9</locationVariables>
+  </validationMessages>
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_zyDToBTnEe67yvSrSIUMVA" key="101" type="Validation" severity="Warning" invalidObjects="#//@rulesheetViewList.0/@ruleSection/@ruleColumnList.10/@conditionValueSetCellList.4" textKey="RulesheetTableModelAPIImpl.Validation.InvalidVariableUsage" locationKey="RulesheetTableModelAPIImpl.Validation.Location.If">
+    <textVariables>Variable usage warning: use of multiple variables and literals disables analysis functions.</textVariables>
+    <locationVariables>e</locationVariables>
+    <locationVariables>10</locationVariables>
+  </validationMessages>
+  <ruleset vocabularyUpdateStamp="_LNEG8QbOEe6CfO_-j_rNpQ" vocabulary="Vocabulary.ecore#/">
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+        <opaqueExpression expression="Patient.bmi = Patient.weight_lbs / (Patient.height_in**2)*703">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.bmi = Patient.weight_lbs / ( Patient.height_in ** 2 ) * 703" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="bmi" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.bmi">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="Patient.weight_kg = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_kg = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.weight_kg" rhs="null"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Patient.weight_kg = Patient.weight_lbs/2.205">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_kg = Patient.weight_lbs / 2.205" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Patient.weight_lbs = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.weight_lbs" rhs="null"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Patient.weight_lbs = Patient.weight_kg*2.205">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs = Patient.weight_kg * 2.205" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Patient.sex = 'Male'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.sex = 'Male'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="sex" datatype="String" termtype="ATTRIBUTE" fulltext="Patient.sex">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.sex" rhs="'Male'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Patient.height_in >= 60">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.height_in >= 60" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.height_in" rhs=">= 60"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Patient.ideal_body_weight_kg = 50+2.3 * (Patient.height_in-60)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.ideal_body_weight_kg = 50 + 2.3 * ( Patient.height_in - 60 )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.4">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Patient.sex = 'Female'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.sex = 'Female'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="sex" datatype="String" termtype="ATTRIBUTE" fulltext="Patient.sex">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.sex" rhs="'Female'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Patient.height_in >= 60">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.height_in >= 60" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.height_in" rhs=">= 60"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Patient.ideal_body_weight_kg = 45.5+2.3 * (Patient.height_in-60)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.ideal_body_weight_kg = 45.5 + 2.3 * ( Patient.height_in - 60 )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.5">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Patient.sex = 'Male'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.sex = 'Male'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="sex" datatype="String" termtype="ATTRIBUTE" fulltext="Patient.sex">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.sex" rhs="'Male'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Patient.height_in &lt; 60">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.height_in &lt; 60" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.height_in" rhs="&lt; 60"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Patient.ideal_body_weight_kg = Patient.weight_kg - (.833 *5)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.ideal_body_weight_kg = Patient.weight_kg - ( 0.833 * 5 )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.6">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Patient.sex = 'Female'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.sex = 'Female'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="sex" datatype="String" termtype="ATTRIBUTE" fulltext="Patient.sex">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.sex" rhs="'Female'"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Patient.height_in &lt; 60">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.height_in &lt; 60" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.height_in" rhs="&lt; 60"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Patient.ideal_body_weight_kg = Patient.weight_kg - (.758 * 5)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.ideal_body_weight_kg = Patient.weight_kg - ( 0.758 * 5 )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.7">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Patient.weight_lbs > Patient.ideal_body_weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs > Patient.ideal_body_weight_kg" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.weight_lbs" rhs="> Patient.ideal_body_weight_kg"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Patient.adjusted_body_weight = Patient.ideal_body_weight_kg + .4 * ( Patient.weight_kg - Patient.ideal_body_weight_kg)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.adjusted_body_weight = Patient.ideal_body_weight_kg + 0.4 * ( Patient.weight_kg - Patient.ideal_body_weight_kg )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="adjusted_body_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.adjusted_body_weight">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="prescribed_drug.name = 'Acyclovir' or prescribed_drug.name = 'AmBisome (liposomal amphotericin B)' or prescribed_drug.name = 'Amikacin' or prescribed_drug.name = 'Daptomycin' or prescribed_drug.name = 'Foscarnet' or prescribed_drug.name = 'Ganciclovir' or prescribed_drug.name = 'Gentamicin' or prescribed_drug.name = 'Plazomicin' or prescribed_drug.name = 'Polymyxin B' or prescribed_drug.name = 'TMP/SMX (trimethoprim/sulfamethoxazole)' or prescribed_drug.name = 'Tobramycin' or prescribed_drug.name = 'Vancomycin IV' or prescribed_drug.name = 'Voriconazole'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.name = 'Acyclovir' or prescribed_drug.name = 'AmBisome (liposomal amphotericin B)' or prescribed_drug.name = 'Amikacin' or prescribed_drug.name = 'Daptomycin' or prescribed_drug.name = 'Foscarnet' or prescribed_drug.name = 'Ganciclovir' or prescribed_drug.name = 'Gentamicin' or prescribed_drug.name = 'Plazomicin' or prescribed_drug.name = 'Polymyxin B' or prescribed_drug.name = 'TMP/SMX (trimethoprim/sulfamethoxazole)' or prescribed_drug.name = 'Tobramycin' or prescribed_drug.name = 'Vancomycin IV' or prescribed_drug.name = 'Voriconazole'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.name">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="prescribed_drug.name" rhs="{'Acyclovir', 'AmBisome (liposomal amphotericin B)', 'Amikacin', 'Daptomycin', 'Foscarnet', 'Ganciclovir', 'Gentamicin', 'Plazomicin', 'Polymyxin B', 'TMP/SMX (trimethoprim/sulfamethoxazole)', 'Tobramycin', 'Vancomycin IV', 'Voriconazole'}"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Patient.weight_lbs > 1.2*Patient.ideal_body_weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs > 1.2 * Patient.ideal_body_weight_kg" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.weight_lbs" rhs="> 1.2*Patient.ideal_body_weight_kg"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="prescribed_drug.dosing_weight_type = 'Adjusted Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Adjusted Body Weight'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="prescribed_drug.name = 'Colistin IV' or prescribed_drug.name = 'Ethambutol' or prescribed_drug.name = 'Flucytosine' or prescribed_drug.name = 'Pyrazinamide'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.name = 'Colistin IV' or prescribed_drug.name = 'Ethambutol' or prescribed_drug.name = 'Flucytosine' or prescribed_drug.name = 'Pyrazinamide'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.name">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="prescribed_drug.name" rhs="{'Colistin IV', 'Ethambutol', 'Flucytosine', 'Pyrazinamide'}"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Patient.weight_lbs > 1.2*Patient.ideal_body_weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs > 1.2 * Patient.ideal_body_weight_kg" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.weight_lbs" rhs="> 1.2*Patient.ideal_body_weight_kg"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="prescribed_drug.dosing_weight_type = 'Ideal Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Ideal Body Weight'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="prescribed_drug.name = 'AmBisome (liposomal amphotericin B)' or prescribed_drug.name = 'Amikacin' or prescribed_drug.name = 'Daptomycin' or prescribed_drug.name = 'Foscarnet' or prescribed_drug.name = 'Ganciclovir' or prescribed_drug.name = 'Gentamicin' or prescribed_drug.name = 'Plazomicin' or prescribed_drug.name = 'Polymyxin B' or prescribed_drug.name = 'Pyrazinamide' or prescribed_drug.name = 'TMP/SMX (trimethoprim/sulfamethoxazole)' or prescribed_drug.name = 'Tobramycin' or prescribed_drug.name = 'Vancomycin IV' or prescribed_drug.name = 'Voriconazole'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.name = 'AmBisome (liposomal amphotericin B)' or prescribed_drug.name = 'Amikacin' or prescribed_drug.name = 'Daptomycin' or prescribed_drug.name = 'Foscarnet' or prescribed_drug.name = 'Ganciclovir' or prescribed_drug.name = 'Gentamicin' or prescribed_drug.name = 'Plazomicin' or prescribed_drug.name = 'Polymyxin B' or prescribed_drug.name = 'Pyrazinamide' or prescribed_drug.name = 'TMP/SMX (trimethoprim/sulfamethoxazole)' or prescribed_drug.name = 'Tobramycin' or prescribed_drug.name = 'Vancomycin IV' or prescribed_drug.name = 'Voriconazole'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.name">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="prescribed_drug.name" rhs="{'AmBisome (liposomal amphotericin B)', 'Amikacin', 'Daptomycin', 'Foscarnet', 'Ganciclovir', 'Gentamicin', 'Plazomicin', 'Polymyxin B', 'Pyrazinamide', 'TMP/SMX (trimethoprim/sulfamethoxazole)', 'Tobramycin', 'Vancomycin IV', 'Voriconazole'}"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="Patient.weight_lbs &lt;= 1.2*Patient.ideal_body_weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs &lt;= 1.2 * Patient.ideal_body_weight_kg" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Patient.weight_lbs" rhs="&lt;= 1.2*Patient.ideal_body_weight_kg"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="prescribed_drug.dosing_weight_type = 'Total Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Total Body Weight'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.8">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="prescribed_drug.dosing_weight_type = 'Adjusted Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Adjusted Body Weight'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="prescribed_drug.dosing_weight_type" rhs="'Adjusted Body Weight'"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="prescribed_drug.dosing_weight_lbs = Patient.adjusted_body_weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_lbs = Patient.adjusted_body_weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_lbs">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="adjusted_body_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.adjusted_body_weight">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.9">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="prescribed_drug.dosing_weight_type = 'Ideal Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Ideal Body Weight'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="prescribed_drug.dosing_weight_type" rhs="'Ideal Body Weight'"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="prescribed_drug.dosing_weight_lbs = Patient.ideal_body_weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_lbs = Patient.ideal_body_weight_kg" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_lbs">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="prescribed_drug.dosing_weight_type = 'Total Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Total Body Weight'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="prescribed_drug.dosing_weight_type" rhs="'Total Body Weight'"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="prescribed_drug.dosing_weight_lbs = Patient.weight_lbs">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_lbs = Patient.weight_lbs" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_lbs">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If weight in kg not provided, determine it by multiplying weight in lbs by 2.205">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If weight in kg not provided, determine it by multiplying weight in lbs by 2.205" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If weight in lbs not provided, determine it by diving weight in kg by 2.205">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If weight in lbs not provided, determine it by diving weight in kg by 2.205" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" sourceLink="https://www.cdc.gov/nccdphp/dnpao/growthcharts/training/bmiage/page5_2.html" ruleModelElements="#//@ruleset/@rules.0/@actions.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="BMI: weight (lb) / [height (in)]2 x 703">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="BMI: weight (lb) / [height (in)]2 x 703" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Ideal body weight (IBW) (men) over 5 ft (60 in.) tall = 50 kg + 2.3 kg x (height, in - 60)">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ideal body weight (IBW) (men) over 5 ft (60 in.) tall = 50 kg + 2.3 kg x (height, in - 60)" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Ideal body weight (IBW) (women) over 5 ft (60 in.) tall  = 45.5 kg + 2.3 kg x  (height, in - 60)">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ideal body weight (IBW) (women) over 5 ft (60 in.) tall  = 45.5 kg + 2.3 kg x  (height, in - 60)" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.5" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Ideal body weight (IBW) (men) under 5 ft (60 in.) tall =  50kg - (0.833 x 5)">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ideal body weight (IBW) (men) under 5 ft (60 in.) tall =  50kg - (0.833 x 5)" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.6" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Ideal body weight (IBW) (men) under 5 ft (60 in.) tall =  50kg - (0.758x 5)">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ideal body weight (IBW) (men) under 5 ft (60 in.) tall =  50kg - (0.758x 5)" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" sourceLink="https://www.mdcalc.com/calc/68/ideal-body-weight-adjusted-body-weight" ruleModelElements="#//@ruleset/@rules.7" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Adjusted Body Weight (ABW), for use in obese patients (where actual body weight > IBW): ABW = IBW + 0.4 x (actual body weight - IBW)">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Adjusted Body Weight (ABW), for use in obese patients (where actual body weight > IBW): ABW = IBW + 0.4 x (actual body weight - IBW)" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.11" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+      <text expression="Patient's weight is more than 120% of their ideal body weight, so use [{prescribed_drug.dosing_weight_type}] of [{Patient.adjusted_body_weight}] kg as dosing weight for [{prescribed_drug.name}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient's weight is more than 120% of their ideal body weight, so use [ + prescribed_drug.dosing_weight_type + ] of [ + Patient.adjusted_body_weight + ] kg as dosing weight for [ + prescribed_drug.name + ]" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="adjusted_body_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.adjusted_body_weight">
+              <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+              <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.name">
+              <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.12" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+      <text expression="Patient's weight is more than 120% of their ideal body weight, so use [{prescribed_drug.dosing_weight_type}] of {Patient.ideal_body_weight_kg} kg as dosing weight for [{prescribed_drug.name}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient's weight is more than 120% of their ideal body weight, so use [ + prescribed_drug.dosing_weight_type + ] of  + Patient.ideal_body_weight_kg +  kg as dosing weight for [ + prescribed_drug.name + ]" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+              <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+              <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.name">
+              <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="Vocabulary.ecore#//Patient" ruleStatements="#//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.7 #//@ruleset/@ruleStatements.3 #//@ruleset/@ruleStatements.4 #//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.5 #//@ruleset/@ruleStatements.6">
+      <extension explicit="true" association="true" entity="Vocabulary.ecore#//Drug" traversedAssocRole="Vocabulary.ecore#//Patient/drug" ruleStatements="#//@ruleset/@ruleStatements.8 #//@ruleset/@ruleStatements.9">
+        <alias value="prescribed_drug"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Drug/name"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Drug/dosing_weight_type"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Drug/dosing_weight_lbs"/>
+      </extension>
+      <referencedAttributes attribute="Vocabulary.ecore#//Patient/sex"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Patient/height_in"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Patient/ideal_body_weight_kg"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Patient/bmi"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Patient/weight_lbs"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Patient/adjusted_body_weight"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Patient/weight_kg"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightAdvancedView="18" sashWeightScope="80" sashWeightConditionsActions="31" sashWeightConditionsIf="22">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList rowHeight="57">
+        <naturalLanguageText value="The patient's ideal body weight is solved based upon"/>
+        <valueSetCell/>
+        <expressionCell external="Patient.ideal_body_weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.ideal_body_weight_kg" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="88">
+        <naturalLanguageText value="The patient's BMI is solved based upon"/>
+        <valueSetCell/>
+        <expressionCell external="Patient.bmi">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.bmi" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="bmi" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.bmi">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="87">
+        <naturalLanguageText value="The patient's adjusted body weight is solved based upon"/>
+        <valueSetCell/>
+        <expressionCell external="Patient.adjusted_body_weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.adjusted_body_weight" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="adjusted_body_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.adjusted_body_weight">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Set the weight measure used for dosing this drug to"/>
+        <valueSetCell/>
+        <expressionCell external="prescribed_drug.dosing_weight_type">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="26">
+        <naturalLanguageText value="Use this value for the patient's dosing weight in lbs"/>
+        <valueSetCell/>
+        <expressionCell external="prescribed_drug.dosing_weight_lbs">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_lbs" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dosing_weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_lbs">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="56">
+        <naturalLanguageText value="The patient's weight in kg is"/>
+        <valueSetCell/>
+        <expressionCell external="Patient.weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_kg" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="95">
+        <naturalLanguageText value="The patient's weight in lbs is"/>
+        <valueSetCell/>
+        <expressionCell external="Patient.weight_lbs">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.5"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.6"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="54" scrollRowTop="1" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="2217" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="If weight in kg not provided, determine it by multiplying weight in lbs by 2.205">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If weight in kg not provided, determine it by multiplying weight in lbs by 2.205" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="If weight in lbs not provided, determine it by diving weight in kg by 2.205">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If weight in lbs not provided, determine it by diving weight in kg by 2.205" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="B0"/>
+        <text external="BMI: weight (lb) / [height (in)]2 x 703">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="BMI: weight (lb) / [height (in)]2 x 703" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="3"/>
+        <text external="Ideal body weight (IBW) (men) over 5 ft (60 in.) tall = 50 kg + 2.3 kg x (height, in - 60)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ideal body weight (IBW) (men) over 5 ft (60 in.) tall = 50 kg + 2.3 kg x (height, in - 60)" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference external="4"/>
+        <text external="Ideal body weight (IBW) (women) over 5 ft (60 in.) tall  = 45.5 kg + 2.3 kg x  (height, in - 60)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ideal body weight (IBW) (women) over 5 ft (60 in.) tall  = 45.5 kg + 2.3 kg x  (height, in - 60)" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.5">
+        <reference external="5"/>
+        <text external="Ideal body weight (IBW) (men) under 5 ft (60 in.) tall =  50kg - (0.833 x 5)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ideal body weight (IBW) (men) under 5 ft (60 in.) tall =  50kg - (0.833 x 5)" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.6">
+        <reference external="6"/>
+        <text external="Ideal body weight (IBW) (men) under 5 ft (60 in.) tall =  50kg - (0.758x 5)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Ideal body weight (IBW) (men) under 5 ft (60 in.) tall =  50kg - (0.758x 5)" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList rowHeight="26" ruleStatement="#//@ruleset/@ruleStatements.7">
+        <reference external="7"/>
+        <text external="Adjusted Body Weight (ABW), for use in obese patients (where actual body weight > IBW): ABW = IBW + 0.4 x (actual body weight - IBW)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Adjusted Body Weight (ABW), for use in obese patients (where actual body weight > IBW): ABW = IBW + 0.4 x (actual body weight - IBW)" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList rowHeight="68" ruleStatement="#//@ruleset/@ruleStatements.8">
+        <reference external="11"/>
+        <text external="Patient's weight is more than 120% of their ideal body weight, so use [{prescribed_drug.dosing_weight_type}] of [{Patient.adjusted_body_weight}] kg as dosing weight for [{prescribed_drug.name}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient's weight is more than 120% of their ideal body weight, so use [ + prescribed_drug.dosing_weight_type + ] of [ + Patient.adjusted_body_weight + ] kg as dosing weight for [ + prescribed_drug.name + ]" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="adjusted_body_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.adjusted_body_weight">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.name">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList rowHeight="82" ruleStatement="#//@ruleset/@ruleStatements.9">
+        <reference external="12"/>
+        <text external="Patient's weight is more than 120% of their ideal body weight, so use [{prescribed_drug.dosing_weight_type}] of {Patient.ideal_body_weight_kg} kg as dosing weight for [{prescribed_drug.name}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient's weight is more than 120% of their ideal body weight, so use [ + prescribed_drug.dosing_weight_type + ] of  + Patient.ideal_body_weight_kg +  kg as dosing weight for [ + prescribed_drug.name + ]" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.name">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="51" columnWidthFactor="0.671875">
+      <conditionItemList>
+        <naturalLanguageText value="If patient’s weight in kg is"/>
+        <valueSetCell/>
+        <expressionCell external="Patient.weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_kg" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <naturalLanguageText value="If patient's sex is"/>
+        <valueSetCell/>
+        <expressionCell external="Patient.sex">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.sex" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="sex" datatype="String" termtype="ATTRIBUTE" fulltext="Patient.sex">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <naturalLanguageText value="For patient with height of"/>
+        <valueSetCell/>
+        <expressionCell external="Patient.height_in">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.height_in" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList rowHeight="26">
+        <naturalLanguageText value="When prescribed drug is"/>
+        <valueSetCell/>
+        <expressionCell external="prescribed_drug.name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.name" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.name">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList rowHeight="26">
+        <naturalLanguageText value="When patient's weight in lbs is"/>
+        <valueSetCell/>
+        <expressionCell external="Patient.weight_lbs">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <naturalLanguageText value="If the prescribed drug should be dosed using the patient's"/>
+        <valueSetCell/>
+        <expressionCell external="prescribed_drug.dosing_weight_type">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="26">
+      <ruleColumnList ruleId="0" columnWidth="172" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="Patient.weight_lbs / (Patient.height_in**2)*703">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.bmi = Patient.weight_lbs / ( Patient.height_in ** 2 ) * 703" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="bmi" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.bmi">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="123" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_kg = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="Patient.weight_lbs/2.205">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_kg = Patient.weight_lbs / 2.205" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="95" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="Patient.weight_kg*2.205">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs = Patient.weight_kg * 2.205" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="183" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'Male'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.sex = 'Male'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="sex" datatype="String" termtype="ATTRIBUTE" fulltext="Patient.sex">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 60">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.height_in >= 60" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="50+2.3 * (Patient.height_in-60)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.ideal_body_weight_kg = 50 + 2.3 * ( Patient.height_in - 60 )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="177" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'Female'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.sex = 'Female'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="sex" datatype="String" termtype="ATTRIBUTE" fulltext="Patient.sex">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 60">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.height_in >= 60" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="45.5+2.3 * (Patient.height_in-60)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.ideal_body_weight_kg = 45.5 + 2.3 * ( Patient.height_in - 60 )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="149" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'Male'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.sex = 'Male'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="sex" datatype="String" termtype="ATTRIBUTE" fulltext="Patient.sex">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="&lt; 60">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.height_in &lt; 60" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="Patient.weight_kg - (.833 *5)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.ideal_body_weight_kg = Patient.weight_kg - ( 0.833 * 5 )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="131" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'Female'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.sex = 'Female'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="sex" datatype="String" termtype="ATTRIBUTE" fulltext="Patient.sex">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="&lt; 60">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.height_in &lt; 60" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="height_in" datatype="Integer" termtype="ATTRIBUTE" fulltext="Patient.height_in">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="Patient.weight_kg - (.758 * 5)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.ideal_body_weight_kg = Patient.weight_kg - ( 0.758 * 5 )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="263" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList validationMessages="#//@validationMessages.0" tooltip="Variable usage warning: use of multiple variables and literals disables analysis functions." valueSet="> Patient.ideal_body_weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs > Patient.ideal_body_weight_kg" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="Patient.ideal_body_weight_kg + .4 * ( Patient.weight_kg - Patient.ideal_body_weight_kg)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.adjusted_body_weight = Patient.ideal_body_weight_kg + 0.4 * ( Patient.weight_kg - Patient.ideal_body_weight_kg )" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="adjusted_body_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.adjusted_body_weight">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="8" columnWidth="211" pRule="#//@ruleset/@rules.8">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="{'Acyclovir', 'AmBisome (liposomal amphotericin B)', 'Amikacin', 'Daptomycin', 'Foscarnet', 'Ganciclovir', 'Gentamicin', 'Plazomicin', 'Polymyxin B', 'TMP/SMX (trimethoprim/sulfamethoxazole)', 'Tobramycin', 'Vancomycin IV', 'Voriconazole'}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.name = 'Acyclovir' or prescribed_drug.name = 'AmBisome (liposomal amphotericin B)' or prescribed_drug.name = 'Amikacin' or prescribed_drug.name = 'Daptomycin' or prescribed_drug.name = 'Foscarnet' or prescribed_drug.name = 'Ganciclovir' or prescribed_drug.name = 'Gentamicin' or prescribed_drug.name = 'Plazomicin' or prescribed_drug.name = 'Polymyxin B' or prescribed_drug.name = 'TMP/SMX (trimethoprim/sulfamethoxazole)' or prescribed_drug.name = 'Tobramycin' or prescribed_drug.name = 'Vancomycin IV' or prescribed_drug.name = 'Voriconazole'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.name">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList validationMessages="#//@validationMessages.1" tooltip="Variable usage warning: use of multiple variables and literals disables analysis functions." valueSet="> 1.2*Patient.ideal_body_weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs > 1.2 * Patient.ideal_body_weight_kg" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="'Adjusted Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Adjusted Body Weight'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="9" columnWidth="315" pRule="#//@ruleset/@rules.9">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="{'Colistin IV', 'Ethambutol', 'Flucytosine', 'Pyrazinamide'}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.name = 'Colistin IV' or prescribed_drug.name = 'Ethambutol' or prescribed_drug.name = 'Flucytosine' or prescribed_drug.name = 'Pyrazinamide'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.name">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList validationMessages="#//@validationMessages.2" tooltip="Variable usage warning: use of multiple variables and literals disables analysis functions." valueSet="> 1.2*Patient.ideal_body_weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs > 1.2 * Patient.ideal_body_weight_kg" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="'Ideal Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Ideal Body Weight'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="10" columnWidth="543" pRule="#//@ruleset/@rules.10">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="{'AmBisome (liposomal amphotericin B)', 'Amikacin', 'Daptomycin', 'Foscarnet', 'Ganciclovir', 'Gentamicin', 'Plazomicin', 'Polymyxin B', 'Pyrazinamide', 'TMP/SMX (trimethoprim/sulfamethoxazole)', 'Tobramycin', 'Vancomycin IV', 'Voriconazole'}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.name = 'AmBisome (liposomal amphotericin B)' or prescribed_drug.name = 'Amikacin' or prescribed_drug.name = 'Daptomycin' or prescribed_drug.name = 'Foscarnet' or prescribed_drug.name = 'Ganciclovir' or prescribed_drug.name = 'Gentamicin' or prescribed_drug.name = 'Plazomicin' or prescribed_drug.name = 'Polymyxin B' or prescribed_drug.name = 'Pyrazinamide' or prescribed_drug.name = 'TMP/SMX (trimethoprim/sulfamethoxazole)' or prescribed_drug.name = 'Tobramycin' or prescribed_drug.name = 'Vancomycin IV' or prescribed_drug.name = 'Voriconazole'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.name">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList validationMessages="#//@validationMessages.3" tooltip="Variable usage warning: use of multiple variables and literals disables analysis functions." valueSet="&lt;= 1.2*Patient.ideal_body_weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Patient.weight_lbs &lt;= 1.2 * Patient.ideal_body_weight_kg" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="'Total Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Total Body Weight'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="11" columnWidth="212" pRule="#//@ruleset/@rules.11">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'Adjusted Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Adjusted Body Weight'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="Patient.adjusted_body_weight">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_lbs = Patient.adjusted_body_weight" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_lbs">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="adjusted_body_weight" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.adjusted_body_weight">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="12" columnWidth="193" pRule="#//@ruleset/@rules.12">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'Ideal Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Ideal Body Weight'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="Patient.ideal_body_weight_kg">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_lbs = Patient.ideal_body_weight_kg" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_lbs">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="ideal_body_weight_kg" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.ideal_body_weight_kg">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="13" columnWidth="163" pRule="#//@ruleset/@rules.13">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'Total Body Weight'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_type = 'Total Body Weight'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dosing_weight_type" datatype="String" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_type">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="Patient.weight_lbs">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="prescribed_drug.dosing_weight_lbs = Patient.weight_lbs" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="dosing_weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="prescribed_drug.dosing_weight_lbs">
+                <parentTerm text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                  <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="prescribed_drug" datatype="Drug" termtype="ENTITY" fulltext="prescribed_drug">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+              <terms text="weight_lbs" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Patient.weight_lbs">
+                <parentTerm text="Patient" datatype="Patient" termtype="ENTITY" fulltext="Patient"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

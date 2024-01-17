@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_Zzy_gva1Eeuir70AvfJduQ" externalChecksum="3391387159:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_0sJWwqMMEe2sDqaiAbAFEQ" externalChecksum="3391387159:507989954">
+    <testsheet ruleActivityUpdateStamp="_lFej4aMMEe2sDqaiAbAFEQ" ruleActivity="Untitled.erf#//@ruleflow" locale="">
+      <input/>
+      <output>
+        <PostedMessage severity="Violation" text="An unexpected error has occurred in Rule Asset: CorticonREST.executeRetrievalWithNoAssociationsSql: failed to execute Statement (SELECT * FROM AUTOREST.REST_DATA).  Exception Message ([progress][AutoREST JDBC Driver][AutoREST]I/O Error Illegal character in query at index 87: https://api.sunrise-sunset.org/json?date=2021-07-26&amp;lng=-4.42034&amp;lat=36.72016&amp;formatted =0&#xA;Caused by: java.net.URISyntaxException: Illegal character in query at index 87: https://api.sunrise-sunset.org/json?date=2021-07-26&amp;lng=-4.42034&amp;lat=36.72016&amp;formatted =0 in statement [SELECT * FROM AUTOREST.REST_DATA])..  Please review the log file for detailed exception."/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot/>
+      <outputRoot/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0"/>
+      </outputMessageSection>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_WWV18qMMEe2sDqaiAbAFEQ" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Vocab.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="untitled_1"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
+  <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_zlhs8aMMEe2sDqaiAbAFEQ" externalChecksum="3391387159:507989954" studioType="Java" customDataTypeDisplayCount="50">
+      <languageCode>en_US</languageCode>
+      <databaseAccess databasePropertyDisplayCount="50"/>
+      <vocabularyMappings name="Sunrise Sunset API" ID="REST_1" mappingType="REST">
+        <mappingProperties key="SERVER">
+          <value manuallyCreated="true" value="com.corticon.database.id.AUTOREST"/>
+        </mappingProperties>
+        <mappingProperties key="AUTHENTICATION_TYPE">
+          <value manuallyCreated="true" value="None"/>
+        </mappingProperties>
+        <mappingProperties key="SCHEMA">
+          <value manuallyCreated="true" value="AUTOREST"/>
+        </mappingProperties>
+        <mappingProperties key="REST_URL">
+          <value manuallyCreated="true" value="https://api.sunrise-sunset.org/json"/>
+        </mappingProperties>
+        <mappingProperties key="REST_PATH_PARAMETERS"/>
+        <mappingProperties key="REST_PARAMETERS">
+          <value manuallyCreated="true" value="lat=36.7201600&amp;lng=-4.4203400&amp;date=2023-01-11"/>
+        </mappingProperties>
+        <mappingProperties key="REST_SCHEMA">
+          <value manuallyCreated="true" value="{&#xD;&#xA;&#x9;&quot;REST_DATA&quot;:{&#xD;&#xA;&#x9;&#x9;&quot;#path&quot;:[&#xD;&#xA;&#x9;&#x9;&#x9;&quot;https://api.sunrise-sunset.org/json&quot;&#xD;&#xA;&#x9;&#x9;],&#xD;&#xA;&#x9;&#x9;&quot;results&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;sunrise&quot;:&quot;VarChar(64),#key&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;sunset&quot;:&quot;VarChar(64)&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;solar_noon&quot;:&quot;VarChar(64)&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;day_length&quot;:&quot;Time(0)&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;civil_twilight_begin&quot;:&quot;VarChar(64)&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;civil_twilight_end&quot;:&quot;VarChar(64)&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;nautical_twilight_begin&quot;:&quot;VarChar(64)&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;nautical_twilight_end&quot;:&quot;VarChar(64)&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;astronomical_twilight_begin&quot;:&quot;VarChar(64)&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;astronomical_twilight_end&quot;:&quot;VarChar(64)&quot;&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&quot;status&quot;:&quot;VarChar(64)&quot;,&#xD;&#xA;&#x9;&#x9;&quot;lat&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#type&quot;:&quot;Double,#key&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#virtual&quot;:true,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#default&quot;:36.7201600,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#eq&quot;:&quot;lat&quot;&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&quot;lng&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#type&quot;:&quot;Double,#key&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#virtual&quot;:true,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#default&quot;:-4.4203400,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#eq&quot;:&quot;lng&quot;&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&quot;date&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#type&quot;:&quot;Date,#key&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#virtual&quot;:true,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#default&quot;:&quot;2023-01-11&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#eq&quot;:&quot;date&quot;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;}&#xD;&#xA;}"/>
+        </mappingProperties>
+        <entityMappings element="#//REST_DATA">
+          <mappingProperties key="tableName">
+            <value manuallyCreated="true" value="AUTOREST.REST_DATA"/>
+          </mappingProperties>
+          <mappingProperties key="identity">
+            <value manuallyCreated="true" value="{DATE, LAT, LNG, RESULTS_SUNRISE}"/>
+          </mappingProperties>
+          <children element="#//REST_DATA/DATE">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="DATE"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/LAT">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="LAT"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/LNG">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="LNG"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/RESULTS_ASTRONOMICAL_TWILIGHT_BEGIN">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="RESULTS_ASTRONOMICAL_TWILIGHT_BEGIN"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/RESULTS_ASTRONOMICAL_TWILIGHT_END">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="RESULTS_ASTRONOMICAL_TWILIGHT_END"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/RESULTS_CIVIL_TWILIGHT_BEGIN">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="RESULTS_CIVIL_TWILIGHT_BEGIN"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/RESULTS_CIVIL_TWILIGHT_END">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="RESULTS_CIVIL_TWILIGHT_END"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/RESULTS_DAY_LENGTH">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="RESULTS_DAY_LENGTH"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/RESULTS_NAUTICAL_TWILIGHT_BEGIN">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="RESULTS_NAUTICAL_TWILIGHT_BEGIN"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/RESULTS_NAUTICAL_TWILIGHT_END">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="RESULTS_NAUTICAL_TWILIGHT_END"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/RESULTS_SOLAR_NOON">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="RESULTS_SOLAR_NOON"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/RESULTS_SUNRISE">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="RESULTS_SUNRISE"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/RESULTS_SUNSET">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="RESULTS_SUNSET"/>
+            </mappingProperties>
+          </children>
+          <children element="#//REST_DATA/STATUS">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="STATUS"/>
+            </mappingProperties>
+          </children>
+        </entityMappings>
+        <databaseMetadata>
+          <tableMetadataList schemaName="AUTOREST" tableName="REST_DATA" tableType="TABLE">
+            <columnMetadataList columnName="RESULTS_SUNRISE" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="RESULTS_SUNSET" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="RESULTS_SOLAR_NOON" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="RESULTS_DAY_LENGTH" jdbcDataType="TIME" sqlDataType="Time" columnSize="8"/>
+            <columnMetadataList columnName="RESULTS_CIVIL_TWILIGHT_BEGIN" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="RESULTS_CIVIL_TWILIGHT_END" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="RESULTS_NAUTICAL_TWILIGHT_BEGIN" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="RESULTS_NAUTICAL_TWILIGHT_END" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="RESULTS_ASTRONOMICAL_TWILIGHT_BEGIN" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="RESULTS_ASTRONOMICAL_TWILIGHT_END" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="STATUS" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="LAT" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="LNG" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="DATE" jdbcDataType="DATE" sqlDataType="Date" columnSize="10" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK_AUTOREST_REST_DATA" primaryKeySchemaName="AUTOREST" primaryKeyTableName="REST_DATA">
+              <primaryKeyColumnMetadataList sequenceNumber="4" primaryKeyColumnName="DATE"/>
+              <primaryKeyColumnMetadataList sequenceNumber="2" primaryKeyColumnName="LAT"/>
+              <primaryKeyColumnMetadataList sequenceNumber="3" primaryKeyColumnName="LNG"/>
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="RESULTS_SUNRISE"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList schemaName="AUTOREST" tableName="_CONFIGURATION" tableType="TABLE">
+            <columnMetadataList columnName="ID" jdbcDataType="INTEGER" sqlDataType="Integer" columnSize="10"/>
+            <columnMetadataList columnName="CONTENT" jdbcDataType="LONGVARCHAR" sqlDataType="LongVarChar" columnSize="16777215" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK_AUTOREST__CONFIGURATION" primaryKeySchemaName="AUTOREST" primaryKeyTableName="_CONFIGURATION">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="ID"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+        </databaseMetadata>
+      </vocabularyMappings>
+    </contents>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="REST_DATA">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="REST_DATA"/>
+        <datastorePersistent manuallyCreated="true" value="false"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="DATE" eType="ecore:EDataType http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore#//Date">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="DATE"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LAT" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="LAT"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="LNG" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="LNG"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RESULTS_ASTRONOMICAL_TWILIGHT_BEGIN" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="RESULTS_ASTRONOMICAL_TWILIGHT_BEGIN"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RESULTS_ASTRONOMICAL_TWILIGHT_END" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="RESULTS_ASTRONOMICAL_TWILIGHT_END"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RESULTS_CIVIL_TWILIGHT_BEGIN" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="RESULTS_CIVIL_TWILIGHT_BEGIN"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RESULTS_CIVIL_TWILIGHT_END" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="RESULTS_CIVIL_TWILIGHT_END"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RESULTS_DAY_LENGTH" eType="ecore:EDataType http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore#//Time">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="RESULTS_DAY_LENGTH"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RESULTS_NAUTICAL_TWILIGHT_BEGIN" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="RESULTS_NAUTICAL_TWILIGHT_BEGIN"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RESULTS_NAUTICAL_TWILIGHT_END" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="RESULTS_NAUTICAL_TWILIGHT_END"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RESULTS_SOLAR_NOON" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="RESULTS_SOLAR_NOON"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RESULTS_SUNRISE" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="RESULTS_SUNRISE"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RESULTS_SUNSET" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="RESULTS_SUNSET"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="STATUS" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="STATUS"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

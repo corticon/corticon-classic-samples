@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="2" buildNumber="8020" updateStamp="_xkVJaGx_Ee6R-Lxwg-jRHg" externalChecksum="3538238644:507989954:2614682131" studioType="Java">
+  <languageCode>nl_NL</languageCode>
+  <ruleset vocabularyUpdateStamp="_R1tNocFfEeiy1sf8tR4iEA" vocabulary="../Vocabulary/groceryStore.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(CURRENT_CART.useCashBack)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( CURRENT_CART.useCashBack ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="useCashBack" datatype="Boolean" termtype="ATTRIBUTE" fulltext="CURRENT_CART.useCashBack">
+                <parentTerm text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="CURRENT_CART.useCashBack" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="CURRENT_CART.totalAmount -= ACCOUNT.cumulativeCashBack">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="CURRENT_CART.totalAmount = CURRENT_CART.totalAmount - ACCOUNT.cumulativeCashBack" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="totalAmount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="CURRENT_CART.totalAmount">
+                <parentTerm text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="totalAmount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="CURRENT_CART.totalAmount">
+                <parentTerm text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="cumulativeCashBack" datatype="Decimal" termtype="ATTRIBUTE" fulltext="ACCOUNT.cumulativeCashBack">
+                <parentTerm text="ACCOUNT" datatype="PreferredAccount" termtype="ENTITY" fulltext="ACCOUNT" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="CURRENT_CART.savings = ACCOUNT.cumulativeCashBack">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="CURRENT_CART.savings = ACCOUNT.cumulativeCashBack" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="savings" datatype="Decimal" termtype="ATTRIBUTE" fulltext="CURRENT_CART.savings">
+                <parentTerm text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="cumulativeCashBack" datatype="Decimal" termtype="ATTRIBUTE" fulltext="ACCOUNT.cumulativeCashBack">
+                <parentTerm text="ACCOUNT" datatype="PreferredAccount" termtype="ENTITY" fulltext="ACCOUNT" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="ACCOUNT.cumulativeCashBack = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ACCOUNT.cumulativeCashBack = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="cumulativeCashBack" datatype="Decimal" termtype="ATTRIBUTE" fulltext="ACCOUNT.cumulativeCashBack">
+                <parentTerm text="ACCOUNT" datatype="PreferredAccount" termtype="ENTITY" fulltext="ACCOUNT" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="ACCOUNT" datatype="PreferredAccount" termtype="ENTITY" fulltext="ACCOUNT" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0">
+      <opaqueExpression expression="Customer.isPreferredMember = T">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer.isPreferredMember = T" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="isPreferredMember" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Customer.isPreferredMember">
+              <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+      <text expression="Total amount minus use of cumulative cash back (€ [{ACCOUNT.cumulativeCashBack}]) is: € [{CURRENT_CART.totalAmount}]">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Total amount minus use of cumulative cash back (€ [ + ACCOUNT.cumulativeCashBack + ]) is: € [ + CURRENT_CART.totalAmount + ]" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="totalAmount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="CURRENT_CART.totalAmount">
+              <parentTerm text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="cumulativeCashBack" datatype="Decimal" termtype="ATTRIBUTE" fulltext="ACCOUNT.cumulativeCashBack">
+              <parentTerm text="ACCOUNT" datatype="PreferredAccount" termtype="ENTITY" fulltext="ACCOUNT" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="../Vocabulary/groceryStore.ecore#//Customer" filters="#//@ruleset/@filters.0">
+      <extension explicit="true" association="true" entity="../Vocabulary/groceryStore.ecore#//PreferredAccount" traversedAssocRole="../Vocabulary/groceryStore.ecore#//Customer/preferredCard">
+        <alias value="ACCOUNT"/>
+        <referencedAttributes attribute="../Vocabulary/groceryStore.ecore#//PreferredAccount/cumulativeCashBack"/>
+      </extension>
+      <extension explicit="true" association="true" entity="../Vocabulary/groceryStore.ecore#//ShoppingCart" traversedAssocRole="../Vocabulary/groceryStore.ecore#//Customer/shoppingCart" ruleStatements="#//@ruleset/@ruleStatements.0">
+        <alias value="CURRENT_CART"/>
+        <referencedAttributes attribute="../Vocabulary/groceryStore.ecore#//ShoppingCart/useCashBack"/>
+        <referencedAttributes attribute="../Vocabulary/groceryStore.ecore#//ShoppingCart/totalAmount"/>
+        <referencedAttributes attribute="../Vocabulary/groceryStore.ecore#//ShoppingCart/savings"/>
+      </extension>
+      <referencedAttributes attribute="../Vocabulary/groceryStore.ecore#//Customer/isPreferredMember"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightConditionsIf="44">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="CURRENT_CART.totalAmount -= ACCOUNT.cumulativeCashBack">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="CURRENT_CART.totalAmount = CURRENT_CART.totalAmount - ACCOUNT.cumulativeCashBack" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="totalAmount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="CURRENT_CART.totalAmount">
+                <parentTerm text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="totalAmount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="CURRENT_CART.totalAmount">
+                <parentTerm text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="cumulativeCashBack" datatype="Decimal" termtype="ATTRIBUTE" fulltext="ACCOUNT.cumulativeCashBack">
+                <parentTerm text="ACCOUNT" datatype="PreferredAccount" termtype="ENTITY" fulltext="ACCOUNT" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="CURRENT_CART.savings = ACCOUNT.cumulativeCashBack">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="CURRENT_CART.savings = ACCOUNT.cumulativeCashBack" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="savings" datatype="Decimal" termtype="ATTRIBUTE" fulltext="CURRENT_CART.savings">
+                <parentTerm text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="cumulativeCashBack" datatype="Decimal" termtype="ATTRIBUTE" fulltext="ACCOUNT.cumulativeCashBack">
+                <parentTerm text="ACCOUNT" datatype="PreferredAccount" termtype="ENTITY" fulltext="ACCOUNT" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="ACCOUNT.cumulativeCashBack = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ACCOUNT.cumulativeCashBack = 0" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="cumulativeCashBack" datatype="Decimal" termtype="ATTRIBUTE" fulltext="ACCOUNT.cumulativeCashBack">
+                <parentTerm text="ACCOUNT" datatype="PreferredAccount" termtype="ENTITY" fulltext="ACCOUNT" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="ACCOUNT" datatype="PreferredAccount" termtype="ENTITY" fulltext="ACCOUNT" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Customer.isPreferredMember = T" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="Customer.isPreferredMember = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Customer.isPreferredMember = T" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isPreferredMember" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Customer.isPreferredMember">
+                <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="177" columnWidthID="50" columnWidthText="1171" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Total amount minus use of cumulative cash back (€ [{ACCOUNT.cumulativeCashBack}]) is: € [{CURRENT_CART.totalAmount}]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Total amount minus use of cumulative cash back (€ [ + ACCOUNT.cumulativeCashBack + ]) is: € [ + CURRENT_CART.totalAmount + ]" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="totalAmount" datatype="Decimal" termtype="ATTRIBUTE" fulltext="CURRENT_CART.totalAmount">
+                <parentTerm text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="cumulativeCashBack" datatype="Decimal" termtype="ATTRIBUTE" fulltext="ACCOUNT.cumulativeCashBack">
+                <parentTerm text="ACCOUNT" datatype="PreferredAccount" termtype="ENTITY" fulltext="ACCOUNT" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="CURRENT_CART.useCashBack">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="CURRENT_CART.useCashBack" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="useCashBack" datatype="Boolean" termtype="ATTRIBUTE" fulltext="CURRENT_CART.useCashBack">
+                <parentTerm text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( CURRENT_CART.useCashBack ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="useCashBack" datatype="Boolean" termtype="ATTRIBUTE" fulltext="CURRENT_CART.useCashBack">
+                <parentTerm text="CURRENT_CART" datatype="ShoppingCart" termtype="ENTITY" fulltext="CURRENT_CART" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Customer" datatype="Customer" termtype="ENTITY" fulltext="Customer" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

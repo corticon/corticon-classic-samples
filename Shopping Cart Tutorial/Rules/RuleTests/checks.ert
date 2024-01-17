@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="2" buildNumber="8020" updateStamp="_QhOHgYlMEe6_aYbGJ0BQ8w" externalChecksum="3538238644:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="7" majorServiceNumber="1" minorServiceNumber="5" buildNumber="8015" updateStamp="_tGXkosFuEei0Quo8jflrHw" externalChecksum="593875513:3886051383">
+    <testsheet ruleActivityUpdateStamp="_PHsKYMFuEei0Quo8jflrHw" ruleActivity="../RuleFlows/MyAdvancedTutorial.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Department-code for item [39-285-12345] is [285]"/>
+        <PostedMessage severity="Info" text="Department-code for item [39-290-2345] is [290]"/>
+        <PostedMessage severity="Info" text="Department-code for item [39-291-1234] is [291]"/>
+        <PostedMessage severity="Info" text="Total amount of items in shopping cart: € [70,980000]"/>
+        <PostedMessage severity="Info" text="The customer is a preferred card holder"/>
+        <PostedMessage severity="Warning" text="ID Check required (cart contains one or more items from the liquor department)"/>
+        <PostedMessage severity="Info" text="Cashback earned based on 2% discount: € [1,419600]"/>
+        <PostedMessage severity="Info" text="Free balloon!"/>
+        <PostedMessage severity="Info" text="Cashback earned today: € [1,419600]. Total bonus earned is now € [1,419600]"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabulary/groceryStore.ecore#//Customer">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//Customer/shoppingCart" eClass="../Vocabulary/groceryStore.ecore#//ShoppingCart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-291-1234" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="6.990000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Bier" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-290-2345" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.990000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tulpen" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-285-12345" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="62.000000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tomatensap (doos)" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Customer/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//Customer/preferredCard" eClass="../Vocabulary/groceryStore.ecore#//PreferredAccount">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="A12345678" eAttribute="../Vocabulary/groceryStore.ecore#//PreferredAccount/cardNumber"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="../Vocabulary/groceryStore.ecore#//PreferredAccount/cumulativeCashBack"/>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="../Vocabulary/groceryStore.ecore#//Customer">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.6 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.7 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.8" eReference="../Vocabulary/groceryStore.ecore#//Customer/shoppingCart" eClass="../Vocabulary/groceryStore.ecore#//ShoppingCart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="291" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="39-291-1234" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6.990000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Bier" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="290" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="39-290-2345" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.990000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tulpen" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="285" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="39-285-12345" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="62.000000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tomatensap (doos)" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="70.980000" eAttribute="../Vocabulary/groceryStore.ecore#//ShoppingCart/totalAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="../Vocabulary/groceryStore.ecore#//ShoppingCart/checkID"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.419600" eAttribute="../Vocabulary/groceryStore.ecore#//ShoppingCart/cashBackEarned"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" eAttribute="../Vocabulary/groceryStore.ecore#//Customer/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="../Vocabulary/groceryStore.ecore#//Customer/preferredCard" eClass="../Vocabulary/groceryStore.ecore#//PreferredAccount">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="A12345678" eAttribute="../Vocabulary/groceryStore.ecore#//PreferredAccount/cardNumber"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1.419600" eAttribute="../Vocabulary/groceryStore.ecore#//PreferredAccount/cumulativeCashBack"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="../Vocabulary/groceryStore.ecore#//Customer/isPreferredMember"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../Vocabulary/groceryStore.ecore#//Coupon">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="12/31/9999" eAttribute="../Vocabulary/groceryStore.ecore#//Coupon/expirationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Free balloon!" eAttribute="../Vocabulary/groceryStore.ecore#//Coupon/description"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.0"/>
+      </outputMessageSection>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="7" majorServiceNumber="1" minorServiceNumber="5" buildNumber="8015" updateStamp="_tGW9kcFuEei0Quo8jflrHw" externalChecksum="593875513:3886051383">
+    <testsheet ruleActivityUpdateStamp="_Tx2C08FiEeiy1sf8tR4iEA" ruleActivity="../RuleSheets/checks.ers#//@ruleset">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Department-code for item [39-280-2345] is [280]"/>
+        <PostedMessage severity="Info" text="Department-code for item [39-291-1234] is [291]"/>
+        <PostedMessage severity="Info" text="Total amount of items in shopping cart: € [8,980000]"/>
+        <PostedMessage severity="Warning" text="ID Check required (cart contains one or more items from the liquor department)"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabulary/groceryStore.ecore#//Customer">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//Customer/shoppingCart" eClass="../Vocabulary/groceryStore.ecore#//ShoppingCart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-291-1234" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="6.990000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-280-2345" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.990000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Customer/name"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true"/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="7" majorServiceNumber="1" minorServiceNumber="5" buildNumber="8015" updateStamp="_tGW9ksFuEei0Quo8jflrHw" externalChecksum="593875513:3886051383">
+    <testsheet ruleActivityUpdateStamp="_mo0H08FtEei0Quo8jflrHw" ruleActivity="../RuleSheets/coupons.ers#//@ruleset" locale="nl">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Cashback earned based on 2% discount: € [2,000000]"/>
+        <PostedMessage severity="Info" text="Cashback earned today: € [2,000000]. Total bonus earned is now € [12,000000]"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabulary/groceryStore.ecore#//Customer">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//Customer/preferredCard" eClass="../Vocabulary/groceryStore.ecore#//PreferredAccount">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="../Vocabulary/groceryStore.ecore#//PreferredAccount/cumulativeCashBack"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//Customer/shoppingCart" eClass="../Vocabulary/groceryStore.ecore#//ShoppingCart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//ShoppingCart/cashBackEarned"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="../Vocabulary/groceryStore.ecore#//ShoppingCart/totalAmount"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="true" eAttribute="../Vocabulary/groceryStore.ecore#//Customer/isPreferredMember"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Customer/name"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true"/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="7" majorServiceNumber="1" minorServiceNumber="5" buildNumber="8015" updateStamp="_tGXkoMFuEei0Quo8jflrHw" externalChecksum="593875513:3886051383">
+    <testsheet ruleActivityUpdateStamp="_PHsKYMFuEei0Quo8jflrHw" ruleActivity="../RuleFlows/MyAdvancedTutorial.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Department-code for item [39-285-12345] is [285]"/>
+        <PostedMessage severity="Info" text="Department-code for item [39-285-12345] is [285]"/>
+        <PostedMessage severity="Info" text="Department-code for item [39-285-12345] is [285]"/>
+        <PostedMessage severity="Info" text="Department-code for item [39-285-12345] is [285]"/>
+        <PostedMessage severity="Info" text="Total amount of items in shopping cart: € [7,380000]"/>
+        <PostedMessage severity="Info" text="The customer is a preferred card holder"/>
+        <PostedMessage severity="Info" text="Cashback earned based on 2% discount: € [0,147600]"/>
+        <PostedMessage severity="Info" text="The purchase 3 or more soda items gives you a €2 off coupon"/>
+        <PostedMessage severity="Info" text="Cashback earned today: € [0,147600]. Total bonus earned is now € [0,147600]"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabulary/groceryStore.ecore#//Customer">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//Customer/shoppingCart" eClass="../Vocabulary/groceryStore.ecore#//ShoppingCart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-285-12345" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.850000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Cola" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-285-12345" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.590000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Prik" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-285-12345" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.750000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Sap" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-285-12345" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2.190000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Punica" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Customer/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//Customer/preferredCard" eClass="../Vocabulary/groceryStore.ecore#//PreferredAccount">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="A12345678" eAttribute="../Vocabulary/groceryStore.ecore#//PreferredAccount/cardNumber"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="../Vocabulary/groceryStore.ecore#//PreferredAccount/cumulativeCashBack"/>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../Vocabulary/groceryStore.ecore#//Coupon">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="09/26/19" eAttribute="../Vocabulary/groceryStore.ecore#//Coupon/expirationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="€2,00 discount on next purchase" eAttribute="../Vocabulary/groceryStore.ecore#//Coupon/description"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="5" minorVersionNumber="7" majorServiceNumber="1" minorServiceNumber="5" buildNumber="8015" updateStamp="_tGXkocFuEei0Quo8jflrHw" externalChecksum="593875513:3886051383">
+    <testsheet ruleActivityUpdateStamp="_PHsKYMFuEei0Quo8jflrHw" ruleActivity="../RuleFlows/MyAdvancedTutorial.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Department-code for item [39-290-2345] is [290]"/>
+        <PostedMessage severity="Info" text="Department-code for item [39-291-1234] is [291]"/>
+        <PostedMessage severity="Info" text="Department-code for item [39-285-12345] is [285]"/>
+        <PostedMessage severity="Info" text="Total amount of items in shopping cart: € [562,990000]"/>
+        <PostedMessage severity="Info" text="The customer is a preferred card holder"/>
+        <PostedMessage severity="Warning" text="ID Check required (cart contains one or more items from the liquor department)"/>
+        <PostedMessage severity="Info" text="Cashback earned based on 2% discount: € [11,259800]"/>
+        <PostedMessage severity="Info" text="Free balloon!"/>
+        <PostedMessage severity="Info" text="10,00% Discount on next gas purchase"/>
+        <PostedMessage severity="Info" text="Cashback earned today: € [11,259800]. Total bonus earned is now € [11,259800]"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabulary/groceryStore.ecore#//Customer">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//Customer/shoppingCart" eClass="../Vocabulary/groceryStore.ecore#//ShoppingCart">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-291-1234" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="499.000000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Shotgun" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-290-2345" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.990000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tulpen" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//ShoppingCart/item" eClass="../Vocabulary/groceryStore.ecore#//Item">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Item/department"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="39-285-12345" eAttribute="../Vocabulary/groceryStore.ecore#//Item/barCode"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="62.000000" eAttribute="../Vocabulary/groceryStore.ecore#//Item/price"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tomatensap (doos)" eAttribute="../Vocabulary/groceryStore.ecore#//Item/name"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/groceryStore.ecore#//Customer/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="../Vocabulary/groceryStore.ecore#//Customer/preferredCard" eClass="../Vocabulary/groceryStore.ecore#//PreferredAccount">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="A12345678" eAttribute="../Vocabulary/groceryStore.ecore#//PreferredAccount/cardNumber"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="../Vocabulary/groceryStore.ecore#//PreferredAccount/cumulativeCashBack"/>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="../Vocabulary/groceryStore.ecore#//Coupon">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="12/31/9999" eAttribute="../Vocabulary/groceryStore.ecore#//Coupon/expirationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Free balloon!" eAttribute="../Vocabulary/groceryStore.ecore#//Coupon/description"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="../Vocabulary/groceryStore.ecore#//Coupon">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="12/26/18" eAttribute="../Vocabulary/groceryStore.ecore#//Coupon/expirationDate"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="10% discount on next gas purchase" eAttribute="../Vocabulary/groceryStore.ecore#//Coupon/description"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_R1tNocFfEeiy1sf8tR4iEA" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet #//@testsheetAssets.3/@testsheet #//@testsheetAssets.4/@testsheet" vocabulary="../Vocabulary/groceryStore.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="MyAdvancedTutorial"/>
+    <testTabList name="checks"/>
+    <testTabList name="coupons"/>
+    <testTabList name="soda coupons"/>
+    <testTabList name="Gas purchase"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

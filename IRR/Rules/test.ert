@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="7" buildNumber="8020" updateStamp="_AHiB0LV2Ee6jjLPqgvsdaw" externalChecksum="2722078124:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="7" buildNumber="8020" updateStamp="_KoGysbV4Ee6jjLPqgvsdaw" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_2-OpEbV3Ee6jjLPqgvsdaw" ruleActivity="irr%20flow.erf#//@ruleflow" locale="">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="vocab.ecore#//Investment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" manuallyCreated="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="-4115.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="vocab.ecore#//Cashflow/installment"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" manuallyCreated="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="vocab.ecore#//Cashflow/installment"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1100.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2" eAttribute="vocab.ecore#//Cashflow/installment"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" manuallyCreated="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1200.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3" eAttribute="vocab.ecore#//Cashflow/installment"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="vocab.ecore#//Investment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" manuallyCreated="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="-250000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="vocab.ecore#//Cashflow/installment"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" manuallyCreated="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="vocab.ecore#//Cashflow/installment"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" manuallyCreated="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="150000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2" eAttribute="vocab.ecore#//Cashflow/installment"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" manuallyCreated="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="200000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3" eAttribute="vocab.ecore#//Cashflow/installment"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" manuallyCreated="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="250000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="vocab.ecore#//Cashflow/installment"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" manuallyCreated="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="300000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5" eAttribute="vocab.ecore#//Cashflow/installment"/>
+          </children>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" expanded="false" eClass="vocab.ecore#//Investment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-4115.000000" eAttribute="vocab.ecore#//Investment/principal"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="1" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.050000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.040000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.030000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.020000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.010000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.000000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.010000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="14" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.020000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="16" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.030000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="18" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.040000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="20" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.050000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="22" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.060000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="24" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.070000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="26" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.080000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="28" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.090000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="30" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.100000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.226337" eAttribute="vocab.ecore#//Investment/npv"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="vocab.ecore#//Cashflow/installment"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1111.111111" eAttribute="vocab.ecore#//Cashflow/portion"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1100.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="vocab.ecore#//Cashflow/installment"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1358.024691" eAttribute="vocab.ecore#//Cashflow/portion"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1200.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="vocab.ecore#//Cashflow/installment"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1646.090535" eAttribute="vocab.ecore#//Cashflow/portion"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-0.100000" eAttribute="vocab.ecore#//Investment/irr"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="vocab.ecore#//Investment">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-250000.000000" eAttribute="vocab.ecore#//Investment/principal"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.060000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.070000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.080000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.090000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.100000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.110000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="15" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.120000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="17" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.130000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="19" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.140000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="21" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.150000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="23" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.160000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="25" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.170000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="27" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.180000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="29" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.190000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="31" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.200000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="32" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.210000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="33" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.220000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="34" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.230000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="35" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.240000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="36" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.250000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="37" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.260000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="38" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.270000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="39" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.280000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="40" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.290000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="41" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.300000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="42" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.310000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="43" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.320000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="44" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.330000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="45" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.340000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="46" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.350000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="47" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.360000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="48" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.370000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="49" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.380000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="50" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.390000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="51" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.400000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="52" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.410000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="53" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.420000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="54" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.430000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="55" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.440000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="56" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.450000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="57" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.460000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="58" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.470000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="59" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.480000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="60" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.490000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="61" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.500000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="62" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.510000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="63" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.520000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="64" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.530000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="65" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.540000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="66" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.550000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="67" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.560000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="68" newOrModified="true" eReference="vocab.ecore#//Investment/candidate" eClass="vocab.ecore#//Candidate">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.570000" eAttribute="vocab.ecore#//Candidate/rate"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="-1172.846324" eAttribute="vocab.ecore#//Investment/npv"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" newOrModified="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="100000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="vocab.ecore#//Cashflow/installment"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="63694.267516" eAttribute="vocab.ecore#//Cashflow/portion"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" newOrModified="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="150000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="vocab.ecore#//Cashflow/installment"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="60854.395716" eAttribute="vocab.ecore#//Cashflow/portion"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="200000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="vocab.ecore#//Cashflow/installment"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="51681.015470" eAttribute="vocab.ecore#//Cashflow/portion"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" newOrModified="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="250000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="vocab.ecore#//Cashflow/installment"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="41147.305310" eAttribute="vocab.ecore#//Cashflow/portion"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" newOrModified="true" eReference="vocab.ecore#//Investment/cashflow" eClass="vocab.ecore#//Cashflow">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="300000.000000" eAttribute="vocab.ecore#//Cashflow/amount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="vocab.ecore#//Cashflow/installment"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="31450.169664" eAttribute="vocab.ecore#//Cashflow/portion"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.570000" eAttribute="vocab.ecore#//Investment/irr"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_FSYA8bV0Ee6jjLPqgvsdaw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="vocab.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="untitled_1"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>
