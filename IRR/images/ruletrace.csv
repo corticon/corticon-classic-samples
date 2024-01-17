@@ -1,0 +1,190 @@
+Sequence,Action,Element,Old Value,New Value,Association Entity,Location
+5,Remove Entity,Cashflow [1],,,,initial values : E0
+15,Add Entity,candidate (Candidate) [1],,,,evaluate npv : 1
+23,Add Entity,candidate (Candidate) [2],,,,evaluate npv : 1
+31,Add Entity,candidate (Candidate) [3],,,,evaluate npv : 1
+39,Add Entity,candidate (Candidate) [4],,,,evaluate npv : 1
+47,Add Entity,candidate (Candidate) [5],,,,evaluate npv : 1
+55,Add Entity,candidate (Candidate) [6],,,,evaluate npv : 1
+63,Add Entity,candidate (Candidate) [7],,,,evaluate npv : 1
+71,Add Entity,candidate (Candidate) [8],,,,evaluate npv : 1
+79,Add Entity,candidate (Candidate) [9],,,,evaluate npv : 1
+87,Add Entity,candidate (Candidate) [10],,,,evaluate npv : 1
+95,Add Entity,candidate (Candidate) [11],,,,evaluate npv : 1
+103,Add Entity,candidate (Candidate) [12],,,,evaluate npv : 1
+111,Add Entity,candidate (Candidate) [13],,,,evaluate npv : 1
+119,Add Entity,candidate (Candidate) [14],,,,evaluate npv : 1
+127,Add Entity,candidate (Candidate) [15],,,,evaluate npv : 1
+135,Add Entity,candidate (Candidate) [16],,,,evaluate npv : 1
+143,Add Entity,candidate (Candidate) [17],,,,evaluate npv : 1
+151,Add Entity,candidate (Candidate) [18],,,,evaluate npv : 1
+159,Add Entity,candidate (Candidate) [19],,,,evaluate npv : 1
+167,Add Entity,candidate (Candidate) [20],,,,evaluate npv : 1
+175,Add Entity,candidate (Candidate) [21],,,,evaluate npv : 1
+183,Add Entity,candidate (Candidate) [22],,,,evaluate npv : 1
+1,Update Attribute,Investment [1]/irr,,0.05,,initial values : A0
+2,Update Attribute,Investment [1]/principal,,-5000,,initial values : B0
+7,Update Attribute,cashflow (Cashflow) [2]/portion,,0,,solve each cashflow : B0
+8,Update Attribute,cashflow (Cashflow) [7]/portion,,6715.93857,,solve each cashflow : B0
+9,Update Attribute,cashflow (Cashflow) [6]/portion,,0,,solve each cashflow : B0
+10,Update Attribute,cashflow (Cashflow) [4]/portion,,0,,solve each cashflow : B0
+11,Update Attribute,cashflow (Cashflow) [5]/portion,,3290.809899,,solve each cashflow : B0
+12,Update Attribute,cashflow (Cashflow) [3]/portion,,1814.058957,,solve each cashflow : B0
+13,Update Attribute,Investment [1]/npv,,6820.807426,,evaluate npv : A0
+14,Update Attribute,Investment [1]/irr,0.05,0.06,,evaluate npv : 1
+16,Update Attribute,candidate (Candidate) [1]/rate,,0.06,,evaluate npv : 1
+18,Update Attribute,cashflow (Cashflow) [7]/portion,6715.93857,6344.644864,,solve each cashflow : B0
+19,Update Attribute,cashflow (Cashflow) [5]/portion,3290.809899,3168.374653,,solve each cashflow : B0
+20,Update Attribute,cashflow (Cashflow) [3]/portion,1814.058957,1779.99288,,solve each cashflow : B0
+21,Update Attribute,Investment [1]/npv,6820.807426,6293.012397,,evaluate npv : A0
+22,Update Attribute,Investment [1]/irr,0.06,0.07,,evaluate npv : 1
+24,Update Attribute,candidate (Candidate) [2]/rate,,0.07,,evaluate npv : 1
+26,Update Attribute,cashflow (Cashflow) [7]/portion,6344.644864,5997.080014,,solve each cashflow : B0
+27,Update Attribute,cashflow (Cashflow) [5]/portion,3168.374653,3051.580848,,solve each cashflow : B0
+28,Update Attribute,cashflow (Cashflow) [3]/portion,1779.99288,1746.877457,,solve each cashflow : B0
+29,Update Attribute,Investment [1]/npv,6293.012397,5795.538319,,evaluate npv : A0
+30,Update Attribute,Investment [1]/irr,0.07,0.08,,evaluate npv : 1
+32,Update Attribute,candidate (Candidate) [3]/rate,,0.08,,evaluate npv : 1
+34,Update Attribute,cashflow (Cashflow) [7]/portion,5997.080014,5671.526642,,solve each cashflow : B0
+35,Update Attribute,cashflow (Cashflow) [5]/portion,3051.580848,2940.119411,,solve each cashflow : B0
+36,Update Attribute,cashflow (Cashflow) [3]/portion,1746.877457,1714.677641,,solve each cashflow : B0
+37,Update Attribute,Investment [1]/npv,5795.538319,5326.323694,,evaluate npv : A0
+38,Update Attribute,Investment [1]/irr,0.08,0.09,,evaluate npv : 1
+40,Update Attribute,candidate (Candidate) [4]/rate,,0.09,,evaluate npv : 1
+42,Update Attribute,cashflow (Cashflow) [7]/portion,5671.526642,5366.405942,,solve each cashflow : B0
+43,Update Attribute,cashflow (Cashflow) [5]/portion,2940.119411,2833.700844,,solve each cashflow : B0
+44,Update Attribute,cashflow (Cashflow) [3]/portion,1714.677641,1683.359987,,solve each cashflow : B0
+45,Update Attribute,Investment [1]/npv,5326.323694,4883.466773,,evaluate npv : A0
+46,Update Attribute,Investment [1]/irr,0.09,0.1,,evaluate npv : 1
+48,Update Attribute,candidate (Candidate) [5]/rate,,0.1,,evaluate npv : 1
+50,Update Attribute,cashflow (Cashflow) [7]/portion,5366.405942,5080.26537,,solve each cashflow : B0
+51,Update Attribute,cashflow (Cashflow) [5]/portion,2833.700844,2732.053821,,solve each cashflow : B0
+52,Update Attribute,cashflow (Cashflow) [3]/portion,1683.359987,1652.892562,,solve each cashflow : B0
+53,Update Attribute,Investment [1]/npv,4883.466773,4465.211753,,evaluate npv : A0
+54,Update Attribute,Investment [1]/irr,0.1,0.11,,evaluate npv : 1
+56,Update Attribute,candidate (Candidate) [6]/rate,,0.11,,evaluate npv : 1
+58,Update Attribute,cashflow (Cashflow) [7]/portion,5080.26537,4811.767525,,solve each cashflow : B0
+59,Update Attribute,cashflow (Cashflow) [5]/portion,2732.053821,2634.923897,,solve each cashflow : B0
+60,Update Attribute,cashflow (Cashflow) [3]/portion,1652.892562,1623.244866,,solve each cashflow : B0
+61,Update Attribute,Investment [1]/npv,4465.211753,4069.936288,,evaluate npv : A0
+62,Update Attribute,Investment [1]/irr,0.11,0.12,,evaluate npv : 1
+64,Update Attribute,candidate (Candidate) [7]/rate,,0.12,,evaluate npv : 1
+66,Update Attribute,cashflow (Cashflow) [7]/portion,4811.767525,4559.680091,,solve each cashflow : B0
+67,Update Attribute,cashflow (Cashflow) [5]/portion,2634.923897,2542.072314,,solve each cashflow : B0
+68,Update Attribute,cashflow (Cashflow) [3]/portion,1623.244866,1594.387755,,solve each cashflow : B0
+69,Update Attribute,Investment [1]/npv,4069.936288,3696.14016,,evaluate npv : A0
+70,Update Attribute,Investment [1]/irr,0.12,0.13,,evaluate npv : 1
+72,Update Attribute,candidate (Candidate) [8]/rate,,0.13,,evaluate npv : 1
+74,Update Attribute,cashflow (Cashflow) [7]/portion,4559.680091,4322.866747,,solve each cashflow : B0
+75,Update Attribute,cashflow (Cashflow) [5]/portion,2542.072314,2453.274911,,solve each cashflow : B0
+76,Update Attribute,cashflow (Cashflow) [3]/portion,1594.387755,1566.293367,,solve each cashflow : B0
+77,Update Attribute,Investment [1]/npv,3696.14016,3342.435025,,evaluate npv : A0
+78,Update Attribute,Investment [1]/irr,0.13,0.14,,evaluate npv : 1
+80,Update Attribute,candidate (Candidate) [9]/rate,,0.14,,evaluate npv : 1
+82,Update Attribute,cashflow (Cashflow) [7]/portion,4322.866747,4100.278929,,solve each cashflow : B0
+83,Update Attribute,cashflow (Cashflow) [5]/portion,2453.274911,2368.321109,,solve each cashflow : B0
+84,Update Attribute,cashflow (Cashflow) [3]/portion,1566.293367,1538.935057,,solve each cashflow : B0
+85,Update Attribute,Investment [1]/npv,3342.435025,3007.535095,,evaluate npv : A0
+86,Update Attribute,Investment [1]/irr,0.14,0.15,,evaluate npv : 1
+88,Update Attribute,candidate (Candidate) [10]/rate,,0.15,,evaluate npv : 1
+90,Update Attribute,cashflow (Cashflow) [7]/portion,4100.278929,3890.948363,,solve each cashflow : B0
+91,Update Attribute,cashflow (Cashflow) [5]/portion,2368.321109,2287.012982,,solve each cashflow : B0
+92,Update Attribute,cashflow (Cashflow) [3]/portion,1538.935057,1512.287335,,solve each cashflow : B0
+93,Update Attribute,Investment [1]/npv,3007.535095,2690.24868,,evaluate npv : A0
+94,Update Attribute,Investment [1]/irr,0.15,0.16,,evaluate npv : 1
+96,Update Attribute,candidate (Candidate) [11]/rate,,0.16,,evaluate npv : 1
+98,Update Attribute,cashflow (Cashflow) [7]/portion,3890.948363,3693.980292,,solve each cashflow : B0
+99,Update Attribute,cashflow (Cashflow) [5]/portion,2287.012982,2209.164392,,solve each cashflow : B0
+100,Update Attribute,cashflow (Cashflow) [3]/portion,1512.287335,1486.325803,,solve each cashflow : B0
+101,Update Attribute,Investment [1]/npv,2690.24868,2389.470487,,evaluate npv : A0
+102,Update Attribute,Investment [1]/irr,0.16,0.17,,evaluate npv : 1
+104,Update Attribute,candidate (Candidate) [12]/rate,,0.17,,evaluate npv : 1
+106,Update Attribute,cashflow (Cashflow) [7]/portion,3693.980292,3508.547326,,solve each cashflow : B0
+107,Update Attribute,cashflow (Cashflow) [5]/portion,2209.164392,2134.600193,,solve each cashflow : B0
+108,Update Attribute,cashflow (Cashflow) [3]/portion,1486.325803,1461.027102,,solve each cashflow : B0
+109,Update Attribute,Investment [1]/npv,2389.470487,2104.174621,,evaluate npv : A0
+110,Update Attribute,Investment [1]/irr,0.17,0.18,,evaluate npv : 1
+112,Update Attribute,candidate (Candidate) [13]/rate,,0.18,,evaluate npv : 1
+114,Update Attribute,cashflow (Cashflow) [7]/portion,3508.547326,3333.883853,,solve each cashflow : B0
+115,Update Attribute,cashflow (Cashflow) [5]/portion,2134.600193,2063.155501,,solve each cashflow : B0
+116,Update Attribute,cashflow (Cashflow) [3]/portion,1461.027102,1436.36886,,solve each cashflow : B0
+117,Update Attribute,Investment [1]/npv,2104.174621,1833.408214,,evaluate npv : A0
+118,Update Attribute,Investment [1]/irr,0.18,0.19,,evaluate npv : 1
+120,Update Attribute,candidate (Candidate) [14]/rate,,0.19,,evaluate npv : 1
+122,Update Attribute,cashflow (Cashflow) [7]/portion,3333.883853,3169.280957,,solve each cashflow : B0
+123,Update Attribute,cashflow (Cashflow) [5]/portion,2063.155501,1994.675006,,solve each cashflow : B0
+124,Update Attribute,cashflow (Cashflow) [3]/portion,1436.36886,1412.329638,,solve each cashflow : B0
+125,Update Attribute,Investment [1]/npv,1833.408214,1576.285601,,evaluate npv : A0
+126,Update Attribute,Investment [1]/irr,0.19,0.2,,evaluate npv : 1
+128,Update Attribute,candidate (Candidate) [15]/rate,,0.2,,evaluate npv : 1
+130,Update Attribute,cashflow (Cashflow) [7]/portion,3169.280957,3014.08179,,solve each cashflow : B0
+131,Update Attribute,cashflow (Cashflow) [5]/portion,1994.675006,1929.012346,,solve each cashflow : B0
+132,Update Attribute,cashflow (Cashflow) [3]/portion,1412.329638,1388.888889,,solve each cashflow : B0
+133,Update Attribute,Investment [1]/npv,1576.285601,1331.983025,,evaluate npv : A0
+134,Update Attribute,Investment [1]/irr,0.2,0.21,,evaluate npv : 1
+136,Update Attribute,candidate (Candidate) [16]/rate,,0.21,,evaluate npv : 1
+138,Update Attribute,cashflow (Cashflow) [7]/portion,3014.08179,2867.677359,,solve each cashflow : B0
+139,Update Attribute,cashflow (Cashflow) [5]/portion,1929.012346,1866.029521,,solve each cashflow : B0
+140,Update Attribute,cashflow (Cashflow) [3]/portion,1388.888889,1366.026911,,solve each cashflow : B0
+141,Update Attribute,Investment [1]/npv,1331.983025,1099.733791,,evaluate npv : A0
+142,Update Attribute,Investment [1]/irr,0.21,0.22,,evaluate npv : 1
+144,Update Attribute,candidate (Candidate) [17]/rate,,0.22,,evaluate npv : 1
+146,Update Attribute,cashflow (Cashflow) [7]/portion,2867.677359,2729.502682,,solve each cashflow : B0
+147,Update Attribute,cashflow (Cashflow) [5]/portion,1866.029521,1805.596352,,solve each cashflow : B0
+148,Update Attribute,cashflow (Cashflow) [3]/portion,1366.026911,1343.724805,,solve each cashflow : B0
+149,Update Attribute,Investment [1]/npv,1099.733791,878.823839,,evaluate npv : A0
+150,Update Attribute,Investment [1]/irr,0.22,0.23,,evaluate npv : 1
+152,Update Attribute,candidate (Candidate) [18]/rate,,0.23,,evaluate npv : 1
+154,Update Attribute,cashflow (Cashflow) [7]/portion,2729.502682,2599.033281,,solve each cashflow : B0
+155,Update Attribute,cashflow (Cashflow) [5]/portion,1805.596352,1747.589978,,solve each cashflow : B0
+156,Update Attribute,cashflow (Cashflow) [3]/portion,1343.724805,1321.964439,,solve each cashflow : B0
+157,Update Attribute,Investment [1]/npv,878.823839,668.587698,,evaluate npv : A0
+158,Update Attribute,Investment [1]/irr,0.23,0.24,,evaluate npv : 1
+160,Update Attribute,candidate (Candidate) [19]/rate,,0.24,,evaluate npv : 1
+162,Update Attribute,cashflow (Cashflow) [7]/portion,2599.033281,2475.781985,,solve each cashflow : B0
+163,Update Attribute,cashflow (Cashflow) [5]/portion,1747.589978,1691.894391,,solve each cashflow : B0
+164,Update Attribute,cashflow (Cashflow) [3]/portion,1321.964439,1300.728408,,solve each cashflow : B0
+165,Update Attribute,Investment [1]/npv,668.587698,468.404784,,evaluate npv : A0
+166,Update Attribute,Investment [1]/irr,0.24,0.25,,evaluate npv : 1
+168,Update Attribute,candidate (Candidate) [20]/rate,,0.25,,evaluate npv : 1
+170,Update Attribute,cashflow (Cashflow) [7]/portion,2475.781985,2359.296,,solve each cashflow : B0
+171,Update Attribute,cashflow (Cashflow) [5]/portion,1691.894391,1638.4,,solve each cashflow : B0
+172,Update Attribute,cashflow (Cashflow) [3]/portion,1300.728408,1280,,solve each cashflow : B0
+173,Update Attribute,Investment [1]/npv,468.404784,277.696,,evaluate npv : A0
+174,Update Attribute,Investment [1]/irr,0.25,0.26,,evaluate npv : 1
+176,Update Attribute,candidate (Candidate) [21]/rate,,0.26,,evaluate npv : 1
+178,Update Attribute,cashflow (Cashflow) [7]/portion,2359.296,2249.154239,,solve each cashflow : B0
+179,Update Attribute,cashflow (Cashflow) [5]/portion,1638.4,1587.003231,,solve each cashflow : B0
+180,Update Attribute,cashflow (Cashflow) [3]/portion,1280,1259.763165,,solve each cashflow : B0
+181,Update Attribute,Investment [1]/npv,277.696,95.920635,,evaluate npv : A0
+182,Update Attribute,Investment [1]/irr,0.26,0.27,,evaluate npv : 1
+184,Update Attribute,candidate (Candidate) [22]/rate,,0.27,,evaluate npv : 1
+186,Update Attribute,cashflow (Cashflow) [7]/portion,2249.154239,2144.96487,,solve each cashflow : B0
+187,Update Attribute,cashflow (Cashflow) [5]/portion,1587.003231,1537.60615,,solve each cashflow : B0
+188,Update Attribute,cashflow (Cashflow) [3]/portion,1259.763165,1240.00248,,solve each cashflow : B0
+189,Update Attribute,Investment [1]/npv,95.920635,-77.4265,,evaluate npv : A0
+3,Remove Association,Investment [1]/cashflow,,,Cashflow [1],initial values : E0
+4,Remove Association,Investment [1]/cashflow,,,Cashflow [1],initial values : E0
+6,Set Association,Cashflow [1]/investment,,,,initial values : E0
+17,Add Association,Investment [1]/candidate,,,candidate (Candidate) [1],evaluate npv : 1
+25,Add Association,Investment [1]/candidate,,,candidate (Candidate) [2],evaluate npv : 1
+33,Add Association,Investment [1]/candidate,,,candidate (Candidate) [3],evaluate npv : 1
+41,Add Association,Investment [1]/candidate,,,candidate (Candidate) [4],evaluate npv : 1
+49,Add Association,Investment [1]/candidate,,,candidate (Candidate) [5],evaluate npv : 1
+57,Add Association,Investment [1]/candidate,,,candidate (Candidate) [6],evaluate npv : 1
+65,Add Association,Investment [1]/candidate,,,candidate (Candidate) [7],evaluate npv : 1
+73,Add Association,Investment [1]/candidate,,,candidate (Candidate) [8],evaluate npv : 1
+81,Add Association,Investment [1]/candidate,,,candidate (Candidate) [9],evaluate npv : 1
+89,Add Association,Investment [1]/candidate,,,candidate (Candidate) [10],evaluate npv : 1
+97,Add Association,Investment [1]/candidate,,,candidate (Candidate) [11],evaluate npv : 1
+105,Add Association,Investment [1]/candidate,,,candidate (Candidate) [12],evaluate npv : 1
+113,Add Association,Investment [1]/candidate,,,candidate (Candidate) [13],evaluate npv : 1
+121,Add Association,Investment [1]/candidate,,,candidate (Candidate) [14],evaluate npv : 1
+129,Add Association,Investment [1]/candidate,,,candidate (Candidate) [15],evaluate npv : 1
+137,Add Association,Investment [1]/candidate,,,candidate (Candidate) [16],evaluate npv : 1
+145,Add Association,Investment [1]/candidate,,,candidate (Candidate) [17],evaluate npv : 1
+153,Add Association,Investment [1]/candidate,,,candidate (Candidate) [18],evaluate npv : 1
+161,Add Association,Investment [1]/candidate,,,candidate (Candidate) [19],evaluate npv : 1
+169,Add Association,Investment [1]/candidate,,,candidate (Candidate) [20],evaluate npv : 1
+177,Add Association,Investment [1]/candidate,,,candidate (Candidate) [21],evaluate npv : 1
+185,Add Association,Investment [1]/candidate,,,candidate (Candidate) [22],evaluate npv : 1
