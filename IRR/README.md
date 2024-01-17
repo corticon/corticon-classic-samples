@@ -64,8 +64,8 @@ Testing against the top level ruleflow, we set the input based upon the use case
 
 When we run the ruletest with ruletrace, we can see how Corticon has looped through the rules with each tweaked rate until it got as close to zero for the investment's NPV as it could. 
 
-<video src="images/WinCam-2024-01-17-%5B17-57-42%5D.mp4" controls title="Title"></video>
+![](images/trace2.png)
 
 The rule trace data can be exported to a CSV as well. If you'd like to see the exported trace data, its included within this repo and can be downloaded by clicking [here](images/ruletrace.csv). 
 
-![Alt text](images/trace.png)
+![](images/trace.png)
