@@ -42,6 +42,7 @@ Next our rules.
 
 ![top loop](<images/top loop.png>)
 
+* When an object on a ruleflow is set to iterate, it will repeatedly re-execute until the values derived by the object’s rules cease to change. Once values in the object cease changing, the iteration stops and execution continues to the next object (as determined by the Connectors). 
 * Within the inner ruleflow, we have two rulesheets.
   
 ![inner flow](<images/inner flow.png>)
