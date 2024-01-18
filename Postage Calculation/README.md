@@ -1,15 +1,7 @@
----
-id: classic_Postal
-title: Change for a Postal Stamp
-tags:
-  - Corticon classic
----
+# Change for a Postal Stamp
 
-Which combination of stamps is optimal?
+_Which combination of stamps is optimal?_
 
----
-
-[Download Rule Assets](https://github.com/corticon/accelerators/raw/main/docs/classic-templates/project-zips/Postage%20Calculation.zip)
 
 Assume you need to mail a letter and the required postage costs (an arbitrary) 1.25 (whatever currency). The Post Office prints stamps in 45, 25, and 10‐cent increments. What combination of stamps is needed to total 1.25? If it’s not possible to total 1.25 exactly, which combination of stamps results in the least amount of wasted, excess postage?
 

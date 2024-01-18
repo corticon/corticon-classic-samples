@@ -1,16 +1,7 @@
----
-id: classic_Pharmaceutical
-title: Pharmaceutical Dosing
-tags:
-  - Corticon classic
----
+Pharmaceutical Dosing
 
-Based upon patient attributes, calculate recommended medication dose.
+_Based upon patient attributes, calculate recommended medication dose_
 
----
-
-[Download Rule Assets
-](https://github.com/corticon/accelerators/raw/main/docs/classic-templates/project-zips/Dosing%20Weights.zip)
 
 ---
 Certain drugs are prescribed based upon a patient’s weight, but the prescriber must also consider whether the patient is overweight or underweight. When a patient is within the bounds of a clinically healthy weight, then that weight will serve as the input for calculating an appropriate dosage.

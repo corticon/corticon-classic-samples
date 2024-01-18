@@ -1,18 +1,7 @@
----
-id: classic_heir
-title: Who shall be the king's heir?
-tags:
-  - Corticon.js
-  - Corticon classic
----
+# Who shall be the king's heir?
 
-Which child is the crown prince?
+_Which child is the crown prince?_
 
----
-
-[Download Rule Assets](https://github.com/corticon/accelerators/raw/main/docs/classic-templates/project-zips/Solve%20for%20the%20Heir%20to%20the%20Throne.zip)
-
----
 
 A King may have several children, but only the first-born son is designated “heir” to the throne. Create a rules project which determines which of his children is the “Crown Prince” and heir to the throne.
 

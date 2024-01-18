@@ -1,14 +1,6 @@
----
-id: classic_Solar
-title: Evaluate a Site for Solar Energy Potential
-tags:
-  - Corticon classic
-  - REST Data Integration
----
+# Evaluate a Site for Solar Energy Potential
 
-Integrate data from external REST APIs to enrich your decision data
-
----
+_Integrate data from external REST APIs to enrich your decision data_
 
 ## First Launch of Corticon Studio
 

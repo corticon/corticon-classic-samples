@@ -1,14 +1,6 @@
----
-id: classic_Cart
-title: Grocery Cart
-tags:
-  - Corticon.js
-  - Corticon classic
----
+# Grocery Cart
+_Implement rules to apply promotions to a shopping cart._
 
-Implement rules to apply promotions to a shopping cart.
-
----
 
 In this tutorial, you learn how to use some of Corticon Studio’s more complex and powerful functions, including:
 

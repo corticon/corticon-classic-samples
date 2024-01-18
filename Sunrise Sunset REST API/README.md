@@ -1,17 +1,5 @@
----
-id: classic_Sunset
-title: Retrieving Data from Sunrise/Sunset REST API
-tags:
-  - Corticon classic
-  - REST Data Integration
----
+# Retrieving Data from Sunrise/Sunset REST API
 
-Use data from external REST API in rules
-
----
-[Download Rule Assets](https://github.com/corticon/accelerators/raw/main/docs/classic-templates/project-zips/Sunrise%20Sunset%20REST%20API.zip)
-
----
 Corticon's REST connectivity allows you to access data via REST services such that rule payloads can be enriched with REST data similar to database data. Corticon uses the [Progress Data Direct Autonomous REST Connector](https://www.progress.com/connectors/autonomous-rest-connector) to provide support for REST data integration. This allows you to access a REST service similar to the way you access a database. 
 
 This simple sample illustrates the functionality using the free API provided at https://sunrise-sunset.org/ It was built in just a few steps:

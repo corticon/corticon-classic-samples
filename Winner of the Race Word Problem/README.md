@@ -1,18 +1,6 @@
----
-id: classic_race
-title: Who won the race?
-tags:
-  - Corticon.js
-  - Corticon classic
----
+# Who won the race?
 
-
-Seven runners enter a race--who comes out on top?
-
----
-[Download Rule Assets](https://github.com/corticon/accelerators/raw/main/docs/classic-templates/project-zips/Winner%20of%20the%20Race%20Word%20Problem.zip)
-
----
+_Seven runners enter a race--who comes out on top?_
 
 **Seven runners enter a race. The following rules describe the race results:**
 
@@ -26,9 +14,7 @@ Seven runners enter a race--who comes out on top?
 
 **In what order did the runners finish the race?**
 
-This puzzle is a classic constraint-based problem. The seven runners who run the race _could_
-finish in any of the many sequences. In this race, the total number of possible finish sequences
-is equal to 7! (7 factorial), or 7x6x5x4x3x2x1=5,040. That's a lot!
+This puzzle is a classic constraint-based problem. The seven runners who run the race _could_ finish in any of the many sequences. In this race, the total number of possible finish sequences is equal to 7! (7 factorial), or 7x6x5x4x3x2x1=5,040. That's a lot!
 
 We also know that any given runner can finish in any place, from first to last. While the
 constraints place additional limits on order in which the runners finish, we’re trying to visualize
@@ -99,7 +85,7 @@ that satisfies all the requirements at the same time can be considered a solutio
 It’s only when ALL rule conditions are satisfied that we assign the name attribute to the proper
 Person entity instance in the Actions pane.
 
-![Alt text](Images/Who-Won-The-Race_rs 1.png)
+![Alt text](Images/Who-Won-The-Race_rs.png)
 
 The Action simply posts the following message, which has been entered as Rule Statement 1:
 
@@ -120,12 +106,11 @@ rulesheet sets up the 7 `Person` entity instances, also known by our alias as th
 The Output pane in the test sheet shows each racer (`Person`) identified by a place attribute,
 numbered 1 through 7. This is the result of the race rulesheet executing.
 
-The answer to the puzzle is contained in the posted Rule Statement, below:
+The answer to the puzzle is contained in the posted Rule Message, below:
 
-![Alt text](Images/Who-Won-The-Racetest message.png)
+![Alt text](<Images/Who-Won-The-Racetest message.png>)
 
-In this case, only one finish sequence of the 5,040 possible satisfy all the constraints, so only
-one Rule Statement is posted.
+In this case, only one finish sequence of the 5,040 possible satisfy all the constraints, so only one Rule Statement is posted.
 
 The full solution can be downloaded from the Corticon GitHub repository.
 
