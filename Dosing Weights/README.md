@@ -1,4 +1,4 @@
-Pharmaceutical Dosing
+# Pharmaceutical Dosing
 
 _Based upon patient attributes, calculate recommended medication dose_
 
