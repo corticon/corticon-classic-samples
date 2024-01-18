@@ -1,7 +1,6 @@
 # IPv4 Validation
 
 _Use regular expression in Corticon to validate IP address_
- ---
 
 
 This project, explored in depth in the below video, demonstrates the use of regular expressions in Corticon or Corticon.js to implement a IPv4 address verification service. 
