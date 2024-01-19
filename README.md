@@ -18,6 +18,7 @@ _(versus Corticon.js for JavaScript deployment)_
 - [Which combination of stamps is optimal?](<Postage Calculation/README.md>)
 - [Shipping Logistics](Postcodes/README.md)
 - [Ranking and Ordering](<Ranking and Ordering/README.md>)
+- [Residential Mortgage Eligibility and Scoring](Mortgage/README.md)
 - [Shopping Cart Tutorial](<Shopping Cart Tutorial/Grocery-Cart.md>)
 - [Who shall be the king's heir?](<Solve for the Heir to the Throne/README.md>)
 - [Retrieving Data from Sunrise/Sunset REST API](<Sunrise Sunset REST API/README.md>)
