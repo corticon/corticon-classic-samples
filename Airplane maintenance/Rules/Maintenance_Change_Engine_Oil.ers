@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_XeKjqgkoEe6s4ub-2LS3GA" externalChecksum="2722078124:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="2" buildNumber="8020" updateStamp="_5mR4V2nnEe6JjfaaEiMiJw" externalChecksum="2722078124:507989954:2146616488" studioType="Javascript">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_xOs78MJ7Ee2U28GO6rimkw" vocabulary="Maintenance.ecore#/">
+  <ruleset vocabularyUpdateStamp="_3MpHcGnnEe6JjfaaEiMiJw" vocabulary="Maintenance.ecore#/">
     <rule/>
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
         <opaqueExpression expression="plane.totalMiles.mod ( 3000 ) &lt; 100">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="plane.totalMiles.mod ( 3000 ) &lt; 100" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="plane.totalMiles.mod">
+              <terms text="mod (3000)" datatype="Integer" termtype="METHOD" fulltext="plane.totalMiles.mod (3000)">
                 <parentTerm text="totalMiles" datatype="Integer" termtype="ATTRIBUTE" fulltext="plane.totalMiles">
                   <parentTerm text="plane" datatype="Aircraft" termtype="ENTITY" fulltext="plane" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -138,12 +138,12 @@
       </ruleStatementItemList>
     </ruleStatementSection>
     <conditionSection rowCount="50" columnWidthFactor="0.5">
-      <conditionItemList variableMode="Literal">
+      <conditionItemList>
         <valueSetCell valueSet="&lt; 100"/>
         <expressionCell external="plane.totalMiles.mod ( 3000 )">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="plane.totalMiles.mod ( 3000 )" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="plane.totalMiles.mod">
+              <terms text="mod (3000)" datatype="Integer" termtype="METHOD" fulltext="plane.totalMiles.mod (3000)">
                 <parentTerm text="totalMiles" datatype="Integer" termtype="ATTRIBUTE" fulltext="plane.totalMiles">
                   <parentTerm text="plane" datatype="Aircraft" termtype="ENTITY" fulltext="plane" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -159,7 +159,7 @@
         <conditionValueSetCellList valueSet="&lt; 100">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="plane.totalMiles.mod ( 3000 ) &lt; 100" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="plane.totalMiles.mod">
+              <terms text="mod (3000)" datatype="Integer" termtype="METHOD" fulltext="plane.totalMiles.mod (3000)">
                 <parentTerm text="totalMiles" datatype="Integer" termtype="ATTRIBUTE" fulltext="plane.totalMiles">
                   <parentTerm text="plane" datatype="Aircraft" termtype="ENTITY" fulltext="plane" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>

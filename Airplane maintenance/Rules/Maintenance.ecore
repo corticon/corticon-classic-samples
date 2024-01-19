@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
   <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
-    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_aNp7IDFpEe67QY0TqXDq3w" externalChecksum="3538238644:507989954" studioType="Java" customDataTypeDisplayCount="50">
+    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="2" buildNumber="8020" updateStamp="_QQ_N0rbYEe6b3vRPP1714g" externalChecksum="2722078124:507989954" studioType="Javascript" customDataTypeDisplayCount="50">
       <languageCode>en_US</languageCode>
       <databaseAccess databasePropertyDisplayCount="50"/>
       <customDataTypeList enumerationDisplayCount="50" eDataType="#//typeType">
@@ -20,7 +20,11 @@
         <enumerationElements>
           <value manuallyCreated="true" value="'DC-10'"/>
         </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'747'"/>
+        </enumerationElements>
       </customDataTypeList>
+      <vocabularyMappings name="JSON" ID="JSON" mappingType="JSON"/>
     </contents>
   </eAnnotations>
   <eClassifiers xsi:type="ecore:EClass" name="Aircraft">
@@ -46,7 +50,7 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="purchaseDate" eType="ecore:EDataType http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore#//Date">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="purchaseDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
       <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
         <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
           <name manuallyCreated="true" value="purchaseDate"/>
@@ -54,7 +58,7 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="serviceDate" eType="ecore:EDataType http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore#//Date">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="serviceDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
       <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
         <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
           <name manuallyCreated="true" value="serviceDate"/>
@@ -124,5 +128,6 @@
     <eLiterals name="V1" value="1" literal="'767'"/>
     <eLiterals name="V2" value="2" literal="'757'"/>
     <eLiterals name="V3" value="3" literal="'DC-10'"/>
+    <eLiterals name="V4" value="4" literal="'747'"/>
   </eClassifiers>
 </ecore:EPackage>

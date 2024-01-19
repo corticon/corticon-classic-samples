@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="2" buildNumber="8020" updateStamp="_YV9uZwkoEe6s4ub-2LS3GA" externalChecksum="2722078124:507989954:2614682131" studioType="Java">
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="2" buildNumber="8020" updateStamp="_2XMGKWnnEe6JjfaaEiMiJw" externalChecksum="2722078124:507989954:2146616488" studioType="Javascript">
   <languageCode>en_US</languageCode>
-  <ruleset vocabularyUpdateStamp="_xOs78MJ7Ee2U28GO6rimkw" vocabulary="Maintenance.ecore#/">
+  <ruleset vocabularyUpdateStamp="_3MpHcGnnEe6JjfaaEiMiJw" vocabulary="Maintenance.ecore#/">
     <rule/>
     <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
       <condition>
         <opaqueExpression expression="plane.ageInDays.mod ( 7) = 0">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="plane.ageInDays.mod ( 7 ) = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="plane.ageInDays.mod">
+              <terms text="mod (7)" datatype="Integer" termtype="METHOD" fulltext="plane.ageInDays.mod (7)">
                 <parentTerm text="ageInDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="plane.ageInDays">
                   <parentTerm text="plane" datatype="Aircraft" termtype="ENTITY" fulltext="plane" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -48,7 +48,7 @@
         <opaqueExpression expression="plane.ageInDays.mod ( 7) = 1">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="plane.ageInDays.mod ( 7 ) = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="plane.ageInDays.mod">
+              <terms text="mod (7)" datatype="Integer" termtype="METHOD" fulltext="plane.ageInDays.mod (7)">
                 <parentTerm text="ageInDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="plane.ageInDays">
                   <parentTerm text="plane" datatype="Aircraft" termtype="ENTITY" fulltext="plane" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -195,12 +195,12 @@
       </ruleStatementItemList>
     </ruleStatementSection>
     <conditionSection rowCount="50" columnWidthFactor="0.5">
-      <conditionItemList variableMode="Literal">
+      <conditionItemList>
         <valueSetCell valueSet="{0, 1}"/>
         <expressionCell external="plane.ageInDays.mod ( 7)">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="plane.ageInDays.mod ( 7 )" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="plane.ageInDays.mod">
+              <terms text="mod (7)" datatype="Integer" termtype="METHOD" fulltext="plane.ageInDays.mod (7)">
                 <parentTerm text="ageInDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="plane.ageInDays">
                   <parentTerm text="plane" datatype="Aircraft" termtype="ENTITY" fulltext="plane" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -216,7 +216,7 @@
         <conditionValueSetCellList valueSet="0">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="plane.ageInDays.mod ( 7 ) = 0" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="plane.ageInDays.mod">
+              <terms text="mod (7)" datatype="Integer" termtype="METHOD" fulltext="plane.ageInDays.mod (7)">
                 <parentTerm text="ageInDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="plane.ageInDays">
                   <parentTerm text="plane" datatype="Aircraft" termtype="ENTITY" fulltext="plane" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
@@ -230,7 +230,7 @@
         <conditionValueSetCellList valueSet="1">
           <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="plane.ageInDays.mod ( 7 ) = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
             <referencedTermList>
-              <terms text="mod" datatype="Integer" termtype="METHOD" fulltext="plane.ageInDays.mod">
+              <terms text="mod (7)" datatype="Integer" termtype="METHOD" fulltext="plane.ageInDays.mod (7)">
                 <parentTerm text="ageInDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="plane.ageInDays">
                   <parentTerm text="plane" datatype="Aircraft" termtype="ENTITY" fulltext="plane" variable="#//@ruleset/@logicalVariables.0"/>
                 </parentTerm>
