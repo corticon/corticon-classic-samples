@@ -21,4 +21,5 @@ _(versus Corticon.js for JavaScript deployment)_
 - [Shopping Cart Tutorial](<Shopping Cart Tutorial/Grocery-Cart.md>)
 - [Who shall be the king's heir?](<Solve for the Heir to the Throne/README.md>)
 - [Retrieving Data from Sunrise/Sunset REST API](<Sunrise Sunset REST API/README.md>)
+- [Target investment price forecast](<Target investment price forecast/README.md>)
 - [Who won the race?](<Winner of the Race Word Problem/README.md>)
