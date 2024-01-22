@@ -49,12 +49,12 @@ Of course, we could also provide this in our input request to the rules.
 
 The Person entity instances are created in a set of non-conditional rules using the `new` operator.
 
-![Alt text](images/Who-Won-The-Raceactions.png)
+![Alt text](Images/Who-Won-The-Raceactions.png)
 
 You can find this operator in the Corticon operator tree under Entity/Association Operators.
 Learn more about this operator and its syntax here.
 
-![Alt text](Images/Who-Won-The-Race_rule operators.png)
+![Alt text](Images/Who-Won-The-Race_rule%20operators.png)
 
 
 Our next step would be to assign the proper name to each instance based on our set of rules.
