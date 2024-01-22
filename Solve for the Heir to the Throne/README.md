@@ -11,8 +11,7 @@ That said, most solutions have a few things in common. In general, they recogniz
 
 - That this problem deals with ollections, specifically the collection of children associated with the King. In more natural language, it’s just the collection of the King’s children. This recognition provides some guidance for building a simple vocabulary that supports our rules.
 - That our rules must operate on a certain subset of children, specifically, the males. This implies we’ll need to “filter out” the females. Note, we’re not judging the sexism inherent in patriarchal/monarchical systems, we’re just trying to solve the problem… 
-- 
-![Alt text](images/heir1.png)
+- ![Alt text](Images/heir1.png)
 
 - The need to sort the remaining children according to age and identify the oldest – in other words, the oldest of the males.
 
