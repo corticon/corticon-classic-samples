@@ -17,9 +17,7 @@ We start with the first rulesheet to tackle the first piece related to the month
 
 ![Alt text](<images/oyster rule msg.png>)
 
-We can even take this one step further, by starting with natural language text for our conditions and actions. We can open the Natural Language view as follows and drag the pane next to our rule statement pane.
-
-![Alt text](<images/oyster_nat lang dropdown.png>)
+We can even take this one step further, by starting with natural language text for our conditions and actions. We can open the Natural Language view and drag the pane next to our rule statement pane.
 
 Now we can enter the plain language text for our rules’ conditions and actions!
 
@@ -83,4 +81,3 @@ As long as your rules are easily maintainable and understood by your business au
 
 ![Alt text](<images/oyster test1.png>)
 
-As always, 
