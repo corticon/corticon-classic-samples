@@ -2,7 +2,6 @@
 
 _Which child is the crown prince?_
 
-
 A King may have several children, but only the first-born son is designated “heir” to the throne. Create a rules project which determines which of his children is the “Crown Prince” and heir to the throne.
 
 As usual, there is more than one way to solve this problem: for example, we had a submission (we had a good laugh!) in which the author incorporated rules to check for misattributed paternity of children based on blood type matching. Very creative, well done!
@@ -62,6 +61,5 @@ To turn a Filter expression into a limiting filter, right-click on a filter in t
 
 Fortunately, as you can see below, our Kingdom is preserved in this Studio Testsheet:
 
-![Alt text](images/heir6.png)
+![Alt text](Images/heir6.png)
 
-The full solution can be downloaded from [here](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/corticon/newsletter-solutions/tree/main/NewsletterPuzzleSolutionFall2021&fileName=CrownPrince&rootDirectory=<true>).
