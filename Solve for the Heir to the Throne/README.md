@@ -23,15 +23,15 @@ Also, note the attributes present in this Vocabulary. We know from the problem s
 
 With our supporting Vocabulary in place, we can begin to model our rules. Knowing that collections are unavoidable, we immediately set up a collection alias in the Scope section of the Rulesheet. This gives us a convenient way to refer to the collection (here named **theChildren**). It also allows us to use collection operators in our rules.
 
-![Alt text](images/heir3.png)
+![Alt text](Images/heir3.png)
 
 With the collection alias defined, our next step is to filter the collection for males. In other words, we want to remove any female children from the collection since only males are eligible to be heir. A conditional expression that acts as a filter is shown below:
 
-![Alt text](images/heir2.png)
+![Alt text](Images/heir2.png)
 
 Only those children that satisfy this gender test (the males) will survive the filter and be evaluated by other rules in the Rulesheet.
 
-![Alt text](images/heir7.png)
+![Alt text](Images/heir7.png)
 
 The Nonconditional rule of the Rulesheet contains the sorting logic:
 
@@ -46,13 +46,13 @@ There are two collection operations in use here, a collection and a sequence ope
 
 Finally, a few Condition/Action rules round out our Rulesheet and provide a convenient way to post informative messages.
 
-![Alt text](images/heir5.png)
+![Alt text](Images/heir5.png)
 
 Rule 1 (column 1) is straightforward – the son designated Crown Prince by the Nonconditional rule will cause this rule to fire, simply posting a message and assigning his name to the King’s **heirName** attribute.
 
 Rule 2 (column 2) is a bit more interesting. Because it’s possible for a King to have no sons or even no children at all, we decided to test for the emptiness of the filtered collection **theChildren** using the **isEmpt**y operator. A warning message is appropriate since a childless King wishing to preserve his lineage needs to get his priorities in order!
 
-![Alt text](images/heir8png.png)
+![Alt text](Images/heir8png.png)
 
 **But wait!** Our filter filters all (related) male children, but if no children survive the filter, the King himself gets filtered out as well. We call that a full filter, which is the default filter in Corticon. So, if we want to check for ‘no children' or more accurately no male children (rule 2), we need to disable the filter which was applied to the King by default. We need to apply a limited filter.  
 
