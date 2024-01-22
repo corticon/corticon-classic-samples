@@ -3,6 +3,7 @@ _(versus Corticon.js for JavaScript deployment)_
 
 
 - [Airplane Scheduled Maintenance](<Airplane maintenance/README.md>)
+- [Baseball's Infield Fly Rule](<Infield Fly/README.md>)
 - [Convert number to Roman numerals](<Arabic number to Roman numerals/README.md>)
 - [Have Corticon loop through '99 Bottles of Beer on the wall'](<Beers on the Wall Challenge/README.md>)
 - [The Miracle of Compound Interest](<Calculate Compound Interest/README.md>)
