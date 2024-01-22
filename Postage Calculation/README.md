@@ -23,7 +23,7 @@ Having a feel for the algorithm involved is important because it influences the 
 
 Let’s create a Vocabulary that incorporates some of these requirements: 
 
-![Alt text](images/postage1.png)
+![Alt text](Images/postage1.png)
 
 The Vocabulary contains a `Letter` entity and its `PostageDue` attribute which will hold the 1.25 value we’re using as the problem’s constraint.
 
@@ -37,11 +37,11 @@ In each `Solution`, the attributes `Quantity45`, `Quantity25`, and `Quantity10` 
 
 The Ruleflow below contains a total of 5 Rulesheets, but only the middle 3 are instructive. The first and last Rulesheets contain simple “housekeeping” rules that set up and clean up the results. We’ll leave those Rulesheets for your download and review.
 
-![Alt text](images/postage2.png)
+![Alt text](Images/postage2.png)
 
 The first Rulesheet we’ll discuss here is the second one in the Ruleflow, named Make sets of stamps. As its name implies, here’s where `Possibility` entities will be generated based on the stamps we have on hand:
 
-![Alt text](images/postage3.png)
+![Alt text](Images/postage3.png)
 
 According to the algorithm discussed previously, if we have three 45‐cent stamps, then we need four (3+1) possibilities because we have the option of using 3,2,1,0 45‐cent stamps on our letter. Follow the logic in rule 1: If we have any 45‐cent stamps on hand, then one of the `StampBook` entities will have a `value` attribute equal to 0.45.
 
@@ -51,7 +51,7 @@ As long as its `counter` attribute is less than the `StampBook`’s number of 45
 
 Now that our rules have created lots of possibilities, we need to compare the sum of their `SubTotal` with the constraint. If a combination of possibilities either matches or exceeds the `PostageDue`, then we have a solution of interest. In the 'Assemble optimal number of stamps' Rulesheet below, the whole set of all possibilities has been filtered into individual p45, p25, and p10 subsets so that the sum in Condition row a uses only a single possibility from each subset. 
 
-![Alt text](images/postage4.png)
+![Alt text](Images/postage4.png)
 
 But, and here’s where we take advantage of the power of Corticon’s declarative approach, the Condition _will automatically evaluate every combination of our possibilities._
 
@@ -63,7 +63,7 @@ Note the used **cellValue** operator in action row B. The special operator cellV
 
 The 'Rank next best solution' Rulesheet identifies the next‐best solution if no exact matches are found. And by “next‐best”, we mean the solution that uses the least amount of excess postage.
 
-![Alt text](images/postage5.png)
+![Alt text](Images/postage5.png)
 
 Due to the Precondition/Filter, this Rulesheet will only execute if all the solutions are excess. If any of them are exact, then we’re not really interested in finding a next‐best solution ‐ we’ll use the exact solution(s) ‐ and this Rulesheet is skipped.
 
@@ -75,7 +75,7 @@ When the solution with least excess postage is identified, a **Rule Statement** 
 
 Let’s test our Ruleflow with a Studio Test. In the Testsheet below, we’ve given ourselves three 45‐cent, two 25‐cent, and five 10‐cent stamps to work with. The required postage to mail the letter is 1.25.
 
-![Alt text](images/postage6.png)
+![Alt text](Images/postage6.png)
 
 The 'Results' Testsheet tells us that there are two different ways to create exactly 1.25 postage from stamps on hand. There’s no need to look for any next‐best solutions.
 
@@ -83,4 +83,4 @@ A different set of stamps on hand, or a different `PostageDue` constraint, will 
 
 The solution consist of four 45‐cent stamps, is as close as we can come to the 1.75 required, using excess postage of 5 cents.
 
-![Alt text](images/postage7.png)
+![Alt text](Images/postage7.png)
