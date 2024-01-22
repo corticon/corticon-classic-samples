@@ -87,7 +87,7 @@ Based on these assumptions, you can derive the attributes for each entity in the
 
 This table lists the attributes for each entity along with their data type and attribute mode:
 
-![Alt text](<images/grocery_vocab table.png>)
+![](<images/grocery_vocab table.png>)
 
 The mode of an attribute can be Base or Transient. **Base** attribute values are either sent to the rule model from a client application, returned to a client application from the rule model, or both. **Transient** attributes are only used within the rule model, and their values are assigned or derived by rules, but not sent to a client application. For example, the **cashBackEarned** attribute is a Transient attribute that is used to update the value of the **cumulativeCashBack** attribute, which is a Base attribute.
 
@@ -99,7 +99,7 @@ Next, let’s identify the associations for the Vocabulary. An association defin
 
 To make these relationships clear, you create a diagram of the associations. Creating a diagram is especially useful when you have a large or complex Vocabulary with many associations. Here is the diagram of entities and associations for this business problem:
 
-![Alt text](images/grocery_diagram.png)
+![](images/grocery_diagram.png)
 
 In this diagram, the connectors between entities show the kind of relationship. For example, Customer has a one-to-many association with ShoppingCart.
 
@@ -122,7 +122,7 @@ For the **Checkout** step, the following three substeps are identified. You crea
 
 Next, let’s look at the business rules that you need to model for each substep:
 
-![Alt text](<images/grocery_vocab table.png>)
+![](<images/grocery_vocab table.png>)
 
 Now, let’s implement the Vocabulary in Corticon Studio. To begin, launch Corticon Studio and create a Rule Project:
 

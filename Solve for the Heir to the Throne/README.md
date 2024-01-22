@@ -10,7 +10,7 @@ That said, most solutions have a few things in common. In general, they recogniz
 
 - That this problem deals with ollections, specifically the collection of children associated with the King. In more natural language, it’s just the collection of the King’s children. This recognition provides some guidance for building a simple vocabulary that supports our rules.
 - That our rules must operate on a certain subset of children, specifically, the males. This implies we’ll need to “filter out” the females. Note, we’re not judging the sexism inherent in patriarchal/monarchical systems, we’re just trying to solve the problem… 
-- ![Alt text](Images/heir1.png)
+- ![](Images/heir1.png)
 
 - The need to sort the remaining children according to age and identify the oldest – in other words, the oldest of the males.
 
@@ -22,15 +22,15 @@ Also, note the attributes present in this Vocabulary. We know from the problem s
 
 With our supporting Vocabulary in place, we can begin to model our rules. Knowing that collections are unavoidable, we immediately set up a collection alias in the Scope section of the Rulesheet. This gives us a convenient way to refer to the collection (here named **theChildren**). It also allows us to use collection operators in our rules.
 
-![Alt text](Images/heir3.png)
+![](Images/heir3.png)
 
 With the collection alias defined, our next step is to filter the collection for males. In other words, we want to remove any female children from the collection since only males are eligible to be heir. A conditional expression that acts as a filter is shown below:
 
-![Alt text](Images/heir2.png)
+![](Images/heir2.png)
 
 Only those children that satisfy this gender test (the males) will survive the filter and be evaluated by other rules in the Rulesheet.
 
-![Alt text](Images/heir7.png)
+![](Images/heir7.png)
 
 The Nonconditional rule of the Rulesheet contains the sorting logic:
 
@@ -45,13 +45,13 @@ There are two collection operations in use here, a collection and a sequence ope
 
 Finally, a few Condition/Action rules round out our Rulesheet and provide a convenient way to post informative messages.
 
-![Alt text](Images/heir5.png)
+![](Images/heir5.png)
 
 Rule 1 (column 1) is straightforward – the son designated Crown Prince by the Nonconditional rule will cause this rule to fire, simply posting a message and assigning his name to the King’s **heirName** attribute.
 
 Rule 2 (column 2) is a bit more interesting. Because it’s possible for a King to have no sons or even no children at all, we decided to test for the emptiness of the filtered collection **theChildren** using the **isEmpt**y operator. A warning message is appropriate since a childless King wishing to preserve his lineage needs to get his priorities in order!
 
-![Alt text](Images/heir8png.png)
+![](Images/heir8png.png)
 
 **But wait!** Our filter filters all (related) male children, but if no children survive the filter, the King himself gets filtered out as well. We call that a full filter, which is the default filter in Corticon. So, if we want to check for ‘no children' or more accurately no male children (rule 2), we need to disable the filter which was applied to the King by default. We need to apply a limited filter.  
 
@@ -61,5 +61,5 @@ To turn a Filter expression into a limiting filter, right-click on a filter in t
 
 Fortunately, as you can see below, our Kingdom is preserved in this Studio Testsheet:
 
-![Alt text](Images/heir6.png)
+![](Images/heir6.png)
 

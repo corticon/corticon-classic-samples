@@ -36,7 +36,7 @@ Previously, large numbers were indicated by putting a horizontal line over them.
 
 ![](Images/convert4.png) 
 
-![Alt text](Images/convert5.png)
+![](Images/convert5.png)
 
 This implied multiplying the number by 1,000. Hence the V has a line over the top, which means 5,000. **This usage is no longer current**, because the largest numbers usually expressed in the 
 Roman system are dates.

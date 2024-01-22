@@ -6,12 +6,12 @@ First Order of Decay Calculations are [widely used](https://pubmed.ncbi.nlm.nih.
 
 With Corticon, using two rules, we can create a web service or JavaScript function that will automatically ingest the inputs and execute this calculation. These rules leverage this specification from the UN's Intergovernmental Panel on Climate Change:
 
-![Alt text](images/gas_sshot-49.png)
+![](images/gas_sshot-49.png)
 
 Equation 2A1.2 Expressed in Corticon
  
-![Alt text](images/gas_2A1.2.png)
+![](images/gas_2A1.2.png)
 
 Result from Corticon = 90.48 
 
-![Alt text](images/gas_Picture3.png)
+![](images/gas_Picture3.png)

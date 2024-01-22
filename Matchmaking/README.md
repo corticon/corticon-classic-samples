@@ -42,7 +42,7 @@ Note that the rules must apply both ways between the two people
 
 ## The Process
 
-![Alt text](images/Matchmaking_Binder1.png)
+![](images/Matchmaking_Binder1.png)
 
 1. Step 1 will try all possible pairs of people to see which ones match on location, age and gender. When two matching people are found, a possible match record will be created that refers to the two people.
 2. Step 2 will examine each of the possible match records from step 1, calculate the number of shared interests and check that they are acceptable to both people. A score will also be calculated based on the number of shared interests and the age difference. A larger score means a better match.
@@ -59,36 +59,36 @@ Depending on whether age difference or number of interests was the more importan
 ### Match Persons Based on Location, Age and Gender
 
 
-![Alt text](images/Matchmaking_sshot-73.png)
+![](images/Matchmaking_sshot-73.png)
 
 _Natural language representation (effectively a specification)_
 
 A possible implementation where `criteria1` and 2 refer to the selection criteria for person1 and 2.
 
-![Alt text](images/Matchmaking_sshot-74.png)
+![](images/Matchmaking_sshot-74.png)
 
 Rule statements that generate audit trail messages might look like this:
 
-![Alt text](images/Matchmaking_sshot-75.png)
+![](images/Matchmaking_sshot-75.png)
 
 Attributes enclosed in {} will be replaced by actual values at run time.
 
 ### Match Interests and Calculate a Score
 
-![Alt text](images/Matchmaking_sshot-76.png)
+![](images/Matchmaking_sshot-76.png)
 
-![Alt text](images/Matchmaking_sshot-1.png)
+![](images/Matchmaking_sshot-1.png)
 
 ### The Vocabulary
 
 The data passed to the rules will be in this form:
 
-![Alt text](images/Matchmaking_sshot-2.png)
+![](images/Matchmaking_sshot-2.png)
 
 The rules will apply the matching logic and create
 instances of Match where appropriate:
 
-![Alt text](images/Matchmaking_sshot-3.png)
+![](images/Matchmaking_sshot-3.png)
 
 ### Commentary on the Data Model
 Some of the other vendor solutions use a flattened data structure. For example the attributes of the Criteria object could be defined at the Person level. This works fine as long as you only want to allow a
@@ -108,13 +108,15 @@ This is something that’s harder to do with the flattened data model.
 
 ### Test Cases
 
-![Alt text](images/Matchmaking_sshot-4.png)
-![Alt text](images/Matchmaking_sshot-5.png)
-![Alt text](images/Matchmaking_sshot-6.png)
+![](images/Matchmaking_sshot-4.png)
+
+![](images/Matchmaking_sshot-5.png)
+
+![](images/Matchmaking_sshot-6.png)
 
 This has Jane and Jim from the challenge description, but we’ve also added Tom (age 31) to show how the scoring works. The rules produce these conclusions:
 
-![Alt text](images/Matchmaking_sshot-7.png)
+![](images/Matchmaking_sshot-7.png)
 
 Jane-Tom gets a lower score (3.33) than Jane-Jim (5.0) because of the greater difference in ages.
 
@@ -137,7 +139,7 @@ access
 
 Here’s what the modified scope and filter would look like:
 
-![Alt text](images/Matchmaking_sshot-8.png)
+![](images/Matchmaking_sshot-8.png)
 
 Notice that the Person with the little disk icon is the “someone” being searched for in the database whereas the Person designated “searcher” is the one that was passed into
 the rules to drive the search. The filters with the disk icon show that the query is processed on the database side.
@@ -145,4 +147,4 @@ the rules to drive the search. The filters with the disk icon show that the quer
 The rules themselves don’t need to change (they don’t care about or need to know the source of the data) except for using
 a different alias to the Person object to distinguish the searcher from someone being searched. So now instead of comparing NxN pairs of people, we only need to compare X (where  < N; X is the size of the set with location matching the searcher).
 
-![Alt text](images/Matchmaking_sshot-9.png)
+![](images/Matchmaking_sshot-9.png)

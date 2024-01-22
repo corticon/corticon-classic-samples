@@ -7,4 +7,4 @@ With these rules you can calculate what the value of X dollars will be in the fu
 - Simple or Compound Interest
 - If Compound, then over what frequency schedule: daily, monthly, annually?
 
-![Alt text](images/compound_interest_test.png)
+![](images/compound_interest_test.png)

@@ -15,24 +15,24 @@ The Rules:
 
 ## Rule Vocabulary
 
-![Alt text](images/commission_sshot-40.png)
+![](images/commission_sshot-40.png)
 
 ## Calculating the quarterly commission rate
 
-![Alt text](images/commission_sshot-41.png)
+![](images/commission_sshot-41.png)
 
 ## Calculating the quarterly commission
 
-![Alt text](images/commission_sshot-42.png)
+![](images/commission_sshot-42.png)
 
 ## Calculating cumulative commission
 
-![Alt text](images/commission_sshot-43.png)
+![](images/commission_sshot-43.png)
 
 ## Test Case
 
-![Alt text](images/commission_sshot-45.png)
+![](images/commission_sshot-45.png)
 
 ## Test Results
 
-![Alt text](images/commission_sshot-47.png)
+![](images/commission_sshot-47.png)

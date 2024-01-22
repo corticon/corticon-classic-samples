@@ -14,7 +14,7 @@ Internal Rate of Return (IRR) is a financial measure used, among other things, t
 
 The internal rate of return is solved for by using the formula:
 
-![Alt text](images/internal-rate-of-return-main-formula-1-1536x256.jpg)
+![](images/internal-rate-of-return-main-formula-1-1536x256.jpg)
 
 Plugging in our numbers, we have: 
 
