@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="2" buildNumber="8020" updateStamp="_1tE-020sEe6R-Lxwg-jRHg" externalChecksum="3538238644:507989954:2614682131" studioType="Java" rulesheetAssets="../Rulesheets/Site%20Area.ers#/">
+  <ruleflow majorVersion="1" vocabularyUpdateStamp="_g-tHwm0rEe6R-Lxwg-jRHg" vocabulary="../Vocabulary/Rule%20Vocabulary.ecore#/">
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="CorticonREST.retrieveData" order="1" ruleActivityUpdateStamp="_1tE-0W0sEe6R-Lxwg-jRHg" nextStep="#//@ruleflow/@flowControlList.1" invokes="#//@ruleflow/@connectorList.0"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Site Area" order="2" ruleActivityUpdateStamp="_06WhaW0sEe6R-Lxwg-jRHg" invokes="../Rulesheets/Site%20Area.ers#//@ruleset"/>
+    <connectorList className="CorticonREST" serviceName="retrieveData">
+      <connectorDecryptedProperties name="Datasource Name" value="NREL"/>
+      <connectorDecryptedProperties name="Primary Entity" value="Site"/>
+      <connectorDecryptedProperties name="address" value="Site.address"/>
+    </connectorList>
+  </ruleflow>
+  <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="112" y="188" width="309" height="83" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.0"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="495" y="270" width="217" height="81" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.1"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.0" targetShape="#//@ruleflowViewList.0/@flowShapeList.1"/>
+  </ruleflowViewList>
+</com.corticon.rulesemf.assetmodel:RuleflowAsset>

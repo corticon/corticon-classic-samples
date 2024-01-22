@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
+  <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="2" buildNumber="8020" updateStamp="_xQxbEG26Ee6TOLEzZv_fAg" externalChecksum="3538238644:507989954" studioType="Java" customDataTypeDisplayCount="50">
+      <languageCode>en_US</languageCode>
+      <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_wS2aQG26Ee6TOLEzZv_fAg" key="12" type="Validation" severity="Warning" invalidObjects="#//Site/%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0" textKey="VocabularyModelAPIImpl.Validation.DatabaseMetadata.EntityIdentityAssociationNotDefinedForPrimaryKeyColumn" locationKey="VocabularyModelAPIImpl.Validation.Location.Entity">
+        <textVariables>Site</textVariables>
+        <textVariables>AUTOREST.REST_DATA</textVariables>
+        <textVariables>VERSION</textVariables>
+        <locationVariables>Site</locationVariables>
+      </validationMessages>
+      <databaseAccess databasePropertyDisplayCount="50"/>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//aspect">
+        <dataTypeName manuallyCreated="true" value="aspect"/>
+        <baseDataType manuallyCreated="true" value="String"/>
+        <enumeration value="true"/>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'North'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'South'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'East'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'West'"/>
+        </enumerationElements>
+      </customDataTypeList>
+      <vocabularyMappings name="NREL" ID="REST_2" mappingType="REST">
+        <mappingProperties key="SERVER">
+          <value manuallyCreated="true" value="com.corticon.database.id.AUTOREST"/>
+        </mappingProperties>
+        <mappingProperties key="AUTHENTICATION_TYPE">
+          <value manuallyCreated="true" value="UrlParameter"/>
+        </mappingProperties>
+        <mappingProperties key="SCHEMA">
+          <value manuallyCreated="true" value="AUTOREST"/>
+        </mappingProperties>
+        <mappingProperties key="REST_URL">
+          <value manuallyCreated="true" value="https://developer.nrel.gov/api/solar/solar_resource/v1.json"/>
+        </mappingProperties>
+        <mappingProperties key="REST_PARAMETERS">
+          <value manuallyCreated="true" value="address=Tremont%20St,%20Boston,%20MA%2002111"/>
+        </mappingProperties>
+        <mappingProperties key="AUTHENTICATION_FIELD">
+          <value manuallyCreated="true" value="api_key"/>
+        </mappingProperties>
+        <mappingProperties key="AUTHENTICATION_TOKEN">
+          <value manuallyCreated="true" value="063013006037007004061018016023037097055019019045062004118023019000037042006054020035026001008043062090043038091033050024"/>
+        </mappingProperties>
+        <mappingProperties key="REST_PATH_PARAMETERS"/>
+        <mappingProperties key="REST_POST_PARAMETERS"/>
+        <mappingProperties key="REST_SCHEMA">
+          <value manuallyCreated="true" value="{&#xD;&#xA;&#x9;&quot;REST_DATA&quot;:{&#xD;&#xA;&#x9;&#x9;&quot;#path&quot;:[&#xD;&#xA;&#x9;&#x9;&#x9;&quot;https://developer.nrel.gov/api/solar/solar_resource/v1.json&quot;&#xD;&#xA;&#x9;&#x9;],&#xD;&#xA;&#x9;&#x9;&quot;version&quot;:&quot;VarChar(64),#key&quot;,&#xD;&#xA;&#x9;&#x9;&quot;warnings&quot;:&quot;JSON&quot;,&#xD;&#xA;&#x9;&#x9;&quot;errors&quot;:&quot;JSON&quot;,&#xD;&#xA;&#x9;&#x9;&quot;metadata&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;sources[]&quot;:&quot;VarChar(64)&quot;&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&quot;inputs&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;address&quot;:&quot;VarChar(64)&quot;&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&quot;outputs&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;avg_dni&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;annual&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;monthly&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jan&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;feb&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;mar&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;apr&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;may&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jun&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jul&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;aug&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;sep&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;oct&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;nov&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;dec&quot;:&quot;Double&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;&quot;avg_ghi&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;annual&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;monthly&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jan&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;feb&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;mar&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;apr&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;may&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jun&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jul&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;aug&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;sep&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;oct&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;nov&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;dec&quot;:&quot;Double&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;&quot;avg_lat_tilt&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;annual&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;monthly&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jan&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;feb&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;mar&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;apr&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;may&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jun&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jul&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;aug&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;sep&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;oct&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;nov&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;dec&quot;:&quot;Double&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&quot;address&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#type&quot;:&quot;VarChar(64),#key&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#virtual&quot;:true,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#default&quot;:&quot;Tremont St, Boston, MA 02111&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#eq&quot;:&quot;address&quot;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;}&#xD;&#xA;}"/>
+        </mappingProperties>
+        <entityMappings element="#//Site">
+          <mappingProperties key="identity">
+            <value manuallyCreated="true" value="address"/>
+          </mappingProperties>
+          <mappingProperties key="tableName">
+            <value manuallyCreated="true" value="AUTOREST.REST_DATA"/>
+          </mappingProperties>
+          <children element="#//Site/address">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="ADDRESS"/>
+            </mappingProperties>
+          </children>
+          <children element="#//Site/avgDailyRadiation_kWh">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="OUTPUTS_AVG_DNI_ANNUAL"/>
+            </mappingProperties>
+          </children>
+        </entityMappings>
+        <databaseMetadata>
+          <tableMetadataList schemaName="AUTOREST" tableName="REST_DATA" tableType="TABLE">
+            <columnMetadataList columnName="VERSION" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="WARNINGS" jdbcDataType="VARCHAR" sqlDataType="JSON" columnSize="16777215" decimalDigits="-1"/>
+            <columnMetadataList columnName="ERRORS" jdbcDataType="VARCHAR" sqlDataType="JSON" columnSize="16777215" decimalDigits="-1"/>
+            <columnMetadataList columnName="INPUTS_ADDRESS" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_ANNUAL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_JAN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_FEB" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_MAR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_APR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_MAY" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_JUN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_JUL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_AUG" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_SEP" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_OCT" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_NOV" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_DEC" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_ANNUAL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_JAN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_FEB" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_MAR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_APR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_MAY" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_JUN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_JUL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_AUG" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_SEP" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_OCT" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_NOV" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_DEC" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_ANNUAL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_JAN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_FEB" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_MAR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_APR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_MAY" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_JUN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_JUL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_AUG" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_SEP" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_OCT" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_NOV" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_DEC" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="ADDRESS" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK_AUTOREST_REST_DATA" primaryKeySchemaName="AUTOREST" primaryKeyTableName="REST_DATA">
+              <primaryKeyColumnMetadataList sequenceNumber="2" primaryKeyColumnName="ADDRESS"/>
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="VERSION"/>
+            </primaryKeyMetadataList>
+            <foreignKeyMetadataList foreignKeyName="REST_DATAVERSIONADDRESS_to_SOURCESREST_DATA_VERSIONREST_DATA_ADDRESSPOSITION" foreignKeySchemaName="AUTOREST" foreignKeyTableName="SOURCES">
+              <foreignKeyColumnMetadataList sequenceNumber="1" foreignKeyColumnName="REST_DATA_VERSION" primaryKeyColumnName="VERSION"/>
+              <foreignKeyColumnMetadataList sequenceNumber="2" foreignKeyColumnName="REST_DATA_ADDRESS" primaryKeyColumnName="ADDRESS"/>
+            </foreignKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList schemaName="AUTOREST" tableName="SOURCES" tableType="TABLE">
+            <columnMetadataList columnName="REST_DATA_VERSION" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="REST_DATA_ADDRESS" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="POSITION" jdbcDataType="INTEGER" sqlDataType="Integer" columnSize="10"/>
+            <columnMetadataList columnName="SOURCE" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK_AUTOREST_SOURCES" primaryKeySchemaName="AUTOREST" primaryKeyTableName="SOURCES">
+              <primaryKeyColumnMetadataList sequenceNumber="3" primaryKeyColumnName="POSITION"/>
+              <primaryKeyColumnMetadataList sequenceNumber="2" primaryKeyColumnName="REST_DATA_ADDRESS"/>
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="REST_DATA_VERSION"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList schemaName="AUTOREST" tableName="_CONFIGURATION" tableType="TABLE">
+            <columnMetadataList columnName="ID" jdbcDataType="INTEGER" sqlDataType="Integer" columnSize="10"/>
+            <columnMetadataList columnName="CONTENT" jdbcDataType="LONGVARCHAR" sqlDataType="LongVarChar" columnSize="16777215" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK_AUTOREST__CONFIGURATION" primaryKeySchemaName="AUTOREST" primaryKeyTableName="_CONFIGURATION">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="ID"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+        </databaseMetadata>
+      </vocabularyMappings>
+      <vocabularyMappings name="REST Service" ID="REST_3" mappingType="REST">
+        <mappingProperties key="SERVER">
+          <value manuallyCreated="true" value="com.corticon.database.id.AUTOREST"/>
+        </mappingProperties>
+        <mappingProperties key="AUTHENTICATION_TYPE">
+          <value manuallyCreated="true" value="UrlParameter"/>
+        </mappingProperties>
+        <mappingProperties key="SCHEMA">
+          <value manuallyCreated="true" value="AUTOREST"/>
+        </mappingProperties>
+        <mappingProperties key="REST_URL">
+          <value manuallyCreated="true" value="https://developer.nrel.gov/api/solar/solar_resource/v1.json"/>
+        </mappingProperties>
+        <mappingProperties key="REST_PARAMETERS">
+          <value manuallyCreated="true" value="address=Tremont%20St,%20Boston,%20MA%2002111"/>
+        </mappingProperties>
+        <mappingProperties key="AUTHENTICATION_TOKEN">
+          <value manuallyCreated="true" value="063013006037007004061018016023037097055019019045062004118023019000037042006054020035026001008043062090043038091033050024"/>
+        </mappingProperties>
+        <mappingProperties key="AUTHENTICATION_FIELD">
+          <value manuallyCreated="true" value="api_key"/>
+        </mappingProperties>
+        <mappingProperties key="REST_PATH_PARAMETERS"/>
+        <mappingProperties key="REST_POST_PARAMETERS"/>
+        <mappingProperties key="REST_SCHEMA">
+          <value manuallyCreated="true" value="{&#xD;&#xA;&#x9;&quot;REST_DATA&quot;:{&#xD;&#xA;&#x9;&#x9;&quot;#path&quot;:[&#xD;&#xA;&#x9;&#x9;&#x9;&quot;https://developer.nrel.gov/api/solar/solar_resource/v1.json&quot;&#xD;&#xA;&#x9;&#x9;],&#xD;&#xA;&#x9;&#x9;&quot;version&quot;:&quot;VarChar(64),#key&quot;,&#xD;&#xA;&#x9;&#x9;&quot;warnings&quot;:&quot;JSON&quot;,&#xD;&#xA;&#x9;&#x9;&quot;errors&quot;:&quot;JSON&quot;,&#xD;&#xA;&#x9;&#x9;&quot;metadata&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;sources[]&quot;:&quot;VarChar(64)&quot;&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&quot;inputs&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;address&quot;:&quot;VarChar(64)&quot;&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&quot;outputs&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;avg_dni&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;annual&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;monthly&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jan&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;feb&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;mar&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;apr&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;may&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jun&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jul&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;aug&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;sep&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;oct&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;nov&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;dec&quot;:&quot;Double&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;&quot;avg_ghi&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;annual&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;monthly&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jan&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;feb&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;mar&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;apr&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;may&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jun&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jul&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;aug&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;sep&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;oct&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;nov&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;dec&quot;:&quot;Double&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&#x9;&quot;avg_lat_tilt&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;annual&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&quot;monthly&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jan&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;feb&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;mar&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;apr&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;may&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jun&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;jul&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;aug&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;sep&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;oct&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;nov&quot;:&quot;Double&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;&quot;dec&quot;:&quot;Double&quot;&#xD;&#xA;&#x9;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;&#x9;}&#xD;&#xA;&#x9;&#x9;},&#xD;&#xA;&#x9;&#x9;&quot;address&quot;:{&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#type&quot;:&quot;VarChar(64),#key&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#virtual&quot;:true,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#default&quot;:&quot;Tremont St, Boston, MA 02111&quot;,&#xD;&#xA;&#x9;&#x9;&#x9;&quot;#eq&quot;:&quot;address&quot;&#xD;&#xA;&#x9;&#x9;}&#xD;&#xA;&#x9;}&#xD;&#xA;}"/>
+        </mappingProperties>
+        <databaseMetadata>
+          <tableMetadataList schemaName="AUTOREST" tableName="REST_DATA" tableType="TABLE">
+            <columnMetadataList columnName="VERSION" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="WARNINGS" jdbcDataType="VARCHAR" sqlDataType="JSON" columnSize="16777215" decimalDigits="-1"/>
+            <columnMetadataList columnName="ERRORS" jdbcDataType="VARCHAR" sqlDataType="JSON" columnSize="16777215" decimalDigits="-1"/>
+            <columnMetadataList columnName="INPUTS_ADDRESS" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_ANNUAL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_JAN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_FEB" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_MAR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_APR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_MAY" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_JUN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_JUL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_AUG" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_SEP" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_OCT" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_NOV" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_DNI_MONTHLY_DEC" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_ANNUAL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_JAN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_FEB" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_MAR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_APR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_MAY" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_JUN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_JUL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_AUG" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_SEP" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_OCT" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_NOV" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_GHI_MONTHLY_DEC" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_ANNUAL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_JAN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_FEB" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_MAR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_APR" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_MAY" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_JUN" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_JUL" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_AUG" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_SEP" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_OCT" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_NOV" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="OUTPUTS_AVG_LAT_TILT_MONTHLY_DEC" jdbcDataType="DOUBLE" sqlDataType="Double" columnSize="53" decimalDigits="-1"/>
+            <columnMetadataList columnName="ADDRESS" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK_AUTOREST_REST_DATA" primaryKeySchemaName="AUTOREST" primaryKeyTableName="REST_DATA">
+              <primaryKeyColumnMetadataList sequenceNumber="2" primaryKeyColumnName="ADDRESS"/>
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="VERSION"/>
+            </primaryKeyMetadataList>
+            <foreignKeyMetadataList foreignKeyName="REST_DATAVERSIONADDRESS_to_SOURCESREST_DATA_VERSIONREST_DATA_ADDRESSPOSITION" foreignKeySchemaName="AUTOREST" foreignKeyTableName="SOURCES">
+              <foreignKeyColumnMetadataList sequenceNumber="1" foreignKeyColumnName="REST_DATA_VERSION" primaryKeyColumnName="VERSION"/>
+              <foreignKeyColumnMetadataList sequenceNumber="2" foreignKeyColumnName="REST_DATA_ADDRESS" primaryKeyColumnName="ADDRESS"/>
+            </foreignKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList schemaName="AUTOREST" tableName="SOURCES" tableType="TABLE">
+            <columnMetadataList columnName="REST_DATA_VERSION" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="REST_DATA_ADDRESS" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <columnMetadataList columnName="POSITION" jdbcDataType="INTEGER" sqlDataType="Integer" columnSize="10"/>
+            <columnMetadataList columnName="SOURCE" jdbcDataType="VARCHAR" sqlDataType="VarChar" columnSize="64" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK_AUTOREST_SOURCES" primaryKeySchemaName="AUTOREST" primaryKeyTableName="SOURCES">
+              <primaryKeyColumnMetadataList sequenceNumber="3" primaryKeyColumnName="POSITION"/>
+              <primaryKeyColumnMetadataList sequenceNumber="2" primaryKeyColumnName="REST_DATA_ADDRESS"/>
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="REST_DATA_VERSION"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList schemaName="AUTOREST" tableName="_CONFIGURATION" tableType="TABLE">
+            <columnMetadataList columnName="ID" jdbcDataType="INTEGER" sqlDataType="Integer" columnSize="10"/>
+            <columnMetadataList columnName="CONTENT" jdbcDataType="LONGVARCHAR" sqlDataType="LongVarChar" columnSize="16777215" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK_AUTOREST__CONFIGURATION" primaryKeySchemaName="AUTOREST" primaryKeyTableName="_CONFIGURATION">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="ID"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+        </databaseMetadata>
+      </vocabularyMappings>
+    </contents>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Site">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension" validationMessages="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@validationMessages.0">
+        <name manuallyCreated="true" value="Site"/>
+        <datastorePersistent manuallyCreated="true" value="false"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="squareMeters" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="squareMeters"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="panel" upperBound="-1" eType="#//Panel" eOpposite="#//Panel/site">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="panel"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="length"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="width"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="maxPanels" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="maxPanels"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="aspect" eType="#//aspect">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.0">
+          <name manuallyCreated="true" value="aspect"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="annualRadiation_kWh" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="annualRadiation_kWh"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="slopeDegrees" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="slopeDegrees"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isSuitable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="isSuitable"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="address" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="address"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="avgDailyRadiation_kWh" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="avgDailyRadiation_kWh"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Panel">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Panel"/>
+        <datastorePersistent manuallyCreated="true" value="false"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="site" lowerBound="1" eType="#//Site" eOpposite="#//Site/panel">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="site"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="length" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="length"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="squareMeters" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="squareMeters"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="width" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="width"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="aspect">
+    <eLiterals name="V0" literal="'North'"/>
+    <eLiterals name="V1" value="1" literal="'South'"/>
+    <eLiterals name="V2" value="2" literal="'East'"/>
+    <eLiterals name="V3" value="3" literal="'West'"/>
+  </eClassifiers>
+</ecore:EPackage>

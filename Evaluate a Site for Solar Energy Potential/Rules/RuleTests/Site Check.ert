@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="2" buildNumber="8020" updateStamp="_gzxkwG0YEe6R-Lxwg-jRHg" externalChecksum="3538238644:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="2" buildNumber="8020" updateStamp="_5O9SQm29Ee6TOLEzZv_fAg" externalChecksum="3538238644:507989954">
+    <testsheet ruleActivityUpdateStamp="_xRCg2m26Ee6TOLEzZv_fAg" ruleActivity="../Rulesheets/Site%20Area.ers#//@ruleset" locale="">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Site area is 2880.000 meters"/>
+        <PostedMessage severity="Info" text="Site area is 2080.000 meters"/>
+        <PostedMessage severity="Warning" text="Site.avgDailyRadiation_kWh is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Site.avgDailyRadiation_kWh is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Violation" text="Annual solar radiation is not at least 800 kWh."/>
+        <PostedMessage severity="Info" text="Areas with a slope of 10° or less are determined as suitable areas regardless of the aspect."/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabulary/Rule%20Vocabulary.ecore#//Site">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="700.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/annualRadiation_kWh"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="East" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/aspect"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="40.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/slopeDegrees"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="52.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/width"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="../Vocabulary/Rule%20Vocabulary.ecore#//Site">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="900.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/annualRadiation_kWh"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="North" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/aspect"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="60.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="8.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/slopeDegrees"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="48.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/width"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="../Vocabulary/Rule%20Vocabulary.ecore#//Site">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2080.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/squareMeters"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/isSuitable"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="18.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/slopeDegrees"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="East" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/aspect"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="40.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="52.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/width"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="700.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/annualRadiation_kWh"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="../Vocabulary/Rule%20Vocabulary.ecore#//Site">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2880.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/squareMeters"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="true" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/isSuitable"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/slopeDegrees"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="North" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/aspect"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="60.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="48.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/width"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="900.000" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/annualRadiation_kWh"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+      </outputMessageSection>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="2" buildNumber="8020" updateStamp="_5O9SQW29Ee6TOLEzZv_fAg" externalChecksum="3538238644:507989954">
+    <testsheet ruleActivityUpdateStamp="_xRCg2m26Ee6TOLEzZv_fAg" ruleActivity="../Rulesheets/Site%20Area.ers#//@ruleset">
+      <input/>
+      <output/>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="../Vocabulary/Rule%20Vocabulary.ecore#//Site">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/annualRadiation_kWh"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/aspect"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/isSuitable"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/length"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/maxPanels"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/slopeDegrees"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/squareMeters"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="../Vocabulary/Rule%20Vocabulary.ecore#//Site/width"/>
+        </children>
+      </inputRoot>
+      <outputRoot/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_xQxbEG26Ee6TOLEzZv_fAg" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet" vocabulary="../Vocabulary/Rule%20Vocabulary.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="untitled_1"/>
+    <testTabList name="untitled_2"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

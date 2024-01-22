@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="2" buildNumber="8020" updateStamp="_hBuPAm25Ee6TOLEzZv_fAg" externalChecksum="3538238644:507989954:2614682131" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_-bepMW23Ee6TOLEzZv_fAg" vocabulary="../../Solar%20Begin/Rule%20Vocabulary.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0" overriddenBy="#//@ruleset/@rules.3">
+      <condition>
+        <opaqueExpression expression="Site.slope &lt; 45">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.slope &lt; 45" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="slope" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Site.slope">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Site.slope" rhs="&lt; 45"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Site.isSuitable = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.isSuitable = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isSuitable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Site.isSuitable">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule overriddenBy="#//@ruleset/@rules.3">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Site.radiation >= 800">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.radiation >= 800" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="radiation" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Site.radiation">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Site.radiation" rhs=">= 800"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Site.isSuitable = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.isSuitable = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isSuitable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Site.isSuitable">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule overrides="#//@ruleset/@rules.1 #//@ruleset/@rules.2" overriddenBy="#//@ruleset/@rules.4">
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Site.aspect = 'North'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.aspect = 'North'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="aspect" datatype="String" termtype="ATTRIBUTE" fulltext="Site.aspect">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Site.aspect" rhs="'North'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Site.isSuitable = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.isSuitable = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isSuitable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Site.isSuitable">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule overrides="#//@ruleset/@rules.3">
+      <condition>
+        <opaqueExpression expression="Site.slope &lt; 10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.slope &lt; 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="slope" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Site.slope">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Site.slope" rhs="&lt; 10"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Site.isSuitable = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.isSuitable = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isSuitable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Site.isSuitable">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="The slope is under 45 degrees so it's suitable">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The slope is under 45 degrees so it's suitable" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="../../Solar%20Begin/Rule%20Vocabulary.ecore#//Site" ruleStatements="#//@ruleset/@ruleStatements.0">
+      <referencedAttributes attribute="../../Solar%20Begin/Rule%20Vocabulary.ecore#//Site/slope"/>
+      <referencedAttributes attribute="../../Solar%20Begin/Rule%20Vocabulary.ecore#//Site/isSuitable"/>
+      <referencedAttributes attribute="../../Solar%20Begin/Rule%20Vocabulary.ecore#//Site/radiation"/>
+      <referencedAttributes attribute="../../Solar%20Begin/Rule%20Vocabulary.ecore#//Site/aspect"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsIf="22">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Site.isSuitable">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.isSuitable" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isSuitable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Site.isSuitable">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="The slope is under 45 degrees so it's suitable">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="The slope is under 45 degrees so it's suitable" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Site.slope">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.slope" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="slope" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Site.slope">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Site.radiation">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.radiation" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="radiation" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Site.radiation">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Site.aspect">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.aspect" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="aspect" datatype="String" termtype="ATTRIBUTE" fulltext="Site.aspect">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="&lt; 45">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.slope &lt; 45" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="slope" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Site.slope">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.isSuitable = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isSuitable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Site.isSuitable">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Site" datatype="Site" termtype="ENTITY" fulltext="Site"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet=">= 800">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.radiation >= 800" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="radiation" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Site.radiation">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.isSuitable = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isSuitable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Site.isSuitable">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Site" datatype="Site" termtype="ENTITY" fulltext="Site"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <overrideValueSetCell valueSet="{1, 2}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="'North'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.aspect = 'North'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="aspect" datatype="String" termtype="ATTRIBUTE" fulltext="Site.aspect">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.isSuitable = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isSuitable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Site.isSuitable">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Site" datatype="Site" termtype="ENTITY" fulltext="Site"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <overrideValueSetCell valueSet="3"/>
+        <conditionValueSetCellList valueSet="&lt; 10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.slope &lt; 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="slope" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Site.slope">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Site.isSuitable = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isSuitable" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Site.isSuitable">
+                <parentTerm text="Site" datatype="Site" termtype="ENTITY" fulltext="Site"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Site" datatype="Site" termtype="ENTITY" fulltext="Site"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
