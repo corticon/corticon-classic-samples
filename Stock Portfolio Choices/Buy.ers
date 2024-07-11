@@ -1,0 +1,1583 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="7" minorServiceNumber="1" buildNumber="8020" updateStamp="_pVG7ID02Ee-Ch5Hj3cIWkw" externalChecksum="2722078124:507989954:2304733958" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_bWb2QD01Ee-Ch5Hj3cIWkw" vocabulary="Vocabulary.ecore#/">
+    <rule>
+      <condition/>
+      <condition/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Portfolio.futureValue=allStocks.netFutureValue->sum">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.futureValue = allStocks.netFutureValue->sum" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="futureValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.futureValue">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="allStocks_netFutureValue" datatype="Integer" termtype="COLLECTION" fulltext="allStocks.netFutureValue->sum">
+                <parentTerm text="netFutureValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="allStocks.netFutureValue">
+                  <parentTerm text="allStocks" datatype="Stock" termtype="ENTITY" fulltext="allStocks" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                    <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="allStocks.netFutureValue=allStocks.futurePrice*allStocks.quantity">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="allStocks.netFutureValue = allStocks.futurePrice * allStocks.quantity" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="netFutureValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="allStocks.netFutureValue">
+                <parentTerm text="allStocks" datatype="Stock" termtype="ENTITY" fulltext="allStocks" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="allStocks.quantity">
+                <parentTerm text="allStocks" datatype="Stock" termtype="ENTITY" fulltext="allStocks" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="futurePrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="allStocks.futurePrice">
+                <parentTerm text="allStocks" datatype="Stock" termtype="ENTITY" fulltext="allStocks" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="allStocks" datatype="Stock" termtype="ENTITY" fulltext="allStocks" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule overrides="#//@ruleset/@rules.2 #//@ruleset/@rules.3 #//@ruleset/@rules.4">
+      <condition>
+        <opaqueExpression expression="(ranked1.netCurrentValue&lt;5000)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( ranked1.netCurrentValue &lt; 5000 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.netCurrentValue">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="ranked1.netCurrentValue&lt;5000" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Portfolio.cash>=ranked1.currentPrice)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Portfolio.cash >= ranked1.currentPrice ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.currentPrice">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Portfolio.cash>=ranked1.currentPrice" rhs="T"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action>
+        <opaqueExpression expression="ranked1.quantity+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked1.quantity = ranked1.quantity + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.quantity">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.quantity">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="ranked1.netCurrentValue+=ranked1.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked1.netCurrentValue = ranked1.netCurrentValue + ranked1.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.netCurrentValue">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.currentPrice">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.netCurrentValue">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Portfolio.cash-=ranked1.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash = Portfolio.cash - ranked1.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.currentPrice">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule overrides="#//@ruleset/@rules.3 #//@ruleset/@rules.4" overriddenBy="#//@ruleset/@rules.1">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(ranked2.netCurrentValue&lt;5000)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( ranked2.netCurrentValue &lt; 5000 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.netCurrentValue">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="ranked2.netCurrentValue&lt;5000" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Portfolio.cash>=ranked2.currentPrice)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Portfolio.cash >= ranked2.currentPrice ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.currentPrice">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Portfolio.cash>=ranked2.currentPrice" rhs="T"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="ranked2.quantity+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked2.quantity = ranked2.quantity + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.quantity">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.quantity">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="ranked2.netCurrentValue+=ranked2.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked2.netCurrentValue = ranked2.netCurrentValue + ranked2.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.netCurrentValue">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.currentPrice">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.netCurrentValue">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Portfolio.cash-=ranked2.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash = Portfolio.cash - ranked2.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.currentPrice">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule overrides="#//@ruleset/@rules.4" overriddenBy="#//@ruleset/@rules.1 #//@ruleset/@rules.2">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(ranked3.netCurrentValue&lt;5000)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( ranked3.netCurrentValue &lt; 5000 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.netCurrentValue">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="ranked3.netCurrentValue&lt;5000" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Portfolio.cash>=ranked3.currentPrice)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Portfolio.cash >= ranked3.currentPrice ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.currentPrice">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Portfolio.cash>=ranked3.currentPrice" rhs="T"/>
+      </condition>
+      <condition/>
+      <condition/>
+      <condition/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="ranked3.quantity+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked3.quantity = ranked3.quantity + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.quantity">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.quantity">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="ranked3.netCurrentValue+=ranked3.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked3.netCurrentValue = ranked3.netCurrentValue + ranked3.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.netCurrentValue">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.currentPrice">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.netCurrentValue">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Portfolio.cash-=ranked3.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash = Portfolio.cash - ranked3.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.currentPrice">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule overriddenBy="#//@ruleset/@rules.1 #//@ruleset/@rules.2 #//@ruleset/@rules.3">
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(ranked4.netCurrentValue&lt;5000)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( ranked4.netCurrentValue &lt; 5000 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.netCurrentValue">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="ranked4.netCurrentValue&lt;5000" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Portfolio.cash>=ranked4.currentPrice)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Portfolio.cash >= ranked4.currentPrice ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.currentPrice">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Portfolio.cash>=ranked4.currentPrice" rhs="T"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="ranked4.quantity+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked4.quantity = ranked4.quantity + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.quantity">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.quantity">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="ranked4.netCurrentValue+=ranked4.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked4.netCurrentValue = ranked4.netCurrentValue + ranked4.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.netCurrentValue">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.netCurrentValue">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.currentPrice">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Portfolio.cash-=ranked4.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash = Portfolio.cash - ranked4.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.currentPrice">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+      <opaqueExpression expression="ranked1.roiRank=1">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked1.roiRank = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="roiRank" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.roiRank">
+              <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.1">
+      <opaqueExpression expression="ranked2.roiRank=2">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked2.roiRank = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="roiRank" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.roiRank">
+              <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.2">
+      <opaqueExpression expression="ranked3.roiRank=3">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked3.roiRank = 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="roiRank" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.roiRank">
+              <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.3">
+      <opaqueExpression expression="ranked4.roiRank=4">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked4.roiRank = 4" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="roiRank" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.roiRank">
+              <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable entity="Vocabulary.ecore#//Portfolio" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.3">
+      <extension explicit="true" association="true" entity="Vocabulary.ecore#//Stock" traversedAssocRole="Vocabulary.ecore#//Portfolio/stock" filters="#//@ruleset/@filters.0">
+        <alias value="ranked1"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/roi"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/roiRank"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/netCurrentValue"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/quantity"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/currentPrice"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/futurePrice"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Vocabulary.ecore#//Stock" traversedAssocRole="Vocabulary.ecore#//Portfolio/stock" filters="#//@ruleset/@filters.1">
+        <alias value="ranked2"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/roiRank"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/netCurrentValue"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/currentPrice"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/quantity"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Vocabulary.ecore#//Stock" traversedAssocRole="Vocabulary.ecore#//Portfolio/stock" filters="#//@ruleset/@filters.2">
+        <alias value="ranked3"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/roiRank"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/netCurrentValue"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/currentPrice"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/quantity"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Vocabulary.ecore#//Stock" traversedAssocRole="Vocabulary.ecore#//Portfolio/stock" filters="#//@ruleset/@filters.3">
+        <alias value="ranked4"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/roiRank"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/netCurrentValue"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/currentPrice"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/quantity"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Vocabulary.ecore#//Stock" traversedAssocRole="Vocabulary.ecore#//Portfolio/stock">
+        <alias value="allStocks"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/currentPrice"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/netFutureValue"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/quantity"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Stock/futurePrice"/>
+      </extension>
+      <referencedAttributes attribute="Vocabulary.ecore#//Portfolio/cash"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Portfolio/futureValue"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="18" sashWeightScope="54" sashWeightConditionsActions="40" sashWeightConditionsIf="37">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <naturalLanguageText value="Add 1 to ranked1.quantity"/>
+        <valueSetCell/>
+        <expressionCell external="ranked1.quantity+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked1.quantity = ranked1.quantity + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.quantity">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.quantity">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Add ranked1.currentPrice to ranked1.netCurrent Value"/>
+        <valueSetCell/>
+        <expressionCell external="ranked1.netCurrentValue+=ranked1.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked1.netCurrentValue = ranked1.netCurrentValue + ranked1.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.netCurrentValue">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.currentPrice">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.netCurrentValue">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Subtract ranked1.currentPrice from Portfolio.cash"/>
+        <valueSetCell/>
+        <expressionCell external="Portfolio.cash-=ranked1.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash = Portfolio.cash - ranked1.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.currentPrice">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Add 1 to ranked2.quantity"/>
+        <valueSetCell/>
+        <expressionCell external="ranked2.quantity+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked2.quantity = ranked2.quantity + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.quantity">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.quantity">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Add ranked2.currentPrice to ranked2.netCurrent Value"/>
+        <valueSetCell/>
+        <expressionCell external="ranked2.netCurrentValue+=ranked2.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked2.netCurrentValue = ranked2.netCurrentValue + ranked2.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.netCurrentValue">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.currentPrice">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.netCurrentValue">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Subtract ranked1.currentPrice from Portfolio.cash"/>
+        <valueSetCell/>
+        <expressionCell external="Portfolio.cash-=ranked2.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash = Portfolio.cash - ranked2.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.currentPrice">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Add 1 to ranked3.quantity"/>
+        <valueSetCell/>
+        <expressionCell external="ranked3.quantity+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked3.quantity = ranked3.quantity + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.quantity">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.quantity">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Add ranked3.currentPrice to ranked3.netCurrent Value"/>
+        <valueSetCell/>
+        <expressionCell external="ranked3.netCurrentValue+=ranked3.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked3.netCurrentValue = ranked3.netCurrentValue + ranked3.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.netCurrentValue">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.currentPrice">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.netCurrentValue">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Subtract ranked1.currentPrice from Portfolio.cash"/>
+        <valueSetCell/>
+        <expressionCell external="Portfolio.cash-=ranked3.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash = Portfolio.cash - ranked3.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.currentPrice">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Add 1 to ranked4.quantity"/>
+        <valueSetCell/>
+        <expressionCell external="ranked4.quantity+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked4.quantity = ranked4.quantity + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.quantity">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.quantity">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Add ranked4.currentPrice to ranked4.netCurrent Value"/>
+        <valueSetCell/>
+        <expressionCell external="ranked4.netCurrentValue+=ranked4.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked4.netCurrentValue = ranked4.netCurrentValue + ranked4.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.netCurrentValue">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.netCurrentValue">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.currentPrice">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Subtract ranked1.currentPrice from Portfolio.cash"/>
+        <valueSetCell/>
+        <expressionCell external="Portfolio.cash-=ranked4.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash = Portfolio.cash - ranked4.currentPrice" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.currentPrice">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Set portfolio future value to be the sum of all holdings' net future values"/>
+        <valueSetCell/>
+        <expressionCell external="Portfolio.futureValue=allStocks.netFutureValue->sum">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.futureValue = allStocks.netFutureValue->sum" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="futureValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.futureValue">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="allStocks_netFutureValue" datatype="Integer" termtype="COLLECTION" fulltext="allStocks.netFutureValue->sum">
+                <parentTerm text="netFutureValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="allStocks.netFutureValue">
+                  <parentTerm text="allStocks" datatype="Stock" termtype="ENTITY" fulltext="allStocks" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                    <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+              <terms text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="57">
+        <naturalLanguageText value="Set the sum of all holdings' net future values to be their future price * the quantity held"/>
+        <valueSetCell/>
+        <expressionCell external="allStocks.netFutureValue=allStocks.futurePrice*allStocks.quantity">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="allStocks.netFutureValue = allStocks.futurePrice * allStocks.quantity" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="netFutureValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="allStocks.netFutureValue">
+                <parentTerm text="allStocks" datatype="Stock" termtype="ENTITY" fulltext="allStocks" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="quantity" datatype="Integer" termtype="ATTRIBUTE" fulltext="allStocks.quantity">
+                <parentTerm text="allStocks" datatype="Stock" termtype="ENTITY" fulltext="allStocks" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="futurePrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="allStocks.futurePrice">
+                <parentTerm text="allStocks" datatype="Stock" termtype="ENTITY" fulltext="allStocks" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="allStocks" datatype="Stock" termtype="ENTITY" fulltext="allStocks" variable="#//@ruleset/@logicalVariables.0/@extension.4">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="ranked1.roiRank=1" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="ranked2.roiRank=2" filter="#//@ruleset/@filters.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="ranked3.roiRank=3" filter="#//@ruleset/@filters.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="ranked4.roiRank=4" filter="#//@ruleset/@filters.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="ranked1.roiRank=1" filter="#//@ruleset/@filters.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.3"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.4"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.5"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="ranked2.roiRank=2" filter="#//@ruleset/@filters.1"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="ranked3.roiRank=3" filter="#//@ruleset/@filters.2"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.3">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="ranked4.roiRank=4" filter="#//@ruleset/@filters.3"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.3/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.3/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.3/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.3/@referencedAttributes.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.4">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.4/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.4/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.4/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.4/@referencedAttributes.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="49">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="ranked1.roiRank=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked1.roiRank = 1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="roiRank" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.roiRank">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="Alias 'ranked1' for the instance of Portfolio.stock where Portfolio.stock.roiRank = 1"/>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="ranked2.roiRank=2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked2.roiRank = 2" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="roiRank" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.roiRank">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="Alias 'ranked2' for the instance of Portfolio.stock where Portfolio.stock.roiRank = 2"/>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.2">
+        <expressionCell external="ranked3.roiRank=3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked3.roiRank = 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="roiRank" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.roiRank">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="Alias 'ranked3' for the instance of Portfolio.stock where Portfolio.stock.roiRank = 3"/>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.3">
+        <expressionCell external="ranked4.roiRank=4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked4.roiRank = 4" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="roiRank" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.roiRank">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="Alias 'ranked4' for the instance of Portfolio.stock where Portfolio.stock.roiRank = 4"/>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <naturalLanguageText value="netCurrentValue of 'ranked1' alias &lt; 5000 (T/F)"/>
+        <valueSetCell/>
+        <expressionCell external="ranked1.netCurrentValue&lt;5000">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked1.netCurrentValue &lt; 5000" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.netCurrentValue">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList rowHeight="26">
+        <naturalLanguageText value="Cash on hand is >= current price of 'ranked1'"/>
+        <valueSetCell/>
+        <expressionCell external="Portfolio.cash>=ranked1.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash >= ranked1.currentPrice" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.currentPrice">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </conditionItemList>
+      <conditionItemList>
+        <naturalLanguageText value="netCurrentValue of 'ranked2' alias &lt; 5000 (T/F)"/>
+        <valueSetCell/>
+        <expressionCell external="ranked2.netCurrentValue&lt;5000">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked2.netCurrentValue &lt; 5000" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.netCurrentValue">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <naturalLanguageText value="Cash on hand is >= current price of 'ranked2'"/>
+        <valueSetCell/>
+        <expressionCell external="Portfolio.cash>=ranked2.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash >= ranked2.currentPrice" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.currentPrice">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </conditionItemList>
+      <conditionItemList>
+        <naturalLanguageText value="netCurrentValue of 'ranked3' alias &lt; 5000 (T/F)"/>
+        <valueSetCell/>
+        <expressionCell external="ranked3.netCurrentValue&lt;5000">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked3.netCurrentValue &lt; 5000" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.netCurrentValue">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <naturalLanguageText value="Cash on hand is >= current price of 'ranked3'"/>
+        <valueSetCell/>
+        <expressionCell external="Portfolio.cash>=ranked3.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash >= ranked3.currentPrice" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.currentPrice">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </conditionItemList>
+      <conditionItemList>
+        <naturalLanguageText value="netCurrentValue of 'ranked4' alias &lt; 5000 (T/F)"/>
+        <valueSetCell/>
+        <expressionCell external="ranked4.netCurrentValue&lt;5000">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="ranked4.netCurrentValue &lt; 5000" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.netCurrentValue">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <naturalLanguageText value="Cash on hand is >= current price of 'ranked4'"/>
+        <valueSetCell/>
+        <expressionCell external="Portfolio.cash>=ranked4.currentPrice">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Portfolio.cash >= ranked4.currentPrice" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.currentPrice">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="74" pRule="#//@ruleset/@rules.1">
+        <overrideValueSetCell valueSet="{2, 3, 4}"/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( ranked1.netCurrentValue &lt; 5000 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.netCurrentValue">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Portfolio.cash >= ranked1.currentPrice ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked1.currentPrice">
+                <parentTerm text="ranked1" datatype="Stock" termtype="ENTITY" fulltext="ranked1" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <overrideValueSetCell valueSet="{3, 4}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( ranked2.netCurrentValue &lt; 5000 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.netCurrentValue">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Portfolio.cash >= ranked2.currentPrice ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked2.currentPrice">
+                <parentTerm text="ranked2" datatype="Stock" termtype="ENTITY" fulltext="ranked2" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <overrideValueSetCell valueSet="4"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( ranked3.netCurrentValue &lt; 5000 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.netCurrentValue">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Portfolio.cash >= ranked3.currentPrice ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked3.currentPrice">
+                <parentTerm text="ranked3" datatype="Stock" termtype="ENTITY" fulltext="ranked3" variable="#//@ruleset/@logicalVariables.0/@extension.2">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( ranked4.netCurrentValue &lt; 5000 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="netCurrentValue" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.netCurrentValue">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Portfolio.cash >= ranked4.currentPrice ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="cash" datatype="Integer" termtype="ATTRIBUTE" fulltext="Portfolio.cash">
+                <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="currentPrice" datatype="Integer" termtype="ATTRIBUTE" fulltext="ranked4.currentPrice">
+                <parentTerm text="ranked4" datatype="Stock" termtype="ENTITY" fulltext="ranked4" variable="#//@ruleset/@logicalVariables.0/@extension.3">
+                  <parentTerm text="Portfolio" datatype="Portfolio" termtype="ENTITY" fulltext="Portfolio" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
