@@ -1,4 +1,4 @@
-/****** Object:  UserDefinedFunction [dbo].[GetTripDetailsWithDriverInfo]    Script Date: 9/16/2024 9:37:59 PM ******/
+/****** Object:  UserDefinedFunction [dbo].[GetTripDetailsWithDriverInfo]    Script Date: 9/17/2024 8:57:43 PM ******/
 SET ANSI_NULLS ON
 GO
 

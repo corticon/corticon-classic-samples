@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="7" minorServiceNumber="3" buildNumber="8021" updateStamp="_Nu4AUH9gEe-zR6Q1c5DP0A" externalChecksum="2722078124:507989954:434831388" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_Bo3uQHzjEe-upYPr9ka_Jw" vocabulary="../../vocab.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="Driver.temp = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Driver.temp = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="temp" datatype="Integer" termtype="ATTRIBUTE" fulltext="Driver.temp">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="(statuses->exists(dutyStatus='Off Duty' and durationHours>=34))=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( statuses ->exists( statuses.dutyStatus = 'Off Duty' and statuses.durationHours >= 34 ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="statuses" datatype="Boolean" termtype="COLLECTION" fulltext="statuses->notEmpty">
+                <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="dutyStatus" datatype="String" termtype="ATTRIBUTE" fulltext="statuses.dutyStatus">
+                <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="durationHours" datatype="Decimal" termtype="ATTRIBUTE" fulltext="statuses.durationHours">
+                <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="statuses->exists(dutyStatus='Off Duty' and durationHours>=34)" rhs="F"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="statusesInPeriod+=statuses">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="statusesInPeriod += statuses" datatype="DriverStatusChange" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="statusesInPeriod" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statusesInPeriod" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                <parentTerm text="allPeriods" datatype="Period" termtype="ENTITY" fulltext="allPeriods" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="allPeriods" datatype="Period" termtype="ENTITY" fulltext="allPeriods" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.1">
+      <opaqueExpression expression="statuses.statusStart>=allPeriods.day1">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="statuses.statusStart >= allPeriods.day1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="statusStart" datatype="DateTime" termtype="ATTRIBUTE" fulltext="statuses.statusStart">
+              <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="day1" datatype="DateTime" termtype="ATTRIBUTE" fulltext="allPeriods.day1">
+              <parentTerm text="allPeriods" datatype="Period" termtype="ENTITY" fulltext="allPeriods" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.1">
+      <opaqueExpression expression="statuses.statusEnd&lt;=allPeriods.day8">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="statuses.statusEnd &lt;= allPeriods.day8" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="statusEnd" datatype="DateTime" termtype="ATTRIBUTE" fulltext="statuses.statusEnd">
+              <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="day8" datatype="DateTime" termtype="ATTRIBUTE" fulltext="allPeriods.day8">
+              <parentTerm text="allPeriods" datatype="Period" termtype="ENTITY" fulltext="allPeriods" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable entity="../../vocab.ecore#//Driver">
+      <extension explicit="true" association="true" entity="../../vocab.ecore#//DriverStatusChange" traversedAssocRole="../../vocab.ecore#//Driver/driverStatusChange" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1">
+        <alias value="statuses"/>
+        <referencedAttributes attribute="../../vocab.ecore#//DriverStatusChange/statusStart"/>
+        <referencedAttributes attribute="../../vocab.ecore#//DriverStatusChange/dutyStatus"/>
+        <referencedAttributes attribute="../../vocab.ecore#//DriverStatusChange/statusEnd"/>
+        <referencedAttributes attribute="../../vocab.ecore#//DriverStatusChange/durationMins"/>
+        <referencedAttributes attribute="../../vocab.ecore#//DriverStatusChange/periodIDs"/>
+        <referencedAttributes attribute="../../vocab.ecore#//DriverStatusChange/durationHours"/>
+      </extension>
+      <extension explicit="true" association="true" entity="../../vocab.ecore#//Period" traversedAssocRole="../../vocab.ecore#//Driver/period" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1">
+        <alias value="allPeriods"/>
+        <extension explicit="true" association="true" entity="../../vocab.ecore#//DriverStatusChange" traversedAssocRole="../../vocab.ecore#//Period/driverStatusChange">
+          <alias value="statusesInPeriod"/>
+        </extension>
+        <referencedAttributes attribute="../../vocab.ecore#//Period/day1"/>
+        <referencedAttributes attribute="../../vocab.ecore#//Period/day8"/>
+        <referencedAttributes attribute="../../vocab.ecore#//Period/id"/>
+      </extension>
+      <extension explicit="true" association="true" entity="../../vocab.ecore#//DriverStatusChange" traversedAssocRole="../../vocab.ecore#//Driver/driverStatusChange">
+        <alias value="offDuty"/>
+        <referencedAttributes attribute="../../vocab.ecore#//DriverStatusChange/dutyStatus"/>
+        <referencedAttributes attribute="../../vocab.ecore#//DriverStatusChange/statusEnd"/>
+        <referencedAttributes attribute="../../vocab.ecore#//DriverStatusChange/statusStart"/>
+        <referencedAttributes attribute="../../vocab.ecore#//DriverStatusChange/durationHours"/>
+      </extension>
+      <referencedAttributes attribute="../../vocab.ecore#//Driver/driverID"/>
+      <referencedAttributes attribute="../../vocab.ecore#//Driver/temp"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="34" sashWeightScope="63" sashWeightConditionsActions="40" sashWeightConditionsIf="30">
+    <actionSection rowCount="42" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Driver.temp">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Driver.temp" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="temp" datatype="Integer" termtype="ATTRIBUTE" fulltext="Driver.temp">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet=""/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet=""/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell/>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="statusesInPeriod+=statuses">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="statusesInPeriod += statuses" datatype="DriverStatusChange" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="statusesInPeriod" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statusesInPeriod" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                <parentTerm text="allPeriods" datatype="Period" termtype="ENTITY" fulltext="allPeriods" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="allPeriods" datatype="Period" termtype="ENTITY" fulltext="allPeriods" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder" expanded="true">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="statuses.statusStart>=allPeriods.day1" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="statuses.statusEnd&lt;=allPeriods.day8" filter="#//@ruleset/@filters.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="statuses.statusStart>=allPeriods.day1" filter="#//@ruleset/@filters.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="statuses.statusEnd&lt;=allPeriods.day8" filter="#//@ruleset/@filters.1"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.3"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.4"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.5"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="statuses.statusStart>=allPeriods.day1" filter="#//@ruleset/@filters.0"/>
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="statuses.statusEnd&lt;=allPeriods.day8" filter="#//@ruleset/@filters.1"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.2">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.2/@referencedAttributes.3"/>
+          </children>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="45">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="statuses.statusStart>=allPeriods.day1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="statuses.statusStart >= allPeriods.day1" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="statusStart" datatype="DateTime" termtype="ATTRIBUTE" fulltext="statuses.statusStart">
+                <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="day1" datatype="DateTime" termtype="ATTRIBUTE" fulltext="allPeriods.day1">
+                <parentTerm text="allPeriods" datatype="Period" termtype="ENTITY" fulltext="allPeriods" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="statuses.statusEnd&lt;=allPeriods.day8">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="statuses.statusEnd &lt;= allPeriods.day8" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="statusEnd" datatype="DateTime" termtype="ATTRIBUTE" fulltext="statuses.statusEnd">
+                <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="day8" datatype="DateTime" termtype="ATTRIBUTE" fulltext="allPeriods.day8">
+                <parentTerm text="allPeriods" datatype="Period" termtype="ENTITY" fulltext="allPeriods" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="48" columnWidthFactor="0.5">
+      <conditionItemList rowHeight="155">
+        <valueSetCell/>
+        <expressionCell external="statuses->exists(dutyStatus='Off Duty' and durationHours>=34)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="statuses ->exists( statuses.dutyStatus = 'Off Duty' and statuses.durationHours >= 34 )" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="statuses" datatype="Boolean" termtype="COLLECTION" fulltext="statuses->notEmpty">
+                <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="dutyStatus" datatype="String" termtype="ATTRIBUTE" fulltext="statuses.dutyStatus">
+                <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="durationHours" datatype="Decimal" termtype="ATTRIBUTE" fulltext="statuses.durationHours">
+                <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="118" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Driver.temp = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="temp" datatype="Integer" termtype="ATTRIBUTE" fulltext="Driver.temp">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( statuses ->exists( statuses.dutyStatus = 'Off Duty' and statuses.durationHours >= 34 ) ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="statuses" datatype="Boolean" termtype="COLLECTION" fulltext="statuses->notEmpty">
+                <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="dutyStatus" datatype="String" termtype="ATTRIBUTE" fulltext="statuses.dutyStatus">
+                <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="durationHours" datatype="Decimal" termtype="ATTRIBUTE" fulltext="statuses.durationHours">
+                <parentTerm text="statuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="statuses" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

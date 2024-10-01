@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="7" minorServiceNumber="3" buildNumber="8021" updateStamp="_6bi8MH9kEe-zR6Q1c5DP0A" externalChecksum="2722078124:507989954:434831388" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_Bo3uQHzjEe-upYPr9ka_Jw" vocabulary="../vocab.ecore#/">
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition/>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="(offDutyStatuses->size=windowsOffDuty->size)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( offDutyStatuses->size = windowsOffDuty->size ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="offDutyStatuses" datatype="Integer" termtype="COLLECTION" fulltext="offDutyStatuses->size">
+                <parentTerm text="offDutyStatuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="offDutyStatuses" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="windowsOffDuty" datatype="Integer" termtype="COLLECTION" fulltext="windowsOffDuty->size">
+                <parentTerm text="windowsOffDuty" datatype="ShiftWindow" termtype="ENTITY" fulltext="windowsOffDuty" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="offDutyStatuses->size=windowsOffDuty->size" rhs="F"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="windowsOffDuty+=ShiftWindow.newUnique[windowID = Driver.temp, statusEnd = offDutyStatuses ->sortedBy (statusEnd)->at(Driver.temp).statusEnd, statusStart = offDutyStatuses ->sortedBy (statusEnd)->at(Driver.temp).statusStart, isOffDuty = T]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="windowsOffDuty += ShiftWindow.newUnique [ ShiftWindow.windowID = Driver.temp , ShiftWindow.statusStart = offDutyStatuses->sortedBy ( offDutyStatuses.statusEnd )->at ( Driver.temp ).statusStart , ShiftWindow.statusEnd = offDutyStatuses->sortedBy ( offDutyStatuses.statusEnd )->at ( Driver.temp ).statusEnd , ShiftWindow.isOffDuty = T ]" datatype="ShiftWindow" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="windowsOffDuty" datatype="ShiftWindow" termtype="ENTITY" fulltext="windowsOffDuty" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="windowID" datatype="Integer" termtype="ATTRIBUTE" fulltext="ShiftWindow.windowID">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="statusEnd" datatype="DateTime" termtype="ATTRIBUTE" fulltext="offDutyStatuses.statusEnd">
+                <parentTerm text="offDutyStatuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="offDutyStatuses" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="temp" datatype="Integer" termtype="ATTRIBUTE" fulltext="Driver.temp">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="isOffDuty" datatype="Boolean" termtype="ATTRIBUTE" fulltext="ShiftWindow.isOffDuty">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="statusStart" datatype="DateTime" termtype="ATTRIBUTE" fulltext="ShiftWindow.statusStart">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="offDutyStatuses" datatype="DriverStatusChange" termtype="COLLECTION" fulltext="offDutyStatuses->asSequence->at( ((Long)lobjDriver.getAtempAttr())">
+                <parentTerm text="offDutyStatuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="offDutyStatuses" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="temp" datatype="Integer" termtype="ATTRIBUTE" fulltext="Driver.temp">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="new" datatype="ShiftWindow" termtype="NEW" fulltext="ShiftWindow.new">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="statusEnd" datatype="DateTime" termtype="ATTRIBUTE" fulltext="ShiftWindow.statusEnd">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="statusStart" datatype="DateTime" termtype="ATTRIBUTE" fulltext="offDutyStatuses.statusStart">
+                <parentTerm text="offDutyStatuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="offDutyStatuses" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Driver.temp+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Driver.temp = Driver.temp + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="temp" datatype="Integer" termtype="ATTRIBUTE" fulltext="Driver.temp">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="temp" datatype="Integer" termtype="ATTRIBUTE" fulltext="Driver.temp">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0/@extension.1 #//@ruleset/@logicalVariables.0">
+      <opaqueExpression expression="offDutyStatuses.dutyStatus='Off Duty'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="offDutyStatuses.dutyStatus = 'Off Duty'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="dutyStatus" datatype="String" termtype="ATTRIBUTE" fulltext="offDutyStatuses.dutyStatus">
+              <parentTerm text="offDutyStatuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="offDutyStatuses" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.0"/>
+    <logicalVariable entity="../vocab.ecore#//Driver" filters="#//@ruleset/@filters.0">
+      <extension explicit="true" association="true" entity="../vocab.ecore#//ShiftWindow" traversedAssocRole="../vocab.ecore#//Driver/drivingWindow">
+        <alias value="windowsOffDuty"/>
+        <referencedAttributes attribute="../vocab.ecore#//ShiftWindow/statusEnd"/>
+      </extension>
+      <extension explicit="true" association="true" entity="../vocab.ecore#//DriverStatusChange" traversedAssocRole="../vocab.ecore#//Driver/driverStatusChange" filters="#//@ruleset/@filters.0">
+        <alias value="offDutyStatuses"/>
+        <referencedAttributes attribute="../vocab.ecore#//DriverStatusChange/RecordID"/>
+        <referencedAttributes attribute="../vocab.ecore#//DriverStatusChange/dutyStatus"/>
+        <referencedAttributes attribute="../vocab.ecore#//DriverStatusChange/statusEnd"/>
+        <referencedAttributes attribute="../vocab.ecore#//DriverStatusChange/statusStart"/>
+      </extension>
+      <referencedAttributes attribute="../vocab.ecore#//Driver/driverID"/>
+      <referencedAttributes attribute="../vocab.ecore#//Driver/temp"/>
+      <referencedAttributes attribute="../vocab.ecore#//Driver/offDutyCount"/>
+    </logicalVariable>
+    <logicalVariable entity="../vocab.ecore#//ShiftWindow">
+      <referencedAttributes attribute="../vocab.ecore#//ShiftWindow/statusStart"/>
+      <referencedAttributes attribute="../vocab.ecore#//ShiftWindow/windowID"/>
+      <referencedAttributes attribute="../vocab.ecore#//ShiftWindow/statusEnd"/>
+      <referencedAttributes attribute="../vocab.ecore#//ShiftWindow/isOffDuty"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="35" sashWeightScope="60" sashWeightConditionsActions="30" sashWeightConditionsIf="54">
+    <actionSection rowCount="43" columnWidthFactor="0.5">
+      <actionItemList rowHeight="253">
+        <valueSetCell/>
+        <expressionCell external="windowsOffDuty+=ShiftWindow.newUnique[windowID = Driver.temp, statusEnd = offDutyStatuses ->sortedBy (statusEnd)->at(Driver.temp).statusEnd, statusStart = offDutyStatuses ->sortedBy (statusEnd)->at(Driver.temp).statusStart, isOffDuty = T]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="windowsOffDuty += ShiftWindow.newUnique [ ShiftWindow.windowID = Driver.temp , ShiftWindow.statusStart = offDutyStatuses->sortedBy ( offDutyStatuses.statusEnd )->at ( Driver.temp ).statusStart , ShiftWindow.statusEnd = offDutyStatuses->sortedBy ( offDutyStatuses.statusEnd )->at ( Driver.temp ).statusEnd , ShiftWindow.isOffDuty = T ]" datatype="ShiftWindow" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="windowsOffDuty" datatype="ShiftWindow" termtype="ENTITY" fulltext="windowsOffDuty" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="windowID" datatype="Integer" termtype="ATTRIBUTE" fulltext="ShiftWindow.windowID">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="statusEnd" datatype="DateTime" termtype="ATTRIBUTE" fulltext="offDutyStatuses.statusEnd">
+                <parentTerm text="offDutyStatuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="offDutyStatuses" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="temp" datatype="Integer" termtype="ATTRIBUTE" fulltext="Driver.temp">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="isOffDuty" datatype="Boolean" termtype="ATTRIBUTE" fulltext="ShiftWindow.isOffDuty">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="statusStart" datatype="DateTime" termtype="ATTRIBUTE" fulltext="ShiftWindow.statusStart">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="offDutyStatuses" datatype="DriverStatusChange" termtype="COLLECTION" fulltext="offDutyStatuses->asSequence->at( ((Long)lobjDriver.getAtempAttr())">
+                <parentTerm text="offDutyStatuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="offDutyStatuses" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="temp" datatype="Integer" termtype="ATTRIBUTE" fulltext="Driver.temp">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="new" datatype="ShiftWindow" termtype="NEW" fulltext="ShiftWindow.new">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="statusEnd" datatype="DateTime" termtype="ATTRIBUTE" fulltext="ShiftWindow.statusEnd">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="statusStart" datatype="DateTime" termtype="ATTRIBUTE" fulltext="offDutyStatuses.statusStart">
+                <parentTerm text="offDutyStatuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="offDutyStatuses" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet=""/>
+        <expressionCell external="Driver.temp+=1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Driver.temp = Driver.temp + 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="temp" datatype="Integer" termtype="ATTRIBUTE" fulltext="Driver.temp">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="temp" datatype="Integer" termtype="ATTRIBUTE" fulltext="Driver.temp">
+                <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder" expanded="true">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="offDutyStatuses.dutyStatus='Off Duty'" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="offDutyStatuses.dutyStatus='Off Duty'" filter="#//@ruleset/@filters.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="41">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="offDutyStatuses.dutyStatus='Off Duty'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="offDutyStatuses.dutyStatus = 'Off Duty'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dutyStatus" datatype="String" termtype="ATTRIBUTE" fulltext="offDutyStatuses.dutyStatus">
+                <parentTerm text="offDutyStatuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="offDutyStatuses" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="alias for Driver.driverStatusChange of 'offDutyStatuses' when the value of Driver.driverStatusChange.dutyStatus =  'Off Duty'"/>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="357" columnWidthID="50" columnWidthText="1614" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="0"/>
+        <text/>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="43" columnWidthFactor="0.5">
+      <conditionItemList>
+        <naturalLanguageText value="Is the size of the collection of ShiftWindows for this Driver the same size as the collection of DriverStatusChange for this driver where DriverStatusChange.dutyStatus = 'Off Duty'?"/>
+        <valueSetCell/>
+        <expressionCell external="offDutyStatuses->size=windowsOffDuty->size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="offDutyStatuses->size = windowsOffDuty->size" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="offDutyStatuses" datatype="Integer" termtype="COLLECTION" fulltext="offDutyStatuses->size">
+                <parentTerm text="offDutyStatuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="offDutyStatuses" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="windowsOffDuty" datatype="Integer" termtype="COLLECTION" fulltext="windowsOffDuty->size">
+                <parentTerm text="windowsOffDuty" datatype="ShiftWindow" termtype="ENTITY" fulltext="windowsOffDuty" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="19">
+      <ruleColumnList ruleId="0" columnWidth="234" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( offDutyStatuses->size = windowsOffDuty->size ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="offDutyStatuses" datatype="Integer" termtype="COLLECTION" fulltext="offDutyStatuses->size">
+                <parentTerm text="offDutyStatuses" datatype="DriverStatusChange" termtype="ENTITY" fulltext="offDutyStatuses" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="windowsOffDuty" datatype="Integer" termtype="COLLECTION" fulltext="windowsOffDuty->size">
+                <parentTerm text="windowsOffDuty" datatype="ShiftWindow" termtype="ENTITY" fulltext="windowsOffDuty" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Driver" datatype="Driver" termtype="ENTITY" fulltext="Driver" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

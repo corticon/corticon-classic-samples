@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="7" minorServiceNumber="3" buildNumber="8021" updateStamp="_9pPGkH9sEe-zR6Q1c5DP0A" externalChecksum="2722078124:507989954:434831388" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_Bo3uQHzjEe-upYPr9ka_Jw" vocabulary="../vocab.ecore#/">
+    <rule>
+      <condition/>
+      <condition/>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="DriverStatusChange.durationHours >RegulatoryThresholds.periodNotOffDutyMaxDrivingHoursTotal">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="DriverStatusChange.durationHours > RegulatoryThresholds.periodNotOffDutyMaxDrivingHoursTotal" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="periodNotOffDutyMaxDrivingHoursTotal" datatype="Integer" termtype="ATTRIBUTE" fulltext="RegulatoryThresholds.periodNotOffDutyMaxDrivingHoursTotal">
+                <parentTerm text="RegulatoryThresholds" datatype="RegulatoryThresholds" termtype="ENTITY" fulltext="RegulatoryThresholds" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="durationHours" datatype="Decimal" termtype="ATTRIBUTE" fulltext="DriverStatusChange.durationHours">
+                <parentTerm text="DriverStatusChange" datatype="DriverStatusChange" termtype="ENTITY" fulltext="DriverStatusChange" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="DriverStatusChange.durationHours" rhs=">RegulatoryThresholds.periodNotOffDutyMaxDrivingHoursTotal"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="DriverStatusChange.dutyStatus = 'Driving'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="DriverStatusChange.dutyStatus = 'Driving'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dutyStatus" datatype="String" termtype="ATTRIBUTE" fulltext="DriverStatusChange.dutyStatus">
+                <parentTerm text="DriverStatusChange" datatype="DriverStatusChange" termtype="ENTITY" fulltext="DriverStatusChange" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="DriverStatusChange.dutyStatus" rhs="'Driving'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="flags+=HOS_flag.newUnique[when='Driving shift of ' + DriverStatusChange.durationHours.toString + ' beginning ' +DriverStatusChange.statusStart.toString, type='>11 hour driving within 14 hour period on duty']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="flags += HOS_flag.newUnique [ HOS_flag.when = 'Driving shift of ' + DriverStatusChange.durationHours.toString + ' beginning ' + DriverStatusChange.statusStart.toString , HOS_flag.type = '>11 hour driving within 14 hour period on duty' ]" datatype="HOS_flag" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="flags" datatype="HOS_flag" termtype="ENTITY" fulltext="flags" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="driver" datatype="Driver" termtype="ENTITY" fulltext="ShiftWindow.driver" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="toString" datatype="String" termtype="METHOD" fulltext="DriverStatusChange.statusStart.toString">
+                <parentTerm text="statusStart" datatype="DateTime" termtype="ATTRIBUTE" fulltext="DriverStatusChange.statusStart">
+                  <parentTerm text="DriverStatusChange" datatype="DriverStatusChange" termtype="ENTITY" fulltext="DriverStatusChange" variable="#//@ruleset/@logicalVariables.2"/>
+                </parentTerm>
+              </terms>
+              <terms text="toString" datatype="String" termtype="METHOD" fulltext="DriverStatusChange.durationHours.toString">
+                <parentTerm text="durationHours" datatype="Decimal" termtype="ATTRIBUTE" fulltext="DriverStatusChange.durationHours">
+                  <parentTerm text="DriverStatusChange" datatype="DriverStatusChange" termtype="ENTITY" fulltext="DriverStatusChange" variable="#//@ruleset/@logicalVariables.2"/>
+                </parentTerm>
+              </terms>
+              <terms text="HOS_flag" datatype="HOS_flag" termtype="ENTITY" fulltext="HOS_flag" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="when" datatype="String" termtype="ATTRIBUTE" fulltext="HOS_flag.when">
+                <parentTerm text="HOS_flag" datatype="HOS_flag" termtype="ENTITY" fulltext="HOS_flag" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="HOS_flag.type">
+                <parentTerm text="HOS_flag" datatype="HOS_flag" termtype="ENTITY" fulltext="HOS_flag" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="driver" datatype="Driver" termtype="ENTITY" fulltext="ShiftWindow.driver" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="new" datatype="HOS_flag" termtype="NEW" fulltext="HOS_flag.new">
+                <parentTerm text="HOS_flag" datatype="HOS_flag" termtype="ENTITY" fulltext="HOS_flag" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="../vocab.ecore#//ShiftWindow">
+      <extension association="true" entity="../vocab.ecore#//Driver" traversedAssocRole="../vocab.ecore#//ShiftWindow/driver">
+        <extension explicit="true" association="true" entity="../vocab.ecore#//HOS_flag" traversedAssocRole="../vocab.ecore#//Driver/hOS_flag">
+          <alias value="flags"/>
+        </extension>
+      </extension>
+      <referencedAttributes attribute="../vocab.ecore#//ShiftWindow/drivingDurationHrs"/>
+      <referencedAttributes attribute="../vocab.ecore#//ShiftWindow/statusStart"/>
+    </logicalVariable>
+    <logicalVariable entity="../vocab.ecore#//HOS_flag">
+      <referencedAttributes attribute="../vocab.ecore#//HOS_flag/when"/>
+      <referencedAttributes attribute="../vocab.ecore#//HOS_flag/type"/>
+    </logicalVariable>
+    <logicalVariable entity="../vocab.ecore#//DriverStatusChange">
+      <extension association="true" entity="../vocab.ecore#//Driver" traversedAssocRole="../vocab.ecore#//DriverStatusChange/driver">
+        <extension association="true" entity="../vocab.ecore#//HOS_flag" traversedAssocRole="../vocab.ecore#//Driver/hOS_flag"/>
+      </extension>
+      <referencedAttributes attribute="../vocab.ecore#//DriverStatusChange/durationHours"/>
+      <referencedAttributes attribute="../vocab.ecore#//DriverStatusChange/dutyStatus"/>
+      <referencedAttributes attribute="../vocab.ecore#//DriverStatusChange/statusStart"/>
+    </logicalVariable>
+    <logicalVariable entity="../vocab.ecore#//RegulatoryThresholds">
+      <referencedAttributes attribute="../vocab.ecore#//RegulatoryThresholds/periodNotOffDutyMaxDrivingHoursTotal"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="26" sashWeightScope="63" sashWeightConditionsActions="48" sashWeightConditionsIf="29">
+    <actionSection rowCount="45" columnWidthFactor="0.5">
+      <actionItemList rowHeight="277">
+        <valueSetCell/>
+        <expressionCell external="flags+=HOS_flag.newUnique[when='Driving shift of ' + DriverStatusChange.durationHours.toString + ' beginning ' +DriverStatusChange.statusStart.toString, type='>11 hour driving within 14 hour period on duty']">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="flags += HOS_flag.newUnique [ HOS_flag.when = 'Driving shift of ' + DriverStatusChange.durationHours.toString + ' beginning ' + DriverStatusChange.statusStart.toString , HOS_flag.type = '>11 hour driving within 14 hour period on duty' ]" datatype="HOS_flag" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="flags" datatype="HOS_flag" termtype="ENTITY" fulltext="flags" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="driver" datatype="Driver" termtype="ENTITY" fulltext="ShiftWindow.driver" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="toString" datatype="String" termtype="METHOD" fulltext="DriverStatusChange.statusStart.toString">
+                <parentTerm text="statusStart" datatype="DateTime" termtype="ATTRIBUTE" fulltext="DriverStatusChange.statusStart">
+                  <parentTerm text="DriverStatusChange" datatype="DriverStatusChange" termtype="ENTITY" fulltext="DriverStatusChange" variable="#//@ruleset/@logicalVariables.2"/>
+                </parentTerm>
+              </terms>
+              <terms text="toString" datatype="String" termtype="METHOD" fulltext="DriverStatusChange.durationHours.toString">
+                <parentTerm text="durationHours" datatype="Decimal" termtype="ATTRIBUTE" fulltext="DriverStatusChange.durationHours">
+                  <parentTerm text="DriverStatusChange" datatype="DriverStatusChange" termtype="ENTITY" fulltext="DriverStatusChange" variable="#//@ruleset/@logicalVariables.2"/>
+                </parentTerm>
+              </terms>
+              <terms text="HOS_flag" datatype="HOS_flag" termtype="ENTITY" fulltext="HOS_flag" variable="#//@ruleset/@logicalVariables.1"/>
+              <terms text="when" datatype="String" termtype="ATTRIBUTE" fulltext="HOS_flag.when">
+                <parentTerm text="HOS_flag" datatype="HOS_flag" termtype="ENTITY" fulltext="HOS_flag" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="HOS_flag.type">
+                <parentTerm text="HOS_flag" datatype="HOS_flag" termtype="ENTITY" fulltext="HOS_flag" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="driver" datatype="Driver" termtype="ENTITY" fulltext="ShiftWindow.driver" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="ShiftWindow" datatype="ShiftWindow" termtype="ENTITY" fulltext="ShiftWindow" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="new" datatype="HOS_flag" termtype="NEW" fulltext="HOS_flag.new">
+                <parentTerm text="HOS_flag" datatype="HOS_flag" termtype="ENTITY" fulltext="HOS_flag" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.2/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.2/@extension.0/@extension.0"/>
+          </children>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.3">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.3/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="46"/>
+    <ruleStatementSection rowCount="48" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="533" columnWidthID="50" columnWidthText="1927" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="47" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="DriverStatusChange.durationHours">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="DriverStatusChange.durationHours" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="durationHours" datatype="Decimal" termtype="ATTRIBUTE" fulltext="DriverStatusChange.durationHours">
+                <parentTerm text="DriverStatusChange" datatype="DriverStatusChange" termtype="ENTITY" fulltext="DriverStatusChange" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="DriverStatusChange.dutyStatus">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="DriverStatusChange.dutyStatus" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dutyStatus" datatype="String" termtype="ATTRIBUTE" fulltext="DriverStatusChange.dutyStatus">
+                <parentTerm text="DriverStatusChange" datatype="DriverStatusChange" termtype="ENTITY" fulltext="DriverStatusChange" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="19">
+      <ruleColumnList ruleId="0" columnWidth="142" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList/>
+        <conditionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="768" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet=">RegulatoryThresholds.periodNotOffDutyMaxDrivingHoursTotal">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="DriverStatusChange.durationHours > RegulatoryThresholds.periodNotOffDutyMaxDrivingHoursTotal" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="periodNotOffDutyMaxDrivingHoursTotal" datatype="Integer" termtype="ATTRIBUTE" fulltext="RegulatoryThresholds.periodNotOffDutyMaxDrivingHoursTotal">
+                <parentTerm text="RegulatoryThresholds" datatype="RegulatoryThresholds" termtype="ENTITY" fulltext="RegulatoryThresholds" variable="#//@ruleset/@logicalVariables.3"/>
+              </terms>
+              <terms text="durationHours" datatype="Decimal" termtype="ATTRIBUTE" fulltext="DriverStatusChange.durationHours">
+                <parentTerm text="DriverStatusChange" datatype="DriverStatusChange" termtype="ENTITY" fulltext="DriverStatusChange" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="'Driving'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="DriverStatusChange.dutyStatus = 'Driving'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="dutyStatus" datatype="String" termtype="ATTRIBUTE" fulltext="DriverStatusChange.dutyStatus">
+                <parentTerm text="DriverStatusChange" datatype="DriverStatusChange" termtype="ENTITY" fulltext="DriverStatusChange" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

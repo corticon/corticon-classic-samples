@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
+  <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="7" minorServiceNumber="3" buildNumber="8021" updateStamp="_Bo3uQHzjEe-upYPr9ka_Jw" externalChecksum="2722078124:507989954" studioType="Java" customDataTypeDisplayCount="50">
+      <languageCode>en_US</languageCode>
+      <databaseAccess databasePropertyDisplayCount="50"/>
+      <vocabularyMappings name="ADC" ID="DATABASE_1" mappingType="DATABASE">
+        <mappingProperties key="SERVER">
+          <value manuallyCreated="true" value="com.corticon.database.id.MsSql"/>
+        </mappingProperties>
+        <mappingProperties key="URL">
+          <value manuallyCreated="true" value="jdbc:progress:sqlserver://localhost:1433;databaseName=CorticonFleetManager"/>
+        </mappingProperties>
+        <mappingProperties key="AUTHENTICATION_TYPE">
+          <value manuallyCreated="true" value="Basic"/>
+        </mappingProperties>
+        <mappingProperties key="USERNAME">
+          <value manuallyCreated="true" value="061046"/>
+        </mappingProperties>
+        <mappingProperties key="PASSWORD">
+          <value manuallyCreated="true" value="062046016058035029061039"/>
+        </mappingProperties>
+        <mappingProperties key="SCHEMA">
+          <value manuallyCreated="true" value="dbo"/>
+        </mappingProperties>
+        <entityMappings element="#//DriverStatusChange">
+          <mappingProperties key="identity">
+            <value manuallyCreated="true" value="RecordID"/>
+          </mappingProperties>
+          <children element="#//DriverStatusChange/driver">
+            <mappingProperties key="joinExpression">
+              <value manuallyCreated="true" value="CorticonFleetManager.dbo.DriverStatusChange.driverId=CorticonFleetManager.dbo.Driver.driverId"/>
+            </mappingProperties>
+          </children>
+          <children element="#//DriverStatusChange/RecordID">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="record"/>
+            </mappingProperties>
+          </children>
+          <children element="#//DriverStatusChange/dutyStatus">
+            <mappingProperties key="columnName"/>
+          </children>
+          <children element="#//DriverStatusChange/statusEnd">
+            <mappingProperties key="columnName"/>
+          </children>
+          <children element="#//DriverStatusChange/trip_1">
+            <mappingProperties key="joinExpression">
+              <value manuallyCreated="true" value="CorticonFleetManager.dbo.DriverStatusChange.driverId=CorticonFleetManager.dbo.Trip.driverId"/>
+            </mappingProperties>
+          </children>
+        </entityMappings>
+        <entityMappings element="#//Driver">
+          <mappingProperties key="identity">
+            <value manuallyCreated="true" value="driverID"/>
+          </mappingProperties>
+          <children element="#//Driver/driverStatusChange">
+            <mappingProperties key="joinExpression">
+              <value manuallyCreated="true" value="CorticonFleetManager.dbo.Driver.driverId=CorticonFleetManager.dbo.DriverStatusChange.driverId"/>
+            </mappingProperties>
+          </children>
+          <children element="#//Driver/trip">
+            <mappingProperties key="joinExpression">
+              <value manuallyCreated="true" value="CorticonFleetManager.dbo.Trip.driverId=CorticonFleetManager.dbo.Driver.driverId"/>
+            </mappingProperties>
+          </children>
+        </entityMappings>
+        <entityMappings element="#//Trip">
+          <mappingProperties key="identity">
+            <value manuallyCreated="true" value="tripID"/>
+          </mappingProperties>
+          <children element="#//Trip/driver">
+            <mappingProperties key="joinExpression">
+              <value manuallyCreated="true" value="CorticonFleetManager.dbo.Driver.driverId=CorticonFleetManager.dbo.Trip.driverId"/>
+            </mappingProperties>
+          </children>
+          <children element="#//Trip/driverStatusChange">
+            <mappingProperties key="joinExpression">
+              <value manuallyCreated="true" value="CorticonFleetManager.dbo.Trip.driverId=CorticonFleetManager.dbo.DriverStatusChange.driverId"/>
+            </mappingProperties>
+          </children>
+        </entityMappings>
+        <entityMappings element="#//Vehicle">
+          <mappingProperties key="identity">
+            <value manuallyCreated="true" value="vehicleID"/>
+          </mappingProperties>
+        </entityMappings>
+        <entityMappings element="#//Depot">
+          <mappingProperties key="identity">
+            <value manuallyCreated="true" value="depotID"/>
+          </mappingProperties>
+        </entityMappings>
+        <entityMappings element="#//Destination">
+          <mappingProperties key="identity">
+            <value manuallyCreated="true" value="destinationID"/>
+          </mappingProperties>
+        </entityMappings>
+        <entityMappings element="#//RegulatoryThresholds">
+          <mappingProperties key="identity">
+            <value manuallyCreated="true" value="driverType"/>
+          </mappingProperties>
+          <mappingProperties key="tableName">
+            <value manuallyCreated="true" value="CorticonFleetManager.dbo.thresholds"/>
+          </mappingProperties>
+          <children element="#//RegulatoryThresholds/driverType">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="driverType"/>
+            </mappingProperties>
+          </children>
+          <children element="#//RegulatoryThresholds/periodNotOffDutyMaxDrivingHoursTotal">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="periodNotOffDutyMaxDrivingHoursTotal"/>
+            </mappingProperties>
+          </children>
+          <children element="#//RegulatoryThresholds/periodOffDutyMinHours">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="periodOffDutyMinHours"/>
+            </mappingProperties>
+          </children>
+          <children element="#//RegulatoryThresholds/periodOnDutyNoDriveAfterHour">
+            <mappingProperties key="columnName">
+              <value manuallyCreated="true" value="periodOnDutyNoDriveAfterHour"/>
+            </mappingProperties>
+          </children>
+        </entityMappings>
+        <databaseMetadata>
+          <tableMetadataList catalogName="CorticonFleetManager" schemaName="dbo" tableName="Depot" tableType="TABLE">
+            <columnMetadataList columnName="depotID" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="city" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="lat" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="latLong" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="long" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="state" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="streetAddress" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="tripID" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="zip" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK__Depot__087D3361F026035E" primaryKeyCatalogName="CorticonFleetManager" primaryKeySchemaName="dbo" primaryKeyTableName="Depot">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="depotID"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList catalogName="CorticonFleetManager" schemaName="dbo" tableName="Destination" tableType="TABLE">
+            <columnMetadataList columnName="destinationID" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="city" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="lat" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="latLong" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="long" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="state" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="streetAddress" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="zip" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK__Destinat__3FEE21323940584D" primaryKeyCatalogName="CorticonFleetManager" primaryKeySchemaName="dbo" primaryKeyTableName="Destination">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="destinationID"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList catalogName="CorticonFleetManager" schemaName="dbo" tableName="Driver" tableType="TABLE">
+            <columnMetadataList columnName="driverId" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="assignedVehicleID" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="driveDurationMinutesLast24Hrs" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="driveDurationMinutesLast7Days" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="eld_type" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="email" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="first" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="homeDepot" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="hosStatusType" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="last" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="onDutyDurationLast24Hrs" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="onDutyDurationLast7Days" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="phone" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="RtripAssoc_tripID" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="driverType" jdbcDataType="VARCHAR" sqlDataType="nvarchar" columnSize="250" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK__Driver__F1532C1202208717" primaryKeyCatalogName="CorticonFleetManager" primaryKeySchemaName="dbo" primaryKeyTableName="Driver">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="driverId"/>
+            </primaryKeyMetadataList>
+            <foreignKeyMetadataList foreignKeyName="FK_Driver_Driver" foreignKeyCatalogName="CorticonFleetManager" foreignKeySchemaName="dbo" foreignKeyTableName="Driver">
+              <foreignKeyColumnMetadataList sequenceNumber="1" foreignKeyColumnName="driverId" primaryKeyColumnName="driverId"/>
+            </foreignKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList catalogName="CorticonFleetManager" schemaName="dbo" tableName="DriverStatusChange" tableType="TABLE">
+            <columnMetadataList columnName="driverId" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="250" decimalDigits="-1"/>
+            <columnMetadataList columnName="dutyStatus" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="250" decimalDigits="-1"/>
+            <columnMetadataList columnName="record" jdbcDataType="INTEGER" sqlDataType="int" columnSize="10"/>
+            <columnMetadataList columnName="durationMins" jdbcDataType="INTEGER" sqlDataType="int" columnSize="10"/>
+            <columnMetadataList columnName="statusStart" jdbcDataType="TIMESTAMP" sqlDataType="datetime" columnSize="23" decimalDigits="3"/>
+            <columnMetadataList columnName="statusEnd" jdbcDataType="TIMESTAMP" sqlDataType="datetime" columnSize="23" decimalDigits="3"/>
+            <primaryKeyMetadataList primaryKeyName="PK_DriverStatusChange" primaryKeyCatalogName="CorticonFleetManager" primaryKeySchemaName="dbo" primaryKeyTableName="DriverStatusChange">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="record"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList catalogName="CorticonFleetManager" schemaName="dbo" tableName="MaintenanceRecord" tableType="TABLE">
+            <columnMetadataList columnName="RecordID" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="facilityID" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="maintenanceDate" jdbcDataType="TIMESTAMP" sqlDataType="datetime2" columnSize="27" decimalDigits="7"/>
+            <columnMetadataList columnName="maintenanceType" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="vehicleID" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="RvehicleAssoc_vehicleID" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK__Maintena__FBDF78C94AA73854" primaryKeyCatalogName="CorticonFleetManager" primaryKeySchemaName="dbo" primaryKeyTableName="MaintenanceRecord">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="RecordID"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList catalogName="CorticonFleetManager" schemaName="dbo" tableName="sysdiagrams" tableType="TABLE">
+            <columnMetadataList columnName="name" jdbcDataType="VARCHAR" sqlDataType="sysname" columnSize="128" decimalDigits="-1"/>
+            <columnMetadataList columnName="principal_id" jdbcDataType="INTEGER" sqlDataType="int" columnSize="10"/>
+            <columnMetadataList columnName="diagram_id" jdbcDataType="INTEGER" sqlDataType="int identity" columnSize="10"/>
+            <columnMetadataList columnName="version" jdbcDataType="INTEGER" sqlDataType="int" columnSize="10"/>
+            <columnMetadataList columnName="definition" jdbcDataType="LONGVARBINARY" sqlDataType="varbinary(max)" columnSize="2147483647" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK__sysdiagr__C2B05B61B5FC285D" primaryKeyCatalogName="CorticonFleetManager" primaryKeySchemaName="dbo" primaryKeyTableName="sysdiagrams">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="diagram_id"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList catalogName="CorticonFleetManager" schemaName="dbo" tableName="thresholds" tableType="TABLE">
+            <columnMetadataList columnName="periodOffDutyMinHours" jdbcDataType="INTEGER" sqlDataType="int" columnSize="10"/>
+            <columnMetadataList columnName="periodNotOffDutyMaxDrivingHoursTotal" jdbcDataType="INTEGER" sqlDataType="int" columnSize="10"/>
+            <columnMetadataList columnName="periodOnDutyNoDriveAfterHour" jdbcDataType="INTEGER" sqlDataType="int" columnSize="10"/>
+            <columnMetadataList columnName="driverType" jdbcDataType="VARCHAR" sqlDataType="nvarchar" columnSize="250" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK_thresholds" primaryKeyCatalogName="CorticonFleetManager" primaryKeySchemaName="dbo" primaryKeyTableName="thresholds">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="driverType"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList catalogName="CorticonFleetManager" schemaName="dbo" tableName="Trip" tableType="TABLE">
+            <columnMetadataList columnName="tripID" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="dateOfArrival" jdbcDataType="TIMESTAMP" sqlDataType="datetime2" columnSize="27" decimalDigits="7"/>
+            <columnMetadataList columnName="dateOfDepature" jdbcDataType="TIMESTAMP" sqlDataType="datetime2" columnSize="27" decimalDigits="7"/>
+            <columnMetadataList columnName="driverId" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="status" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="vehicleTagNo" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="RdepotAssoc_depotID" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="RdestinationAssoc_destinationID" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="RdriverAssoc_driverID" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="RshipmentAssoc_shipmentID" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="RvehicleAssoc_vehicleID" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="originDepotID" jdbcDataType="VARCHAR" sqlDataType="nvarchar" columnSize="250" decimalDigits="-1"/>
+            <columnMetadataList columnName="destinationID" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="250" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK__Trip__303EBFA5D73A0892" primaryKeyCatalogName="CorticonFleetManager" primaryKeySchemaName="dbo" primaryKeyTableName="Trip">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="tripID"/>
+            </primaryKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList catalogName="CorticonFleetManager" schemaName="dbo" tableName="Vehicle" tableType="TABLE">
+            <columnMetadataList columnName="vehicleID" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="fuelType" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="make" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="model" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="modelYear" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="odometerLatest" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="registeredState" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="tagNo" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <primaryKeyMetadataList primaryKeyName="PK__Vehicle__5B9D25D238A5D45F" primaryKeyCatalogName="CorticonFleetManager" primaryKeySchemaName="dbo" primaryKeyTableName="Vehicle">
+              <primaryKeyColumnMetadataList sequenceNumber="1" primaryKeyColumnName="vehicleID"/>
+            </primaryKeyMetadataList>
+            <foreignKeyMetadataList foreignKeyName="FK1cdyp3xib7ejufsfbe0fwer0k" foreignKeyCatalogName="CorticonFleetManager" foreignKeySchemaName="dbo" foreignKeyTableName="MaintenanceRecord">
+              <foreignKeyColumnMetadataList sequenceNumber="1" foreignKeyColumnName="RvehicleAssoc_vehicleID" primaryKeyColumnName="vehicleID"/>
+            </foreignKeyMetadataList>
+          </tableMetadataList>
+          <tableMetadataList catalogName="CorticonFleetManager" schemaName="dbo" tableName="TripDetails" tableType="VIEW">
+            <columnMetadataList columnName="tripID" jdbcDataType="BIGINT" sqlDataType="bigint" columnSize="19"/>
+            <columnMetadataList columnName="originCity" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="originState" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="originStreetAddress" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="destinationCity" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="destinationState" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+            <columnMetadataList columnName="destinationStreetAddress" jdbcDataType="VARCHAR" sqlDataType="varchar" columnSize="255" decimalDigits="-1"/>
+          </tableMetadataList>
+        </databaseMetadata>
+      </vocabularyMappings>
+      <vocabularyMappings name="QUERY" ID="QUERY" mappingType="QUERY">
+        <mappingProperties key="SERVER">
+          <value manuallyCreated="true" value="com.corticon.database.id.MsSql"/>
+        </mappingProperties>
+        <mappingProperties key="URL">
+          <value manuallyCreated="true" value="jdbc:progress:sqlserver://localhost:1433;databaseName=fleetQueries"/>
+        </mappingProperties>
+        <mappingProperties key="AUTHENTICATION_TYPE">
+          <value manuallyCreated="true" value="Basic"/>
+        </mappingProperties>
+        <mappingProperties key="USERNAME">
+          <value manuallyCreated="true" value="061046"/>
+        </mappingProperties>
+        <mappingProperties key="PASSWORD">
+          <value manuallyCreated="true" value="062046016058035029061039"/>
+        </mappingProperties>
+        <queryObjects name="tripsForThisDriver" type="read"/>
+        <queryObjects name="statusesForThisDriver" type="read"/>
+        <queryObjects name="thresholdsForDriver" type="read"/>
+        <queryObjects name="UpdateStart" type="write"/>
+      </vocabularyMappings>
+    </contents>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Driver">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Driver"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="email" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="email"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="first" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="first"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="last" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="last"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="driverID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="driverID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="phone"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="homeTerminalAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="homeTerminalAddress"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="eld_type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="eld_type"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="assignedVehicleID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="assignedVehicleID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="driveDurationMinutesLast24Hrs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="driveDurationMinutesLast24Hrs"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="driveDurationMinutesLast7Days" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="driveDurationMinutesLast7Days"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hosStatusType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="hosStatusType"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="onDutyDurationLast24_hrs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="onDutyDurationLast24_hrs"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="onDutyDurationLast7Days_hrs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="onDutyDurationLast7Days_hrs"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="driverStatusChange" upperBound="-1" eType="#//DriverStatusChange" eOpposite="#//DriverStatusChange/driver">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="driverStatusChange"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusDone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="statusDone"/>
+          <mode manuallyCreated="true" value="ExtendedTransient"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="driveDurationHoursLast24Hrs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="driveDurationHoursLast24Hrs"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trip" lowerBound="1" upperBound="-1" eType="#//Trip" eOpposite="#//Trip/driver">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="trip"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="hOS_flag" upperBound="-1" eType="#//HOS_flag" eOpposite="#//HOS_flag/driver">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="hOS_flag"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="drivingWindow" upperBound="-1" eType="#//ShiftWindow" eOpposite="#//ShiftWindow/driver">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="drivingWindow"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="idProvided" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="idProvided"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="temp" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="temp"/>
+          <mode manuallyCreated="true" value="ExtendedTransient"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="offDutyCount" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="offDutyCount"/>
+          <mode manuallyCreated="true" value="ExtendedTransient"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="period" upperBound="-1" eType="#//Period" eOpposite="#//Period/driver">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="period"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="driverType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="driverType"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DriverStatusChange">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="DriverStatusChange"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dutyStatus" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="dutyStatus"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusStart" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="statusStart"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusEnd" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="statusEnd"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="driver" lowerBound="1" eType="#//Driver" eOpposite="#//Driver/driverStatusChange">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="driver"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="RecordID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="RecordID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="driverId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="driverId"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="splitDay" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="splitDay"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="durationMins" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="durationMins"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="calculated" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="calculated"/>
+          <mode manuallyCreated="true" value="ExtendedTransient"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="trip" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="trip"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="durationHours" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="durationHours"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="trip_1" upperBound="-1" eType="#//Trip" eOpposite="#//Trip/driverStatusChange">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="trip_1"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="shiftWindow" lowerBound="1" eType="#//ShiftWindow" eOpposite="#//ShiftWindow/driverStatusChange">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="shiftWindow"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="period" lowerBound="1" upperBound="-1" eType="#//Period" eOpposite="#//Period/driverStatusChange">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="period"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="periodIDs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="periodIDs"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Trip">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Trip"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateOfArrival" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="dateOfArrival"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dateOfDepature" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="dateOfDepature"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="driverId" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="driverId"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tripID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="tripID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vehicleTagNo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="vehicleTagNo"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="status" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="status"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="driver" eType="#//Driver" eOpposite="#//Driver/trip">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="driver"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="vehicle" eType="#//Vehicle">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="vehicle"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="depot" eType="#//Depot">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="depot"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="destination" eType="#//Destination">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="destination"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="driverStatusChange" lowerBound="1" upperBound="-1" eType="#//DriverStatusChange" eOpposite="#//DriverStatusChange/trip_1">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="driverStatusChange"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Destination">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Destination"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lat" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="lat"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="long" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="long"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tripID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="tripID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="city" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="city"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="state" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="state"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="streetAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="streetAddress"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="zip" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="zip"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="latLong" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="latLong"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="destinationID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="destinationID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Depot">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Depot"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lat" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="lat"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="long" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="long"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tripID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="tripID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="city" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="city"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="state" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="state"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="streetAddress" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="streetAddress"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="zip" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="zip"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="latLong" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="latLong"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="depotID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="depotID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Vehicle">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Vehicle"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="make" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="make"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="model" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="model"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="modelYear" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="modelYear"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="odometerLatest" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="odometerLatest"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="registeredState" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="registeredState"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tagNo" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="tagNo"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="vehicleID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="vehicleID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fuelType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="fuelType"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="HOS_flag">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="HOS_flag"/>
+        <datastorePersistent manuallyCreated="true" value="false"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="driver" lowerBound="1" eType="#//Driver" eOpposite="#//Driver/hOS_flag">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="driver"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="type"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="when" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="when"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tripID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="tripID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="triggeringStatusID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="triggeringStatusID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ShiftWindow">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="ShiftWindow"/>
+        <datastorePersistent manuallyCreated="true" value="false"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="driver" lowerBound="1" eType="#//Driver" eOpposite="#//Driver/drivingWindow">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="driver"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="drivingDurationHrs" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="drivingDurationHrs"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusEnd" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="statusEnd"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="statusStart" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="statusStart"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="windowID" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="windowID"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isOffDuty" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="isOffDuty"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="driverStatusChange" upperBound="-1" eType="#//DriverStatusChange" eOpposite="#//DriverStatusChange/shiftWindow">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="driverStatusChange"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="statuses" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="statuses"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Period">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Period"/>
+        <datastorePersistent manuallyCreated="true" value="false"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="day1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="day1"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="day7" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="day7"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="day8" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="day8"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="driver" lowerBound="1" eType="#//Driver" eOpposite="#//Driver/period">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="driver"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hoursNotOffDuty7" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="hoursNotOffDuty7"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="hoursNotOffDuty8" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigDecimal">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="hoursNotOffDuty8"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="id"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="driverStatusChange" upperBound="-1" eType="#//DriverStatusChange" eOpposite="#//DriverStatusChange/period">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="driverStatusChange"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="RegulatoryThresholds">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="RegulatoryThresholds"/>
+        <datastorePersistent manuallyCreated="true" value="false"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="driverType" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="driverType"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="periodNotOffDutyMaxDrivingHoursTotal" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="periodNotOffDutyMaxDrivingHoursTotal"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="periodOffDutyMinHours" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="periodOffDutyMinHours"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="periodOnDutyNoDriveAfterHour" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="periodOnDutyNoDriveAfterHour"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+</ecore:EPackage>

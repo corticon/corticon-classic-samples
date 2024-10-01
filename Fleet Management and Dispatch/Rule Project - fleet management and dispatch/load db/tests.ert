@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="7" minorServiceNumber="3" buildNumber="8021" updateStamp="_59iYQX9pEe-zR6Q1c5DP0A" externalChecksum="2722078124:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="7" minorServiceNumber="3" buildNumber="8021" updateStamp="_uFcc0XzgEe-upYPr9ka_Jw" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_Y1jbAHW2Ee-EoOocRifNFA" ruleActivity="Untitled.erf#//@ruleflow" locale="">
+      <input/>
+      <output>
+        <PostedMessage severity="Violation" text="Unable to find IADCRead configuration for Query Name=driverStatus"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot/>
+      <outputRoot newOrModified="true"/>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0"/>
+      </outputMessageSection>
+      <expectedRoot passed="false"/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_Bo3uQHzjEe-upYPr9ka_Jw" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="../vocab.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="untitled_1"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

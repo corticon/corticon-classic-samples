@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.common="http:///com/corticon/rulesemf/common.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="7" minorServiceNumber="3" buildNumber="8021" updateStamp="_EeOWgH9vEe-zR6Q1c5DP0A" externalChecksum="2722078124:507989954:434831388" studioType="Java" rulesheetAssets="remove%20temporary%20fields.ers#/ Initialize.ers#/" ruleflowAssets="Time%20Driving%20per%20Shift%20Rules/Time%20Driving%20per%20Shift%20Rules.erf#/ 60%2070%20hour%20limit/60%2070%20hour%20limit.erf#/">
+  <validationMessages xsi:type="com.corticon.rulesemf.common:InternationalValidationMessage" UUID="_XchXEH9wEe-zR6Q1c5DP0A" key="7" type="Validation" severity="Warning" invalidObjects="#//@ruleflowViewList.0/@flowShapeList.3" textKey="RuleflowModelAPIImpl.Validation.InvalidRulesheetAsset"/>
+  <ruleflow majorVersion="1" vocabularyUpdateStamp="_Bo3uQHzjEe-upYPr9ka_Jw" vocabulary="vocab.ecore#/">
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Ruleflow: Time Driving per Shift Rules" order="5" ruleActivityUpdateStamp="_j6jscH9tEe-zR6Q1c5DP0A" nextStep="#//@ruleflow/@flowControlList.3" invokes="Time%20Driving%20per%20Shift%20Rules/Time%20Driving%20per%20Shift%20Rules.erf#//@ruleflow"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="ADC READ: Get Logs for Specified Driver" order="1" ruleActivityUpdateStamp="_mkY1cn9tEe-zR6Q1c5DP0A" nextStep="#//@ruleflow/@flowControlList.4" invokes="#//@ruleflow/@connectorList.0"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Ruleflow: 60 70 hour limit" order="4" ruleActivityUpdateStamp="_Qn0OQH9eEe-zR6Q1c5DP0A" nextStep="#//@ruleflow/@flowControlList.0" invokes="60%2070%20hour%20limit/60%2070%20hour%20limit.erf#//@ruleflow"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Rulesheet: remove temporary fields" order="6" ruleActivityUpdateStamp="_DtWFc39qEe-zR6Q1c5DP0A" invokes="remove%20temporary%20fields.ers#//@ruleset"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="ADC READ: Get Regulatory Thresholds based on Driver Type" order="2" ruleActivityUpdateStamp="_mkY1cn9tEe-zR6Q1c5DP0A" nextStep="#//@ruleflow/@flowControlList.5" invokes="#//@ruleflow/@connectorList.1"/>
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="Rulesheet: Initialize Values" order="3" ruleActivityUpdateStamp="_556cjn9pEe-zR6Q1c5DP0A" nextStep="#//@ruleflow/@flowControlList.2" invokes="Initialize.ers#//@ruleset"/>
+    <connectorList className="CorticonADC" serviceName="read">
+      <connectorDecryptedProperties name="Datasource Name" value="ADC"/>
+      <connectorDecryptedProperties name="Query Name" value="tripsForThisDriver"/>
+    </connectorList>
+    <connectorList className="CorticonADC" serviceName="read">
+      <connectorDecryptedProperties name="Datasource Name" value="ADC"/>
+      <connectorDecryptedProperties name="Query Name" value="thresholdsForDriver"/>
+    </connectorList>
+  </ruleflow>
+  <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="468" y="396" width="811" height="45" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" activityNode="#//@ruleflow/@flowControlList.0"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="468" y="108" width="811" height="45" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" activityNode="#//@ruleflow/@flowControlList.1"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="468" y="324" width="811" height="45" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.2" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.4" activityNode="#//@ruleflow/@flowControlList.2"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" validationMessages="#//@validationMessages.0" x="468" y="468" width="811" height="45" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@flowControlList.3"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="468" y="180" width="811" height="45" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.3" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.1" activityNode="#//@ruleflow/@flowControlList.4"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="468" y="252" width="811" height="45" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.4" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.3" activityNode="#//@ruleflow/@flowControlList.5"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.0" targetShape="#//@ruleflowViewList.0/@flowShapeList.3"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.1" targetShape="#//@ruleflowViewList.0/@flowShapeList.4"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.2" targetShape="#//@ruleflowViewList.0/@flowShapeList.0"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.4" targetShape="#//@ruleflowViewList.0/@flowShapeList.5"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.5" targetShape="#//@ruleflowViewList.0/@flowShapeList.2"/>
+  </ruleflowViewList>
+</com.corticon.rulesemf.assetmodel:RuleflowAsset>
