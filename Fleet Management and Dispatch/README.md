@@ -1,25 +1,25 @@
 ## Taming SQL Logical Complexities with a Business Rules Engine
 
-For enterprises that compete in the realm of the logistical management of geographically diverse personnel and assets, data about these moving parts is critical. While the amount of data available and the sources from which this data is logged and exposed are more expansive than ever, the mounting complexity attributable to the continual accumulation of data from new and existing data sources necessitates thorough consideration of how the enterprise architecture leverages this data.
+For enterprises and government agencies whose operations depend on efficient logistical management of geographically diverse personnel and assets, capturing and acting on relevant data about these moving parts is critical. While the amount of data available and the sources from which this data is logged and exposed are more expansive than ever, the mounting complexity attributable to the continual accumulation of data from new and existing data sources necessitates thoroughly considered the extent to which the data can be acted upon, not accumulated just for the sake of it.
 
-Business processes and decision-making logic logistics companies require data from enormous datasets, often spread across multiple databases or APIs, and maintained in distinct formats. Individual decisions can seem straightforward when they answer simple questions with simple answers-- yet there may be a labyrinth of intermediate business logic and data operations executed along the way.
+Business processes and decision-making for logistical functions like fleet management require data from enormous datasets, often spread across multiple databases and made available through different protocols, and maintained in distinct formats. Individual decisions that seem straightforward, answering simple questions with simple answers-- may rely upon a labyrinth of intermediate business logic and data operations executed along the way.
 
 With the proliferation of connected technologies and the resulting growth in the scale and variability of data, ensuring that applications are able to access specifically relevant data—no more, no less— for a given business process is a critical performance and security requirement for organizations' enterprise architects.
 
-Logistics-heavy companies typically make heavy use of SQL throughout internal applications to minimize the processing time required to get to desired subsets of data, but this approach can quickly result in the company unintentionally hoisting an anvil of maintainability issues over their operations. As regulations change, data sources expand, storage and compute costs grow, personnel turn over, and novel security threats appear, the practice of intertwining logic and data within the database using SQL tends to make it increasingly difficult to isolate bottlenecks.
+Effective use of SQL helps minimize the processing time required to get to desired subsets of data, but this approach can quickly result in organizations unwittingly hoisting an anvil of maintainability issues over their operations. As regulations change, data sources expand, storage and compute costs grow, personnel turn over, and novel security threats appear, the practice of intertwining logic and data within the database using SQL tends to make it increasingly difficult to isolate bottlenecks.
+
+![stack of files](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/9zzdy6j8jpwxdq5rq88j.jpg)
 
 ## Design Approaches for Data Driven Decisions
 
-In this walkthrough, I'll step through an approach that illustrates some of these maintainability challenges based on a vehicle fleet management use case, and how externalizing application in a rules engine can complement SQL and simplify the lives of logistics professionals.
-
-By leveraging an organization's existing in house skill sets like familiarity with writing SQL, IT stakeholders can create reusable queries to pull in data where and when necessary during the execution of business decisions, while rule authors remain tasked with the authoring and optimization of codeless business rules that define how to evaluate inputted/retrieved data.
+In this tutorial, I'll try to solve for some of the fleet management challenges which can present maintainability challenges, first by implementing a SQL only approach to common queries. Then, I'll show how those queries can be made more maintainable, traceable, and understandable by externalizing rules in a rules engine yet operating on the same SQL data source.
 
 Fleet management encompasses the logistical tasks related to vehicle maintenance, driver dispatch and scheduling, cargo tracking and related services in managing moving people and parts. For example, a cable company's fleet of vehicles driven by field service technicians, or a delivery company providing a network of courier and package delivery services.
 
 Organizations that have fleets to manage must compete by maximizing efficiencies across numerous different areas—vehicle reliability, driving behavior and safety, route optimization, and trip completion timelines—representing distinct yet interdependent data points to weigh and balance. Moreover, safety regulations define maximum shifts in which a driver can be driving without a break, minimum break periods, and related measures to mitigate fatigue related dangers. For example, in the United States, the Department of Transportation defines 'Hours of Service Rules' which [stipulate](https://www.fmcsa.dot.gov/regulations/hours-service/summary-hours-service-regulations) the limits such as:
 
-* **14-hour shift limit** - When a driver comes off any ten hour period in which they were off duty, they can only be driving (not they will be for the entire window) in the time window between when they come on duty and 14 hours later. After this 14 hour period, they may not drive again until after another 10 hour period off duty.
-* **11-hour driving limit** - Within this 14 hour window, a driver cannot be be driving for more than 11 hours.
+* **14-hour shift limit** - When a driver comes off any ten hour period in which they were off duty, they can only drive in the time window between when they come on duty and 14 hours later (not that they would be driving for the entire 14 hours). After this 14 hour period, they may not drive again until after another 10 hour period spent off duty.
+* **11-hour driving limit** - Within this 14 hour window, a driver cannot be be driving for more than 11 total hours.
 * **60/70-hour limit** - If a driver works for a carrier that operates vehicles fewer than 7 days per week, no driver may drive for more than 60 hours within a period of 7 consecutive days.  If the carrier does operate vehicles every day of the week, then their drivers may not drive for more than 70 hours in any 8 consecutive day period
 * **30-Minute Driving Break** - Drivers must take a 30-minute break when they have driven for a period of 8 cumulative hours without at least a 30-minute interruption.
 
@@ -356,9 +356,7 @@ Similar to the way stored procedures and views are kept separate from the data t
 
 In Corticon Studio, the vocabulary is mapped to the CorticonFleetManager database tables, and the fleetQueries are imported and then usable in a Ruleflow. This ruleflow, made up of rule logic and these queries, can then be generated into a decision service as illustrated below.
 
-
 <img src="https://smeldon.sirv.com/Presentation1.gif" width="2297" height="1263" alt="">
-
 
 ### Generate the Rule Vocabulary from the Fleet Management Database Schema
 
@@ -390,22 +388,22 @@ After the two ADC READ operations are executed, the ruleflow subsequently execut
 * Sets `Driver.offDutyCount` to be the size of the collection of `Driver.driverStatusChange` where `dutyStatus` = 'Off Duty'
 * Sets a placeholder value of '1' for the attribute `Driver.temp`. This will be used as a counter for looping during subsequent rulesheets.
 
-
 ![initialize rulesheet](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ij3yc1q2tpraad8mz7ph.png)
+
 ### Ruleflow: 60 70 Hour Limit
 
-
 ![60 70 hour limit ruleflow](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/uhalrniped8l5jc0xzmk.png)
+
 #### Iterative Rulesheet - Create Work Periods
 
 This rulesheet iterates until no more changes occur when evaluated. We create a new entity, `Period` associated as a child to `Driver`, which will contain the attributes `day1`, `day7`, and `day8`. We iterate over this rulesheet to create unique instances of `Period` for the 8 days subsequent to every `DriverStatusChange`. Each `Period` will contain the date of the `DriverStatusChange` in the attribute `day1`, add 6 to that value for the attribute `day7`, and add 7 to that value for the attribute `day8` until the number of periods=the number of statuses.
 
-
 ![create work periods](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/rk7cq9b2bhhwtwen1nzr.png)
+
 #### Ruleflow: 8 Day Rules
 
-
 ![8 day](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/p278l2pvueaha7987pt5.png)
+
 ##### Rulesheet 1 - Associate statuses with 8 day period
 
 Add any instance of `Driver.driverStatusChange` to the collection `Driver.period.driverStatusChange` for any `driverStatusChange` where :
@@ -414,18 +412,20 @@ Add any instance of `Driver.driverStatusChange` to the collection `Driver.period
 * The ` Driver.driverStatusChange` `statusStart` and `statusEnd` are within a period's `day1` and `day8`values.
 
 ![associate statuses 8](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/foagymy90aivp0209zbk.png)
+
 ##### Rulesheet 2 - Sum statuses 8 days
 
 Set the value of `Driver.period.hoursNotOffDuty8` to be the sum of all `DriverStatusChange.durationHours` where `DriverStatusChange` is a child entity of `Driver.period`.
 
 ![sum statuses 8](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vy82dijgzrleyrns5gjf.png)
+
 #### Ruleflow: 7 Day Rules
 
 ![7 day](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/omd1gavqh0ub2mjcotxj.png)
+
 ##### Rulesheet 1 - Remove association
 
 Removes the previously created association between `DriverStatusChange` and `Period` created in the 8 day ruleflow.
-
 
 ![7 remove associations](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8zq86uptarhxnxx3003t.png)
 
@@ -436,14 +436,14 @@ Add any instance of `Driver.driverStatusChange` to the collection `Driver.period
 * `Driver.driverStatusChange` attribute `dutyStatus` is 'Off Duty' as well as has a `durationHours `>= 34
 * The `Driver.driverStatusChange` `statusStart` and `statusEnd` are within a period's `day1 `and `day7 `values.
 
-
 ![associate statuses 7](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/te5sfpza08l604wgqimv.png)
+
 ##### Rulesheet 3 - Sum statuses 7 days
 
 Set the value of `Driver.period.hoursNotOffDuty7` to be the sum of all `DriverStatusChange.durationHours` where `DriverStatusChange `is a child entity of `Driver.period.`
 
-
 ![sum statuses 7](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/vp4kb8tjlzxdox04ruco.png)
+
 #### Rulesheet - Overtime Flags
 
 For any instance of `Driver.period` where `hoursNotOffDuty7` > 60, create a new instance of `HOS_Flag` as a child entity to `Driver`, with the attribute `type` having a value of '>60 hours in 7 days' and the attribute `when` having a value of [`Period.day1`] to [`Period.day7`], time not off duty was [`Driver.period.hoursNotOffDuty7`].
@@ -451,24 +451,25 @@ For any instance of `Driver.period` where `hoursNotOffDuty7` > 60, create a new 
 For any instance of `Driver.period` where `hoursNotOffDuty8` > 70, create a new instance of `HOS_Flag` as a child entity to `Driver`, with the attribute `type` having a value of '>70 hours in 8 days' and the attribute `when` having a value of [`Period.day1`] to [`Period.day8`], time not off duty was [`Driver.period.hoursNotOffDuty8`].
 
 ![ot flags](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/6ti8wau7yobx0h2ys20g.png)
+
 ### Ruleflow: Time Driving per Shift Rules
 
-
 ![time driving per shift rules](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/2llget8v1s5555j46383.png)
+
 #### Iterative Rulesheet: Create Windows Off Duty
 
 This rulesheet iterates until no more changes occur when evaluated. We create a new entity, `ShiftWindow` associated as a child to `Driver`, which will contain the attribute `statusEnd`, `statusStart`, `isOffDuty`, and `windowID`. Corticon will iterate over this rulesheet to create a new `ShiftWindow` for every instance of `DriverStatusChange` where `dutyStatus` = 'Off Duty'.
 
 The rulesheet will set the `windowID `for each `ShiftWindow` to be the value of `Driver.temp`, while `Driver.temp` will be incremented up by 1 each time the rulesheet executes, repeating until the value of the `Driver.temp` is equal to the number of off duty statuses.
 
-
 ![create windows off duty](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/qt47t51q5caso8rozeiu.png)
+
 #### Rulesheet: Reset
 
 Set `Driver.temp` back to 1.
 
-
 ![reset](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/i6ei6qxd7jywbxjjpewy.png)
+
 #### Iterative Rulesheet: Create Windows Driving
 
 Here we're creating three aliases for `Driver.drivingWindow `- 'preceding', 'subsequent', and 'timeNotOff':
@@ -479,25 +480,26 @@ Here we're creating three aliases for `Driver.drivingWindow `- 'preceding', 'sub
 
 This rulesheet will iteratively create new, unique `ShiftWindow` entities under the timeNotOff alias, until there are no further instances of the 'subsequent' alias to evaluate.
 
-
 ![create windows driving](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7f2vtg4o8mu7mydhdm9j.png)
+
 #### Rulesheet: Group Windows
 
 Similar to the design pattern with the 60/70 hour rules, here we're going to set `DriverStatusChange` to be a child entity to any instance of `ShiftWindow` within the same `statusStart` and `statusEnd` times, where the value of `DriverStatusChange.dutyStatus`='Driving'.
 
-
 ![group windows](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/5wqrnebdfv8h0kcza4hz.png)
+
 #### Rulesheet: Duration Driving Between off Duty Windows
 
 Evaluate all instances of the newly associated `DriverStatusChange` entities that are a child of `DrivingWindow` for the driver. If the last instance of `Driver.drivingWindow.driverStatusChange` any each `Driver.drivingWindow `has a  driving  `statusEnd `greater than 14 hours after the `drivingWindow`, create a new `HOS_flag` with the value for the attribute `when` set to ='Last off duty concluded at [`Driver.shiftWindow.statusStart`], driving status ended at [`Driver.drivingWindow.driverStatusChange.statusEnd`] and for the attribute `type` set to='Driving status ended more than 14 hours since off duty'.
 
-
 ![duration between windows](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/pxhrkah2irav7vfpawfi.png)
+
 #### Rulesheet: 11 in 14 flags
 
 Evaluate all instances of the newly associated `DriverStatusChange` entities that are a child of `DrivingWindow` for the driver. If any instance of `Driver.drivingWindow` has a `durationHours` spent with a duty status of 'Driving' greater than the 11 permissible hours they may drive in a 14 hour window, create a new `HOS_flag` with with the value of the `when `attribute set to ='Driving shift of [`DriverStatusChange.durationHours`] beginning [`DriverStatusChange.statusStart`]' and the `type` attribute set to '>11 hour driving within 14 hour period on duty'.
 
 ![11 in 14](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/t23bfs4n7ssvuj378lyk.png)
+
 ### Rulesheet: remove temporary fields
 
 Remove the newly created entities (`Period`, `ShiftWindow`) as well as the retrieved and `DriverStatusChange` records from the final response payload of the decision services.
@@ -505,12 +507,15 @@ Remove the newly created entities (`Period`, `ShiftWindow`) as well as the retri
 ![remove temp](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ddwa1hw1j0nzihrmka4m.png)
 
 ## Better Together
-Our ruleflow can now be generated into a decision service on Corticon Server, turning our compliance assessment into a ready to use API endpoint for decisioning. These rules could be built upon or add in a write step, to persist the final determinations back to the database. 
 
-We could also run this decision as a regular batch job, evaluating many records concurrently across disparate data sources and persisting the outputs directly back into a database.  
+Our ruleflow can now be generated into a decision service on Corticon Server, turning our compliance assessment into a ready to use API endpoint for decisioning. These rules could be built upon or add in a write step, to persist the final determinations back to the database.
 
-By externalizing the logic which evaluates driving compliance from the underlying data that the logic is evaluating, business analysts at logistics-intensive companies maintain rules without needing to know all of the complexities of the ever-changing fleet data. Because we can incorporate any number of data sources, we can maintain the regulatory thresholds separate from the logic which pulls in the relevant records, keeping distinct areas of the decision in quickly adaptable modules. 
+We could also run this decision as a regular batch job, evaluating many records concurrently across disparate data sources and persisting the outputs directly back into a database.
 
-And, we can build in further functionalities that would be very difficult to maintain through other approaches, such as incorporating data from REST API endpoints like geocoding and weather condition APIs, in order to ensure all variables beyond just regulatory considerations are readily available and maintainable in a fleet manager's dispatch application. 
+By externalizing the logic which evaluates driving compliance from the underlying data that the logic is evaluating, business analysts at logistics-intensive companies maintain rules without needing to know all of the complexities of the ever-changing fleet data. Because we can incorporate any number of data sources, we can maintain the regulatory thresholds separate from the logic which pulls in the relevant records, keeping distinct areas of the decision in quickly adaptable modules.
 
-With Corticon, existing application logic doesn't need to be eliminated, and new experts in complex languages don't need to be brought in. Instead Corticon enables enterprises to separate the 'know' from the 'flow' of their complex decision making logic, future proofing the systems from which major competitive differentiators can be derived. 
+And, we can build in further functionalities that would be very difficult to maintain through other approaches, such as incorporating data from REST API endpoints like geocoding and weather condition APIs, in order to ensure all variables beyond just regulatory considerations are readily available and maintainable in a fleet manager's dispatch application.
+
+With Corticon, existing application logic doesn't need to be eliminated, and new experts in complex languages don't need to be brought in. Instead Corticon enables enterprises to separate the 'know' from the 'flow' of their complex decision making logic, future proofing the systems from which major competitive differentiators can be derived.
+
+By leveraging an organization's existing in house skill sets like familiarity with writing SQL, IT stakeholders can create reusable queries to pull in data where and when necessary during the execution of business decisions, while rule authors remain tasked with the authoring and optimization of codeless business rules that define how to evaluate inputted/retrieved data.

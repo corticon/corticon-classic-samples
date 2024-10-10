@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="7" minorServiceNumber="3" buildNumber="8021" updateStamp="_hunr1octEe-R86uBy0z3mg" externalChecksum="2722078124:507989954:434831388" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_hrYKkYctEe-R86uBy0z3mg" vocabulary="../Vocabulary.ecore#/">
+    <rule>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Child.daysAtThreePieces = (pieceOfCandy->size) / 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Child.daysAtThreePieces = ( pieceOfCandy->size ) / 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="daysAtThreePieces" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.daysAtThreePieces">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="pieceOfCandy" datatype="Integer" termtype="COLLECTION" fulltext="pieceOfCandy->size">
+                <parentTerm text="pieceOfCandy" datatype="Candy" termtype="ENTITY" fulltext="pieceOfCandy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Child.piecesForThirtyDays = (pieceOfCandy->size) / 30">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Child.piecesForThirtyDays = ( pieceOfCandy->size ) / 30" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="piecesForThirtyDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.piecesForThirtyDays">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="pieceOfCandy" datatype="Integer" termtype="COLLECTION" fulltext="pieceOfCandy->size">
+                <parentTerm text="pieceOfCandy" datatype="Candy" termtype="ENTITY" fulltext="pieceOfCandy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(Child.daysAtThreePieces &lt; 30)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Child.daysAtThreePieces &lt; 30 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="daysAtThreePieces" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.daysAtThreePieces">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Child.daysAtThreePieces &lt; 30" rhs="T"/>
+      </condition>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="(Child.daysAtThreePieces &lt; 30)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Child.daysAtThreePieces &lt; 30 ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="daysAtThreePieces" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.daysAtThreePieces">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Child.daysAtThreePieces &lt; 30" rhs="F"/>
+      </condition>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0">
+      <opaqueExpression expression="pieceOfCandy.discard=F or pieceOfCandy.replace=T">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="pieceOfCandy.discard = F or pieceOfCandy.replace = T" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="discard" datatype="Boolean" termtype="ATTRIBUTE" fulltext="pieceOfCandy.discard">
+              <parentTerm text="pieceOfCandy" datatype="Candy" termtype="ENTITY" fulltext="pieceOfCandy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="replace" datatype="Boolean" termtype="ATTRIBUTE" fulltext="pieceOfCandy.replace">
+              <parentTerm text="pieceOfCandy" datatype="Candy" termtype="ENTITY" fulltext="pieceOfCandy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Choose the '3 piece per day' strategy. Give 3 pieces to {Child.name} per day for {Child.daysAtThreePieces} days.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Choose the '3 piece per day' strategy. Give 3 pieces to  + Child.name +  per day for  + Child.daysAtThreePieces +  days." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="daysAtThreePieces" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.daysAtThreePieces">
+              <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Child.name">
+              <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Choose the '30 day' strategy. Give {Child.piecesForThirtyDays} pieces to {Child.name} per day for 30 days.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Choose the '30 day' strategy. Give  + Child.piecesForThirtyDays +  pieces to  + Child.name +  per day for 30 days." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="piecesForThirtyDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.piecesForThirtyDays">
+              <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Child.name">
+              <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="../Vocabulary.ecore#//Child" ruleStatements="#//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.0" filters="#//@ruleset/@filters.0">
+      <extension explicit="true" association="true" entity="../Vocabulary.ecore#//Candy" traversedAssocRole="../Vocabulary.ecore#//Child/candy" filters="#//@ruleset/@filters.0">
+        <alias value="pieceOfCandy"/>
+        <referencedAttributes attribute="../Vocabulary.ecore#//Candy/discard"/>
+        <referencedAttributes attribute="../Vocabulary.ecore#//Candy/replace"/>
+      </extension>
+      <referencedAttributes attribute="../Vocabulary.ecore#//Child/daysAtThreePieces"/>
+      <referencedAttributes attribute="../Vocabulary.ecore#//Child/piecesForThirtyDays"/>
+      <referencedAttributes attribute="../Vocabulary.ecore#//Child/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="32" sashWeightScope="79" sashWeightConditionsIf="27">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList rowHeight="67">
+        <valueSetCell/>
+        <expressionCell external="Child.daysAtThreePieces">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Child.daysAtThreePieces" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="daysAtThreePieces" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.daysAtThreePieces">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="81">
+        <valueSetCell/>
+        <expressionCell external="Child.piecesForThirtyDays">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Child.piecesForThirtyDays" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="piecesForThirtyDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.piecesForThirtyDays">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="pieceOfCandy.discard=F or pieceOfCandy.replace=T" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="pieceOfCandy.discard=F or pieceOfCandy.replace=T" filter="#//@ruleset/@filters.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="pieceOfCandy.discard=F or pieceOfCandy.replace=T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="pieceOfCandy.discard = F or pieceOfCandy.replace = T" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="discard" datatype="Boolean" termtype="ATTRIBUTE" fulltext="pieceOfCandy.discard">
+                <parentTerm text="pieceOfCandy" datatype="Candy" termtype="ENTITY" fulltext="pieceOfCandy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="replace" datatype="Boolean" termtype="ATTRIBUTE" fulltext="pieceOfCandy.replace">
+                <parentTerm text="pieceOfCandy" datatype="Candy" termtype="ENTITY" fulltext="pieceOfCandy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="1011" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList rowHeight="42" ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="Choose the '3 piece per day' strategy. Give 3 pieces to {Child.name} per day for {Child.daysAtThreePieces} days.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Choose the '3 piece per day' strategy. Give 3 pieces to  + Child.name +  per day for  + Child.daysAtThreePieces +  days." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="daysAtThreePieces" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.daysAtThreePieces">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Child.name">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList rowHeight="157" ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="Choose the '30 day' strategy. Give {Child.piecesForThirtyDays} pieces to {Child.name} per day for 30 days.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Choose the '30 day' strategy. Give  + Child.piecesForThirtyDays +  pieces to  + Child.name +  per day for 30 days." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="piecesForThirtyDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.piecesForThirtyDays">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Child.name">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.6956521739130435">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Child.daysAtThreePieces &lt; 30">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Child.daysAtThreePieces &lt; 30" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="daysAtThreePieces" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.daysAtThreePieces">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="272" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList/>
+        <actionValueSetCellList valueSet="(pieceOfCandy->size) / 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Child.daysAtThreePieces = ( pieceOfCandy->size ) / 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="daysAtThreePieces" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.daysAtThreePieces">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="pieceOfCandy" datatype="Integer" termtype="COLLECTION" fulltext="pieceOfCandy->size">
+                <parentTerm text="pieceOfCandy" datatype="Candy" termtype="ENTITY" fulltext="pieceOfCandy">
+                  <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child"/>
+                </parentTerm>
+              </terms>
+              <terms text="Child" datatype="Child" termtype="ENTITY" fulltext="Child"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="(pieceOfCandy->size) / 30">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Child.piecesForThirtyDays = ( pieceOfCandy->size ) / 30" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="piecesForThirtyDays" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.piecesForThirtyDays">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="pieceOfCandy" datatype="Integer" termtype="COLLECTION" fulltext="pieceOfCandy->size">
+                <parentTerm text="pieceOfCandy" datatype="Candy" termtype="ENTITY" fulltext="pieceOfCandy">
+                  <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child"/>
+                </parentTerm>
+              </terms>
+              <terms text="Child" datatype="Child" termtype="ENTITY" fulltext="Child"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Child.daysAtThreePieces &lt; 30 ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="daysAtThreePieces" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.daysAtThreePieces">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Child.daysAtThreePieces &lt; 30 ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="daysAtThreePieces" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.daysAtThreePieces">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

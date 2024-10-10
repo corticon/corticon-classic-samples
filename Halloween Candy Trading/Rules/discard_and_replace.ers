@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="7" minorServiceNumber="3" buildNumber="8021" updateStamp="_jFMdNIctEe-R86uBy0z3mg" externalChecksum="2722078124:507989954:434831388" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_hrYKkYctEe-R86uBy0z3mg" vocabulary="../Vocabulary.ecore#/">
+    <rule>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Jimmy.candyOwed = 0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jimmy.candyOwed = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="candyOwed" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jimmy.candyOwed">
+                <parentTerm text="Jimmy" datatype="Child" termtype="ENTITY" fulltext="Jimmy" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Jimmy" datatype="Child" termtype="ENTITY" fulltext="Jimmy" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Child.candyCount = allCandies->size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Child.candyCount = allCandies->size" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="candyCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.candyCount">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="allCandies" datatype="Integer" termtype="COLLECTION" fulltext="allCandies->size">
+                <parentTerm text="allCandies" datatype="Candy" termtype="ENTITY" fulltext="allCandies" variable="#//@ruleset/@logicalVariables.2/@extension.0">
+                  <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.2"/>
+                </parentTerm>
+              </terms>
+              <terms text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="(Candy.inProperPackage)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Candy.inProperPackage ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inProperPackage" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.inProperPackage">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Candy.inProperPackage" rhs="F"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Candy.isFruit)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Candy.isFruit ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Candy.isFruit" rhs="F"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Candy.discard = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.discard = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="discard" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.discard">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Candy.replace = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.replace = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="replace" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.replace">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(Candy.isFruit)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Candy.isFruit ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Candy.isFruit" rhs="T"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Candy.discard = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.discard = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="discard" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.discard">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Candy.replace = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.replace = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="replace" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.replace">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="(Candy.inProperPackage)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Candy.inProperPackage ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inProperPackage" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.inProperPackage">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Candy.inProperPackage" rhs="T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(Candy.isFruit)=false">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Candy.isFruit ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Candy.isFruit" rhs="F"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="Candy.discard = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.discard = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="discard" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.discard">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Candy.replace = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.replace = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="replace" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.replace">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Candy.name = 'Snickers' or Candy.name = 'Boston Baked Beans' or Candy.name = 'PayDay' or Candy.name = 'Goo Goo Cluster' or Candy.name = 'Reeses Take 5' or Candy.name = 'Butterfinger' or Candy.name = 'Hershey Milk Chocolate with Almonds' or Candy.name = 'Baby Ruth'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.name = 'Snickers' or Candy.name = 'Boston Baked Beans' or Candy.name = 'PayDay' or Candy.name = 'Goo Goo Cluster' or Candy.name = 'Reeses Take 5' or Candy.name = 'Butterfinger' or Candy.name = 'Hershey Milk Chocolate with Almonds' or Candy.name = 'Baby Ruth'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Candy.name" rhs="{'Snickers', 'Boston Baked Beans', 'PayDay', 'Goo Goo Cluster', 'Reeses Take 5', 'Butterfinger', 'Hershey Milk Chocolate with Almonds', 'Baby Ruth'}"/>
+      </condition>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Candy.hasNuts = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.hasNuts = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="hasNuts" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.hasNuts">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.4">
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Candy.name = 'Skittles' or Candy.name = 'Apple' or Candy.name = 'Banana' or Candy.name = 'Orange' or Candy.name = 'Mike and Ikes' or Candy.name = 'Starbursts' or Candy.name = 'Lifesavers' or Candy.name = 'Life Saver Gummies' or Candy.name = 'Dots' or Candy.name = 'Enjoy Life Chocolate' or Candy.name = 'Swedish Fish' or Candy.name = 'Pixy Stix' or Candy.name = 'Ring Pops' or Candy.name = 'Fun Dip' or Candy.name = 'Starburst Pops' or Candy.name = 'Surf Sweets' or Candy.name = 'Sour Patch Kids'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.name = 'Skittles' or Candy.name = 'Apple' or Candy.name = 'Banana' or Candy.name = 'Orange' or Candy.name = 'Mike and Ikes' or Candy.name = 'Starbursts' or Candy.name = 'Lifesavers' or Candy.name = 'Life Saver Gummies' or Candy.name = 'Dots' or Candy.name = 'Enjoy Life Chocolate' or Candy.name = 'Swedish Fish' or Candy.name = 'Pixy Stix' or Candy.name = 'Ring Pops' or Candy.name = 'Fun Dip' or Candy.name = 'Starburst Pops' or Candy.name = 'Surf Sweets' or Candy.name = 'Sour Patch Kids'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Candy.name" rhs="{'Skittles', 'Apple', 'Banana', 'Orange', 'Mike and Ikes', 'Starbursts', 'Lifesavers', 'Life Saver Gummies', 'Dots', 'Enjoy Life Chocolate', 'Swedish Fish', 'Pixy Stix', 'Ring Pops', 'Fun Dip', 'Starburst Pops', 'Surf Sweets', 'Sour Patch Kids'}"/>
+      </condition>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Candy.hasNuts = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.hasNuts = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="hasNuts" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.hasNuts">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.5">
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Candy.name = 'Apple' or Candy.name = 'Banana' or Candy.name = 'Orange'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.name = 'Apple' or Candy.name = 'Banana' or Candy.name = 'Orange'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Candy.name" rhs="{'Apple', 'Banana', 'Orange'}"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Candy.isFruit = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.isFruit = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition/>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not (Candy.name = 'Apple' or Candy.name = 'Banana' or Candy.name = 'Orange') or Candy.name = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Candy.name = 'Apple' or Candy.name = 'Banana' or Candy.name = 'Orange' ) or Candy.name = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Candy.name" rhs="not {'Apple', 'Banana', 'Orange'}"/>
+      </condition>
+      <action/>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Candy.isFruit = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.isFruit = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+      <action/>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.1">
+      <opaqueExpression expression="Jimmy.name='Jimmy'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jimmy.name = 'Jimmy'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Jimmy.name">
+              <parentTerm text="Jimmy" datatype="Child" termtype="ENTITY" fulltext="Jimmy" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If any candy item is improperly wrapped and is not fruit, discard it. Do not replace.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If any candy item is improperly wrapped and is not fruit, discard it. Do not replace." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If any candy item is fruit, discard it but replace with a new piece.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If any candy item is fruit, discard it but replace with a new piece." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Keep any non-fruit candy that is properly wrapped.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Keep any non-fruit candy that is properly wrapped." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Mark {Candy.name} as having nuts.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mark  + Candy.name +  as having nuts." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+              <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.5" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Mark {Candy.name} as not having nuts.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mark  + Candy.name +  as not having nuts." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+              <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.6" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="Mark {Candy.name} as fruit.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mark  + Candy.name +  as fruit." expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+              <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="../Vocabulary.ecore#//Candy" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3 #//@ruleset/@ruleStatements.4 #//@ruleset/@ruleStatements.5">
+      <referencedAttributes attribute="../Vocabulary.ecore#//Candy/inProperPackage"/>
+      <referencedAttributes attribute="../Vocabulary.ecore#//Candy/isFruit"/>
+      <referencedAttributes attribute="../Vocabulary.ecore#//Candy/discard"/>
+      <referencedAttributes attribute="../Vocabulary.ecore#//Candy/replace"/>
+      <referencedAttributes attribute="../Vocabulary.ecore#//Candy/name"/>
+      <referencedAttributes attribute="../Vocabulary.ecore#//Candy/hasNuts"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="../Vocabulary.ecore#//Child" filters="#//@ruleset/@filters.0">
+      <alias value="Jimmy"/>
+      <referencedAttributes attribute="../Vocabulary.ecore#//Child/candyOwed"/>
+      <referencedAttributes attribute="../Vocabulary.ecore#//Child/name"/>
+    </logicalVariable>
+    <logicalVariable entity="../Vocabulary.ecore#//Child">
+      <extension explicit="true" association="true" entity="../Vocabulary.ecore#//Candy" traversedAssocRole="../Vocabulary.ecore#//Child/candy">
+        <alias value="allCandies"/>
+      </extension>
+      <referencedAttributes attribute="../Vocabulary.ecore#//Child/candyCount"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="22" sashWeightConditionsActions="55" sashWeightConditionsIf="21">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Candy.discard">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.discard" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="discard" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.discard">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Candy.replace">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.replace" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="replace" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.replace">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Candy.hasNuts">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.hasNuts" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="hasNuts" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.hasNuts">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Candy.isFruit">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.isFruit" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Jimmy.candyOwed">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jimmy.candyOwed" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="candyOwed" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jimmy.candyOwed">
+                <parentTerm text="Jimmy" datatype="Child" termtype="ENTITY" fulltext="Jimmy" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="Child.candyCount">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Child.candyCount" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="candyCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.candyCount">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.4"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.5"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Jimmy.name='Jimmy'" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.2/@extension.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="Jimmy.name='Jimmy'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jimmy.name = 'Jimmy'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Jimmy.name">
+                <parentTerm text="Jimmy" datatype="Child" termtype="ENTITY" fulltext="Jimmy" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="854" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="If any candy item is improperly wrapped and is not fruit, discard it. Do not replace.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If any candy item is improperly wrapped and is not fruit, discard it. Do not replace." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="If any candy item is fruit, discard it but replace with a new piece.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If any candy item is fruit, discard it but replace with a new piece." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="Keep any non-fruit candy that is properly wrapped.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Keep any non-fruit candy that is properly wrapped." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="4"/>
+        <text external="Mark {Candy.name} as having nuts.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mark  + Candy.name +  as having nuts." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.4">
+        <reference external="5"/>
+        <text external="Mark {Candy.name} as not having nuts.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mark  + Candy.name +  as not having nuts." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.5">
+        <reference external="6"/>
+        <text external="Mark {Candy.name} as fruit.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Mark  + Candy.name +  as fruit." expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Candy.inProperPackage">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.inProperPackage" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inProperPackage" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.inProperPackage">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <valueSetCell/>
+        <expressionCell external="Candy.isFruit">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.isFruit" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList rowHeight="261">
+        <valueSetCell/>
+        <expressionCell external="Candy.name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.name" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="183" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="0">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Jimmy.candyOwed = 0" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="candyOwed" datatype="Integer" termtype="ATTRIBUTE" fulltext="Jimmy.candyOwed">
+                <parentTerm text="Jimmy" datatype="Child" termtype="ENTITY" fulltext="Jimmy"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Jimmy" datatype="Child" termtype="ENTITY" fulltext="Jimmy"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="allCandies->size">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Child.candyCount = allCandies->size" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="candyCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="Child.candyCount">
+                <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="allCandies" datatype="Integer" termtype="COLLECTION" fulltext="allCandies->size">
+                <parentTerm text="allCandies" datatype="Candy" termtype="ENTITY" fulltext="allCandies">
+                  <parentTerm text="Child" datatype="Child" termtype="ENTITY" fulltext="Child"/>
+                </parentTerm>
+              </terms>
+              <terms text="Child" datatype="Child" termtype="ENTITY" fulltext="Child"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="44" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Candy.inProperPackage ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inProperPackage" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.inProperPackage">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Candy.isFruit ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.discard = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="discard" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.discard">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.replace = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="replace" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.replace">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="50" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Candy.isFruit ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.discard = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="discard" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.discard">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.replace = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="replace" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.replace">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="61" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Candy.inProperPackage ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="inProperPackage" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.inProperPackage">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( Candy.isFruit ) = false" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.discard = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="discard" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.discard">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.replace = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="replace" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.replace">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="202" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="{'Snickers', 'Boston Baked Beans', 'PayDay', 'Goo Goo Cluster', 'Reeses Take 5', 'Butterfinger', 'Hershey Milk Chocolate with Almonds', 'Baby Ruth'}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.name = 'Snickers' or Candy.name = 'Boston Baked Beans' or Candy.name = 'PayDay' or Candy.name = 'Goo Goo Cluster' or Candy.name = 'Reeses Take 5' or Candy.name = 'Butterfinger' or Candy.name = 'Hershey Milk Chocolate with Almonds' or Candy.name = 'Baby Ruth'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.hasNuts = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="hasNuts" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.hasNuts">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="236" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="{'Skittles', 'Apple', 'Banana', 'Orange', 'Mike and Ikes', 'Starbursts', 'Lifesavers', 'Life Saver Gummies', 'Dots', 'Enjoy Life Chocolate', 'Swedish Fish', 'Pixy Stix', 'Ring Pops', 'Fun Dip', 'Starburst Pops', 'Surf Sweets', 'Sour Patch Kids'}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.name = 'Skittles' or Candy.name = 'Apple' or Candy.name = 'Banana' or Candy.name = 'Orange' or Candy.name = 'Mike and Ikes' or Candy.name = 'Starbursts' or Candy.name = 'Lifesavers' or Candy.name = 'Life Saver Gummies' or Candy.name = 'Dots' or Candy.name = 'Enjoy Life Chocolate' or Candy.name = 'Swedish Fish' or Candy.name = 'Pixy Stix' or Candy.name = 'Ring Pops' or Candy.name = 'Fun Dip' or Candy.name = 'Starburst Pops' or Candy.name = 'Surf Sweets' or Candy.name = 'Sour Patch Kids'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.hasNuts = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="hasNuts" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.hasNuts">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="100" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="{'Apple', 'Banana', 'Orange'}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.name = 'Apple' or Candy.name = 'Banana' or Candy.name = 'Orange'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.isFruit = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="100" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not {'Apple', 'Banana', 'Orange'}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( Candy.name = 'Apple' or Candy.name = 'Banana' or Candy.name = 'Orange' ) or Candy.name = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="Candy.name">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Candy.isFruit = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isFruit" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Candy.isFruit">
+                <parentTerm text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Candy" datatype="Candy" termtype="ENTITY" fulltext="Candy"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
