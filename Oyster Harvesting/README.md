@@ -15,17 +15,17 @@ To start, we’ll look at each component individually; we will combine them at t
 
 We start with the first rulesheet to tackle the first piece related to the month of harvest. To make our lives more straightforward as rule modelers, we start with our rule messages. Notice the TestDate which we inserted from the vocabulary in the statement to contextualize the produced rule messages once we start testing this with some real data.
 
-![](<images/oyster rule msg.png>)
+![](<Images/oyster rule msg.png>)
 
 We can even take this one step further, by starting with natural language text for our conditions and actions. We can open the Natural Language view and drag the pane next to our rule statement pane.
 
 Now we can enter the plain language text for our rules’ conditions and actions!
 
-![](<images/oyster nat lang.png>)
+![](<Images/oyster nat lang.png>)
 
 Let’s now define the rules.
 
-![](<images/oyster rules.png>)
+![](<Images/oyster rules.png>)
 
 In the Rulesheet above, our `TestDate` is a ‘Date’ attribute, and we use the `.month`
 operator to identify the integer number of the month. The 1st rule column tests if the month number falls within the range 1..4 (representing the months January through April) or 9..12 (September through December) – these two ranges, taken together, cover the entire oyster-eating season. 
@@ -43,7 +43,7 @@ We’ll break our solution into two parts:
 
 ### 2.1 Determine the year of the season start or end (as appropriate).
 
-![](<images/oyster determine season start rule.png>)
+![](<Images/oyster determine season start rule.png>)
 
 The Rulesheet above shows a simple way to determine the start or end year based on the month of `TestDate`. If `TestDate.month` is January through April, which is in-season, then the season ends in the same year (May 1). If `TestDate.month` is May through August, which is out-of-season, then the next season starts in the same year (September 1). However, if `TestDate.month` is September through December, which is in-season, then the season ends next year (May 1).
 
@@ -51,7 +51,7 @@ After determining the year of the start of the next season or end of the current
 
 ### 2.2 Calculate the number of days between the start or end date and the `TestDate`.
 
-![](images/oyster days to testdate.png)
+![](Images/oyster days to testdate.png)
 
 The screenshot above shows a brute-force approach to producing an actual date value for `SeasonEnd` or `SeasonStart` as appropriate. Note that the result of these rules is a String attribute that contains text that looks like a date but isn’t actually `Date` information…yet. 
 
@@ -59,7 +59,7 @@ We’ll worry about the conversion into an actual `Date` in the next step.
 
 Finally, with a `TestDate` and either a `SeasonEnd` date or `SeasonStart` date, we can calculate the time (number of days) between them:
 
-![](images/oyster days between.png)
+![](Images/oyster days between.png)
 
 The Rulesheet above shows two conditional rules that use the **.daysBetween** operator to calculate the number of days between `TestDate` and either 1) the start of the next season or 2) the end of the current season. Both rules are conditional, so only the one which has enough data to work with will actually fire.
 
@@ -67,17 +67,17 @@ For example, if `TestDate` is May 1, 2021, then only `SeasonStart` is calculated
 
 Through our step by step approach, we have completed the rules and we can package them in a ruleflow which we can publish to Corticon Server as an executable decision service.
 
-![](<images/oyster flow.png>)
+![](<Images/oyster flow.png>)
 
 Alternatively, the four steps shown above could be combined into a single Rulesheet – the dependencies between rules will still be understood and executed correctly by Studio. Here’s a screenshot of the combined rules in a single Rulesheet:
 
-![](<images/oyster combined.png>)
+![](<Images/oyster combined.png>)
 
 Or in natural text format:
 
-![](<images/oyster combined nat lang.png>)
+![](<Images/oyster combined nat lang.png>)
 
 As long as your rules are easily maintainable and understood by your business audience, you could take the step to step approach or consolidate all rules into one rulesheet. So next time you’re not sure whether it is oyster eating season, just consult your decision service (through Corticon Tester). You can call your consolidated rules rulesheet:
 
-![](<images/oyster test1.png>)
+![](<Images/oyster test1.png>)
 
