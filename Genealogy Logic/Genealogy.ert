@@ -1,22 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="7" minorVersionNumber="1" minorServiceNumber="4" buildNumber="8022" updateStamp="__-0_YW7REeqTlvrXSNkiXg" externalChecksum="2722078124:507989954" studioType="Java">
-  <testsheetAssets majorVersionNumber="7" minorVersionNumber="1" minorServiceNumber="4" buildNumber="8022" updateStamp="_dqHscf9OEe-ZwvW002GNtg" externalChecksum="2722078124:507989954">
-    <testsheet ruleActivityUpdateStamp="_dUrA5_9OEe-ZwvW002GNtg" ruleActivity="Genealogy.erf#//@ruleflow">
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="7" minorVersionNumber="1" minorServiceNumber="4" buildNumber="8022" updateStamp="_GsoAkf9PEe-ZwvW002GNtg" externalChecksum="2722078124:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="7" minorVersionNumber="1" minorServiceNumber="4" buildNumber="8022" updateStamp="_GsqcwP9PEe-ZwvW002GNtg" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_FfBk8f9PEe-ZwvW002GNtg" ruleActivity="Genealogy.erf#//@ruleflow" locale="">
       <input/>
       <output>
+        <PostedMessage severity="Info" text="Susie and Billy share a parent (Little Joe) and so are siblings"/>
+        <PostedMessage severity="Info" text="Joe and Sally share a parent (Tom) and so are siblings"/>
+        <PostedMessage severity="Info" text="Sally and Mary share a parent (Tom) and so are siblings"/>
+        <PostedMessage severity="Info" text="Joe and Mary share a parent (Tom) and so are siblings"/>
         <PostedMessage severity="Info" text="Billy and Susie share a parent (Little Joe) and so are siblings"/>
         <PostedMessage severity="Info" text="Sally and Joe share a parent (Tom) and so are siblings"/>
-        <PostedMessage severity="Info" text="Susie and Billy share a parent (Little Joe) and so are siblings"/>
-        <PostedMessage severity="Info" text="Mary and Joe share a parent (Tom) and so are siblings"/>
-        <PostedMessage severity="Info" text="Joe and Sally share a parent (Tom) and so are siblings"/>
         <PostedMessage severity="Info" text="Mary and Sally share a parent (Tom) and so are siblings"/>
-        <PostedMessage severity="Info" text="Joe and Mary share a parent (Tom) and so are siblings"/>
-        <PostedMessage severity="Info" text="Sally and Mary share a parent (Tom) and so are siblings"/>
-        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
-        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
-        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
-        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
-        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Info" text="Mary and Joe share a parent (Tom) and so are siblings"/>
         <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
         <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
       </output>
@@ -63,93 +58,88 @@
       </inputRoot>
       <outputRoot newOrModified="true" passed="false">
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" passed="false" eClass="Genealogy.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tom" eAttribute="Genealogy.ecore#//Person/name"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.6 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4/@children.7" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="8" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.6 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7/@children.7" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="2" eAttribute="Genealogy.ecore#//Person/generation"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1920" eAttribute="Genealogy.ecore#//Person/dob"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Joe" eAttribute="Genealogy.ecore#//Person/name"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="2" eAttribute="Genealogy.ecore#//Person/generation"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" passed="false" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" passed="false" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.5 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4/@children.6" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.10" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5/@children.6 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7/@children.6" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.6 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.7" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="2" eAttribute="Genealogy.ecore#//Person/generation"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1921" eAttribute="Genealogy.ecore#//Person/dob"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Mary" eAttribute="Genealogy.ecore#//Person/name"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" passed="false" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.9 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.11 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.13" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" passed="false" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.8" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="3" eAttribute="Genealogy.ecore#//Person/generation"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1940" eAttribute="Genealogy.ecore#//Person/dob"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Little Joe" eAttribute="Genealogy.ecore#//Person/name"/>
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2/@children.3/@children.6" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="6" newOrModified="true" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.5/@children.6/@children.6" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="4" eAttribute="Genealogy.ecore#//Person/generation"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1960" eAttribute="Genealogy.ecore#//Person/dob"/>
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Susie" eAttribute="Genealogy.ecore#//Person/name"/>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="4" eAttribute="Genealogy.ecore#//Person/generation"/>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="8" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2/@children.3"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="8" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.5/@children.6"/>
               </children>
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" passed="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2/@children.2/@children.5" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.8 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.12 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.14" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" passed="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.5/@children.5/@children.5" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="4" eAttribute="Genealogy.ecore#//Person/generation"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1962" eAttribute="Genealogy.ecore#//Person/dob"/>
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Billy" eAttribute="Genealogy.ecore#//Person/name"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" newOrModified="true" passed="false" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+                  <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="5" eAttribute="Genealogy.ecore#//Person/generation"/>
+                  <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
                   <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1980" eAttribute="Genealogy.ecore#//Person/dob"/>
                   <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tiny Tim" eAttribute="Genealogy.ecore#//Person/name"/>
-                  <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
                   <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-                  <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="5" eAttribute="Genealogy.ecore#//Person/generation"/>
                 </children>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="4" eAttribute="Genealogy.ecore#//Person/generation"/>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="6" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2/@children.2"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="6" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.5/@children.5"/>
               </children>
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="3" eAttribute="Genealogy.ecore#//Person/generation"/>
             </children>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="2" eAttribute="Genealogy.ecore#//Person/generation"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" passed="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2/@children.6 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.7" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.7" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" passed="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5/@children.5 #//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.7" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.9" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="2" eAttribute="Genealogy.ecore#//Person/generation"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1930" eAttribute="Genealogy.ecore#//Person/dob"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sally" eAttribute="Genealogy.ecore#//Person/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" newOrModified="true" passed="false" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="3" eAttribute="Genealogy.ecore#//Person/generation"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1950" eAttribute="Genealogy.ecore#//Person/dob"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Martin" eAttribute="Genealogy.ecore#//Person/name"/>
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="3" eAttribute="Genealogy.ecore#//Person/generation"/>
             </children>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="2" eAttribute="Genealogy.ecore#//Person/generation"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="8" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" passed="false" issue="Extra" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
         </children>
       </outputRoot>
       <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2/@children.3"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2/@children.2"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.2"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2/@children.3"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.10" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.11" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.12" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2/@children.3"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.13" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2"/>
-        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.14" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.2/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.5/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.6/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.7"/>
       </outputMessageSection>
       <expectedRoot passed="false">
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" passed="false" eClass="Genealogy.ecore#//Person">
@@ -162,8 +152,8 @@
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Joe" eAttribute="Genealogy.ecore#//Person/name"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" passed="false" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.5"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.6"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.5"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" manuallyCreated="true" passed="false" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.6"/>
           </children>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" manuallyCreated="true" expanded="false" referencingHrefs="#//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.4/@children.4 #//@testsheetAssets.0/@testsheetViewList.0/@expectedRoot/@children.0/@children.6/@children.6" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1/1/1921" eAttribute="Genealogy.ecore#//Person/dob"/>
@@ -218,8 +208,8 @@
       <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
     </testsheetViewList>
   </testsheetAssets>
-  <testsheetAssets majorVersionNumber="7" minorVersionNumber="1" minorServiceNumber="4" buildNumber="8022" updateStamp="_dqGeUf9OEe-ZwvW002GNtg" externalChecksum="2722078124:507989954">
-    <testsheet ruleActivityUpdateStamp="_dUrA5_9OEe-ZwvW002GNtg" ruleActivity="Genealogy.erf#//@ruleflow">
+  <testsheetAssets majorVersionNumber="7" minorVersionNumber="1" minorServiceNumber="4" buildNumber="8022" updateStamp="_Gsqcwf9PEe-ZwvW002GNtg" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_FfBk8f9PEe-ZwvW002GNtg" ruleActivity="Genealogy.erf#//@ruleflow" locale="">
       <input/>
       <output/>
       <expectedOutput/>
@@ -252,38 +242,38 @@
         </children>
       </inputRoot>
       <outputRoot newOrModified="true">
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.2/@children.2 #//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4/@children.2" eClass="Genealogy.ecore#//Person">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.2/@children.3 #//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4/@children.3" eClass="Genealogy.ecore#//Person">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tom" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tom" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
         </children>
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.2/@children.3" eClass="Genealogy.ecore#//Person">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1930" eAttribute="Genealogy.ecore#//Person/dob"/>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.2/@children.2" eClass="Genealogy.ecore#//Person">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sally" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1930" eAttribute="Genealogy.ecore#//Person/dob"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sally" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="Genealogy.ecore#//Marriage">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/2000" eAttribute="Genealogy.ecore#//Marriage/date"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Orange" eAttribute="Genealogy.ecore#//Marriage/place"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" eReference="Genealogy.ecore#//Marriage/wife" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
         </children>
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4/@children.3" eClass="Genealogy.ecore#//Person">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" referencingHrefs="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4/@children.2" eClass="Genealogy.ecore#//Person">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jenny" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jenny" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" eClass="Genealogy.ecore#//Marriage">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1980" eAttribute="Genealogy.ecore#//Marriage/date"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Los Angeles" eAttribute="Genealogy.ecore#//Marriage/place"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" eReference="Genealogy.ecore#//Marriage/wife" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
         </children>
       </outputRoot>
       <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
@@ -325,58 +315,75 @@
       <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
     </testsheetViewList>
   </testsheetAssets>
-  <testsheetAssets majorVersionNumber="7" minorVersionNumber="1" minorServiceNumber="4" buildNumber="8022" updateStamp="_dqHscP9OEe-ZwvW002GNtg" externalChecksum="2722078124:507989954">
-    <testsheet cascade="true" ruleActivityUpdateStamp="_dUrA5_9OEe-ZwvW002GNtg" ruleActivity="Genealogy.erf#//@ruleflow">
+  <testsheetAssets majorVersionNumber="7" minorVersionNumber="1" minorServiceNumber="4" buildNumber="8022" updateStamp="_GtXnYP9PEe-ZwvW002GNtg" externalChecksum="2722078124:507989954">
+    <testsheet cascade="true" ruleActivityUpdateStamp="_FfBk8f9PEe-ZwvW002GNtg" ruleActivity="Genealogy.erf#//@ruleflow" locale="">
       <input/>
       <output>
-        <PostedMessage severity="Info" text="Susie and Billy share a parent (Little Joe) and so are siblings"/>
-        <PostedMessage severity="Info" text="Joe and Mary share a parent (Tom) and so are siblings"/>
-        <PostedMessage severity="Info" text="Joe and Sally share a parent (Tom) and so are siblings"/>
         <PostedMessage severity="Info" text="Billy and Susie share a parent (Little Joe) and so are siblings"/>
+        <PostedMessage severity="Info" text="Susie and Billy share a parent (Little Joe) and so are siblings"/>
+        <PostedMessage severity="Info" text="Mary and Sally share a parent (Tom) and so are siblings"/>
+        <PostedMessage severity="Info" text="Joe and Mary share a parent (Tom) and so are siblings"/>
         <PostedMessage severity="Info" text="Mary and Joe share a parent (Tom) and so are siblings"/>
         <PostedMessage severity="Info" text="Sally and Joe share a parent (Tom) and so are siblings"/>
         <PostedMessage severity="Info" text="Sally and Mary share a parent (Tom) and so are siblings"/>
-        <PostedMessage severity="Info" text="Mary and Sally share a parent (Tom) and so are siblings"/>
-        <PostedMessage severity="Info" text="Tom is Tom's null"/>
-        <PostedMessage severity="Info" text="Tiny Tim is Sally's null"/>
-        <PostedMessage severity="Info" text="Jenny is Mary's null"/>
+        <PostedMessage severity="Info" text="Joe and Sally share a parent (Tom) and so are siblings"/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Generation: Person.generation is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividualandClosestAncestor is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividuals is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividualandClosestAncestor is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividuals is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividualandClosestAncestor is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividuals is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividualandClosestAncestor is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividuals is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividualandClosestAncestor is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividuals is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividualandClosestAncestor is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
+        <PostedMessage severity="Warning" text="Rulesheet Genealogy_Determine_Relationship: Query.generationsBetweenIndividuals is used on the right-hand side of an assignment action but its value is null.  As a result the action does not fire as expected."/>
       </output>
       <expectedOutput/>
     </testsheet>
     <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
       <inputRoot>
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.2/@children.2 #//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.4/@children.2" eClass="Genealogy.ecore#//Person">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.2/@children.3 #//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.4/@children.3" eClass="Genealogy.ecore#//Person">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tom" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tom" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
         </children>
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.2/@children.3" eClass="Genealogy.ecore#//Person">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1930" eAttribute="Genealogy.ecore#//Person/dob"/>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.2/@children.2" eClass="Genealogy.ecore#//Person">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sally" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1930" eAttribute="Genealogy.ecore#//Person/dob"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sally" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="Genealogy.ecore#//Marriage">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/2000" eAttribute="Genealogy.ecore#//Marriage/date"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Orange" eAttribute="Genealogy.ecore#//Marriage/place"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.0"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" eReference="Genealogy.ecore#//Marriage/wife" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.0"/>
         </children>
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.4/@children.3" eClass="Genealogy.ecore#//Person">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.4/@children.2" eClass="Genealogy.ecore#//Person">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jenny" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jenny" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" eClass="Genealogy.ecore#//Marriage">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1980" eAttribute="Genealogy.ecore#//Marriage/date"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Los Angeles" eAttribute="Genealogy.ecore#//Marriage/place"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.0"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" eReference="Genealogy.ecore#//Marriage/wife" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@inputRoot/@children.0"/>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Genealogy.ecore#//Person">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
@@ -419,137 +426,145 @@
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Genealogy.ecore#//Query"/>
       </inputRoot>
       <outputRoot newOrModified="true">
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.2/@children.2 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.4/@children.2 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.8/@children.0 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.8/@children.1" eClass="Genealogy.ecore#//Person">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.2/@children.3 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.4/@children.3" eClass="Genealogy.ecore#//Person">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tom" eAttribute="Genealogy.ecore#//Person/name"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
         </children>
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.2/@children.3 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6/@children.0" eClass="Genealogy.ecore#//Person">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1930" eAttribute="Genealogy.ecore#//Person/dob"/>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.2/@children.2" eClass="Genealogy.ecore#//Person">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1930" eAttribute="Genealogy.ecore#//Person/dob"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sally" eAttribute="Genealogy.ecore#//Person/name"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="Genealogy.ecore#//Marriage">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/2000" eAttribute="Genealogy.ecore#//Marriage/date"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Orange" eAttribute="Genealogy.ecore#//Marriage/place"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" eReference="Genealogy.ecore#//Marriage/wife" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
         </children>
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.4/@children.3 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.7/@children.1" eClass="Genealogy.ecore#//Person">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.4/@children.2" eClass="Genealogy.ecore#//Person">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jenny" eAttribute="Genealogy.ecore#//Person/name"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" eClass="Genealogy.ecore#//Marriage">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1980" eAttribute="Genealogy.ecore#//Marriage/date"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Los Angeles" eAttribute="Genealogy.ecore#//Marriage/place"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" eReference="Genealogy.ecore#//Marriage/wife" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Marriage/husband" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" eClass="Genealogy.ecore#//Person">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tom" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tom" eAttribute="Genealogy.ecore#//Person/name"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="8" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" expanded="false" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.6/@children.6 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.7/@children.5 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.7/@children.0" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.7" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1921" eAttribute="Genealogy.ecore#//Person/dob"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="3" newOrModified="true" expanded="false" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.6/@children.7 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.7/@children.6" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.11" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="Genealogy.ecore#//Person/generation"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Mary" eAttribute="Genealogy.ecore#//Person/name"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1921" eAttribute="Genealogy.ecore#//Person/dob"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Mary" eAttribute="Genealogy.ecore#//Person/name"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="10" newOrModified="true" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1940" eAttribute="Genealogy.ecore#//Person/dob"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.9 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.10 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.13 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.14" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="Genealogy.ecore#//Person/generation"/>
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Little Joe" eAttribute="Genealogy.ecore#//Person/name"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1940" eAttribute="Genealogy.ecore#//Person/dob"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Little Joe" eAttribute="Genealogy.ecore#//Person/name"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="8" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.6/@children.5" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1962" eAttribute="Genealogy.ecore#//Person/dob"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="14" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.6/@children.5" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.8 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.12 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.15" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="Genealogy.ecore#//Person/generation"/>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Billy" eAttribute="Genealogy.ecore#//Person/name"/>
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1962" eAttribute="Genealogy.ecore#//Person/dob"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Billy" eAttribute="Genealogy.ecore#//Person/name"/>
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6/@children.1" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
-                  <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1980" eAttribute="Genealogy.ecore#//Person/dob"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="9" newOrModified="true" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
                   <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="5" eAttribute="Genealogy.ecore#//Person/generation"/>
-                  <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tiny Tim" eAttribute="Genealogy.ecore#//Person/name"/>
                   <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+                  <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1980" eAttribute="Genealogy.ecore#//Person/dob"/>
+                  <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tiny Tim" eAttribute="Genealogy.ecore#//Person/name"/>
                   <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
                 </children>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="12" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.6"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="15" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.6"/>
               </children>
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="12" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.5/@children.6" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1960" eAttribute="Genealogy.ecore#//Person/dob"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="15" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.5/@children.6" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="4" eAttribute="Genealogy.ecore#//Person/generation"/>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Susie" eAttribute="Genealogy.ecore#//Person/name"/>
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1960" eAttribute="Genealogy.ecore#//Person/dob"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Susie" eAttribute="Genealogy.ecore#//Person/name"/>
                 <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="8" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.5"/>
+                <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="14" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.5"/>
               </children>
             </children>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.6"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="7" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.7"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.6"/>
           </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.6 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.7/@children.6" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1930" eAttribute="Genealogy.ecore#//Person/dob"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.7 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.7/@children.5" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.5 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="Genealogy.ecore#//Person/generation"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sally" eAttribute="Genealogy.ecore#//Person/name"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1930" eAttribute="Genealogy.ecore#//Person/dob"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sally" eAttribute="Genealogy.ecore#//Person/name"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="1" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="11" newOrModified="true" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1950" eAttribute="Genealogy.ecore#//Person/dob"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="13" newOrModified="true" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="3" eAttribute="Genealogy.ecore#//Person/generation"/>
-              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Martin" eAttribute="Genealogy.ecore#//Person/name"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1950" eAttribute="Genealogy.ecore#//Person/dob"/>
+              <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Martin" eAttribute="Genealogy.ecore#//Person/name"/>
               <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
             </children>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="7" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.7"/>
-          </children>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.7 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.6/@children.7" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1920" eAttribute="Genealogy.ecore#//Person/dob"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="Genealogy.ecore#//Person/generation"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Joe" eAttribute="Genealogy.ecore#//Person/name"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
-            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" newOrModified="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.6 #//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.6/@children.6" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.7" eReference="Genealogy.ecore#//Person/child" eClass="Genealogy.ecore#//Person">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="2" eAttribute="Genealogy.ecore#//Person/generation"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfChildren"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1/1/1920" eAttribute="Genealogy.ecore#//Person/dob"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Joe" eAttribute="Genealogy.ecore#//Person/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0" eAttribute="Genealogy.ecore#//Person/numberOfDescendants"/>
             <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="4" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.6"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" newOrModified="true" eReference="Genealogy.ecore#//Person/sibling" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5"/>
           </children>
         </children>
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.9" eClass="Genealogy.ecore#//Query">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" eReference="Genealogy.ecore#//Query/person1" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.1"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="9" eReference="Genealogy.ecore#//Query/person2" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.5/@children.5"/>
-        </children>
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.10" eClass="Genealogy.ecore#//Query">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" eReference="Genealogy.ecore#//Query/person1" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" eReference="Genealogy.ecore#//Query/person2" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.3"/>
-        </children>
-        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.8" eClass="Genealogy.ecore#//Query">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Query/person1" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" eReference="Genealogy.ecore#//Query/person2" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
-        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.16 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.17 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.22 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.23" eClass="Genealogy.ecore#//Query"/>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.20 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.21 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.26 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.27" eClass="Genealogy.ecore#//Query"/>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.18 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.19 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.24 #//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.25" eClass="Genealogy.ecore#//Query"/>
       </outputRoot>
       <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
-        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.6"/>
-        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.7"/>
-        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.7"/>
-        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.7"/>
         <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5"/>
         <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.6"/>
         <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.6"/>
-        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5"/>
-        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.8"/>
-        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6"/>
-        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.10" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.7" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.8" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.9" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.10" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.11" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.12" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.13" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.14" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.15" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.5/@children.5/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.16" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.17" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.18" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.8"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.19" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.8"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.20" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.21" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.22" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.23" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.24" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.8"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.25" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.8"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.26" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.7"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.27" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.7"/>
       </outputMessageSection>
-      <expectedRoot>
+      <expectedRoot passed="false">
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" referencingHrefs="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.2/@children.2 #//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.4/@children.2 #//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.8/@children.0 #//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.8/@children.1" eClass="Genealogy.ecore#//Person">
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1/1/1900" eAttribute="Genealogy.ecore#//Person/dob"/>
           <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Genealogy.ecore#//Person/generation"/>
@@ -655,16 +670,16 @@
           </children>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Genealogy.ecore#//Query">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" manuallyCreated="true" eReference="Genealogy.ecore#//Query/person1" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.1"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="9" manuallyCreated="true" eReference="Genealogy.ecore#//Query/person2" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.5/@children.5/@children.5/@children.5/@children.5"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="2" manuallyCreated="true" passed="false" issue="Missing" eReference="Genealogy.ecore#//Query/person1" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="9" manuallyCreated="true" passed="false" issue="Missing" eReference="Genealogy.ecore#//Query/person2" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.5/@children.5/@children.5/@children.5/@children.5"/>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Genealogy.ecore#//Query">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" eReference="Genealogy.ecore#//Query/person1" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.5/@children.5"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" manuallyCreated="true" eReference="Genealogy.ecore#//Query/person2" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="3" manuallyCreated="true" passed="false" issue="Missing" eReference="Genealogy.ecore#//Query/person1" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.5/@children.5"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="5" manuallyCreated="true" passed="false" issue="Missing" eReference="Genealogy.ecore#//Query/person2" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.3"/>
         </children>
         <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Genealogy.ecore#//Query">
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Genealogy.ecore#//Query/person1" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.0"/>
-          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" eReference="Genealogy.ecore#//Query/person2" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" passed="false" issue="Missing" eReference="Genealogy.ecore#//Query/person1" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationHref" nodeID="1" manuallyCreated="true" passed="false" issue="Missing" eReference="Genealogy.ecore#//Query/person2" targetTestNode="#//@testsheetAssets.2/@testsheetViewList.0/@expectedRoot/@children.0"/>
         </children>
       </expectedRoot>
       <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
