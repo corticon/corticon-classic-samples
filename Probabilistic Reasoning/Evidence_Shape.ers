@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_FpfjrhRWEe6GC8iIEmARFw" externalChecksum="2722078124:507989954:1851567734" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_bUlDIBH9Ee6GYNLKihaONg" vocabulary="Evidence.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="Evidence.shape = 'long'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Evidence.shape = 'long'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Evidence.shape">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Evidence.shape" rhs="'long'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="G.statement = 'Banana'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.statement = 'Banana'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="G.statement">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="G.certainty = 0.3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.certainty = 0.3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="conc+=Conclusion.new[statement=G.statement,certainty=G.certainty,fact=Evidence.shape,used=false]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="conc += Conclusion.new [ Conclusion.used = false , Conclusion.statement = G.statement , Conclusion.fact = Evidence.shape , Conclusion.certainty = G.certainty ]" datatype="Conclusion" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="conc" datatype="Conclusion" termtype="ENTITY" fulltext="conc" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="Conclusion.statement">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Conclusion.certainty">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Evidence.shape">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="fact" datatype="String" termtype="ATTRIBUTE" fulltext="Conclusion.fact">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="used" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Conclusion.used">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="new" datatype="Conclusion" termtype="NEW" fulltext="Conclusion.new">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="G.statement">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="Evidence.shape = 'long'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Evidence.shape = 'long'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Evidence.shape">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Evidence.shape" rhs="'long'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="G.statement = 'Submarine'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.statement = 'Submarine'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="G.statement">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="G.certainty = 0.3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.certainty = 0.3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="conc+=Conclusion.new[statement=G.statement,certainty=G.certainty,fact=Evidence.shape,used=false]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="conc += Conclusion.new [ Conclusion.used = false , Conclusion.statement = G.statement , Conclusion.fact = Evidence.shape , Conclusion.certainty = G.certainty ]" datatype="Conclusion" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="conc" datatype="Conclusion" termtype="ENTITY" fulltext="conc" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="Conclusion.statement">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Conclusion.certainty">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Evidence.shape">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="fact" datatype="String" termtype="ATTRIBUTE" fulltext="Conclusion.fact">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="used" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Conclusion.used">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="new" datatype="Conclusion" termtype="NEW" fulltext="Conclusion.new">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="G.statement">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="Evidence.shape = 'oval'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Evidence.shape = 'oval'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Evidence.shape">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Evidence.shape" rhs="'oval'"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="G.statement = 'Lemon'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.statement = 'Lemon'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="G.statement">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="G.certainty = 0.4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.certainty = 0.4" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="conc+=Conclusion.new[statement=G.statement,certainty=G.certainty,fact=Evidence.shape,used=false]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="conc += Conclusion.new [ Conclusion.used = false , Conclusion.statement = G.statement , Conclusion.fact = Evidence.shape , Conclusion.certainty = G.certainty ]" datatype="Conclusion" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="conc" datatype="Conclusion" termtype="ENTITY" fulltext="conc" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="Conclusion.statement">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Conclusion.certainty">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Evidence.shape">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="fact" datatype="String" termtype="ATTRIBUTE" fulltext="Conclusion.fact">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="used" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Conclusion.used">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="new" datatype="Conclusion" termtype="NEW" fulltext="Conclusion.new">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="G.statement">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.1">
+      <text expression="If its long then it might be a banana CF={G.certainty}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If its long then it might be a banana CF= + G.certainty" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+              <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement ruleModelElements="#//@ruleset/@rules.2">
+      <text expression="If its long then it might be a submarine CF={G.certainty}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If its long then it might be a submarine CF= + G.certainty" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+              <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="If its oval then it might be a lemon CF={G.certainty}">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If its oval then it might be a lemon CF= + G.certainty" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+              <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="Evidence.ecore#//Evidence" ruleStatements="#//@ruleset/@ruleStatements.2">
+      <extension explicit="true" association="true" entity="Evidence.ecore#//Conclusion" traversedAssocRole="Evidence.ecore#//Evidence/conclusion">
+        <alias value="conc"/>
+      </extension>
+      <referencedAttributes attribute="Evidence.ecore#//Evidence/shape"/>
+    </logicalVariable>
+    <logicalVariable entity="Evidence.ecore#//G">
+      <referencedAttributes attribute="Evidence.ecore#//G/statement"/>
+      <referencedAttributes attribute="Evidence.ecore#//G/certainty"/>
+    </logicalVariable>
+    <logicalVariable entity="Evidence.ecore#//Conclusion">
+      <referencedAttributes attribute="Evidence.ecore#//Conclusion/certainty"/>
+      <referencedAttributes attribute="Evidence.ecore#//Conclusion/statement"/>
+      <referencedAttributes attribute="Evidence.ecore#//Conclusion/fact"/>
+      <referencedAttributes attribute="Evidence.ecore#//Conclusion/used"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell valueSet="{'Banana', 'Lemon', 'Submarine', 'Raspberry'}"/>
+        <expressionCell external="G.statement">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.statement" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="G.statement">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{0.5, 0.0001, -1.0, 0.3, 0.4}"/>
+        <expressionCell external="G.certainty">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.certainty" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="conc+=Conclusion.new[statement=G.statement,certainty=G.certainty,fact=Evidence.shape,used=false]">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="conc += Conclusion.new [ Conclusion.used = false , Conclusion.statement = G.statement , Conclusion.fact = Evidence.shape , Conclusion.certainty = G.certainty ]" datatype="Conclusion" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="conc" datatype="Conclusion" termtype="ENTITY" fulltext="conc" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="Conclusion.statement">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Conclusion.certainty">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Evidence.shape">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="fact" datatype="String" termtype="ATTRIBUTE" fulltext="Conclusion.fact">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="used" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Conclusion.used">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="new" datatype="Conclusion" termtype="NEW" fulltext="Conclusion.new">
+                <parentTerm text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+              </terms>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="G.statement">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Conclusion" datatype="Conclusion" termtype="ENTITY" fulltext="Conclusion" variable="#//@ruleset/@logicalVariables.2"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.2">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.2/@referencedAttributes.3"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="If its long then it might be a banana CF={G.certainty}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If its long then it might be a banana CF= + G.certainty" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="If its long then it might be a submarine CF={G.certainty}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If its long then it might be a submarine CF= + G.certainty" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="If its oval then it might be a lemon CF={G.certainty}">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If its oval then it might be a lemon CF= + G.certainty" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{'round', 'oval', 'long'}"/>
+        <expressionCell external="Evidence.shape">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Evidence.shape" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Evidence.shape">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="'long'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Evidence.shape = 'long'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Evidence.shape">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="'Banana'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.statement = 'Banana'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="G.statement">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="0.3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.certainty = 0.3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="'long'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Evidence.shape = 'long'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Evidence.shape">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="'Submarine'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.statement = 'Submarine'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="G.statement">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="0.3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.certainty = 0.3" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="'oval'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Evidence.shape = 'oval'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="shape" datatype="String" termtype="ATTRIBUTE" fulltext="Evidence.shape">
+                <parentTerm text="Evidence" datatype="Evidence" termtype="ENTITY" fulltext="Evidence" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="'Lemon'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.statement = 'Lemon'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="statement" datatype="String" termtype="ATTRIBUTE" fulltext="G.statement">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="0.4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="G.certainty = 0.4" datatype="Decimal" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="certainty" datatype="Decimal" termtype="ATTRIBUTE" fulltext="G.certainty">
+                <parentTerm text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="G" datatype="G" termtype="ENTITY" fulltext="G"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

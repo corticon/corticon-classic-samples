@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_Fq_YkBRWEe6GC8iIEmARFw" externalChecksum="2722078124:507989954:1851567734" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_zfTxQIX-EemQjqsc1Wb-Ng" vocabulary="Fuzzy.ecore#/">
+    <rule>
+      <condition/>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0">
+      <condition>
+        <opaqueExpression expression="Borrower.highRisk > Borrower.lowRisk">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk > Borrower.lowRisk" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Borrower.highRisk" rhs="> Borrower.lowRisk"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Borrower.riskProfile = 'High Risk'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.riskProfile = 'High Risk'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1">
+      <condition>
+        <opaqueExpression expression="Borrower.highRisk = Borrower.lowRisk">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk = Borrower.lowRisk" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Borrower.highRisk" rhs="Borrower.lowRisk"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Borrower.riskProfile = 'Med Risk'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.riskProfile = 'Med Risk'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition>
+        <opaqueExpression expression="Borrower.highRisk &lt; Borrower.lowRisk">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk &lt; Borrower.lowRisk" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Borrower.highRisk" rhs="&lt; Borrower.lowRisk"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Borrower.riskProfile = 'Low Risk'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.riskProfile = 'Low Risk'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{ Borrower.highRisk } > { Borrower.lowRisk } => risk = { Borrower.riskProfile }">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk +  >  + Borrower.lowRisk +  => risk =  + Borrower.riskProfile" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+              <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+              <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+              <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Warning" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{ Borrower.highRisk } = { Borrower.lowRisk } => risk = { Borrower.riskProfile }">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk +  =  + Borrower.lowRisk +  => risk =  + Borrower.riskProfile" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+              <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+              <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+              <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Violation" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="{ Borrower.highRisk } &lt; { Borrower.lowRisk } => risk = { Borrower.riskProfile }">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk +  &lt;  + Borrower.lowRisk +  => risk =  + Borrower.riskProfile" expressiontype="BRSTATEMENT">
+          <referencedTermList>
+            <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+              <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+              <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+              <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable entity="Fuzzy.ecore#//Borrower" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2">
+      <referencedAttributes attribute="Fuzzy.ecore#//Borrower/highRisk"/>
+      <referencedAttributes attribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+      <referencedAttributes attribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell valueSet="{'High Risk', 'Low Risk', 'Med Risk'}"/>
+        <expressionCell external="Borrower.riskProfile">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.riskProfile" datatype="String" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList rowHeight="38" ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="{ Borrower.highRisk } > { Borrower.lowRisk } => risk = { Borrower.riskProfile }">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk +  >  + Borrower.lowRisk +  => risk =  + Borrower.riskProfile" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="{ Borrower.highRisk } = { Borrower.lowRisk } => risk = { Borrower.riskProfile }">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk +  =  + Borrower.lowRisk +  => risk =  + Borrower.riskProfile" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="{ Borrower.highRisk } &lt; { Borrower.lowRisk } => risk = { Borrower.riskProfile }">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk +  &lt;  + Borrower.lowRisk +  => risk =  + Borrower.riskProfile" expressiontype="BRSTATEMENT">
+            <referencedTermList>
+              <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <valueSetCell valueSet="{&lt; Borrower.lowRisk, = Borrower.lowRisk, > Borrower.lowRisk}"/>
+        <expressionCell external="Borrower.highRisk">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk" datatype="Decimal" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="> Borrower.lowRisk">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk > Borrower.lowRisk" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="'High Risk'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.riskProfile = 'High Risk'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="Borrower.lowRisk">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk = Borrower.lowRisk" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="'Med Risk'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.riskProfile = 'Med Risk'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="&lt; Borrower.lowRisk">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.highRisk &lt; Borrower.lowRisk" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="highRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.highRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="lowRisk" datatype="Decimal" termtype="ATTRIBUTE" fulltext="Borrower.lowRisk">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="'Low Risk'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Borrower.riskProfile = 'Low Risk'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="riskProfile" datatype="String" termtype="ATTRIBUTE" fulltext="Borrower.riskProfile">
+                <parentTerm text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Borrower" datatype="Borrower" termtype="ENTITY" fulltext="Borrower"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_pP-i2B7vEeKwc-1Q5N6mow" externalChecksum="2722078124:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_ekm9ZxRWEe6GC8iIEmARFw" externalChecksum="2722078124:507989954" studioType="Java">
+    <testsheet ruleActivityUpdateStamp="_aTqFoxRWEe6GC8iIEmARFw" ruleActivity="Fuzzy.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.5"/>
+      </outputMessageSection>
+      <expectedRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="17" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_ekm9YRRWEe6GC8iIEmARFw" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_aTqFoxRWEe6GC8iIEmARFw" ruleActivity="Fuzzy.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="0.981132 > 0.018868 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="0.981132 > 0.018868 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="0.981132 > 0.018868 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="0.981132 > 0.018868 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="0.981132 > 0.018868 => risk = High Risk"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.018868" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.018868" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.018868" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.018868" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" messageItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.018868" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.1/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.3"/>
+      </outputMessageSection>
+      <expectedRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.018868" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.018868" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.018868" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.018868" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="18" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.018868" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.981132" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_ekm9YhRWEe6GC8iIEmARFw" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_aTqFoxRWEe6GC8iIEmARFw" ruleActivity="Fuzzy.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="0.750000 > 0.250000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="0.735849 > 0.264151 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="0.735849 > 0.264151 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="0.735849 > 0.264151 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="0.735849 > 0.264151 => risk = High Risk"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.264151" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.264151" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.264151" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" messageItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.264151" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.2/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5"/>
+      </outputMessageSection>
+      <expectedRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.264151" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.264151" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.264151" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="31" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.264151" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.735849" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_ekm9YxRWEe6GC8iIEmARFw" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_aTqFoxRWEe6GC8iIEmARFw" ruleActivity="Fuzzy.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="0.750000 > 0.250000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Warning" text="0.500000 = 0.500000 => risk = Med Risk"/>
+        <PostedMessage severity="Violation" text="0.490566 &lt; 0.509434 => risk = Low Risk"/>
+        <PostedMessage severity="Violation" text="0.490566 &lt; 0.509434 => risk = Low Risk"/>
+        <PostedMessage severity="Violation" text="0.490566 &lt; 0.509434 => risk = Low Risk"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Med Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.509434" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.509434" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" messageItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.509434" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.3/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.4"/>
+      </outputMessageSection>
+      <expectedRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Med Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.509434" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.509434" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="44" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.509434" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.490566" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_ekm9ZBRWEe6GC8iIEmARFw" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_aTqFoxRWEe6GC8iIEmARFw" ruleActivity="Fuzzy.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="0.750000 > 0.250000 => risk = High Risk"/>
+        <PostedMessage severity="Warning" text="0.500000 = 0.500000 => risk = Med Risk"/>
+        <PostedMessage severity="Violation" text="0.245283 &lt; 0.754717 => risk = Low Risk"/>
+        <PostedMessage severity="Violation" text="0.245283 &lt; 0.754717 => risk = Low Risk"/>
+        <PostedMessage severity="Violation" text="0.250000 &lt; 0.750000 => risk = Low Risk"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Med Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.754717" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" messageItem="#//@testsheetAssets.4/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.754717" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.4/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.4/@testsheetViewList.0/@outputRoot/@children.4"/>
+      </outputMessageSection>
+      <expectedRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Med Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.754717" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="57" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.754717" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.245283" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_ekm9ZRRWEe6GC8iIEmARFw" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_aTqFoxRWEe6GC8iIEmARFw" ruleActivity="Fuzzy.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="0.750000 > 0.250000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Warning" text="0.500000 = 0.500000 => risk = Med Risk"/>
+        <PostedMessage severity="Violation" text="0.000000 &lt; 1.000000 => risk = Low Risk"/>
+        <PostedMessage severity="Violation" text="0.250000 &lt; 0.750000 => risk = Low Risk"/>
+        <PostedMessage severity="Violation" text="0.000000 &lt; 1.000000 => risk = Low Risk"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.5/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.5/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.5/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.5/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Med Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" messageItem="#//@testsheetAssets.5/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" messageItem="#//@testsheetAssets.5/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" messageItem="#//@testsheetAssets.5/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.5/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.5/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.5/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.5/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.5/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.6"/>
+        <messageItemList postedMessage="#//@testsheetAssets.5/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.5/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.5/@testsheetViewList.0/@outputRoot/@children.5"/>
+      </outputMessageSection>
+      <expectedRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Med Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="70" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_ekm9ZhRWEe6GC8iIEmARFw" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_aTqFoxRWEe6GC8iIEmARFw" ruleActivity="Fuzzy.erf#//@ruleflow">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="1.000000 > 0.000000 => risk = High Risk"/>
+        <PostedMessage severity="Info" text="0.750000 > 0.250000 => risk = High Risk"/>
+        <PostedMessage severity="Warning" text="0.500000 = 0.500000 => risk = Med Risk"/>
+        <PostedMessage severity="Violation" text="0.250000 &lt; 0.750000 => risk = Low Risk"/>
+        <PostedMessage severity="Violation" text="0.000000 &lt; 1.000000 => risk = Low Risk"/>
+        <PostedMessage severity="Violation" text="0.000000 &lt; 1.000000 => risk = Low Risk"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" messageItem="#//@testsheetAssets.6/@testsheetViewList.0/@outputMessageSection/@messageItemList.1" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" messageItem="#//@testsheetAssets.6/@testsheetViewList.0/@outputMessageSection/@messageItemList.0" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" messageItem="#//@testsheetAssets.6/@testsheetViewList.0/@outputMessageSection/@messageItemList.2" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.6/@testsheetViewList.0/@outputMessageSection/@messageItemList.3" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Med Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" messageItem="#//@testsheetAssets.6/@testsheetViewList.0/@outputMessageSection/@messageItemList.4" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" messageItem="#//@testsheetAssets.6/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" newOrModified="true" messageItem="#//@testsheetAssets.6/@testsheetViewList.0/@outputMessageSection/@messageItemList.6" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.6/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.6/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.6/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.6/@testsheetViewList.0/@outputRoot/@children.0"/>
+        <messageItemList postedMessage="#//@testsheetAssets.6/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.6/@testsheetViewList.0/@outputRoot/@children.2"/>
+        <messageItemList postedMessage="#//@testsheetAssets.6/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.6/@testsheetViewList.0/@outputRoot/@children.3"/>
+        <messageItemList postedMessage="#//@testsheetAssets.6/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.6/@testsheetViewList.0/@outputRoot/@children.4"/>
+        <messageItemList postedMessage="#//@testsheetAssets.6/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.6/@testsheetViewList.0/@outputRoot/@children.5"/>
+        <messageItemList postedMessage="#//@testsheetAssets.6/@testsheet/@output/@PostedMessage.6" testNode="#//@testsheetAssets.6/@testsheetViewList.0/@outputRoot/@children.6"/>
+      </outputMessageSection>
+      <expectedRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="32.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="High Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="55.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.500000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Med Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.250000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="77.500000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.750000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="100.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" eClass="Fuzzy.ecore#//Borrower">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="71" eAttribute="Fuzzy.ecore#//Borrower/age"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/highRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="110.000000" eAttribute="Fuzzy.ecore#//Borrower/income"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/lowRisk"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1.000000" eAttribute="Fuzzy.ecore#//Borrower/rich"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Low Risk" eAttribute="Fuzzy.ecore#//Borrower/riskProfile"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="0.000000" eAttribute="Fuzzy.ecore#//Borrower/young"/>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_zfTxQIX-EemQjqsc1Wb-Ng" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet #//@testsheetAssets.3/@testsheet #//@testsheetAssets.4/@testsheet #//@testsheetAssets.5/@testsheet #//@testsheetAssets.6/@testsheet" vocabulary="Fuzzy.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="AgeUnder18"/>
+    <testTabList name="Age18"/>
+    <testTabList name="Age31"/>
+    <testTabList name="Age44"/>
+    <testTabList name="Age57"/>
+    <testTabList name="Age70"/>
+    <testTabList name="AgeOver70"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

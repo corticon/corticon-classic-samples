@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_dWwWQBH9Ee6GYNLKihaONg" externalChecksum="2722078124:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="6" minorVersionNumber="3" majorServiceNumber="1" minorServiceNumber="9" buildNumber="8020" updateStamp="_IiNdWhRWEe6GC8iIEmARFw" externalChecksum="2722078124:507989954" studioType="Java">
+    <testsheet ruleActivityUpdateStamp="_FsyIMxRWEe6GC8iIEmARFw" returnEntityMode="All" ruleActivity="Evidence.erf#//@ruleflow" locale="">
+      <input/>
+      <output>
+        <PostedMessage severity="Info" text="Its definitely NOT a Raspberry because its yellow"/>
+        <PostedMessage severity="Info" text="Its a Submarine with a certainty of 0.300070 because its long and yellow"/>
+        <PostedMessage severity="Info" text="Its a Lemon with a certainty of 0.500000 because its yellow"/>
+        <PostedMessage severity="Info" text="Its a Banana with a certainty of 0.755000 because its long and small and yellow"/>
+        <PostedMessage severity="Info" text="Its a Raspberry with a certainty of -1.000000 because its small and yellow"/>
+        <PostedMessage severity="Info" text="Its most likely a Banana because its long and small and yellow; CF=0.755000"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Evidence.ecore#//G">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Evidence.ecore#//G/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Evidence.ecore#//G/statement"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Evidence.ecore#//Evidence">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yellow" eAttribute="Evidence.ecore#//Evidence/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="long" eAttribute="Evidence.ecore#//Evidence/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="Evidence.ecore#//Evidence/size"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Evidence.ecore#//G">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Raspberry" eAttribute="Evidence.ecore#//G/statement"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.500000" eAttribute="Evidence.ecore#//G/certainty"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" messageItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.1 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.2 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.3 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.4 #//@testsheetAssets.0/@testsheetViewList.0/@outputMessageSection/@messageItemList.5" eClass="Evidence.ecore#//Evidence">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" eReference="Evidence.ecore#//Evidence/conclusion" eClass="Evidence.ecore#//Conclusion">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="long and small and yellow" eAttribute="Evidence.ecore#//Conclusion/fact"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="Banana" eAttribute="Evidence.ecore#//Conclusion/statement"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="0.755000" eAttribute="Evidence.ecore#//Conclusion/certainty"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" value="false" eAttribute="Evidence.ecore#//Conclusion/used"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="yellow" eAttribute="Evidence.ecore#//Evidence/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="long" eAttribute="Evidence.ecore#//Evidence/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="small" eAttribute="Evidence.ecore#//Evidence/size"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600">
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+        <messageItemList postedMessage="#//@testsheetAssets.0/@testsheet/@output/@PostedMessage.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1"/>
+      </outputMessageSection>
+      <expectedRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" manuallyCreated="true" eClass="Evidence.ecore#//G">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.500000" eAttribute="Evidence.ecore#//G/certainty"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Raspberry" eAttribute="Evidence.ecore#//G/statement"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" manuallyCreated="true" eClass="Evidence.ecore#//Evidence">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="yellow" eAttribute="Evidence.ecore#//Evidence/color"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="long" eAttribute="Evidence.ecore#//Evidence/shape"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="small" eAttribute="Evidence.ecore#//Evidence/size"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" manuallyCreated="true" eReference="Evidence.ecore#//Evidence/conclusion" eClass="Evidence.ecore#//Conclusion">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="0.755000" eAttribute="Evidence.ecore#//Conclusion/certainty"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="long and small and yellow" eAttribute="Evidence.ecore#//Conclusion/fact"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="Banana" eAttribute="Evidence.ecore#//Conclusion/statement"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" manuallyCreated="true" value="false" eAttribute="Evidence.ecore#//Conclusion/used"/>
+          </children>
+        </children>
+      </expectedRoot>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_bUlDIBH9Ee6GYNLKihaONg" testsheets="#//@testsheetAssets.0/@testsheet" vocabulary="Evidence.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Evidence"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>
