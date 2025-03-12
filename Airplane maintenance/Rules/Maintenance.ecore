@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
   <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
-    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="2" buildNumber="8020" updateStamp="_QQ_N0rbYEe6b3vRPP1714g" externalChecksum="2722078124:507989954" studioType="Javascript" customDataTypeDisplayCount="50">
+    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="7" minorVersionNumber="1" minorServiceNumber="4" buildNumber="8022" updateStamp="_gNQOAP9CEe-nbfdG_fTL9Q" externalChecksum="2722078124:507989954" studioType="Java" customDataTypeDisplayCount="50">
       <languageCode>en_US</languageCode>
       <databaseAccess databasePropertyDisplayCount="50"/>
       <customDataTypeList enumerationDisplayCount="50" eDataType="#//typeType">
@@ -50,7 +50,7 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="purchaseDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="purchaseDate" eType="ecore:EDataType http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore#//Date">
       <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
         <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
           <name manuallyCreated="true" value="purchaseDate"/>
@@ -58,7 +58,7 @@
         </contents>
       </eAnnotations>
     </eStructuralFeatures>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="serviceDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="serviceDate" eType="ecore:EDataType http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore#//Date">
       <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
         <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
           <name manuallyCreated="true" value="serviceDate"/>
