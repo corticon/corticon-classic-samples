@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="7" minorVersionNumber="1" minorServiceNumber="4" buildNumber="8022" updateStamp="_lPOO7P9JEe-Is_o-qLpb0g" externalChecksum="2722078124:507989954:3680615299" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_02OgcexOEe680s6b_2l7sg" vocabulary="UServ.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="theClient.productTypeCount = services.productType -> uniqueCount">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.productTypeCount = services.productType->uniqueCount" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="productTypeCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.productTypeCount">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="services_productType" datatype="Integer" termtype="COLLECTION" fulltext="services.productType->uniqueCount">
+                <parentTerm text="productType" datatype="String" termtype="ATTRIBUTE" fulltext="services.productType">
+                  <parentTerm text="services" datatype="Service" termtype="ENTITY" fulltext="services" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0" overriddenBy="#//@ruleset/@rules.2">
+      <condition>
+        <opaqueExpression expression="theClient.productTypeCount >= 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.productTypeCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="productTypeCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.productTypeCount">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theClient.productTypeCount" rhs=">= 3"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(theClient.isPreferred)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theClient.isPreferred ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theClient.isPreferred" rhs="T"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="theClient.isPreferred = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.isPreferred = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1" overrides="#//@ruleset/@rules.1">
+      <condition>
+        <opaqueExpression expression="theClient.productTypeCount &lt; 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.productTypeCount &lt; 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="productTypeCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.productTypeCount">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theClient.productTypeCount" rhs="&lt; 3"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="(theClient.isPreferred)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theClient.isPreferred ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theClient.isPreferred" rhs="T"/>
+      </condition>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="theClient.isPreferred = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.isPreferred = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not ((theClient.isPreferred)=true) or theClient.isPreferred = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( ( theClient.isPreferred ) = true ) or theClient.isPreferred = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theClient.isPreferred" rhs="not T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="theClient.avgRolling12MoProdTypeCnt >= 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.avgRolling12MoProdTypeCnt >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="avgRolling12MoProdTypeCnt" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.avgRolling12MoProdTypeCnt">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theClient.avgRolling12MoProdTypeCnt" rhs=">= 3"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="theClient.isPreferred = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.isPreferred = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="not ((theClient.isPreferred)=true) or theClient.isPreferred = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( ( theClient.isPreferred ) = true ) or theClient.isPreferred = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theClient.isPreferred" rhs="not T"/>
+      </condition>
+      <condition>
+        <opaqueExpression expression="theClient.avgRolling12MoProdTypeCnt &lt; 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.avgRolling12MoProdTypeCnt &lt; 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="avgRolling12MoProdTypeCnt" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.avgRolling12MoProdTypeCnt">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theClient.avgRolling12MoProdTypeCnt" rhs="&lt; 3"/>
+      </condition>
+      <action/>
+      <action>
+        <opaqueExpression expression="theClient.isPreferred = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.isPreferred = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="V2: If the client has been a preferred client and the client's portfolio continues to include at least 3 product families, then the client is still a preferred client.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: If the client has been a preferred client and the client's portfolio continues to include at least 3 product families, then the client is still a preferred client." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="V2: If the client has been a preferred client and the client's portfolio does not continue to include at least 3 product families, then the client is no longer a preferred client.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: If the client has been a preferred client and the client's portfolio does not continue to include at least 3 product families, then the client is no longer a preferred client." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="V2: If the client is not a preferred client and the client's portfolio includes an average of at least 3 product families over the past 12 months, then the client is a preferred client.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: If the client is not a preferred client and the client's portfolio includes an average of at least 3 product families over the past 12 months, then the client is a preferred client." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0">
+      <text expression="V2: If the client is not a preferred client and the client's portfolio does not include an average of at least 3 product families over the prior 12 months, then the client is not a preferred client.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: If the client is not a preferred client and the client's portfolio does not include an average of at least 3 product families over the prior 12 months, then the client is not a preferred client." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="UServ.ecore#//Client" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3">
+      <alias value="theClient"/>
+      <extension explicit="true" association="true" entity="UServ.ecore#//Service" traversedAssocRole="UServ.ecore#//Client/service">
+        <alias value="services"/>
+        <referencedAttributes attribute="UServ.ecore#//Service/productType"/>
+      </extension>
+      <referencedAttributes attribute="UServ.ecore#//Client/productTypeCount"/>
+      <referencedAttributes attribute="UServ.ecore#//Client/isPreferred"/>
+      <referencedAttributes attribute="UServ.ecore#//Client/avgRolling12MoProdTypeCnt"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell/>
+        <expressionCell external="theClient.productTypeCount = services.productType -> uniqueCount">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.productTypeCount = services.productType->uniqueCount" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="productTypeCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.productTypeCount">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              <terms text="services_productType" datatype="Integer" termtype="COLLECTION" fulltext="services.productType->uniqueCount">
+                <parentTerm text="productType" datatype="String" termtype="ATTRIBUTE" fulltext="services.productType">
+                  <parentTerm text="services" datatype="Service" termtype="ENTITY" fulltext="services" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="theClient.isPreferred">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.isPreferred" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="V2: If the client has been a preferred client and the client's portfolio continues to include at least 3 product families, then the client is still a preferred client.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: If the client has been a preferred client and the client's portfolio continues to include at least 3 product families, then the client is still a preferred client." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="V2: If the client has been a preferred client and the client's portfolio does not continue to include at least 3 product families, then the client is no longer a preferred client.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: If the client has been a preferred client and the client's portfolio does not continue to include at least 3 product families, then the client is no longer a preferred client." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="V2: If the client is not a preferred client and the client's portfolio includes an average of at least 3 product families over the past 12 months, then the client is a preferred client.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: If the client is not a preferred client and the client's portfolio includes an average of at least 3 product families over the past 12 months, then the client is a preferred client." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="4"/>
+        <text external="V2: If the client is not a preferred client and the client's portfolio does not include an average of at least 3 product families over the prior 12 months, then the client is not a preferred client.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="V2: If the client is not a preferred client and the client's portfolio does not include an average of at least 3 product families over the prior 12 months, then the client is not a preferred client." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{&lt; 3, >= 3}"/>
+        <expressionCell external="theClient.productTypeCount">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.productTypeCount" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="productTypeCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.productTypeCount">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F, null}"/>
+        <expressionCell external="theClient.isPreferred">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.isPreferred" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{&lt; 3, >= 3}"/>
+        <expressionCell external="theClient.avgRolling12MoProdTypeCnt">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.avgRolling12MoProdTypeCnt" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="avgRolling12MoProdTypeCnt" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.avgRolling12MoProdTypeCnt">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet=">= 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.productTypeCount >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="productTypeCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.productTypeCount">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theClient.isPreferred ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.isPreferred = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <overrideValueSetCell valueSet="1"/>
+        <conditionValueSetCellList valueSet="&lt; 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.productTypeCount &lt; 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="productTypeCount" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.productTypeCount">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theClient.isPreferred ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.isPreferred = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( ( theClient.isPreferred ) = true ) or theClient.isPreferred = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet=">= 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.avgRolling12MoProdTypeCnt >= 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="avgRolling12MoProdTypeCnt" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.avgRolling12MoProdTypeCnt">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.isPreferred = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="not T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="not ( ( theClient.isPreferred ) = true ) or theClient.isPreferred = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="&lt; 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.avgRolling12MoProdTypeCnt &lt; 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="avgRolling12MoProdTypeCnt" datatype="Integer" termtype="ATTRIBUTE" fulltext="theClient.avgRolling12MoProdTypeCnt">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.isPreferred = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isPreferred" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isPreferred">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

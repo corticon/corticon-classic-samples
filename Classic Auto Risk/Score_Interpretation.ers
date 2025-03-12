@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="7" minorVersionNumber="1" minorServiceNumber="4" buildNumber="8022" updateStamp="_nSrUY_9JEe-Is_o-qLpb0g" externalChecksum="2722078124:507989954:3680615299" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_02OgcexOEe680s6b_2l7sg" vocabulary="UServ.ecore#/">
+    <rule/>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.0" overriddenBy="#//@ruleset/@rules.4">
+      <condition>
+        <opaqueExpression expression="policy.eligibilityScore &lt; 100">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.eligibilityScore &lt; 100" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="eligibilityScore" datatype="Integer" termtype="ATTRIBUTE" fulltext="policy.eligibilityScore">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="policy.eligibilityScore" rhs="&lt; 100"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="party.isEligible = 'Yes'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="party.isEligible = 'Yes'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="party.isEligible">
+                <parentTerm text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                  <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.1" overriddenBy="#//@ruleset/@rules.4">
+      <condition>
+        <opaqueExpression expression="policy.eligibilityScore in 100 .. 250">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.eligibilityScore in 100 .. 250" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="eligibilityScore" datatype="Integer" termtype="ATTRIBUTE" fulltext="policy.eligibilityScore">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="policy.eligibilityScore" rhs="100 .. 250"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="party.isEligible = 'Review by Underwriter'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="party.isEligible = 'Review by Underwriter'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="party.isEligible">
+                <parentTerm text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                  <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.2" overriddenBy="#//@ruleset/@rules.4">
+      <condition>
+        <opaqueExpression expression="policy.eligibilityScore > 250">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.eligibilityScore > 250" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="eligibilityScore" datatype="Integer" termtype="ATTRIBUTE" fulltext="policy.eligibilityScore">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="policy.eligibilityScore" rhs="> 250"/>
+      </condition>
+      <condition/>
+      <action>
+        <opaqueExpression expression="party.isEligible = 'No'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="party.isEligible = 'No'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="party.isEligible">
+                <parentTerm text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                  <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule documentingRuleStatements="#//@ruleset/@ruleStatements.3" overrides="#//@ruleset/@rules.1 #//@ruleset/@rules.2 #//@ruleset/@rules.3">
+      <condition/>
+      <condition>
+        <opaqueExpression expression="(theClient.isLongTerm)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theClient.isLongTerm ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isLongTerm" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isLongTerm">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="theClient.isLongTerm" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="party.isEligible = 'Yes'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="party.isEligible = 'Yes'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="party.isEligible">
+                <parentTerm text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                  <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="policy.serviceParticipant.isEligible = 'Yes'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.serviceParticipant.isEligible = 'Yes'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="policy.serviceParticipant.isEligible">
+                <parentTerm text="serviceParticipant" datatype="ServiceParticipant" termtype="ENTITY" fulltext="policy.serviceParticipant" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="serviceParticipant" datatype="ServiceParticipant" termtype="ENTITY" fulltext="policy.serviceParticipant" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="policy.vehicle.eligibilityRating = 'Eligible'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.vehicle.eligibilityRating = 'Eligible'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="eligibilityRating" datatype="String" termtype="ATTRIBUTE" fulltext="policy.vehicle.eligibilityRating">
+                <parentTerm text="vehicle" datatype="Vehicle" termtype="ENTITY" fulltext="policy.vehicle" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="vehicle" datatype="Vehicle" termtype="ENTITY" fulltext="policy.vehicle" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+      <opaqueExpression expression="policy.productType = 'Vehicle Insurance'">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.productType = 'Vehicle Insurance'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="productType" datatype="String" termtype="ATTRIBUTE" fulltext="policy.productType">
+              <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.1" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+      <text expression="If eligibility score is less than 100, then client is eligible for insurance.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If eligibility score is less than 100, then client is eligible for insurance." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.2" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+      <text expression="If eligibility score is between 100 and 250 inclusive, then the client's application/policy renewal must be reviewed by underwriting manager who will determine whether the client is eligible for auto insurance.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If eligibility score is between 100 and 250 inclusive, then the client's application/policy renewal must be reviewed by underwriting manager who will determine whether the client is eligible for auto insurance." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.3" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+      <text expression="If eligibility score is greater than 250, then client is not eligible for auto insurance.">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If eligibility score is greater than 250, then client is not eligible for auto insurance." expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <ruleStatement post="Info" ruleModelElements="#//@ruleset/@rules.4" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+      <text expression="If a long term client, then client is always eligible for auto insurance, as is every person and car directly covered by a long term client's auto policy. (A long term client has maintained a UServ portfolio for 15 years.)">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If a long term client, then client is always eligible for auto insurance, as is every person and car directly covered by a long term client's auto policy. (A long term client has maintained a UServ portfolio for 15 years.)" expressiontype="BRSTATEMENT">
+          <referencedTermList/>
+        </parserOutput>
+      </text>
+    </ruleStatement>
+    <logicalVariable explicit="true" entity="UServ.ecore#//Client" filters="#//@ruleset/@filters.0">
+      <alias value="theClient"/>
+      <extension explicit="true" association="true" entity="UServ.ecore#//Service" traversedAssocRole="UServ.ecore#//Client/service" filters="#//@ruleset/@filters.0">
+        <alias value="policy"/>
+        <extension association="true" entity="UServ.ecore#//ServiceParticipant" traversedAssocRole="UServ.ecore#//Service/serviceParticipant">
+          <referencedAttributes attribute="UServ.ecore#//ServiceParticipant/isEligible"/>
+        </extension>
+        <extension association="true" entity="UServ.ecore#//Vehicle" traversedAssocRole="UServ.ecore#//Service/vehicle">
+          <referencedAttributes attribute="UServ.ecore#//Vehicle/eligibilityRating"/>
+        </extension>
+        <referencedAttributes attribute="UServ.ecore#//Service/productType"/>
+        <referencedAttributes attribute="UServ.ecore#//Service/eligibilityScore"/>
+      </extension>
+      <extension association="true" entity="UServ.ecore#//BusinessParty" traversedAssocRole="UServ.ecore#//Client/businessParty">
+        <extension explicit="true" association="true" entity="UServ.ecore#//ServiceParticipant" traversedAssocRole="UServ.ecore#//BusinessParty/serviceParticipant" ruleStatements="#//@ruleset/@ruleStatements.0 #//@ruleset/@ruleStatements.1 #//@ruleset/@ruleStatements.2 #//@ruleset/@ruleStatements.3">
+          <alias value="party"/>
+          <referencedAttributes attribute="UServ.ecore#//ServiceParticipant/isEligible"/>
+        </extension>
+      </extension>
+      <referencedAttributes attribute="UServ.ecore#//Client/isLongTerm"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <valueSetCell valueSet="{'Yes', 'No', 'Review by Underwriter'}"/>
+        <expressionCell external="party.isEligible">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="party.isEligible" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="party.isEligible">
+                <parentTerm text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party" variable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+                  <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{'Yes', 'No', 'Review by Underwriter'}"/>
+        <expressionCell external="policy.serviceParticipant.isEligible">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.serviceParticipant.isEligible" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="policy.serviceParticipant.isEligible">
+                <parentTerm text="serviceParticipant" datatype="ServiceParticipant" termtype="ENTITY" fulltext="policy.serviceParticipant" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+                  <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <valueSetCell valueSet="{'Eligible', 'Provisional', 'Not Eligible'}"/>
+        <expressionCell external="policy.vehicle.eligibilityRating">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.vehicle.eligibilityRating" datatype="String" expressiontype="EXPRESSION" enumeration="true" cellValue="false">
+            <referencedTermList>
+              <terms text="eligibilityRating" datatype="String" termtype="ATTRIBUTE" fulltext="policy.vehicle.eligibilityRating">
+                <parentTerm text="vehicle" datatype="Vehicle" termtype="ENTITY" fulltext="policy.vehicle" variable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+                  <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="policy.productType = 'Vehicle Insurance'" filter="#//@ruleset/@filters.0"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="policy.productType = 'Vehicle Insurance'" filter="#//@ruleset/@filters.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.0/@referencedAttributes.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@extension.1/@referencedAttributes.0"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@extension.0/@referencedAttributes.0"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="policy.productType = 'Vehicle Insurance'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.productType = 'Vehicle Insurance'" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="productType" datatype="String" termtype="ATTRIBUTE" fulltext="policy.productType">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400">
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.0">
+        <reference external="1"/>
+        <text external="If eligibility score is less than 100, then client is eligible for insurance.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If eligibility score is less than 100, then client is eligible for insurance." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.1">
+        <reference external="2"/>
+        <text external="If eligibility score is between 100 and 250 inclusive, then the client's application/policy renewal must be reviewed by underwriting manager who will determine whether the client is eligible for auto insurance.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If eligibility score is between 100 and 250 inclusive, then the client's application/policy renewal must be reviewed by underwriting manager who will determine whether the client is eligible for auto insurance." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.2">
+        <reference external="3"/>
+        <text external="If eligibility score is greater than 250, then client is not eligible for auto insurance.">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If eligibility score is greater than 250, then client is not eligible for auto insurance." expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+      <ruleStatementItemList ruleStatement="#//@ruleset/@ruleStatements.3">
+        <reference external="4"/>
+        <text external="If a long term client, then client is always eligible for auto insurance, as is every person and car directly covered by a long term client's auto policy. (A long term client has maintained a UServ portfolio for 15 years.)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="If a long term client, then client is always eligible for auto insurance, as is every person and car directly covered by a long term client's auto policy. (A long term client has maintained a UServ portfolio for 15 years.)" expressiontype="BRSTATEMENT">
+            <referencedTermList/>
+          </parserOutput>
+        </text>
+      </ruleStatementItemList>
+    </ruleStatementSection>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{&lt; 100, 100 .. 250, > 250}"/>
+        <expressionCell external="policy.eligibilityScore">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.eligibilityScore" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="eligibilityScore" datatype="Integer" termtype="ATTRIBUTE" fulltext="policy.eligibilityScore">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList variableMode="Literal">
+        <valueSetCell valueSet="{T, F}"/>
+        <expressionCell external="theClient.isLongTerm">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="theClient.isLongTerm" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isLongTerm" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isLongTerm">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0"/>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="&lt; 100">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.eligibilityScore &lt; 100" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="eligibilityScore" datatype="Integer" termtype="ATTRIBUTE" fulltext="policy.eligibilityScore">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="'Yes'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="party.isEligible = 'Yes'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="party.isEligible">
+                <parentTerm text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party">
+                  <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party">
+                <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="100" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="100 .. 250">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.eligibilityScore in 100 .. 250" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="eligibilityScore" datatype="Integer" termtype="ATTRIBUTE" fulltext="policy.eligibilityScore">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="'Review by Underwriter'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="party.isEligible = 'Review by Underwriter'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="party.isEligible">
+                <parentTerm text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party">
+                  <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party">
+                <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="100" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="> 250">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.eligibilityScore > 250" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="eligibilityScore" datatype="Integer" termtype="ATTRIBUTE" fulltext="policy.eligibilityScore">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="'No'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="party.isEligible = 'No'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="party.isEligible">
+                <parentTerm text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party">
+                  <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party">
+                <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="100" pRule="#//@ruleset/@rules.4">
+        <overrideValueSetCell valueSet="{1, 2, 3}"/>
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( theClient.isLongTerm ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="isLongTerm" datatype="Boolean" termtype="ATTRIBUTE" fulltext="theClient.isLongTerm">
+                <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="'Yes'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="party.isEligible = 'Yes'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="party.isEligible">
+                <parentTerm text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party">
+                  <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="party" datatype="ServiceParticipant" termtype="ENTITY" fulltext="party">
+                <parentTerm text="businessParty" datatype="BusinessParty" termtype="ENTITY" fulltext="theClient.businessParty">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="'Yes'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.serviceParticipant.isEligible = 'Yes'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="isEligible" datatype="String" termtype="ATTRIBUTE" fulltext="policy.serviceParticipant.isEligible">
+                <parentTerm text="serviceParticipant" datatype="ServiceParticipant" termtype="ENTITY" fulltext="policy.serviceParticipant">
+                  <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="serviceParticipant" datatype="ServiceParticipant" termtype="ENTITY" fulltext="policy.serviceParticipant">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="'Eligible'">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="policy.vehicle.eligibilityRating = 'Eligible'" datatype="String" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="eligibilityRating" datatype="String" termtype="ATTRIBUTE" fulltext="policy.vehicle.eligibilityRating">
+                <parentTerm text="vehicle" datatype="Vehicle" termtype="ENTITY" fulltext="policy.vehicle">
+                  <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy">
+                    <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                  </parentTerm>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="vehicle" datatype="Vehicle" termtype="ENTITY" fulltext="policy.vehicle">
+                <parentTerm text="policy" datatype="Service" termtype="ENTITY" fulltext="policy">
+                  <parentTerm text="theClient" datatype="Client" termtype="ENTITY" fulltext="theClient"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
