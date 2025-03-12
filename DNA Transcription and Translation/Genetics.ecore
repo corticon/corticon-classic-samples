@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.canonicalvocabularymodel="http:///com/corticon/rulesemf/canonicalvocabularymodel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="root" nsURI="http://root/1.0" nsPrefix="root">
+  <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+    <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:RootExtension" majorVersionNumber="5" minorVersionNumber="7" majorServiceNumber="2" buildNumber="8015" updateStamp="_zwfA0IX-EemQjqsc1Wb-Ng" externalChecksum="7824986:507989954" customDataTypeDisplayCount="50">
+      <languageCode>en_US</languageCode>
+      <databaseAccess databasePropertyDisplayCount="50"/>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//baseType">
+        <dataTypeName manuallyCreated="true" value="baseType"/>
+        <baseDataType manuallyCreated="true" value="String"/>
+        <enumeration manuallyCreated="true" value="true"/>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'A'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'C'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'G'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'U'"/>
+        </enumerationElements>
+      </customDataTypeList>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//aminoAcidType">
+        <dataTypeName manuallyCreated="true" value="aminoAcidType"/>
+        <baseDataType manuallyCreated="true" value="String"/>
+        <enumeration manuallyCreated="true" value="true"/>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Alanine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Arginine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Asparagine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Aspartate'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Cysteine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Histidine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Isoleucine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Glutamine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Glutamate'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Glycine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Leucine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Lysine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Methionine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Phenylalanine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Proline'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Serine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Threonine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Tryptophan'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Tyrosine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Valine'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'STOP'"/>
+        </enumerationElements>
+      </customDataTypeList>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//abbrevType">
+        <dataTypeName manuallyCreated="true" value="abbrevType"/>
+        <baseDataType manuallyCreated="true" value="String"/>
+        <enumeration manuallyCreated="true" value="true"/>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Ala'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Arg'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Asn'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Asp'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Cys'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'His'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Ile'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Gln'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Glu'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Gly'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Leu'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Lys'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Met'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Phe'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Pro'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Ser'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Thr'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Trp'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Tyr'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Val'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'STOP'"/>
+        </enumerationElements>
+      </customDataTypeList>
+      <customDataTypeList enumerationDisplayCount="50" eDataType="#//symbolType">
+        <dataTypeName manuallyCreated="true" value="symbolType"/>
+        <baseDataType manuallyCreated="true" value="String"/>
+        <enumeration manuallyCreated="true" value="true"/>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'A'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'R'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'N'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'D'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'C'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'H'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'I'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Q'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'E'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'G'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'L'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'K'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'M'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'F'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'P'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'S'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'T'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'W'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'Y'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'V'"/>
+        </enumerationElements>
+        <enumerationElements>
+          <value manuallyCreated="true" value="'.'"/>
+        </enumerationElements>
+      </customDataTypeList>
+    </contents>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Ribosome">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Ribosome"/>
+        <datastorePersistent manuallyCreated="true" value="true"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attachedmRNA" eType="#//MessengerRNA" eOpposite="#//MessengerRNA/ribosome">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="attachedmRNA"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="position" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//ELongObject">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="position"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="protein" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="protein"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="proteinLabel" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="proteinLabel"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MessengerRNA">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="MessengerRNA"/>
+        <datastorePersistent manuallyCreated="true" value="true"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="ribosome" upperBound="-1" eType="#//Ribosome" eOpposite="#//Ribosome/attachedmRNA">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="ribosome"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="strand" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="strand"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Neucleotide">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Neucleotide"/>
+        <datastorePersistent manuallyCreated="true" value="true"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="base" eType="#//baseType">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.0">
+          <name manuallyCreated="true" value="base"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="complement" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="complement"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TransferRNA">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="TransferRNA"/>
+        <datastorePersistent manuallyCreated="true" value="true"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="aminoAcid" eType="#//aminoAcidType">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.1">
+          <name manuallyCreated="true" value="aminoAcid"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="abbrev" eType="#//abbrevType">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.2">
+          <name manuallyCreated="true" value="abbrev"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="symbol" eType="#//symbolType">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension" customDataType="#//%http:%2F%2F%2Fcom%2Fcorticon%2Frulesemf%2Fcanonicalvocabularymodel%2FVocabularyExtension%/@contents.0/@customDataTypeList.3">
+          <name manuallyCreated="true" value="symbol"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="codon" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="codon"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="antiCodon" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="antiCodon"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Proteasome">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Proteasome"/>
+        <datastorePersistent manuallyCreated="true" value="true"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Protein">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Protein"/>
+        <datastorePersistent manuallyCreated="true" value="true"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="polypeptide" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="polypeptide"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="label" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="label"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="name"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="function" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="function"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Organism">
+    <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+      <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:EntityExtension">
+        <name manuallyCreated="true" value="Organism"/>
+        <datastorePersistent manuallyCreated="true" value="true"/>
+        <datastoreCaching manuallyCreated="true" value="false"/>
+      </contents>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="proteins" upperBound="-1" eType="#//Protein">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AssociationEndExtension">
+          <name manuallyCreated="true" value="proteins"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString">
+      <eAnnotations source="http:///com/corticon/rulesemf/canonicalvocabularymodel/VocabularyExtension">
+        <contents xsi:type="com.corticon.rulesemf.canonicalvocabularymodel:AttributeExtension">
+          <name manuallyCreated="true" value="name"/>
+          <mode manuallyCreated="true" value="Base"/>
+        </contents>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="baseType">
+    <eLiterals name="V0" literal="'A'"/>
+    <eLiterals name="V1" value="1" literal="'C'"/>
+    <eLiterals name="V2" value="2" literal="'G'"/>
+    <eLiterals name="V3" value="3" literal="'U'"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="aminoAcidType">
+    <eLiterals name="V0" literal="'Alanine'"/>
+    <eLiterals name="V1" value="1" literal="'Arginine'"/>
+    <eLiterals name="V2" value="2" literal="'Asparagine'"/>
+    <eLiterals name="V3" value="3" literal="'Aspartate'"/>
+    <eLiterals name="V4" value="4" literal="'Cysteine'"/>
+    <eLiterals name="V5" value="5" literal="'Histidine'"/>
+    <eLiterals name="V6" value="6" literal="'Isoleucine'"/>
+    <eLiterals name="V7" value="7" literal="'Glutamine'"/>
+    <eLiterals name="V8" value="8" literal="'Glutamate'"/>
+    <eLiterals name="V9" value="9" literal="'Glycine'"/>
+    <eLiterals name="V10" value="10" literal="'Leucine'"/>
+    <eLiterals name="V11" value="11" literal="'Lysine'"/>
+    <eLiterals name="V12" value="12" literal="'Methionine'"/>
+    <eLiterals name="V13" value="13" literal="'Phenylalanine'"/>
+    <eLiterals name="V14" value="14" literal="'Proline'"/>
+    <eLiterals name="V15" value="15" literal="'Serine'"/>
+    <eLiterals name="V16" value="16" literal="'Threonine'"/>
+    <eLiterals name="V17" value="17" literal="'Tryptophan'"/>
+    <eLiterals name="V18" value="18" literal="'Tyrosine'"/>
+    <eLiterals name="V19" value="19" literal="'Valine'"/>
+    <eLiterals name="V20" value="20" literal="'STOP'"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="abbrevType">
+    <eLiterals name="V0" literal="'Ala'"/>
+    <eLiterals name="V1" value="1" literal="'Arg'"/>
+    <eLiterals name="V2" value="2" literal="'Asn'"/>
+    <eLiterals name="V3" value="3" literal="'Asp'"/>
+    <eLiterals name="V4" value="4" literal="'Cys'"/>
+    <eLiterals name="V5" value="5" literal="'His'"/>
+    <eLiterals name="V6" value="6" literal="'Ile'"/>
+    <eLiterals name="V7" value="7" literal="'Gln'"/>
+    <eLiterals name="V8" value="8" literal="'Glu'"/>
+    <eLiterals name="V9" value="9" literal="'Gly'"/>
+    <eLiterals name="V10" value="10" literal="'Leu'"/>
+    <eLiterals name="V11" value="11" literal="'Lys'"/>
+    <eLiterals name="V12" value="12" literal="'Met'"/>
+    <eLiterals name="V13" value="13" literal="'Phe'"/>
+    <eLiterals name="V14" value="14" literal="'Pro'"/>
+    <eLiterals name="V15" value="15" literal="'Ser'"/>
+    <eLiterals name="V16" value="16" literal="'Thr'"/>
+    <eLiterals name="V17" value="17" literal="'Trp'"/>
+    <eLiterals name="V18" value="18" literal="'Tyr'"/>
+    <eLiterals name="V19" value="19" literal="'Val'"/>
+    <eLiterals name="V20" value="20" literal="'STOP'"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="symbolType">
+    <eLiterals name="V0" literal="'A'"/>
+    <eLiterals name="V1" value="1" literal="'R'"/>
+    <eLiterals name="V2" value="2" literal="'N'"/>
+    <eLiterals name="V3" value="3" literal="'D'"/>
+    <eLiterals name="V4" value="4" literal="'C'"/>
+    <eLiterals name="V5" value="5" literal="'H'"/>
+    <eLiterals name="V6" value="6" literal="'I'"/>
+    <eLiterals name="V7" value="7" literal="'Q'"/>
+    <eLiterals name="V8" value="8" literal="'E'"/>
+    <eLiterals name="V9" value="9" literal="'G'"/>
+    <eLiterals name="V10" value="10" literal="'L'"/>
+    <eLiterals name="V11" value="11" literal="'K'"/>
+    <eLiterals name="V12" value="12" literal="'M'"/>
+    <eLiterals name="V13" value="13" literal="'F'"/>
+    <eLiterals name="V14" value="14" literal="'P'"/>
+    <eLiterals name="V15" value="15" literal="'S'"/>
+    <eLiterals name="V16" value="16" literal="'T'"/>
+    <eLiterals name="V17" value="17" literal="'W'"/>
+    <eLiterals name="V18" value="18" literal="'Y'"/>
+    <eLiterals name="V19" value="19" literal="'V'"/>
+    <eLiterals name="V20" value="20" literal="'.'"/>
+  </eClassifiers>
+</ecore:EPackage>

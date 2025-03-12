@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuleflowAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicalrulemodel.ruleflow="http:///com/corticon/rulesemf/canonicalrulemodel/ruleflow.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram="http:///com/corticon/rulesemf/viewrulemodel/ruleflow/flowdiagram.ecore" majorVersionNumber="6" majorServiceNumber="1" buildNumber="8015" updateStamp="_HjtJQLydEem4hK0pjpfpdQ" externalChecksum="7824986:507989954:28543041" rulesheetAssets="Ribosome_ConfigureRibosome.ers#/ Ribosome_OperateRibosome.ers#/">
+  <comments timestamp="2019-08-11T21:04:21.456-0400" username="smeldon" text="" objects="#/" type="Note"/>
+  <ruleflow versionLabel="" description="" majorVersion="1" vocabularyUpdateStamp="_zwfA0IX-EemQjqsc1Wb-Ng" vocabulary="Genetics.ecore#/">
+    <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" iterative="true" order="1" ruleActivityUpdateStamp="_HyAswBSzEeKhZ7holqUDJw" invokes="#//@ruleflow/@subflowList.0"/>
+    <subflowList name="Iterative">
+      <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="ConfigureRibosome" order="2" ruleActivityUpdateStamp="_1MUFrIX-EemQjqsc1Wb-Ng" invokes="Ribosome_ConfigureRibosome.ers#//@ruleset"/>
+      <flowControlList xsi:type="com.corticon.rulesemf.canonicalrulemodel.ruleflow:ActivityNode" name="OperateRibosome" order="3" ruleActivityUpdateStamp="_1N9rfoX-EemQjqsc1Wb-Ng" invokes="Ribosome_OperateRibosome.ers#//@ruleset"/>
+    </subflowList>
+  </ruleflow>
+  <ruleflowViewList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:FlowDiagram">
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="30" y="30" width="470" height="180" activityNode="#//@ruleflow/@flowControlList.0"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="30" y="30" width="160" height="60" outboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@subflowList.0/@flowControlList.0"/>
+    <flowShapeList xsi:type="com.corticon.rulesemf.viewrulemodel.ruleflow.flowdiagram:ActivityShape" x="250" y="30" width="160" height="60" inboundEdges="#//@ruleflowViewList.0/@flowEdgeList.0" activityNode="#//@ruleflow/@subflowList.0/@flowControlList.1"/>
+    <flowEdgeList sourceShape="#//@ruleflowViewList.0/@flowShapeList.1" targetShape="#//@ruleflowViewList.0/@flowShapeList.2"/>
+  </ruleflowViewList>
+</com.corticon.rulesemf.assetmodel:RuleflowAsset>
