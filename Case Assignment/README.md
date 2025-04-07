@@ -6,14 +6,19 @@
 	- *Entities*: Represent business objects like "Case" and "Analyst," serving as data containers.  
 	- *Attributes*: Define the characteristics of entities (e.g., `Case.amount`, `Analyst.level`, `Analyst.focusArea`).
   
-    ![Rule Vocabulary](images/Vocabulary.png)
+  <p align="center">
+  <img src="images/Vocabulary.png" />
+</p>
+
 
 -   **Rulesheets:** Group related rules to implement specific parts of the decision logic.
     
 -   **Ruleflow:** Controls the order in which rulesheets are executed, orchestrating the overall decision-making process.
-  
-  ![Ruleflow](images/ruleflow.png)
     
+    <p align="center">
+  ![Ruleflow](images/ruleflow.png)
+    </p>
+
 ## Corticon Solution to Case Assignment Challenge
 
 This solution uses a modular approach, dividing the logic into four Corticon rulesheets:
