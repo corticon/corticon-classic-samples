@@ -109,3 +109,219 @@ Rule tests are essential for validating the correctness of the decision service.
 ![Case 3 Test Results with Rule Trace](<images/Case 3 Test Results with Rule Trace.png>)
 ### Ruletest - Assigning Fourth Case
 ![Case 4 Test Results with Rule Trace](<images/Case 4 Test Results with Rule Trace.png>)
+
+### Combined Ruletest JSON
+
+#### Input
+
+
+```json
+[
+    {
+        "level": 10,
+        "name": "Tim Smith",
+        "maxCaseDollarAmount": 50000000,
+        "totalAmountAssignedCases": 35000000,
+        "maxTotalAmountAssignedCases": 75000000,
+        "focusArea": "Technology Research, Construction"
+    },
+    {
+        "level": 5,
+        "name": "Sue Rogers",
+        "maxCaseDollarAmount": 1000000,
+        "totalAmountAssignedCases": 5000000,
+        "maxTotalAmountAssignedCases": 7000000,
+        "focusArea": "Technology Research"
+    },
+    {
+        "level": 8,
+        "name": "Sam Howard",
+        "maxCaseDollarAmount": 20000000,
+        "totalAmountAssignedCases": 19000000,
+        "maxTotalAmountAssignedCases": 20000000,
+        "focusArea": "Construction Research"
+    },
+    {
+        "level": 9,
+        "name": "Jill Ryan",
+        "maxCaseDollarAmount": 1500000,
+        "totalAmountAssignedCases": 14700000,
+        "maxTotalAmountAssignedCases": 25000000,
+        "focusArea": "Technology Research, Construction"
+    },
+    {
+        "level": 6,
+        "name": "Debbie Smith",
+        "maxCaseDollarAmount": 10000000,
+        "totalAmountAssignedCases": 8000000,
+        "maxTotalAmountAssignedCases": 10000000,
+        "focusArea": "Research Technology"
+    },
+    {
+        "level": 7,
+        "name": "Debbie Bowers",
+        "maxCaseDollarAmount": 1000000,
+        "totalAmountAssignedCases": 6000000,
+        "maxTotalAmountAssignedCases": 7500000,
+        "focusArea": "Technology Research"
+    },
+    {
+        "level": 4,
+        "name": "Kevin Jones",
+        "maxCaseDollarAmount": 3000000,
+        "totalAmountAssignedCases": 2800000,
+        "maxTotalAmountAssignedCases": 3000000,
+        "focusArea": "Research Technology"
+    },
+    {
+        "level": 2,
+        "name": "Roger Howland",
+        "maxCaseDollarAmount": 300000,
+        "totalAmountAssignedCases": 850000,
+        "maxTotalAmountAssignedCases": 1000000,
+        "focusArea": "Construction Technology"
+    },
+    {
+        "complexity": 3,
+        "number": 112,
+        "amount": 50000,
+        "assigned": true,
+        "type": "Technology"
+    },
+    {
+        "complexity": 1,
+        "number": 113,
+        "amount": 200000,
+        "assigned": true,
+        "type": "Technology"
+    },
+    {
+        "complexity": 4,
+        "number": 115,
+        "amount": 300000,
+        "type": "Research"
+    },
+    {
+        "complexity": 4,
+        "number": 114,
+        "amount": 1500000,
+        "type": "Construction"
+    }
+]
+```
+
+
+#### Output
+
+```json
+[
+    {
+        "complexity": 3,
+        "number": 112,
+        "amount": 50000,
+        "analyst": {
+            "level": 4,
+            "name": "Kevin Jones",
+            "maxCaseDollarAmount": 3000000,
+            "minCaseComplexity": 1,
+            "totalAmountAssignedCases": 2850000,
+            "maxTotalAmountAssignedCases": 3000000,
+            "focusArea": "Research Technology",
+            "maxCaseComplexity": 3
+        },
+        "assigned": true,
+        "type": "Technology"
+    },
+    {
+        "level": 2,
+        "name": "Roger Howland",
+        "maxCaseDollarAmount": 300000,
+        "minCaseComplexity": 1,
+        "totalAmountAssignedCases": 850000,
+        "maxTotalAmountAssignedCases": 1000000,
+        "focusArea": "Construction Technology",
+        "maxCaseComplexity": 2
+    },
+    {
+        "complexity": 1,
+        "number": 113,
+        "amount": 200000,
+        "analyst": {
+            "level": 5,
+            "name": "Sue Rogers",
+            "maxCaseDollarAmount": 1000000,
+            "minCaseComplexity": 2,
+            "totalAmountAssignedCases": 5200000,
+            "maxTotalAmountAssignedCases": 7000000,
+            "focusArea": "Technology Research",
+            "maxCaseComplexity": 3
+        },
+        "assigned": true,
+        "type": "Technology"
+    },
+    {
+        "complexity": 4,
+        "number": 114,
+        "amount": 1500000,
+        "analyst": {
+            "level": 9,
+            "name": "Jill Ryan",
+            "maxCaseDollarAmount": 1500000,
+            "minCaseComplexity": 3,
+            "totalAmountAssignedCases": 16200000,
+            "maxTotalAmountAssignedCases": 25000000,
+            "focusArea": "Technology Research, Construction",
+            "maxCaseComplexity": 5
+        },
+        "assigned": true,
+        "type": "Construction"
+    },
+    {
+        "complexity": 4,
+        "number": 115,
+        "amount": 300000,
+        "analyst": {
+            "level": 6,
+            "name": "Debbie Smith",
+            "maxCaseDollarAmount": 10000000,
+            "minCaseComplexity": 2,
+            "totalAmountAssignedCases": 8300000,
+            "maxTotalAmountAssignedCases": 10000000,
+            "focusArea": "Research Technology",
+            "maxCaseComplexity": 4
+        },
+        "assigned": true,
+        "type": "Research"
+    },
+    {
+        "level": 8,
+        "name": "Sam Howard",
+        "maxCaseDollarAmount": 20000000,
+        "minCaseComplexity": 3,
+        "totalAmountAssignedCases": 19000000,
+        "maxTotalAmountAssignedCases": 20000000,
+        "focusArea": "Construction Research",
+        "maxCaseComplexity": 4
+    },
+    {
+        "level": 10,
+        "name": "Tim Smith",
+        "maxCaseDollarAmount": 50000000,
+        "minCaseComplexity": 4,
+        "totalAmountAssignedCases": 35000000,
+        "maxTotalAmountAssignedCases": 75000000,
+        "focusArea": "Technology Research, Construction",
+        "maxCaseComplexity": 5
+    },
+    {
+        "level": 7,
+        "name": "Debbie Bowers",
+        "maxCaseDollarAmount": 1000000,
+        "minCaseComplexity": 2,
+        "totalAmountAssignedCases": 6000000,
+        "maxTotalAmountAssignedCases": 7500000,
+        "focusArea": "Technology Research",
+        "maxCaseComplexity": 4
+    }
+]
+```
