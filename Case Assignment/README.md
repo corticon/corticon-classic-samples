@@ -1,5 +1,5 @@
 
-# Solving the Case Assignment Challenge with Corticon: A Detailed Decision Modeling Walkthrough
+# Solving the [Case Assignment Challenge](https://dmcommunity.org/challenge/challenge-april-2025/) with Corticon: A Detailed Decision Modeling Walkthrough
 
 ## Relevant Corticon Concepts
 -   **Rule Vocabulary:**
