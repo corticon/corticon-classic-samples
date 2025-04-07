@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="7" minorVersionNumber="2" buildNumber="8022" updateStamp="_z5d_cRPGEfCN_sK47bWA4g" externalChecksum="2722078124:507989954:3680615299" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_4LH-sRPCEfCN_sK47bWA4g" vocabulary="Vocabulary.ecore#/">
+    <rule>
+      <condition/>
+      <action/>
+      <action>
+        <opaqueExpression expression="leastQualified.totalAmountAssignedCases+=Case.amount">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="leastQualified.totalAmountAssignedCases = leastQualified.totalAmountAssignedCases + Case.amount" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="totalAmountAssignedCases" datatype="Integer" termtype="ATTRIBUTE" fulltext="leastQualified.totalAmountAssignedCases">
+                <parentTerm text="leastQualified" datatype="Analyst" termtype="ENTITY" fulltext="leastQualified" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="leastQualified" datatype="Analyst" termtype="ENTITY" fulltext="leastQualified" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="amount" datatype="Integer" termtype="ATTRIBUTE" fulltext="Case.amount">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="totalAmountAssignedCases" datatype="Integer" termtype="ATTRIBUTE" fulltext="leastQualified.totalAmountAssignedCases">
+                <parentTerm text="leastQualified" datatype="Analyst" termtype="ENTITY" fulltext="leastQualified" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Case.assigned = T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.assigned = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Case.assigned">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="(assignedAnalysts.name&lt;>leastQualified.name)=true">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( assignedAnalysts.name &lt;> leastQualified.name ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="assignedAnalysts.name">
+                <parentTerm text="assignedAnalysts" datatype="Analyst" termtype="ENTITY" fulltext="assignedAnalysts" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="leastQualified.name">
+                <parentTerm text="leastQualified" datatype="Analyst" termtype="ENTITY" fulltext="leastQualified" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="assignedAnalysts.name&lt;>leastQualified.name" rhs="T"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="assignedAnalysts-=assignedAnalysts">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="assignedAnalysts -= assignedAnalysts" datatype="Analyst" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList/>
+            <referencedTermList>
+              <terms text="assignedAnalysts" datatype="Analyst" termtype="ENTITY" fulltext="assignedAnalysts" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action/>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0 #//@ruleset/@logicalVariables.0/@extension.1">
+      <opaqueExpression expression="leastQualified.name=assignedAnalysts->sortedBy(level)->first.name">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="leastQualified.name = assignedAnalysts->sortedBy ( assignedAnalysts.level )->first.name" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="leastQualified.name">
+              <parentTerm text="leastQualified" datatype="Analyst" termtype="ENTITY" fulltext="leastQualified" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+            <terms text="assignedAnalysts" datatype="Analyst" termtype="COLLECTION" fulltext="assignedAnalysts->asSequence->first">
+              <parentTerm text="assignedAnalysts" datatype="Analyst" termtype="ENTITY" fulltext="assignedAnalysts" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter precondition="true" logicalVariables="#//@ruleset/@logicalVariables.0">
+      <opaqueExpression expression="Case.assigned=F">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.assigned = F" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Case.assigned">
+              <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable entity="Vocabulary.ecore#//Case" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1">
+      <extension explicit="true" association="true" entity="Vocabulary.ecore#//Analyst" traversedAssocRole="Vocabulary.ecore#//Case/analyst" filters="#//@ruleset/@filters.0">
+        <alias value="leastQualified"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Analyst/level"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Analyst/name"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+      </extension>
+      <extension explicit="true" association="true" entity="Vocabulary.ecore#//Analyst" traversedAssocRole="Vocabulary.ecore#//Case/analyst" filters="#//@ruleset/@filters.0">
+        <alias value="assignedAnalysts"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Analyst/level"/>
+        <referencedAttributes attribute="Vocabulary.ecore#//Analyst/name"/>
+      </extension>
+      <referencedAttributes attribute="Vocabulary.ecore#//Case/amount"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Case/assigned"/>
+    </logicalVariable>
+    <logicalVariable entity="Vocabulary.ecore#//Analyst">
+      <extension association="true" entity="Vocabulary.ecore#//Case" traversedAssocRole="Vocabulary.ecore#//Analyst/case"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Analyst/name"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="23" sashWeightScope="30" sashWeightConditionsActions="30" sashWeightConditionsIf="21">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList rowHeight="52">
+        <naturalLanguageText value="Remove the assigned analysts from consideration if they are not the least qualified."/>
+        <valueSetCell/>
+        <expressionCell external="assignedAnalysts-=assignedAnalysts">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="assignedAnalysts -= assignedAnalysts" datatype="Analyst" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList/>
+            <referencedTermList>
+              <terms text="assignedAnalysts" datatype="Analyst" termtype="ENTITY" fulltext="assignedAnalysts" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="47">
+        <naturalLanguageText value="Add the amount of a case to the total amount of assigned cases for the least overqualified matching analyst"/>
+        <valueSetCell/>
+        <expressionCell external="leastQualified.totalAmountAssignedCases+=Case.amount">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="leastQualified.totalAmountAssignedCases = leastQualified.totalAmountAssignedCases + Case.amount" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="totalAmountAssignedCases" datatype="Integer" termtype="ATTRIBUTE" fulltext="leastQualified.totalAmountAssignedCases">
+                <parentTerm text="leastQualified" datatype="Analyst" termtype="ENTITY" fulltext="leastQualified" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="leastQualified" datatype="Analyst" termtype="ENTITY" fulltext="leastQualified" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="amount" datatype="Integer" termtype="ATTRIBUTE" fulltext="Case.amount">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="totalAmountAssignedCases" datatype="Integer" termtype="ATTRIBUTE" fulltext="leastQualified.totalAmountAssignedCases">
+                <parentTerm text="leastQualified" datatype="Analyst" termtype="ENTITY" fulltext="leastQualified" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList rowHeight="60">
+        <naturalLanguageText value="Assign the case by setting its assigned attribute to true."/>
+        <valueSetCell/>
+        <expressionCell external="Case.assigned">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.assigned" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Case.assigned">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="leastQualified.name=assignedAnalysts->sortedBy(level)->first.name" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Case.assigned=F" filter="#//@ruleset/@filters.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="leastQualified.name=assignedAnalysts->sortedBy(level)->first.name" filter="#//@ruleset/@filters.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.0/@referencedAttributes.2"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.1">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="leastQualified.name=assignedAnalysts->sortedBy(level)->first.name" filter="#//@ruleset/@filters.0"/>
+            </children>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@extension.1/@referencedAttributes.1"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.1/@extension.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="leastQualified.name=assignedAnalysts->sortedBy(level)->first.name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="leastQualified.name = assignedAnalysts->sortedBy ( assignedAnalysts.level )->first.name" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="leastQualified.name">
+                <parentTerm text="leastQualified" datatype="Analyst" termtype="ENTITY" fulltext="leastQualified" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="assignedAnalysts" datatype="Analyst" termtype="COLLECTION" fulltext="assignedAnalysts->asSequence->first">
+                <parentTerm text="assignedAnalysts" datatype="Analyst" termtype="ENTITY" fulltext="assignedAnalysts" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="Assign alias of 'leastQualified' to the analyst that has been assigned as a potential match for a case who has the lowest qualification level."/>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="Case.assigned=F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.assigned = F" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Case.assigned">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="Filter out instances of Case where Case.assigned is not False"/>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList rowHeight="43">
+        <naturalLanguageText value="Analyst's name is different from the least qualified analyst's name?"/>
+        <valueSetCell/>
+        <expressionCell external="assignedAnalysts.name&lt;>leastQualified.name">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="assignedAnalysts.name &lt;> leastQualified.name" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="assignedAnalysts.name">
+                <parentTerm text="assignedAnalysts" datatype="Analyst" termtype="ENTITY" fulltext="assignedAnalysts" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="leastQualified.name">
+                <parentTerm text="leastQualified" datatype="Analyst" termtype="ENTITY" fulltext="leastQualified" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <conditionValueSetCellList/>
+        <actionValueSetCellList valueSet=""/>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.assigned = T" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Case.assigned">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Case" datatype="Case" termtype="ENTITY" fulltext="Case"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="100" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="( assignedAnalysts.name &lt;> leastQualified.name ) = true" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="assignedAnalysts.name">
+                <parentTerm text="assignedAnalysts" datatype="Analyst" termtype="ENTITY" fulltext="assignedAnalysts" variable="#//@ruleset/@logicalVariables.0/@extension.1">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+              <terms text="name" datatype="String" termtype="ATTRIBUTE" fulltext="leastQualified.name">
+                <parentTerm text="leastQualified" datatype="Analyst" termtype="ENTITY" fulltext="leastQualified" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList valueSet="X"/>
+        <actionValueSetCellList/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

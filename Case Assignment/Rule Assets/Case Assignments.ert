@@ -1,0 +1,1008 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RuletestAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.canonicaltestmodel.testsheet="http:///com/corticon/rulesemf/canonicaltestmodel/testsheet.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder="http:///com/corticon/rulesemf/viewtestmodel/ruletest/tabfolder.ecore" xmlns:com.corticon.rulesemf.viewtestmodel.testsheet.treeset="http:///com/corticon/rulesemf/viewtestmodel/testsheet/treeset.ecore" majorVersionNumber="7" minorVersionNumber="2" buildNumber="8022" updateStamp="_6PMn4hPFEfCN_sK47bWA4g" externalChecksum="2722078124:507989954" studioType="Java">
+  <testsheetAssets majorVersionNumber="7" minorVersionNumber="2" buildNumber="8022" updateStamp="_6Oak1hPFEfCN_sK47bWA4g" externalChecksum="2722078124:507989954">
+    <testsheet ruleActivityUpdateStamp="_5J7B6RPFEfCN_sK47bWA4g" ruleActivity="Case%20Assignment.erf#//@ruleflow" locale="">
+      <input/>
+      <output>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="1" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_1" name="assigned" oldvalue="" newvalue="false"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="2" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="2" entityname="Analyst" entityidentity="" entityid="Analyst_id_8" name="minCaseComplexity" oldvalue="" newvalue="1"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="3" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="2" entityname="Analyst" entityidentity="" entityid="Analyst_id_8" name="maxCaseComplexity" oldvalue="" newvalue="2"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="4" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="3" entityname="Analyst" entityidentity="" entityid="Analyst_id_7" name="minCaseComplexity" oldvalue="" newvalue="1"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="5" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="3" entityname="Analyst" entityidentity="" entityid="Analyst_id_7" name="maxCaseComplexity" oldvalue="" newvalue="3"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="6" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="4" entityname="Analyst" entityidentity="" entityid="Analyst_id_2" name="minCaseComplexity" oldvalue="" newvalue="2"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="7" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="4" entityname="Analyst" entityidentity="" entityid="Analyst_id_2" name="maxCaseComplexity" oldvalue="" newvalue="3"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="8" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="5" entityname="Analyst" entityidentity="" entityid="Analyst_id_5" name="minCaseComplexity" oldvalue="" newvalue="2"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="9" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="5" entityname="Analyst" entityidentity="" entityid="Analyst_id_5" name="maxCaseComplexity" oldvalue="" newvalue="4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="10" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="5" entityname="Analyst" entityidentity="" entityid="Analyst_id_6" name="minCaseComplexity" oldvalue="" newvalue="2"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="11" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="5" entityname="Analyst" entityidentity="" entityid="Analyst_id_6" name="maxCaseComplexity" oldvalue="" newvalue="4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="12" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="6" entityname="Analyst" entityidentity="" entityid="Analyst_id_3" name="minCaseComplexity" oldvalue="" newvalue="3"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="13" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="6" entityname="Analyst" entityidentity="" entityid="Analyst_id_3" name="maxCaseComplexity" oldvalue="" newvalue="4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="14" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="7" entityname="Analyst" entityidentity="" entityid="Analyst_id_4" name="minCaseComplexity" oldvalue="" newvalue="3"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="15" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="7" entityname="Analyst" entityidentity="" entityid="Analyst_id_4" name="maxCaseComplexity" oldvalue="" newvalue="5"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="16" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="8" entityname="Analyst" entityidentity="" entityid="Analyst_id_1" name="minCaseComplexity" oldvalue="" newvalue="4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="17" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="8" entityname="Analyst" entityidentity="" entityid="Analyst_id_1" name="maxCaseComplexity" oldvalue="" newvalue="5"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="24" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="C0" entityname="Case" entityidentity="" entityid="Case_id_1" name="assigned" oldvalue="false" newvalue="true"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="37" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="B0" entityname="Analyst" entityidentity="" entityid="Analyst_id_7" name="totalAmountAssignedCases" oldvalue="2800000" newvalue="2850000"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="18" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_2"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="19" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_5"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="20" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_7"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="21" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_6"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="22" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="23" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Next Best Options.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_7"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="25" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_2"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="26" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Analyst" entityidentity="" entityid="Analyst_id_2" name="case" action="Remove" targetentity="Case" targetentityidentity="" targetentityid="Case_id_1"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="27" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_2"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="28" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="29" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Analyst" entityidentity="" entityid="Analyst_id_4" name="case" action="Remove" targetentity="Case" targetentityidentity="" targetentityid="Case_id_1"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="30" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="31" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_5"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="32" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Analyst" entityidentity="" entityid="Analyst_id_5" name="case" action="Remove" targetentity="Case" targetentityidentity="" targetentityid="Case_id_1"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="33" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_5"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="34" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_6"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="35" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Analyst" entityidentity="" entityid="Analyst_id_6" name="case" action="Remove" targetentity="Case" targetentityidentity="" targetentityid="Case_id_1"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="36" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_6"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="50000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="112" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" manuallyCreated="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Tim Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="50000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="35000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="75000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Sue Rogers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="5000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="7000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="8" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Sam Howard" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="19000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Construction Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="9" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Jill Ryan" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1500000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="14700000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="25000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" manuallyCreated="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="6" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Debbie Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="8000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" manuallyCreated="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="7" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Debbie Bowers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="6000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="7500000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="7" manuallyCreated="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Kevin Jones" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2800000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" manuallyCreated="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="2" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Roger Howland" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="300000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Construction Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="112" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.21 #//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.24" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Kevin Jones" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.3" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.18" value="2850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.4" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.0 #//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.17" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" newOrModified="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tim Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.15" value="4" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="35000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="75000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.16" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sam Howard" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.11" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="19000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.12" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" newOrModified="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Roger Howland" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="300000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.1" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.2" value="2" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sue Rogers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.5" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.6" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="9" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jill Ryan" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1500000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.13" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="14700000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="25000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.14" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" newOrModified="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.7" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.8" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" newOrModified="true" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Bowers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.9" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7500000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.0/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.10" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.0" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.1" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.2" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.3/@children.7"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.3" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.4" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.7"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.5" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.6" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.4/@children.7"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.7" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.6/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.8" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.6/@children.7"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.9" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.10" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.7/@children.7"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.11" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.12" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.2/@children.7"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.13" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.5/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.14" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.5/@children.7"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.15" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.16" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.1/@children.7"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.17" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.18" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.19"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.20"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.21" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.22"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.23"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.24" testNode="#//@testsheetAssets.0/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.25"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.26"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.27"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.28"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.29"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.30"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.31"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.32"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.33"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.34"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.35"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.0/@testsheet/@output/@RuleTraceData.36"/>
+      </outputRuleTraceSection>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="7" minorVersionNumber="2" buildNumber="8022" updateStamp="_6OsSJBPFEfCN_sK47bWA4g" externalChecksum="2722078124:507989954">
+    <testsheet cascade="true" ruleActivityUpdateStamp="_5J7B6RPFEfCN_sK47bWA4g" ruleActivity="Case%20Assignment.erf#//@ruleflow" locale="">
+      <input/>
+      <output>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="1" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_2" name="assigned" oldvalue="" newvalue="false"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="4" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="C0" entityname="Case" entityidentity="" entityid="Case_id_2" name="assigned" oldvalue="false" newvalue="true"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="5" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="B0" entityname="Analyst" entityidentity="" entityid="Analyst_id_2" name="totalAmountAssignedCases" oldvalue="5000000" newvalue="5200000"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="2" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Next Best Options.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_2" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_2"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="3" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Next Best Options.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_7"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="112" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Kevin Jones" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tim Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="35000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="75000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sam Howard" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="19000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Roger Howland" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="300000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sue Rogers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="9" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jill Ryan" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1500000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="14700000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="25000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Bowers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7500000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" manuallyCreated="true" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="113" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="200000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="112" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" ruleTraceItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.4" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Kevin Jones" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tim Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="35000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="75000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sam Howard" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="19000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Roger Howland" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="300000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="9" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jill Ryan" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1500000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="14700000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="25000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Bowers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7500000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" newOrModified="true" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="113" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="200000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" newOrModified="true" ruleTraceItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.3" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sue Rogers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.2" value="5200000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.1/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.0 #//@testsheetAssets.1/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.1" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.1/@testsheet/@output/@RuleTraceData.0" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.7/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.1/@testsheet/@output/@RuleTraceData.1" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.7/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.1/@testsheet/@output/@RuleTraceData.2" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.7/@children.3/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.1/@testsheet/@output/@RuleTraceData.3" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.7/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.1/@testsheet/@output/@RuleTraceData.4" testNode="#//@testsheetAssets.1/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
+      </outputRuleTraceSection>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="7" minorVersionNumber="2" buildNumber="8022" updateStamp="_6O_NCxPFEfCN_sK47bWA4g" externalChecksum="2722078124:507989954">
+    <testsheet cascade="true" ruleActivityUpdateStamp="_5J7B6RPFEfCN_sK47bWA4g" ruleActivity="Case%20Assignment.erf#//@ruleflow" locale="">
+      <input/>
+      <output>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="1" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_3" name="assigned" oldvalue="" newvalue="false"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="7" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="C0" entityname="Case" entityidentity="" entityid="Case_id_3" name="assigned" oldvalue="false" newvalue="true"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="11" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="B0" entityname="Analyst" entityidentity="" entityid="Analyst_id_4" name="totalAmountAssignedCases" oldvalue="14700000" newvalue="16200000"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="2" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_3" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_1"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="3" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_3" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="4" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Next Best Options.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_2" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_2"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="5" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Next Best Options.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_3" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="6" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Next Best Options.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_7"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="8" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_3" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_1"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="9" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Analyst" entityidentity="" entityid="Analyst_id_1" name="case" action="Remove" targetentity="Case" targetentityidentity="" targetentityid="Case_id_3"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="10" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_3" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_1"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="112" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Kevin Jones" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tim Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="35000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="75000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sam Howard" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="19000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Roger Howland" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="300000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="9" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jill Ryan" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1500000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="14700000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="25000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Bowers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7500000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="113" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="200000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sue Rogers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5200000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" manuallyCreated="true" expanded="false" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="114" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="1500000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Construction" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="112" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" ruleTraceItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.7" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Kevin Jones" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sam Howard" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="19000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Roger Howland" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="300000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Bowers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7500000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="113" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="200000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" ruleTraceItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.5" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sue Rogers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5200000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" newOrModified="true" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="114" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1500000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" newOrModified="true" ruleTraceItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.4 #//@testsheetAssets.2/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.6" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="9" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jill Ryan" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1500000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.2" value="16200000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="25000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.2/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.0 #//@testsheetAssets.2/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.1" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tim Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="35000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="75000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.2/@testsheet/@output/@RuleTraceData.0" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.2/@testsheet/@output/@RuleTraceData.1" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.2/@testsheet/@output/@RuleTraceData.2" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6/@children.3/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.2/@testsheet/@output/@RuleTraceData.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.2/@testsheet/@output/@RuleTraceData.4" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.2/@testsheet/@output/@RuleTraceData.5" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.5/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.2/@testsheet/@output/@RuleTraceData.6" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.6/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.2/@testsheet/@output/@RuleTraceData.7" testNode="#//@testsheetAssets.2/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.2/@testsheet/@output/@RuleTraceData.8"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.2/@testsheet/@output/@RuleTraceData.9"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.2/@testsheet/@output/@RuleTraceData.10"/>
+      </outputRuleTraceSection>
+    </testsheetViewList>
+  </testsheetAssets>
+  <testsheetAssets majorVersionNumber="7" minorVersionNumber="2" buildNumber="8022" updateStamp="_6PMn4RPFEfCN_sK47bWA4g" externalChecksum="2722078124:507989954">
+    <testsheet cascade="true" ruleActivityUpdateStamp="_5J7B6RPFEfCN_sK47bWA4g" ruleActivity="Case%20Assignment.erf#//@ruleflow" locale="">
+      <input/>
+      <output>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="1" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Qualification.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_4" name="assigned" oldvalue="" newvalue="false"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="11" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="C0" entityname="Case" entityidentity="" entityid="Case_id_4" name="assigned" oldvalue="false" newvalue="true"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAttributeData" sequence="24" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="B0" entityname="Analyst" entityidentity="" entityid="Analyst_id_5" name="totalAmountAssignedCases" oldvalue="8000000" newvalue="8300000"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="2" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_3"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="3" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_5"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="4" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="5" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_6"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="6" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Candidates.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_1"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="7" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Next Best Options.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_2" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_2"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="8" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Next Best Options.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_3" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="9" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Next Best Options.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_5"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="10" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Next Best Options.ers" rule="A0" entityname="Case" entityidentity="" entityid="Case_id_1" name="analyst" action="Add" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_7"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="12" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_3"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="13" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Analyst" entityidentity="" entityid="Analyst_id_3" name="case" action="Remove" targetentity="Case" targetentityidentity="" targetentityid="Case_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="14" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_3"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="15" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_1"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="16" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Analyst" entityidentity="" entityid="Analyst_id_1" name="case" action="Remove" targetentity="Case" targetentityidentity="" targetentityid="Case_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="17" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_1"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="18" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="19" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Analyst" entityidentity="" entityid="Analyst_id_4" name="case" action="Remove" targetentity="Case" targetentityidentity="" targetentityid="Case_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="20" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="21" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_6"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="22" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Analyst" entityidentity="" entityid="Analyst_id_6" name="case" action="Remove" targetentity="Case" targetentityidentity="" targetentityid="Case_id_4"/>
+        <RuleTraceData xsi:type="com.corticon.rulesemf.canonicaltestmodel.testsheet:RuleTraceAssociationData" sequence="23" rulesheet="file:/C:/Users/smeldon/Workspaces/Corticon/7.2/Challenge April-2025/Minimize Overqualified.ers" rule="1" entityname="Case" entityidentity="" entityid="Case_id_4" name="analyst" action="Remove" targetentity="Analyst" targetentityidentity="" targetentityid="Analyst_id_6"/>
+      </output>
+      <expectedOutput/>
+    </testsheet>
+    <testsheetViewList xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestTreeSet">
+      <inputRoot>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="112" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Kevin Jones" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sam Howard" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="19000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Roger Howland" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="300000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="5" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Bowers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7500000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="113" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="200000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sue Rogers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5200000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" expanded="false" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="114" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1500000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="9" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jill Ryan" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1500000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="16200000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="25000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tim Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="35000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="75000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" manuallyCreated="true" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="4" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="115" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="300000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" manuallyCreated="true" value="Research" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+      </inputRoot>
+      <outputRoot newOrModified="true">
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="112" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="7" ruleTraceItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.11" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Kevin Jones" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="8" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Roger Howland" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="300000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="850000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="2" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="113" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="200000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="2" ruleTraceItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.8" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sue Rogers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5200000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" expanded="false" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="114" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1500000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="4" ruleTraceItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.9" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="9" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Jill Ryan" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1500000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="16200000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="25000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="4" newOrModified="true" eClass="Vocabulary.ecore#//Case">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Case/complexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="115" eAttribute="Vocabulary.ecore#//Case/number"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="300000" eAttribute="Vocabulary.ecore#//Case/amount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAssociationImbedded" nodeID="5" newOrModified="true" ruleTraceItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.4 #//@testsheetAssets.3/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.10" eReference="Vocabulary.ecore#//Case/analyst" eClass="Vocabulary.ecore#//Analyst">
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.2" value="8300000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research Technology" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+            <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" newOrModified="true" ruleTraceItem="#//@testsheetAssets.3/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.0 #//@testsheetAssets.3/@testsheetViewList.0/@outputRuleTraceSection/@ruleTraceItemList.1" value="true" eAttribute="Vocabulary.ecore#//Case/assigned"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Research" eAttribute="Vocabulary.ecore#//Case/type"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="3" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="8" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Sam Howard" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="3" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="19000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="20000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Construction Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="1" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="10" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Tim Smith" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="50000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="35000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="75000000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research, Construction" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="5" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestEntity" nodeID="6" expanded="false" eClass="Vocabulary.ecore#//Analyst">
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7" eAttribute="Vocabulary.ecore#//Analyst/level"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Debbie Bowers" eAttribute="Vocabulary.ecore#//Analyst/name"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="1000000" eAttribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="2" eAttribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="6000000" eAttribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="7500000" eAttribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="Technology Research" eAttribute="Vocabulary.ecore#//Analyst/focusArea"/>
+          <children xsi:type="com.corticon.rulesemf.viewtestmodel.testsheet.treeset:TestAttribute" value="4" eAttribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+        </children>
+      </outputRoot>
+      <outputMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <expectedRoot/>
+      <expectedMessageSection rowCount="20" columnWidthSeverity="100" columnWidthMessage="600"/>
+      <outputRuleTraceSection>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.0" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.4/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.1" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.4/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.2" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.4/@children.3/@children.4"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.4" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.4/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.5"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.6"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.7"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.8" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.2/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.9" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.3/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.10" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.4/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.11" testNode="#//@testsheetAssets.3/@testsheetViewList.0/@outputRoot/@children.0/@children.3"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.12"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.13"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.14"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.15"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.16"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.17"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.18"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.19"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.20"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.21"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.22"/>
+        <ruleTraceItemList ruleTraceData="#//@testsheetAssets.3/@testsheet/@output/@RuleTraceData.23"/>
+      </outputRuleTraceSection>
+    </testsheetViewList>
+  </testsheetAssets>
+  <ruletest vocabularyUpdateStamp="_4LH-sRPCEfCN_sK47bWA4g" testsheets="#//@testsheetAssets.0/@testsheet #//@testsheetAssets.1/@testsheet #//@testsheetAssets.2/@testsheet #//@testsheetAssets.3/@testsheet" vocabulary="Vocabulary.ecore#/"/>
+  <ruletestViewList xsi:type="com.corticon.rulesemf.viewtestmodel.ruletest.tabfolder:TestTabFolder">
+    <testTabList name="Case 1"/>
+    <testTabList name="Case 2"/>
+    <testTabList name="Case 3"/>
+    <testTabList name="Case 4"/>
+  </ruletestViewList>
+</com.corticon.rulesemf.assetmodel:RuletestAsset>

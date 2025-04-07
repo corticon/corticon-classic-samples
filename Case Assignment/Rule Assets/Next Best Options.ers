@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="7" minorVersionNumber="2" buildNumber="8022" updateStamp="_5CwYARPHEfCN_sK47bWA4g" externalChecksum="2722078124:507989954:3680615299" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_4LH-sRPCEfCN_sK47bWA4g" vocabulary="Vocabulary.ecore#/">
+    <rule>
+      <action>
+        <opaqueExpression expression="assignedAnalyst+=Analysts->sortedBy(level)->first">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="assignedAnalyst += Analysts->sortedBy ( Analysts.level )->first" datatype="Analyst" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="assignedAnalyst" datatype="Analyst" termtype="ENTITY" fulltext="assignedAnalyst" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analysts" datatype="Analyst" termtype="COLLECTION" fulltext="Analysts->asSequence->first">
+                <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.1 #//@ruleset/@logicalVariables.0">
+      <opaqueExpression expression="Analysts.focusArea.contains(Case.type)">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analysts.focusArea.contains ( Case.type )" datatype="boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="contains" datatype="boolean" termtype="METHOD" fulltext="Analysts.focusArea.contains">
+              <parentTerm text="focusArea" datatype="String" termtype="ATTRIBUTE" fulltext="Analysts.focusArea">
+                <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+              </parentTerm>
+            </terms>
+            <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="Case.type">
+              <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.1 #//@ruleset/@logicalVariables.0">
+      <opaqueExpression expression="Analysts.maxCaseDollarAmount>=Case.amount">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analysts.maxCaseDollarAmount >= Case.amount" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="maxCaseDollarAmount" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analysts.maxCaseDollarAmount">
+              <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="amount" datatype="Integer" termtype="ATTRIBUTE" fulltext="Case.amount">
+              <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.1 #//@ruleset/@logicalVariables.0">
+      <opaqueExpression expression="Analysts.totalAmountAssignedCases+Case.amount&lt;=Analysts.maxTotalAmountAssignedCases">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analysts.totalAmountAssignedCases + Case.amount &lt;= Analysts.maxTotalAmountAssignedCases" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="totalAmountAssignedCases" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analysts.totalAmountAssignedCases">
+              <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="amount" datatype="Integer" termtype="ATTRIBUTE" fulltext="Case.amount">
+              <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+            <terms text="maxTotalAmountAssignedCases" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analysts.maxTotalAmountAssignedCases">
+              <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.1 #//@ruleset/@logicalVariables.0">
+      <opaqueExpression expression="Case.complexity&lt;=Analysts.maxCaseComplexity">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.complexity &lt;= Analysts.maxCaseComplexity" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analysts.maxCaseComplexity">
+              <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+            </terms>
+            <terms text="complexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Case.complexity">
+              <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <filter logicalVariables="#//@ruleset/@logicalVariables.0 #//@ruleset/@logicalVariables.0/@extension.0">
+      <opaqueExpression expression="assignedAnalyst->isEmpty=T">
+        <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="assignedAnalyst->isEmpty = T" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+          <referencedTermList>
+            <terms text="assignedAnalyst" datatype="Boolean" termtype="COLLECTION" fulltext="assignedAnalyst->isEmpty">
+              <parentTerm text="assignedAnalyst" datatype="Analyst" termtype="ENTITY" fulltext="assignedAnalyst" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </parentTerm>
+            </terms>
+          </referencedTermList>
+        </parserOutput>
+      </opaqueExpression>
+    </filter>
+    <logicalVariable entity="Vocabulary.ecore#//Case" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.3 #//@ruleset/@filters.4">
+      <extension explicit="true" association="true" entity="Vocabulary.ecore#//Analyst" traversedAssocRole="Vocabulary.ecore#//Case/analyst" filters="#//@ruleset/@filters.4">
+        <alias value="assignedAnalyst"/>
+      </extension>
+      <referencedAttributes attribute="Vocabulary.ecore#//Case/type"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Case/amount"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Case/complexity"/>
+    </logicalVariable>
+    <logicalVariable explicit="true" entity="Vocabulary.ecore#//Analyst" filters="#//@ruleset/@filters.0 #//@ruleset/@filters.1 #//@ruleset/@filters.2 #//@ruleset/@filters.3">
+      <alias value="Analysts"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Analyst/focusArea"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Analyst/maxCaseDollarAmount"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Analyst/maxTotalAmountAssignedCases"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Analyst/totalAmountAssignedCases"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" advanced="true" sashWeightAdvancedView="35" sashWeightScope="29" sashWeightConditionsActions="28" sashWeightConditionsIf="33">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList rowHeight="104">
+        <naturalLanguageText value="This action assigns the first available analyst, sorted by their level, to the case. The assignment is made to the variable assignedAnalyst, which is updated to include the highest-level analyst from the list of available analysts."/>
+        <valueSetCell/>
+        <expressionCell external="assignedAnalyst+=Analysts->sortedBy(level)->first">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="assignedAnalyst += Analysts->sortedBy ( Analysts.level )->first" datatype="Analyst" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="assignedAnalyst" datatype="Analyst" termtype="ENTITY" fulltext="assignedAnalyst" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analysts" datatype="Analyst" termtype="COLLECTION" fulltext="Analysts->asSequence->first">
+                <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Analysts.focusArea.contains(Case.type)" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Analysts.maxCaseDollarAmount>=Case.amount" filter="#//@ruleset/@filters.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Analysts.totalAmountAssignedCases+Case.amount&lt;=Analysts.maxTotalAmountAssignedCases" filter="#//@ruleset/@filters.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Case.complexity&lt;=Analysts.maxCaseComplexity" filter="#//@ruleset/@filters.3"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="assignedAnalyst->isEmpty=T" filter="#//@ruleset/@filters.4"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAssociation" logicalVariable="#//@ruleset/@logicalVariables.0/@extension.0">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+              <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="assignedAnalyst->isEmpty=T" filter="#//@ruleset/@filters.4"/>
+            </children>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFolder">
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Analysts.focusArea.contains(Case.type)" filter="#//@ruleset/@filters.0"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Analysts.maxCaseDollarAmount>=Case.amount" filter="#//@ruleset/@filters.1"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Analysts.totalAmountAssignedCases+Case.amount&lt;=Analysts.maxTotalAmountAssignedCases" filter="#//@ruleset/@filters.2"/>
+            <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeFilter" expression="Case.complexity&lt;=Analysts.maxCaseComplexity" filter="#//@ruleset/@filters.3"/>
+          </children>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.2"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.3"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.4"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50">
+      <filterItemList filter="#//@ruleset/@filters.0">
+        <expressionCell external="Analysts.focusArea.contains(Case.type)">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analysts.focusArea.contains ( Case.type )" datatype="boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="contains" datatype="boolean" termtype="METHOD" fulltext="Analysts.focusArea.contains">
+                <parentTerm text="focusArea" datatype="String" termtype="ATTRIBUTE" fulltext="Analysts.focusArea">
+                  <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+                </parentTerm>
+              </terms>
+              <terms text="type" datatype="String" termtype="ATTRIBUTE" fulltext="Case.type">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="The focus area of the analyst must align with the type of the case."/>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.1">
+        <expressionCell external="Analysts.maxCaseDollarAmount>=Case.amount">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analysts.maxCaseDollarAmount >= Case.amount" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="maxCaseDollarAmount" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analysts.maxCaseDollarAmount">
+                <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="amount" datatype="Integer" termtype="ATTRIBUTE" fulltext="Case.amount">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="The maximum dollar amount that an analyst can handle must be greater than or equal to the case's dollar amount."/>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.2">
+        <expressionCell external="Analysts.totalAmountAssignedCases+Case.amount&lt;=Analysts.maxTotalAmountAssignedCases">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analysts.totalAmountAssignedCases + Case.amount &lt;= Analysts.maxTotalAmountAssignedCases" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="totalAmountAssignedCases" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analysts.totalAmountAssignedCases">
+                <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="amount" datatype="Integer" termtype="ATTRIBUTE" fulltext="Case.amount">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+              <terms text="maxTotalAmountAssignedCases" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analysts.maxTotalAmountAssignedCases">
+                <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="The total amount of cases already assigned to the analyst, plus the amount of the new case, must not exceed the analyst's maximum total amount allowed for assigned cases."/>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.3">
+        <expressionCell external="Case.complexity&lt;=Analysts.maxCaseComplexity">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.complexity &lt;= Analysts.maxCaseComplexity" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analysts.maxCaseComplexity">
+                <parentTerm text="Analysts" datatype="Analyst" termtype="ENTITY" fulltext="Analysts" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+              <terms text="complexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Case.complexity">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="The complexity of the case must be less than or equal to the maximum case complexity that the analyst can handle."/>
+      </filterItemList>
+      <filterItemList filter="#//@ruleset/@filters.4">
+        <expressionCell external="assignedAnalyst->isEmpty=T">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="assignedAnalyst->isEmpty = T" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="assignedAnalyst" datatype="Boolean" termtype="COLLECTION" fulltext="assignedAnalyst->isEmpty">
+                <parentTerm text="assignedAnalyst" datatype="Analyst" termtype="ENTITY" fulltext="assignedAnalyst" variable="#//@ruleset/@logicalVariables.0/@extension.0">
+                  <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.0"/>
+                </parentTerm>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+        <naturalLanguageText value="The assigned analyst must currently be empty."/>
+      </filterItemList>
+    </filterSection>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5"/>
+    <ruleSection columnCount="20">
+      <ruleColumnList ruleId="0" columnWidth="100" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList valueSet="X"/>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>

@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.corticon.rulesemf.assetmodel:RulesheetAsset xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.corticon.rulesemf.asg="http:///com/corticon/rulesemf/asg.ecore" xmlns:com.corticon.rulesemf.assetmodel="http:///com/corticon/rulesemf/assetmodel.ecore" xmlns:com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable="http:///com/corticon/rulesemf/viewrulemodel/rulesheet/decisiontable.ecore" majorVersionNumber="7" minorVersionNumber="2" buildNumber="8022" updateStamp="_V58QoRPGEfCN_sK47bWA4g" externalChecksum="2722078124:507989954:3680615299" studioType="Java">
+  <languageCode>en_US</languageCode>
+  <ruleset vocabularyUpdateStamp="_4LH-sRPCEfCN_sK47bWA4g" vocabulary="Vocabulary.ecore#/">
+    <rule>
+      <action/>
+      <action/>
+      <action/>
+    </rule>
+    <rule>
+      <condition/>
+      <condition>
+        <opaqueExpression expression="Case.assigned = null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.assigned = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Case.assigned">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Case.assigned" rhs="null"/>
+      </condition>
+      <action/>
+      <action/>
+      <action>
+        <opaqueExpression expression="Case.assigned = F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.assigned = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Case.assigned">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.1"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Analyst.level in 1..3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level in 1 .. 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Analyst.level" rhs="1..3"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Analyst.minCaseComplexity = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Analyst.maxCaseComplexity = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Analyst.level = 4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level = 4" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Analyst.level" rhs="4"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Analyst.minCaseComplexity = 1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Analyst.maxCaseComplexity = 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Analyst.level = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level = 5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Analyst.level" rhs="5"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Analyst.minCaseComplexity = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Analyst.maxCaseComplexity = 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Analyst.level in 6..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level in 6 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Analyst.level" rhs="6..7"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Analyst.minCaseComplexity = 2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Analyst.maxCaseComplexity = 4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 4" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Analyst.level = 8">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level = 8" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Analyst.level" rhs="8"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Analyst.minCaseComplexity = 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Analyst.maxCaseComplexity = 4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 4" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Analyst.level = 9">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level = 9" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Analyst.level" rhs="9"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Analyst.minCaseComplexity = 3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Analyst.maxCaseComplexity = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <rule>
+      <condition>
+        <opaqueExpression expression="Analyst.level = 10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level = 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+        <viewExpressions lhs="Analyst.level" rhs="10"/>
+      </condition>
+      <action>
+        <opaqueExpression expression="Analyst.minCaseComplexity = 4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 4" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+      <action>
+        <opaqueExpression expression="Analyst.maxCaseComplexity = 5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+            </referencedTermList>
+          </parserOutput>
+        </opaqueExpression>
+      </action>
+    </rule>
+    <logicalVariable entity="Vocabulary.ecore#//Analyst">
+      <referencedAttributes attribute="Vocabulary.ecore#//Analyst/minCaseComplexity"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Analyst/maxCaseComplexity"/>
+      <referencedAttributes attribute="Vocabulary.ecore#//Analyst/level"/>
+    </logicalVariable>
+    <logicalVariable entity="Vocabulary.ecore#//Case">
+      <referencedAttributes attribute="Vocabulary.ecore#//Case/assigned"/>
+    </logicalVariable>
+  </ruleset>
+  <rulesheetViewList xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:DecisionTable" sashWeightConditionsActions="7" sashWeightConditionsIf="20">
+    <actionSection rowCount="50" columnWidthFactor="0.5">
+      <actionItemList>
+        <naturalLanguageText value="Set the analyst's minimum case complexity"/>
+        <valueSetCell/>
+        <expressionCell external="Analyst.minCaseComplexity">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Set the analyst's maximum case complexity"/>
+        <valueSetCell/>
+        <expressionCell external="Analyst.maxCaseComplexity">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+      <actionItemList>
+        <naturalLanguageText value="Set the case assignment status to false"/>
+        <valueSetCell/>
+        <expressionCell external="Case.assigned">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.assigned" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Case.assigned">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </actionItemList>
+    </actionSection>
+    <scopeSection>
+      <rootNode>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.0">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.0"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.1"/>
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.0/@referencedAttributes.2"/>
+        </children>
+        <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeEntity" expanded="true" logicalVariable="#//@ruleset/@logicalVariables.1">
+          <children xsi:type="com.corticon.rulesemf.viewrulemodel.rulesheet.decisiontable:ScopeAttribute" referencedAttribute="#//@ruleset/@logicalVariables.1/@referencedAttributes.0"/>
+        </children>
+      </rootNode>
+    </scopeSection>
+    <filterSection rowCount="50"/>
+    <ruleStatementSection rowCount="50" columnWidthReference="50" columnWidthPostSeverity="75" columnWidthAlias="100" columnWidthID="50" columnWidthText="600" columnWidthRuleName="100" columnWidthRuleLink="100" columnWidthSourceName="100" columnWidthSourceLink="100" columnWidthCategory="100" columnWidthComments="400"/>
+    <conditionSection rowCount="50" columnWidthFactor="0.5">
+      <conditionItemList>
+        <naturalLanguageText value="If the analyst's level is"/>
+        <valueSetCell/>
+        <expressionCell external="Analyst.level">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level" datatype="Integer" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+      <conditionItemList>
+        <naturalLanguageText value="If the case is not assigned"/>
+        <valueSetCell/>
+        <expressionCell external="Case.assigned">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.assigned" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Case.assigned">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </expressionCell>
+      </conditionItemList>
+    </conditionSection>
+    <ruleSection columnCount="21">
+      <ruleColumnList ruleId="0" columnWidth="48" pRule="#//@ruleset/@rules.0">
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet=""/>
+      </ruleColumnList>
+      <ruleColumnList ruleId="1" columnWidth="44" pRule="#//@ruleset/@rules.1">
+        <conditionValueSetCellList valueSet="-"/>
+        <conditionValueSetCellList valueSet="null">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.assigned = null" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Case.assigned">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case" variable="#//@ruleset/@logicalVariables.1"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <actionValueSetCellList/>
+        <actionValueSetCellList/>
+        <actionValueSetCellList valueSet="F">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Case.assigned = F" datatype="Boolean" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="assigned" datatype="Boolean" termtype="ATTRIBUTE" fulltext="Case.assigned">
+                <parentTerm text="Case" datatype="Case" termtype="ENTITY" fulltext="Case"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Case" datatype="Case" termtype="ENTITY" fulltext="Case"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="2" columnWidth="53" pRule="#//@ruleset/@rules.2">
+        <conditionValueSetCellList valueSet="1..3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level in 1 .. 3" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="3" columnWidth="42" pRule="#//@ruleset/@rules.3">
+        <conditionValueSetCellList valueSet="4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level = 4" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="1">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 1" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="4" columnWidth="47" pRule="#//@ruleset/@rules.4">
+        <conditionValueSetCellList valueSet="5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level = 5" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="5" columnWidth="36" pRule="#//@ruleset/@rules.5">
+        <conditionValueSetCellList valueSet="6..7">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level in 6 .. 7" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="2">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 2" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 4" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="6" columnWidth="42" pRule="#//@ruleset/@rules.6">
+        <conditionValueSetCellList valueSet="8">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level = 8" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 4" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="7" columnWidth="48" pRule="#//@ruleset/@rules.7">
+        <conditionValueSetCellList valueSet="9">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level = 9" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="3">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 3" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+      <ruleColumnList ruleId="8" columnWidth="44" pRule="#//@ruleset/@rules.8">
+        <conditionValueSetCellList valueSet="10">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.level = 10" datatype="Boolean" expressiontype="EXPRESSION" enumeration="false" cellValue="false">
+            <referencedTermList>
+              <terms text="level" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.level">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst" variable="#//@ruleset/@logicalVariables.0"/>
+              </terms>
+            </referencedTermList>
+          </parserOutput>
+        </conditionValueSetCellList>
+        <conditionValueSetCellList valueSet="-"/>
+        <actionValueSetCellList valueSet="4">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.minCaseComplexity = 4" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="minCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.minCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+        <actionValueSetCellList valueSet="5">
+          <parserOutput xsi:type="com.corticon.rulesemf.asg:Expression" text="Analyst.maxCaseComplexity = 5" datatype="Integer" expressiontype="ASSIGNMENT" enumeration="false" cellValue="false">
+            <modifiedTermList>
+              <terms text="maxCaseComplexity" datatype="Integer" termtype="ATTRIBUTE" fulltext="Analyst.maxCaseComplexity">
+                <parentTerm text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+              </terms>
+            </modifiedTermList>
+            <referencedTermList>
+              <terms text="Analyst" datatype="Analyst" termtype="ENTITY" fulltext="Analyst"/>
+            </referencedTermList>
+          </parserOutput>
+        </actionValueSetCellList>
+      </ruleColumnList>
+    </ruleSection>
+  </rulesheetViewList>
+</com.corticon.rulesemf.assetmodel:RulesheetAsset>
