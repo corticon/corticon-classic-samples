@@ -1,4 +1,4 @@
-# DNA Transcription & Translation" Ruleflow Project
+# DNA Transcription & Translation
 
 #### **Use Case**  
 This ruleflow models **DNA transcription and protein synthesis** by simulating the processes of **messenger RNA (mRNA) translation by ribosomes** and **transfer RNA (tRNA) codon matching**. It follows the biological mechanisms where genetic information is **converted into proteins** based on a set of codon-to-amino acid rules.  
