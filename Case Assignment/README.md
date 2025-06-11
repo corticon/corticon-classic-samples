@@ -104,7 +104,9 @@ Rule tests are essential for validating the correctness of the decision service.
     -   Each test case defines the initial state of the analysts and the case to be assigned.
     -   The output section shows the result of executing the rules – which analyst is assigned to the case and how their workload is updated.
     -   The tests cover various scenarios, including different case types, complexities, and amounts, ensuring that the rules handle all situations correctly.
-- **Rule Test Trace View:** Corticon's rule trace view provides valuable insights into the execution of the rules for each test case. By examining the trace, you can see exactly which rules were evaluated, which conditions were met, and which actions were executed, allowing for detailed debugging and verification of the decision logic. For instance, in 'Case 1,' the trace would show how the 'Qualification' rules assigned complexity ranges, followed by the 'Candidates' rules filtering analysts, and finally, the 'Minimize Overqualified' rules assigning the case to Kevin Jones and updating his workload.
+- **Rule Test Trace View:** Corticon's rule trace view provides valuable insights into the execution of the rules for each test case. By examining the trace, you can see exactly which rules were evaluated, which conditions were met, and which actions were executed, allowing for detailed debugging and verification of the decision logic. 
+  
+  For instance, in 'Case 1,' the trace would show how the 'Qualification' rules assigned complexity ranges, followed by the 'Candidates' rules filtering analysts, and finally, the 'Minimize Overqualified' rules assigning the case to Kevin Jones and updating his workload.
 
 ### Ruletest - Assigning First Case
 ![Case 1 Test Results with Rule Trace](<images/Case 1 Test Results with Rule Trace.png>)
