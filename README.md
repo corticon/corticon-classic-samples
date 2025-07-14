@@ -1,6 +1,8 @@
 # :rocket: Rule Project Accelerators for Server-Deployment flavor of Corticon
 _(versus Corticon.js for JavaScript deployment)_
 
+To import all samples in Corticon Studio's samples (Help->Samples), download and run [this](Import-Classic-All-Samples.ps1) script in PowerShell. 
+
 - [Airplane Maintenance](Airplane%20maintenance/README.md)
 - [Arabic Number to Roman Numerals](Arabic%20number%20to%20Roman%20numerals/README.md)
 - [Beers on the Wall Challenge](Beers%20on%20the%20Wall%20Challenge/README.md)
