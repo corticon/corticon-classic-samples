@@ -1,7 +1,18 @@
 # :rocket: Rule Project Accelerators for Server-Deployment flavor of Corticon
 _(versus Corticon.js for JavaScript deployment)_
 
-To import all samples in Corticon Studio's samples (Help->Samples), download and run [this](Import-Classic-All-Samples.ps1) script in PowerShell. 
+## Overview
+
+This repository contains importable Corticon Studio sample projects for server deployment use cases.
+
+## Quick Start
+
+1. Import all samples with [Import-Classic-7.2-Samples.ps1](Import-Classic-7.2-Samples.ps1).
+2. Open any sample folder below and follow its README.
+
+To import all samples in Corticon Studio's samples (Help->Samples), download and run [this](Import-Classic-7.2-Samples.ps1) script in PowerShell. 
+
+## Sample Index
 
 - [Airplane Maintenance](Airplane%20maintenance/README.md)
 - [Arabic Number to Roman Numerals](Arabic%20number%20to%20Roman%20numerals/README.md)
@@ -26,11 +37,22 @@ To import all samples in Corticon Studio's samples (Help->Samples), download and
 - [Mortgage](Mortgage/README.md)
 - [Oyster Harvesting](Oyster%20Harvesting/README.md)
 - [Postage Calculation](Postage%20Calculation/README.md)
-- [Postcodes](Postcodes/README.md)
+- [Postcodes](Postcodes/)
 - [Probabilistic Reasoning](Probabilistic%20Reasoning/README.md)
 - [Ranking and Ordering](Ranking%20and%20Ordering/README.md)
-- [Shopping Cart Tutorial](Shopping%20Cart%20Tutorial/Grocery-Cart.md)
+- [Shopping Cart Tutorial](Shopping%20Cart%20Tutorial/README.md)
 - [Solve for the Heir to the Throne](Solve%20for%20the%20Heir%20to%20the%20Throne/README.md)
 - [Stock Portfolio Choices](Stock%20Portfolio%20Choices/README.md)
 - [Sunrise Sunset REST API](Sunrise%20Sunset%20REST%20API/README.md)
 - [Winner of the Race Word Problem](Winner%20of%20the%20Race%20Word%20Problem/README.md)
+
+## Naming and Discoverability
+
+- Display names in this README use normalized title case for readability.
+- Folder names and URL slugs remain unchanged to preserve existing links.
+
+## Related Corticon Repositories
+
+- [corticon/corticon.js-samples](https://github.com/corticon/corticon.js-samples)
+- [corticon/corticon-dynamic-forms](https://github.com/corticon/corticon-dynamic-forms)
+- [corticon/corticon-on-marklogic](https://github.com/corticon/corticon-on-marklogic)
