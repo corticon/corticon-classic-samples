@@ -1,66 +1,33 @@
-### Determine Security Yield and Rationality
+# Determine Security Yield and Rationality
 
-#### **Use Case**
-This ruleflow assesses the **rationality of stock evaluations** by analyzing historical market data and market reports. It determines:
-1. **The yield of a stock based on a predicted target price.**
-2. **The rationality of the target price, report title, and summary.**
-3. **A final evaluation level based on these factors.**
+This ruleflow assesses the rationality of stock evaluations by analyzing historical market data and market reports. It determines the yield of a stock based on a predicted target price, the rationality of the target price, report title, and summary, and a final evaluation level based on these factors. This helps identify stocks with unrealistic predictions or misleading market reports.
 
-This helps in identifying stocks with unrealistic predictions or misleading market reports.
+## Key Decision Points
 
----
+### 1. Find Previous Market Date
 
-### **Key Decision Points**
-#### **1. Find Previous Market Date**
-- Retrieves the most recent available market date before the stock evaluation date.
-- Ensures stock analysis is based on the latest relevant data.
+- Retrieves the most recent available market date before the stock evaluation date, ensuring analysis is based on the latest relevant data.
+- Logic: finds the second most recent market date (previousStockDate) from MarketData for a given stock.
 
-**Logic:**
-- Finds the second most recent market date (`previousStockDate`) from `MarketData` for a given stock.
+### 2. Evaluate Target Price Rationality
 
----
+- Determines whether the predicted target price is reasonable based on past closing prices.
+- Logic: computes implied yield as `impliedYield = (MarketReport.predictedTargetPrice / MDPrevious.closingPrice) * 100`.
+- Rationality thresholds: unreasonable if yield is below -150% or above 150%; reasonable if yield is between -150% and 150%.
 
-#### **2. Evaluate Target Price Rationality**
-- Determines whether the **predicted target price** is reasonable based on past closing prices.
+### 3. Evaluate Title Rationality
 
-**Logic:**
-- Computes **implied yield**:  
+- Checks whether a market report title contains misleading words.
+- Logic: if the title contains "insider," it is labeled unreasonable; otherwise it is reasonable.
 
-    impliedYield = (MarketReport.predictedTargetPrice / MDPrevious.closingPrice) * 100
- 
+### 4. Evaluate Summary Rationality
 
-- Rationality thresholds:
-  - **Unreasonable**: Yield < -150% or > 150%.
-  - **Reasonable**: Yield between -150% and 150%.
+- Analyzes the summary text of a market report.
+- Logic: if the summary contains "according to reliable sources," it is unreasonable; otherwise it is reasonable.
 
----
+### 5. Determine Overall Security Evaluation Level
 
-#### **3. Evaluate Title Rationality**
-- Checks if a **market report title** contains misleading words.
+- Assigns a level based on the rationality of the target price, title, and summary.
+- Logic: Level 0 if all checks are reasonable; Level 1 if the target price is unreasonable but title and summary are reasonable; Level 2 if either the title or summary is unreasonable.
 
-**Logic:**
-- If the title contains **"insider"**, it is labeled **Unreasonable**.
-- Otherwise, it is labeled **Reasonable**.
-
----
-
-#### **4. Evaluate Summary Rationality**
-- Analyzes the **summary text** of a market report.
-
-**Logic:**
-- If the summary contains **"according to reliable sources"**, it is **Unreasonable**.
-- Otherwise, it is **Reasonable**.
-
----
-
-#### **5. Determine Overall Security Evaluation Level**
-- Assigns a **level** based on the rationality of the **target price, title, and summary**.
-
-**Logic:**
-- Level **0**: All rationality checks are **Reasonable**.
-- Level **1**: **Target Price is Unreasonable**, but Title & Summary are **Reasonable**.
-- Level **2**: **Either Title or Summary is Unreasonable**.
-
----
-
-This ruleflow helps ensure **accurate stock evaluations** and detects **unreliable market reports**, improving investment decision-making.
+This ruleflow helps ensure accurate stock evaluations and detects unreliable market reports, improving investment decision-making.
