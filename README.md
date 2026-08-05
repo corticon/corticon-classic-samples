@@ -1,16 +1,11 @@
-# :rocket: Rule Project Accelerators for Server-Deployment flavor of Corticon
-_(versus Corticon.js for JavaScript deployment)_
+# Corticon Classic Samples
 
-## Overview
-
-This repository contains importable Corticon Studio sample projects for server deployment use cases.
+Importable Corticon Studio sample projects for server-deployed and embedded decision services. Each sample can be imported into Corticon Studio and run as a Ruletest, deployed to Corticon Server, or embedded in a Java or .NET application.
 
 ## Quick Start
 
-1. Import all samples with [Import-Classic-7.2-Samples.ps1](Import-Classic-7.2-Samples.ps1).
-2. Open any sample folder below and follow its README.
-
-To import all samples in Corticon Studio's samples (Help->Samples), download and run [this](Import-Classic-7.2-Samples.ps1) script in PowerShell. 
+- To import all samples into Corticon Studio (Help > Samples), download and run [Import-Classic-7.2-Samples.ps1](Import-Classic-7.2-Samples.ps1) in PowerShell.
+- To explore a single sample, open its folder below and follow its README.
 
 ## Sample Index
 
@@ -18,6 +13,7 @@ To import all samples in Corticon Studio's samples (Help->Samples), download and
 - [Arabic Number to Roman Numerals](Arabic%20number%20to%20Roman%20numerals/README.md)
 - [Beers on the Wall Challenge](Beers%20on%20the%20Wall%20Challenge/README.md)
 - [Calculate Compound Interest](Calculate%20Compound%20Interest/README.md)
+- [Case Assignment](Case%20Assignment/README.md)
 - [Classic Auto Risk](Classic%20Auto%20Risk/README.md)
 - [Commission Calculations](Commission%20Calculations/README.md)
 - [Determine Security Yield and Rationality](Determine%20Security%20Yield%20and%20Rationality/README.md)
@@ -45,11 +41,6 @@ To import all samples in Corticon Studio's samples (Help->Samples), download and
 - [Stock Portfolio Choices](Stock%20Portfolio%20Choices/README.md)
 - [Sunrise Sunset REST API](Sunrise%20Sunset%20REST%20API/README.md)
 - [Winner of the Race Word Problem](Winner%20of%20the%20Race%20Word%20Problem/README.md)
-
-## Naming and Discoverability
-
-- Display names in this README use normalized title case for readability.
-- Folder names and URL slugs remain unchanged to preserve existing links.
 
 ## Related Corticon Repositories
 
