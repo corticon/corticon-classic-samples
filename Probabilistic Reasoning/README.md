@@ -1,4 +1,21 @@
+<<<<<<< Updated upstream
 # Probabilistic Reasoning (Bayes Probability)
+=======
+# Certainty-Factor Expert System
+
+Identifies an object (banana, lemon, submarine, raspberry…) from color/shape/size clues, combining evidence with confidence factors — a MYCIN-style expert system.
+
+## What it demonstrates
+- **Certainty-factor accumulation** — each clue proposes a `Conclusion` with a confidence (`0.5`, `-1.0` for "definitely not"), and a review sheet **combines evidence** using the classic CF formula `cf1 + cf2 * (1 - cf1)`.
+- **Pairwise conclusion merging** via two aliases (`c1`, `c2`) with an ordering filter, plus string concatenation to build the explanation.
+- **Selecting the winner** — `->max`-style comparison removes lower-confidence conclusions, leaving the most likely identification.
+
+## Why it's useful
+The repo's showcase for **uncertain reasoning** — accumulating and reconciling conflicting evidence rather than binary logic.
+
+
+### **Summary of the "Bayes Probability" Ruleflow Project**  
+>>>>>>> Stashed changes
 
 This ruleflow applies Bayesian probability to infer the most likely classification of an object based on observed evidence such as color, shape, and size. It assigns certainty factors (CFs) to possible conclusions and refines probabilities by logically combining multiple evidence sources.
 

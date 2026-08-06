@@ -1,5 +1,10 @@
 # Retrieving Data from Sunrise/Sunset REST API
 
+## What it demonstrates
+- **REST import callout** — `CorticonREST.importData` calls the Sunrise-Sunset API using `LAT`, `LNG`, and `DATE` as inputs and maps the JSON response (sunrise, sunset, twilight times, day length) straight onto the `REST_DATA` entity.
+- A single-node **main flow** with no rulesheets — pure data acquisition.
+
+
 Corticon's REST connectivity allows you to access data via REST services such that rule payloads can be enriched with REST data similar to database data. Corticon uses the [Progress Data Direct Autonomous REST Connector](https://www.progress.com/connectors/autonomous-rest-connector) to provide support for REST data integration. This allows you to access a REST service similar to the way you access a database. 
 
 This simple sample illustrates the functionality using the free API provided at https://sunrise-sunset.org/ It was built in just a few steps:

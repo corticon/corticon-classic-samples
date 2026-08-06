@@ -1,6 +1,12 @@
-### **Summary of the "Bayes Probability - Fuzzy" Ruleflow Project**  
+## **Summary of the "Bayes Probability - Fuzzy" Ruleflow Project**  
 
-#### **Use Case**  
+### What it demonstrates
+- **Fuzzification**: crisp inputs (age, income) are mapped to fuzzy membership degrees using piecewise-linear interpolation across ranged conditions (`< 18`, `18 .. 70`, `> 70`).
+- **Fuzzy AND/OR** using the `.min` and `.max` operators (`young.max(1 - rich)`).
+- **Defuzzification**: a final rulesheet compares the `highRisk` vs `lowRisk` membership scores to emit a crisp label.
+- **`transient` attributes** hold the intermediate membership degrees so they never leak into the output payload.
+
+### **Use Case**  
 This ruleflow applies **fuzzy logic** to assess a **borrower’s financial risk profile** based on their **age** and **income**. Instead of using strict thresholds, it uses **membership functions** to classify borrowers as **young, rich, high-risk, or low-risk** with degrees of certainty.  
 
 ---

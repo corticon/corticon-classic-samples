@@ -2,7 +2,17 @@
 
 This ruleflow models stock portfolio management by evaluating current holdings, ranking stocks by return on investment (ROI), and executing automated stock purchases based on available cash. It aims to optimize future portfolio value by prioritizing investments in high-performing stocks.
 
+<<<<<<< Updated upstream
 ## Key Decision Points
+=======
+---
+## What it demonstrates
+- **Ranking via sorted collection** — `holdings->sortedByDesc(roi)->at(n).roiRank = n` assigns explicit ranks.
+- **Iterative budget consumption** — an `"iterative": true` subflow repeatedly buys one share of the highest-ranked affordable stock, decrementing `Portfolio.cash` and re-checking limits until no purchase qualifies.
+- **Rank-targeted aliases + filters and `overrideRuleIds`** to enforce buy priority (rank 1 before rank 2, …).
+
+---
+>>>>>>> Stashed changes
 
 ### 1. Baseline Calculations (Portfolio and Stock Evaluations)
 
